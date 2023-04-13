@@ -26,7 +26,41 @@ create table Parceiro
 drop table Parceiro;
 select * from parceiro;
 insert into Parceiro
-(status_Parceiro,nome_Parceiro,cnpj_Parceiro,ramo_Parceiro,email_Parceiro,telefone1_Parceiro,telefone2_Parceiro,login_Parceiro,senha_Parceiro,confirmarSenha_Parceiro,logradouro_Parceiro,numero_Parceiro,complemento_Parceiro,bairro_Parceiro,cidade_Parceiro,uf_Parceiro,cep_Parceiro,obs_Parceiro)
+(status_Parceiro,
+nome_Parceiro,
+cnpj_Parceiro,
+ramo_Parceiro,
+email_Parceiro,
+telefone1_Parceiro,
+telefone2_Parceiro,
+login_Parceiro,
+senha_Parceiro,
+confirmarSenha_Parceiro,
+logradouro_Parceiro,
+numero_Parceiro,
+complemento_Parceiro,
+bairro_Parceiro,
+cidade_Parceiro,
+uf_Parceiro,
+cep_Parceiro,
+obs_Parceiro)
 values
-('ativo','administrador','12312512621','asas','adm@gmail.com','15151515','1122334455','txt','aaa','aaa','ssadsad','123','sadsdasd','dsfvdsfs','centro','SP','1616516','sfvsfabvafsb')
+('ativo',
+'nome',
+'121231651',
+'ramo',
+'adm@gmail.com',
+'1122334455',
+'11223344551',
+'adm',
+'123',
+'123',
+'logradouro',
+'123234',
+'complemento',
+'bairro',
+'cidade',
+'SP',
+'cep',
+'obs')
 

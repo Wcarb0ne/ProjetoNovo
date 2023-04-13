@@ -1,21 +1,18 @@
-<header class="header">
-
-  <div class="content">
-
-    <a href="#" target="_blank" class="logo"><img src="css/img/logoteste.jpg" height="80px" width="80px" title="a Lenda"></a>
-    
-    <input class="mobile-btn" type="checkbox" id="mobile-btn" />
-    <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
-    
-    <ul class="nav">
-
-      <li><a href="#" title="Home">Home</a></li>
-      <li><a href="#" title="Sobre">Sobre</a></li>
-      <li><a href="#" title="Artigos">Artigos</a></li>
-      <li><a href="#" title="Contato">Contato</a></li>
-    
-    </ul>
-
-  </div><!--content-->
-
-</header>
+<nav class="menu">
+        <ul>
+            <li class="active"><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Html">felipe</a></li>
+            <li><a href="#" title="Css">thiago</a></li>
+            <li><a href="#" title="Jquery">Kauã</a></li>
+        </ul>   
+</div>
+</nav>
+<div id="box-busca">                
+  <form action="#" autocomplete="on">
+                        
+     <input class="campo-busca" id="busca" name="busca" type="text" placeholder="Faça sua Busca ?">
+     <button type="submit" class="btn-busca"> <i class="bi bi-telegram"> </i> </button>
+                  
+  </form>
+                
+</div>
