@@ -16,7 +16,8 @@
             <div style="filter:alpha(opacity=50); opacity:0;">
             <li><i class=""></i></li>
             </div>
-            
+            <a href="www_sistema.php?Tela=FaleConosco" class="corno"><li><i class="bi bi-person-square"> </i>| FaleConosco</li></a>
+
             <div style="filter:alpha(opacity=50); opacity:0;">
             <li><i class=""></i></li>
             </div>
