@@ -1,7 +1,9 @@
 
 
-.menu { background-color: #233477; 
-  height: 200px;
+.menu {  
+  background-image: linear-gradient(to right,rgb(2, 25, 128),rgba(85, 119, 252, 0.562)) ;
+
+ 
 }
 
 .menu ul {
@@ -45,10 +47,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #695e5e;
   color: #ccc;
   z-index: -1;
-  transform: skewX(-35deg);
+  border-bottom: 1px solid #ffffff ;
   opacity: 0;
   transition: opacity 0.3s;
 
@@ -58,7 +59,7 @@
 .menu ul li:focus a,
 .menu ul li.active a {
 
-  color: #282828;
+  color: #ffffff;
 
 }
 
@@ -68,4 +69,9 @@
 
   opacity: 1;
 
+}
+
+#dropdown-item{
+
+  text-decoration: none;
 }
