@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/bootstrap.css">
    <!--cabeçalho --> <link rel="stylesheet" href="css/headerdeuruim.css">
-   <!--busca test--> <link rel="stylesheet" href="css/Busca.css">
+
    <!--fle conosco--> <link rel="stylesheet" href="css/feleconosco.css">
      
      <!--RODAPE --><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
@@ -21,10 +21,11 @@
 <body>
 
 <?php include_once('www_autenticar.php');?>
+<?php include_once('_header.php');?>
     <div class="container mt-4">
         <div class="row">
             <div class="col-sm-12">
-                <?php include_once('_header.php');?>
+                
             </div>
         </div>
         <div class="row">

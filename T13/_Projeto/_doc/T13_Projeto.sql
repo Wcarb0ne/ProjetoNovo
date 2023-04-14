@@ -1,5 +1,5 @@
 create database T13_Projeto;
-use T13_Projeto
+use T13_Projeto;
 create table Parceiro
 (
 	id_Parceiro int auto_increment not null primary key,
@@ -8,7 +8,7 @@ create table Parceiro
     nome_Parceiro varchar(30) not null,
     cnpj_Parceiro varchar(15) not null,
     ramo_Parceiro varchar(20) not null,
-    email_Parceiro varchar(30) not null,
+    email_Parceiro varchar(30) not null unique,
     telefone1_Parceiro varchar(15) not null,
     telefone2_Parceiro varchar(15) not null,
     login_Parceiro varchar(15) not null unique,
@@ -22,7 +22,7 @@ create table Parceiro
     uf_Parceiro varchar(50) not null,
     cep_Parceiro varchar(9) not null,
     obs_Parceiro varchar(255) null
-)
+);
 drop table Parceiro;
 select * from parceiro;
 insert into Parceiro
@@ -62,5 +62,49 @@ values
 'cidade',
 'SP',
 'cep',
-'obs')
+'obs');
+create table FaleConosco
+(
+id_FaleConosco	int	not null auto_increment	 primary key	,
+dataCadastro_FaleConosco	timestamp	not null,
+assunto_FaleConosco	varchar(30)	not null,
+email_FaleConosco	varchar(50)	not null,
+texto_FaleConosco	varchar(20)	not null,
+anexo_FaleConosco	blob null
+);		
+create table Planos
+(
+id_Planos	int	not null	auto_increment primary key	,
+data_Planos	timestamp	not null 	,
+nome_Planos	varchar(50)	not null	unique	,
+tipo_Planos	varchar(50)	not null		,
+preço_Planos	decimal(10,5)	not null 		,
+beneficios_Planos	varchar(50)		not null		,
+descricao_Planos	varchar(255)	null		,
+dataDuracao_Planos	varchar(30)	not null		
+);
+Create table Usuario
+(
+id_Cliente	int	not null	auto_increment primary key	,
+data_Cliente	timestamp	not null	,
+status_Cliente	varchar(15)	not null		,
+nome_Cliente	varchar(50)	not null		,
+cpf_Cliente	varchar(11)	not null		,
+login_Cliente	varchar(30)	not null	unique	,
+senha_Cliente	varchar(20)	not null		,
+confirmarSenha_Cliente varchar(20) not null,
+cep_Cliente	char(9)	not null		,
+logradouro_Cliente	varchar(100)	not null		,
+numero_Cliente	int	not null		,
+bairro_Cliente	varchar(20)	not null		,
+cidade_Cliente	varchar(20)	not null		,
+uf_Cliente	char(2)	not null		,
+complemento_Cliente	varchar(50)	null		,
+telefone1_Cliente	varchar(14)	not null		,
+telefone2_Cliente	varchar(14)	null		,
+email_Cliente	varchar(50)	not null		,
+obs_Cliente	varchar(255)	null		
+)
+
+
 
