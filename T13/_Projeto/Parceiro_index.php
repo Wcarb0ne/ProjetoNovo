@@ -37,14 +37,14 @@
                     $_SESSION['loginParceiro'] = $linha[9];
                 }
 
-                header('Location:www_sistema.php');
+                header('Location:Parceiro_sistema.php');
             }
             else
             {
                 $mensagem = '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
             }
     }
-    ?>
+ ?>
     <div class="container mt-4">
         <div class="row">
             <div class="col-sm-3"></div>
@@ -52,8 +52,7 @@
                 <form action="" class="form-control" method="POST">
                     <div class="row">
                         <div class="col-sm-12 p-3">
-                            <div class="card bg-blue">
-                                
+                            <div class="card bg-blue">                               
                             </div>
                         </div>
                         <div class="col-sm-12 p-2">
@@ -67,15 +66,14 @@
                         
                         <div class="col-sm-4 p-2"></div>
                         <div class="col-sm-4 p-2">
-                            <button name="btoOK" id="btoOK" class="btn btn-primary form-control" formaction="index.php">Entrar</button>
+                            <button name="btoOK" id="btoOK" class="btn btn-primary form-control" formaction="Parceiro_index.php">Entrar</button>
                         </div>
                         <div class="col-sm-4 p-2"></div>
                     </div>
                 </form>
             </div>
             <div class="col-sm-3"></div>
-        </div>
-        
+        </div>       
     </div>
 </body>
 </html>

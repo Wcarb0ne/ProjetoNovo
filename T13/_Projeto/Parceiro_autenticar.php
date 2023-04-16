@@ -9,6 +9,6 @@ if($_SESSION &&($_SESSION['idParceiro'])&& isset($_SESSION['nomeParceiro'])&& is
     $loginParceiro=$_SESSION['loginParceiro'];
 }
 else{
-    header('location:index.php');
+    header('location:Parceiro_index.php');
 }
 ?>

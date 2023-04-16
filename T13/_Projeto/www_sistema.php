@@ -42,14 +42,14 @@
 
                             $tela = $_GET['Tela'];
 
-                            if($tela  == 'Parceiro')
+                            if($tela  == 'Usuario')
                             {
-                                include_once('frm_Parceiro.php');
+                                include_once('frm_');
                             }
 
                             elseif($tela =='FaleConoso')
                             {
-                                include_once('frm_FaleConosco.php');
+                                include_once('frm_');
                             }
 
                             elseif($tela =='Sair')

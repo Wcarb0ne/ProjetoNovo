@@ -1,0 +1,106 @@
+/*Menu Lateral*/
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+
+  width: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+}
+
+nav ul {
+    background-color: #0087ff;
+    border-radius: 30px;
+    display: inline-table;
+    position: absolute;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    
+    color: #ffffff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+nav .btn-social {
+    
+    color: #ffffff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+nav .btn-social.ativo { background:#4a4a4a; }
+
+
+nav a:hover{
+    color: #fff;
+}
+
+nav ul li ul {
+
+    background: #0087ff;
+    margin-top: -275px;
+    padding: 3px;
+    position: absolute;
+
+}
+
+nav ul li ul:before {
+
+    background: #0087ff;
+    content: "";
+    height: 10px;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+    position: absolute;
+    bottom: -4px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    z-index: -1;
+
+}
+
+nav ul li ul.menu-social { display:none; } 
+
+nav ul li ul li {
+    float: none;
+}
+
+nav ul li ul li a {
+    color: #fff;
+}
+
+nav ul li ul li a:hover {
+    background-color: #4a4a4a;
+}
+/*Menu Lateral*/
+
+

@@ -23,6 +23,25 @@ create table Parceiro
     cep_Parceiro varchar(9) not null,
     obs_Parceiro varchar(255) null
 );
+create table ParceiroServiços
+(
+	id_ParceiroServiços int auto_increment not null primary key,
+    data_ParceiroServiços timestamp not null,
+    nome_ParceiroServiços varchar(30) not null,
+    id_PCategoria_ParceiroServiços int not null,
+    status_ParceiroServiços varchar(20) not null,
+    descricao_ParceiroServiços varchar(255) not null
+);
+ALTER TABLE ParceiroServiços ADD CONSTRAINT id_PCategoria_ParceiroServiços FOREIGN KEY(id_PCategoria_ParceiroServiços) REFERENCES PCategoria (id_PCategoria);
+describe Produto;
+create table PCategoria
+(
+	id_PCategoria int auto_increment not null primary key,
+    data_PCategoria timestamp not null,
+    nome_PCategoria varchar(30) not null,
+    status_PCategoria varchar(20) not null
+);
+
 drop table Parceiro;
 select * from parceiro;
 insert into Parceiro
