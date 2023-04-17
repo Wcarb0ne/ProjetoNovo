@@ -23,17 +23,18 @@ create table Parceiro
     cep_Parceiro varchar(9) not null,
     obs_Parceiro varchar(255) null
 );
-create table ParceiroServiços
+create table ParceiroServicos
 (
-	id_ParceiroServiços int auto_increment not null primary key,
-    data_ParceiroServiços timestamp not null,
-    nome_ParceiroServiços varchar(30) not null,
-    id_PCategoria_ParceiroServiços int not null,
-    status_ParceiroServiços varchar(20) not null,
-    descricao_ParceiroServiços varchar(255) not null
+	id_ParceiroServicos int auto_increment not null primary key,
+    data_ParceiroServicos timestamp not null,
+    nome_ParceiroServicos varchar(30) not null,
+    id_PCategoria_ParceiroServicos int not null,
+    status_ParceiroServicos varchar(20) not null,
+    descricao_ParceiroServicos varchar(255) not null
 );
-ALTER TABLE ParceiroServiços ADD CONSTRAINT id_PCategoria_ParceiroServiços FOREIGN KEY(id_PCategoria_ParceiroServiços) REFERENCES PCategoria (id_PCategoria);
-describe Produto;
+ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
+drop table PCategoria;
+describe ParceiroServicos;
 create table PCategoria
 (
 	id_PCategoria int auto_increment not null primary key,
@@ -43,7 +44,7 @@ create table PCategoria
 );
 
 drop table Parceiro;
-select * from parceiro;
+select * from ParceiroServicos;
 insert into Parceiro
 (status_Parceiro,
 nome_Parceiro,

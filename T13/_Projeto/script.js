@@ -1,4 +1,4 @@
-/////////////////Parceiro///////////
+/////////////////formulario Parceiro///////////
 function CadastrarParceiro(){
  
     let status_Parceiro = $('#txtStatus').val();
@@ -188,6 +188,154 @@ function ParceiroExcluir(){
         }
 
     })
+}/////////////////formulario Parceiro///////////
+
+/////////////////formulario Categoria Parceiro///////////
+function CadastrarCategoriaParceiro(){
+ 
+    let status_PCategoria = $('#txtStatus').val();
+    let nome_PCategoria = $('#txtNome').val();
+    let action = 'Parceiro_btoCadastrarParceiro.php';
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtNome: nome_PCategoria,
+            txtStatus: status_PCategoria
+
+        },
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
+            //$("#txtID").val($(#idGerado).text());
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').append('Error ' + errorMessage);
+        }
+
+    })
 }
-/////////////////Parceiro///////////
+function PesquisarCategoriaParceiro(){
+
+    //console.log('testtetttt');
+
+    let id_Parceiro = $('#txtID').val();
+  
+    let action = 'Parceiro_btoCategoriaPesquisa.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_PCategoria
+           
+        },
+        success: function (data, status, xhr) {
+
+            $("#resultado").empty().html( data );
+            $("#txtID").val($('#idGerado').text());
+            $("#txtData").val($('#PesquisaCadastro').text());
+            $("#txtNome").val($('#PesquisaNome').text());
+            $("#txtStatus").val($('#PesquisaStatus').text()); //obs status nao esta puxando na caixa de txt no form
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').empty().html('Error ' + errorMessage);
+        }
+
+    })
+
+}
+function ExcluirCategoriaParceiro(){
+
+    let id_Parceiro = $('#txtID').val();
+  
+    let action = 'Parceiro_btoCategoriaExcluir.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_PCategoria
+           
+        },
+        beforend : function(){
+            $("#resultado").html("ENVIANDO...");
+        },
+        success: function(data, status, xhr){
+            $( "#resultado" ).empty().html( data );
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').empty().html('Error' + errorMessage);
+        }
+
+    })
+}
+function AlterarCategoriaParceiro(){
+
+    //console.log('testtetttt');
+
+    let id_Parceiro = $('#txtID').val();
+    let nome_Parceiro = $('#txtNome').val();
+    let status_Parceiro = $('#txtStatus').val();
+  
+    let action = 'Parceiro_btoCategoriaAlterar.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_Parceiro,
+            txtNome: nome_Parceiro,
+            txtStatus: status_Parceiro
+           
+        },
+        beforend : function(){
+            $("#resultado").html("ENVIANDO...");
+        },
+        success: function (data, status, xhr) {
+
+            $("#resultado").empty().html( data );
+            ParceiroPesquisar();
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').append('Error ' + errorMessage);
+        }
+
+    })
+
+}/////////////////formulario Categoria Parceiro///////////
+
+/////////////////formulario Serviços Parceiro///////////
+function CadastrarSevicosParceiro(){
+ 
+    let status_ParceiroServicos = $('#txtStatus').val();
+    let nome_ParceiroServicos = $('#txtNome').val();
+    let descricao_ParceiroServicos = $('#txtDescricao').val();
+    let action = 'Parceiro_btoServicosCadastrar.php';
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtNome: nome_ParceiroServicos,
+            txtStatus: status_ParceiroServicos,
+            txtDescricao: descricao_ParceiroServicos
+
+        },
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
+            //$("#txtID").val($(#idGerado).text());
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').append('Error ' + errorMessage);
+        }
+
+    })
+}
+
+
+/////////////////Categoria Serviços Parceiro///////////
 

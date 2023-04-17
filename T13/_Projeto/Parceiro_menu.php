@@ -13,9 +13,9 @@
 
                 </li>
                 <li class="has-subnav">
-                    <a href="Parceiro_sistema.php?Tela=Parceiro">
+                    <a href="Parceiro_sistema.php?Tela=Servicos">
                         <i class="icon icon-file-text icon-text"></i>
-                        <span class="menu-texto">Posts</span>
+                        <span class="menu-texto">Serviços</span>
                     </a>
 
                 </li>

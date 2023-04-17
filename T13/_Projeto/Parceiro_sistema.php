@@ -64,7 +64,7 @@
                             }
                             elseif($tela =='Servicos')
                             {
-                                include_once('frm_ParceiroServicos.php');
+                                include_once('Parceiro_Servicos.php');
                             }
                             elseif($tela =='FaleConosco')
                             {
@@ -95,8 +95,9 @@
         </div>
     </footer> 
     <!-- ?php include_once('Parceiro_RedeSocial.php');? --><!--aqi funciona mais bug a estrutura com o css-->
+<script src="script.js"></script>
 <script src="js/RedeSocial/Rede_Social.js"></script>
 <script src="js/RedeSocial/jquery.js"></script>
-<script src="script.js"></script>
+
 </body>
 </html>
