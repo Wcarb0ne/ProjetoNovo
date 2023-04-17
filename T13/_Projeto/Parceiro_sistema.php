@@ -43,9 +43,8 @@
             <div class="col-sm-3 mb-1">
                 <?php include_once('Parceiro_menu.php')?>
             </div>
-
-            
-            <div class="col-sm-6 ">
+        
+          <div class="col-sm-6 ">
                 <?php
                     if($_GET)
                     {
