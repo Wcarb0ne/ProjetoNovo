@@ -18,9 +18,9 @@
             </li>
             
             <li class="has-subnav">
-                <a href="#">
+                <a href="Parceiro_sistema.php?Tela=Categoria">
                    <i class="icon icon-camera icon-text"></i>
-                    <span class="menu-texto">Galeria de Fotos</span>
+                    <span class="menu-texto">Categoria</span>
                 </a>
                 
             </li>

@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-1">
+            <div class="col-sm-2">
                 <?php include_once('Parceiro_menu.php');?>
             </div>
             <div class="col-sm-10 ">
@@ -79,9 +79,6 @@
 
                     }
                 ?>
-            </div>
-            <div class="col-sm-1">
-                <?php include_once('Parceiro_RedeSocial.php');?> <!--aqi funciona mais nao posso pega o css se nao ele desaparece-->
             </div>
         </div>
     </div>

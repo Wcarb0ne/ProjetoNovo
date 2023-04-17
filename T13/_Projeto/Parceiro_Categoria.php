@@ -4,7 +4,6 @@
                 <h1>Criar Categoria</h1>
         </div>
     </div>
-    <hr>
     <div class="row">
         <div class="col-sm-3">
             <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Categoria">
