@@ -27,7 +27,7 @@
 
 <?php include_once('Parceiro_autenticar.php');?>
 <?php include_once('_header.php');?>
-    <div class="container mt-4">
+    <div class="container mt-1">
         <div class="row">
             <div class="col-sm-12">
                 <!-- <header class="main_header container">        
@@ -37,11 +37,15 @@
                 </header>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-1">
-                <?php include_once('Parceiro_menu.php');?>
+            <div class="col-sm-3 mb-1">
+                <?php include_once('Parceiro_menu.php')?>
             </div>
-            <div class="col-sm-10 ">
+
+            
+            <div class="col-sm-6 ">
                 <?php
                     if($_GET)
                     {
@@ -80,14 +84,14 @@
                     }
                 ?>
             </div>
-            <div class="col-sm-1">
-                <?php include_once('Parceiro_RedeSocial.php');?> <!--aqi funciona mais nao posso pega o css se nao ele desaparece-->
+
             </div>
-        </div>
+
+
     </div>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container-fluid">
                 <?php include_once('_footer.php');?>
         </div>
     </footer> 
