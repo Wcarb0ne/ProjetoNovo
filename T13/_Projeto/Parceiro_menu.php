@@ -1,7 +1,7 @@
 <nav class="menu-sidebar">
         <ul>
             <li>
-                <a href="#">
+                <a href="Parceiro_sistema.php?">
                     <i class="icon icon-home icon-text"></i>
                     <span class="menu-texto">
                         Página Inícial
@@ -10,7 +10,7 @@
               
             </li>
             <li class="has-subnav">
-                <a href="#">
+                <a href="Parceiro_sistema.php?Tela=Parceiro">
                     <i class="icon icon-file-text icon-text"></i>
                     <span class="menu-texto">Posts</span>
                 </a>
@@ -47,14 +47,14 @@
             </li>
         
             <li>
-                <a href="#">
+                <a href="Parceiro_sistema.php?Tela=FaleConosco">
                    <i class="icon icon-envelope icon-text"></i>
-                    <span class="menu-texto"> Contato </span>
+                    <span class="menu-texto">Fale Conosco </span>
                 </a>
             </li>
 
             <li>
-               <a href="#">
+               <a href="Parceiro_autenticarSair.php?Tela=Sair">
                     <i class="icon icon-plug icon-text"></i>
                     <span class="menu-texto"> Sair</span>
                 </a>

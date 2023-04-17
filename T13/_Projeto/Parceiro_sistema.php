@@ -57,13 +57,13 @@
                             }
                             elseif($tela =='Categoria')
                             {
-                                include_once('frm_ParceiroCategoria.php');
+                                include_once('Parceiro_Categoria.php');
                             }
                             elseif($tela =='Servicos')
                             {
                                 include_once('frm_ParceiroServicos.php');
                             }
-                            elseif($tela =='FaleConoso')
+                            elseif($tela =='FaleConosco')
                             {
                                 include_once('frm_FaleConosco.php');
                             }
