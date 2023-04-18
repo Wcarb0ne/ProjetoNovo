@@ -21,8 +21,8 @@ if($_POST)
         $sql->execute(array(
 
             ':nome_ParceiroServiços'=>$nome_ParceiroServiços,
-            ':status_ParceiroServiços'=>$status_ParceiroServiços
-            ':descricao_ParceiroServiços'=>$Descricao_ParceiroServiços
+            ':status_ParceiroServiços'=>$status_ParceiroServiços,
+            ':descricao_ParceiroServiços'=>$descricao_ParceiroServiços
 
         ));
 

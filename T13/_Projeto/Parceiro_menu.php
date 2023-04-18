@@ -1,7 +1,6 @@
 
         <nav class="menu-sidebar">
 
-
             <ul>
                 <li>
                     <a href="Parceiro_sistema.php?">
@@ -35,7 +34,6 @@
 
                 </li>
 
-
                 <li>
                     <a href="#">
                         <i class="icon icon-comments icon-text"></i>
@@ -53,6 +51,13 @@
                     <a href="Parceiro_sistema.php?Tela=FaleConosco">
                         <i class="icon icon-envelope icon-text"></i>
                         <span class="menu-texto">Fale Conosco </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Parceiro_sistema.php?Tela=Parceiro">
+                        <i class="icon icon-plug icon-text"></i>
+                        <span class="menu-texto">Cadastro P</span>
                     </a>
                 </li>
 

@@ -1,6 +1,6 @@
 <form action="" class="from-control" method="post">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-10">
                 <h1>Criar Categoria</h1>
         </div>
     </div>
@@ -9,16 +9,16 @@
             <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Categoria">
         </div>
             <div class="col-sm-2"></div>
-        <div class="col-sm-3">
+        <div class="col-sm-5">
             <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Da Categoria">
         </div>
             <div class="col-sm-2"></div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <select type="checkbox"name="txtStatus" id="txtStatus" class="form-control">
                 <option value=""> ->Selecione<-</option>
                 <option value="Ativo">Ativo</option>

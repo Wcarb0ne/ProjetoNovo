@@ -12,13 +12,13 @@
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/reset.css">
    <!-- RedeSocial<link rel="stylesheet" href="css/redeSocial.css"> css ta bugando a estrutura--> 
 
-   <!--fle conosco--> <link rel="stylesheet" href="css/feleconosco.css">
+   <!-- fle conosco <link rel="stylesheet" href="css/feleconosco.css"> -->
 
     <!--RODAPE --><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
     <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
     <!--RODAPE --><link rel="stylesheet" href="css/footerAMEM.css">
     <!--icones bootstrap-->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <script src="css/Login/js/jquery.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
 
     <title>Login</title>
 
@@ -44,14 +44,12 @@
                 <?php include_once('Parceiro_menu.php')?>
             </div>
         
-          <div class="col-sm-6 ">
+            <div class="col-sm-6 ">
                 <?php
                     if($_GET)
                     {
-
                         if(isset($_GET['Tela']))
                         {
-
                             $tela = $_GET['Tela'];
 
                             if($tela  == 'Parceiro')
@@ -84,7 +82,7 @@
                 ?>
             </div>
 
-            </div>
+        </div>
 
 
     </div>
@@ -94,10 +92,6 @@
                 <?php include_once('_footer.php');?>
         </div>
     </footer> 
-    <!-- ?php include_once('Parceiro_RedeSocial.php');? --><!--aqi funciona mais bug a estrutura com o css-->
-<script src="script.js"></script>
-<script src="js/RedeSocial/Rede_Social.js"></script>
-<script src="js/RedeSocial/jquery.js"></script>
-
+<script src="Bto.js"></script>
 </body>
 </html>

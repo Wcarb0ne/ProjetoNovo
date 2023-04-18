@@ -34,6 +34,7 @@ create table ParceiroServicos
 );
 ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
 drop table PCategoria;
+select * from ParceiroServicos;
 describe ParceiroServicos;
 create table PCategoria
 (

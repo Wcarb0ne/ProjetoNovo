@@ -18,11 +18,11 @@
             <label for="Nome">Nome</label>
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Insira um novo Serviço">
         </div>
-            <div class="col-sm-4">
-            <label for="Nome">Selecione uma Categoria</label>
+            <div class="col-sm-3">
+            <label for="Nome">Categoria</label>
             <input type="checkbox" class="form-control" name="txtCategoria" id="txtCategoria">
             </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <label for="Status">Status</label>
             <select type="checkbox"name="txtStatus" id="txtStatus" class="form-control">
                 <option value="">Selecione</option>
@@ -41,13 +41,14 @@
         <div class="col-sm-10">
             <button name="btoPesquisa" class="btn btn-primary"formaction="Parceiro_sistema.php?Tela=Servicos">Pesquisar</button>
             <button name="btotabela" class="btn btn-info"formaction="Parceiro_sistema.php?Tela=Ctabela">Tabela</button>
-            <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarSevicosParceiro()" >Cadastrar</button>
+            <button name="btoCadastrar" class="btn btn-success"onclick="CadastrarSevicosParceiro()">Cadastrar</button>
             <button name="btoAlterar" class="btn btn-warning"formaction="Parceiro_btoAlterar.php?Tela=Servicos">Alterar</button>
             <a type="reset" name="btoLimpar" class="btn btn-dark"href="Parceiro_sistema.php?Tela=Servicos">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger"formaction="Parceiro_btoExcluir.php?Tela=Servicos">Excluir</button>
         </div>
         <div class="row"> 
-        <div class="col-sm-12" id="resultado"></div>
+            <div class="col-sm-10" id="resultado">
+        </div>
     </div>
     </div>
 </form>
