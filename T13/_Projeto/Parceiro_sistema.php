@@ -18,8 +18,11 @@
     <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
     <!--RODAPE --><link rel="stylesheet" href="css/footerAMEM.css">
     <!--icones bootstrap-->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  
     <script src="js/jquery-3.6.4.js"></script>
-
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
     <title>Login</title>
 
 </head>
@@ -92,6 +95,6 @@
                 <?php include_once('_footer.php');?>
         </div>
     </footer> 
-<script src="Bto.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,9 +11,9 @@ if($_POST)
     try {
         $sql = $conn->prepare(
             "insert into PCategoria
-            (status_PCategoria,nome_PCategoria)
+            (nome_PCategoria,status_PCategoria)
             values
-            (:status_PCategoria,:nome_PCategoria)"
+            (:nome_PCategoria,:status_PCategoria)"
         );
 
         $sql->execute(array(

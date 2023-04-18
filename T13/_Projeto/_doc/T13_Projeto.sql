@@ -23,29 +23,6 @@ create table Parceiro
     cep_Parceiro varchar(9) not null,
     obs_Parceiro varchar(255) null
 );
-create table ParceiroServicos
-(
-	id_ParceiroServicos int auto_increment not null primary key,
-    data_ParceiroServicos timestamp not null,
-    nome_ParceiroServicos varchar(30) not null,
-    id_PCategoria_ParceiroServicos int not null,
-    status_ParceiroServicos varchar(20) not null,
-    descricao_ParceiroServicos varchar(255) not null
-);
-ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
-drop table PCategoria;
-select * from ParceiroServicos;
-describe ParceiroServicos;
-create table PCategoria
-(
-	id_PCategoria int auto_increment not null primary key,
-    data_PCategoria timestamp not null,
-    nome_PCategoria varchar(30) not null,
-    status_PCategoria varchar(20) not null
-);
-
-drop table Parceiro;
-select * from ParceiroServicos;
 insert into Parceiro
 (status_Parceiro,
 nome_Parceiro,
@@ -84,6 +61,36 @@ values
 'SP',
 'cep',
 'obs');
+create table ParceiroServicos
+(
+	id_ParceiroServicos int auto_increment not null primary key,
+    data_ParceiroServicos timestamp not null,
+    nome_ParceiroServicos varchar(30) not null,
+    id_PCategoria_ParceiroServicos int not null,
+    status_ParceiroServicos varchar(20) not null,
+    descricao_ParceiroServicos varchar(255) not null
+);
+ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
+drop table PCategoria;
+select * from ParceiroServicos;
+describe ParceiroServicos;
+create table PCategoria
+(
+	id_PCategoria int auto_increment not null primary key,
+    data_PCategoria timestamp not null,
+    nome_PCategoria varchar(30) not null,
+    status_PCategoria varchar(20) not null
+);
+insert into PCategoria
+(
+nome_PCategoria,
+status_PCategoria)
+values
+('bugdoido',
+'ativo'
+);
+drop table Parceiro;
+select * from PCategoria;
 create table FaleConosco
 (
 id_FaleConosco	int	not null auto_increment	 primary key	,

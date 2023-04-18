@@ -1,4 +1,4 @@
-<form action="" class="from-control" method="post">
+<form action="" class="from-control" method="post" onsubmit="return false">
     <div class="row">
         <div class="col-sm-10">
                 <h1>Criar Serviços</h1>
@@ -46,9 +46,9 @@
             <a type="reset" name="btoLimpar" class="btn btn-dark"href="Parceiro_sistema.php?Tela=Servicos">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger"formaction="Parceiro_btoExcluir.php?Tela=Servicos">Excluir</button>
         </div>
+    </div>
         <div class="row"> 
             <div class="col-sm-10" id="resultado">
         </div>
-    </div>
     </div>
 </form>

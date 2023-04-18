@@ -35,9 +35,9 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="Parceiro_sistema.php?Tela=Categoria">
                         <i class="icon icon-comments icon-text"></i>
-                        <span class="menu-texto">Comentários</span>
+                        <span class="menu-texto">Categoria</span>
                     </a>
                 </li>
                 <li>

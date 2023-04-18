@@ -193,9 +193,12 @@ function ParceiroExcluir(){
 /////////////////formulario Categoria Parceiro///////////
 function CadastrarCategoriaParceiro(){
  
-    let status_PCategoria = $('#txtStatus').val();
-    let nome_PCategoria = $('#txtNome').val();
-    let action = 'Parceiro_btoCadastrarParceiro.php';
+
+let nome_PCategoria = $('#txtNome').val();
+let status_PCategoria = $('txtStatus').val();
+console.log('testee');
+
+let action = 'Parceiro_btoCategoriaCadastrar.php';
 
     $.ajax({
         url: action,
@@ -219,7 +222,7 @@ function PesquisarCategoriaParceiro(){
 
     //console.log('testtetttt');
 
-    let id_Parceiro = $('#txtID').val();
+    let id_PCategoria = $('#txtID').val();
   
     let action = 'Parceiro_btoCategoriaPesquisa.php';
 
@@ -228,7 +231,7 @@ function PesquisarCategoriaParceiro(){
         url: action,
         type: 'post',
         data: {
-            txtID: id_PCategoria
+            txtID: id_PCategoria,
            
         },
         success: function (data, status, xhr) {
@@ -311,8 +314,8 @@ function AlterarCategoriaParceiro(){
 /////////////////formulario Serviços Parceiro///////////
 function CadastrarSevicosParceiro(){
  
-    let status_ParceiroServicos = $('#txtStatus').val();
     let nome_ParceiroServicos = $('#txtNome').val();
+    let status_ParceiroServicos = $('#txtStatus').val();
     let descricao_ParceiroServicos = $('#txtDescricao').val();
     let action = 'Parceiro_btoServicosCadastrar.php';
 
