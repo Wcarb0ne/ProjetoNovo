@@ -35,11 +35,14 @@
                 </div>
 
             </div><!--Coluna 2-->
+            <div class="col-sm-3">
 
-            <div class="footer-contact">
+
+                <div class="footer-tags">
+                    <h3>Redes Sociais</h3>
+                </div>
                 <div class="row align-items-center">
-                    <div class="col-sm-3">
-                        <h4>Redes Sociais</h4>
+                <div class="footer-contact">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>

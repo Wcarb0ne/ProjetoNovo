@@ -183,20 +183,50 @@ body {
   }
   
   .footer .footer-contact {
-    position: relative;
+    
     padding: 25px 0;
-    text-align: center;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    
+ 
   }
   
-  .footer .footer-contact h4 {
-    position: relative;
-    margin-bottom: 10px;
+  .footer .footer-contact h3 {
+    
+    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
   }
+/* Modificações Tome */
+  .footer .footer-contact h3 ::after
+ {
+    position: relative;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+  }
+
+  .footer .footer-contact h3
+ {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .footer .footer-contact
+ {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  /*  */
+
+
   
   .footer .footer-contact p {
     margin: 0;
