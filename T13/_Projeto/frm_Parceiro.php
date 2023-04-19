@@ -4,7 +4,7 @@
             <h1> Tela de Cadastro</h1>
         </div>
     </div>
-    <hr>
+        <hr>
     <div class="row"><!-- ID / STATUS / datacadastro -->
         <div class="col-sm-4">
             <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario">
@@ -22,8 +22,7 @@
             <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
         </div>
     </div>
-   
-    
+        <hr>
     <div class="row mt-1"><!-- NOME  / CHPJ  / RAMO -->
         <div class="col-sm-6">
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o nome da empresa" >
@@ -35,7 +34,7 @@
         <input type="text" class="form-control" name="txtRamo" id="txtRamo" placeholder="Informe o Ramo">            
         </div>
     </div>
-
+        <hr>
     <div class="row mt-1"><!--  email / telefone1 / telefone2 -->
         <div class="col-sm-4">
             <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email Comercial">
@@ -47,7 +46,7 @@
             <input type="text" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder="Telefone da Empresa">
         </div>
     </div>
-
+        <hr>
     <div class="row mt-1"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
         <div class="col-sm-4">
             <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Login do usuário">
@@ -59,7 +58,7 @@
             <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
         </div>
     </div>
-    
+        <hr>
     <div class="row mt-1"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
         <div class="col-sm-3">
             <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder=" Informe seu Endereço">
@@ -71,7 +70,7 @@
             <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Informe o Complemento">
         </div>
     </div>
-
+        <hr>
     <div class="row mt-1"><!-- BAIRRO / CIDADE / UF / CEP -->
         <div class="col-sm-3">
             <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder=" Informe seu Bairro">
@@ -127,5 +126,5 @@
             <button name="btoSair" class="btn btn-danger">Sair</button>
         </div>
     </div>
-
+    <hr>
 </form>

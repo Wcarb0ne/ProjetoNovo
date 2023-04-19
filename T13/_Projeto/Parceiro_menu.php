@@ -1,7 +1,6 @@
 
         <nav class="menu-sidebar">
 
-
             <ul>
                 <li>
                     <a href="Parceiro_sistema.php?">
@@ -13,9 +12,9 @@
 
                 </li>
                 <li class="has-subnav">
-                    <a href="Parceiro_sistema.php?Tela=Parceiro">
+                    <a href="Parceiro_sistema.php?Tela=Servicos">
                         <i class="icon icon-file-text icon-text"></i>
-                        <span class="menu-texto">Posts</span>
+                        <span class="menu-texto">Serviços</span>
                     </a>
 
                 </li>
@@ -35,11 +34,10 @@
 
                 </li>
 
-
                 <li>
-                    <a href="#">
+                    <a href="Parceiro_sistema.php?Tela=Categoria">
                         <i class="icon icon-comments icon-text"></i>
-                        <span class="menu-texto">Comentários</span>
+                        <span class="menu-texto">Categoria</span>
                     </a>
                 </li>
                 <li>
@@ -53,6 +51,13 @@
                     <a href="Parceiro_sistema.php?Tela=FaleConosco">
                         <i class="icon icon-envelope icon-text"></i>
                         <span class="menu-texto">Fale Conosco </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Parceiro_sistema.php?Tela=Parceiro">
+                        <i class="icon icon-plug icon-text"></i>
+                        <span class="menu-texto">Cadastro P</span>
                     </a>
                 </li>
 
