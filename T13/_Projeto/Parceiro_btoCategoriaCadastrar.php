@@ -1,13 +1,14 @@
 <?php
 include_once('Conexao.php');
 
+// print_r($_POST);
+// return;
+
 if($_POST)
 {
     $nome_PCategoria = $_POST['txtNome'];
     $status_PCategoria = $_POST['txtStatus'];
-
-    
-    
+ 
     try {
         $sql = $conn->prepare(
             "insert into PCategoria
@@ -35,7 +36,7 @@ if($_POST)
 }
 else
 {
-    //header('Location:index.php');
+    //header('Location:Parceiro_index.php');
 }
 
 ?>

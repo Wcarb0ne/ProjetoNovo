@@ -193,9 +193,9 @@ function ParceiroExcluir(){
 /////////////////formulario Categoria Parceiro///////////
 function CadastrarCategoriaParceiro(){
  
-
 let nome_PCategoria = $('#txtNome').val();
-let status_PCategoria = $('txtStatus').val();
+let status_PCategoria = $('#txtStatus').val();
+
 console.log('testee');
 
 let action = 'Parceiro_btoCategoriaCadastrar.php';
@@ -206,14 +206,13 @@ let action = 'Parceiro_btoCategoriaCadastrar.php';
         data: {
             txtNome: nome_PCategoria,
             txtStatus: status_PCategoria
-
         },
         success: function (data, status, xhr) {
             $("#resultado").empty().html(data);
             //$("#txtID").val($(#idGerado).text());
         },
         error: function (jqXhr, textStatus, errorMessage) {
-            $('#resultado').append('Error ' + errorMessage);
+            $('#resultado').empty('Error ' + errorMessage);
         }
 
     })
