@@ -195,8 +195,8 @@ function CadastrarCategoriaParceiro(){
  
 
 let nome_PCategoria = $('#txtNome').val();
-let status_PCategoria = $('txtStatus').val();
-console.log('testee');
+let status_PCategoria = $('#txtStatus').val();
+// console.log('testee');
 
 let action = 'Parceiro_btoCategoriaCadastrar.php';
 

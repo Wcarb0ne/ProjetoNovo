@@ -1,10 +1,10 @@
 <form action="" class="form-control" method="POST" onsubmit="return false">
     <div class="row">
         <div class="col-sm-12">
-            <h1> Tela de Cadastro</h1>
+            <h1> Tela de Cadastro Empresa</h1>
         </div>
     </div>
-        <hr>
+
     <div class="row"><!-- ID / STATUS / datacadastro -->
         <div class="col-sm-4">
             <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario">
@@ -22,8 +22,8 @@
             <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
         </div>
     </div>
-        <hr>
-    <div class="row mt-1"><!-- NOME  / CHPJ  / RAMO -->
+
+    <div class="row mt-3"><!-- NOME  / CHPJ  / RAMO -->
         <div class="col-sm-6">
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o nome da empresa" >
         </div>
@@ -34,8 +34,8 @@
         <input type="text" class="form-control" name="txtRamo" id="txtRamo" placeholder="Informe o Ramo">            
         </div>
     </div>
-        <hr>
-    <div class="row mt-1"><!--  email / telefone1 / telefone2 -->
+
+    <div class="row mt-3"><!--  email / telefone1 / telefone2 -->
         <div class="col-sm-4">
             <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email Comercial">
         </div>
@@ -46,8 +46,8 @@
             <input type="text" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder="Telefone da Empresa">
         </div>
     </div>
-        <hr>
-    <div class="row mt-1"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
+
+    <div class="row mt-3"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
         <div class="col-sm-4">
             <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Login do usuário">
         </div>
@@ -58,8 +58,8 @@
             <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
         </div>
     </div>
-        <hr>
-    <div class="row mt-1"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
+
+    <div class="row mt-3"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
         <div class="col-sm-3">
             <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder=" Informe seu Endereço">
         </div>
@@ -70,8 +70,8 @@
             <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Informe o Complemento">
         </div>
     </div>
-        <hr>
-    <div class="row mt-1"><!-- BAIRRO / CIDADE / UF / CEP -->
+
+    <div class="row mt-4"><!-- BAIRRO / CIDADE / UF / CEP -->
         <div class="col-sm-3">
             <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder=" Informe seu Bairro">
         </div>
@@ -114,17 +114,19 @@
         </div>
     </div>
    
-    <div class="row mt-1"><!-- Observação -->
+    <div class="row mt-4"><!-- Observação -->
         <div class="col-sm-12">
             <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Insira a observação do cadastro (campo não obrigatório)"></textarea>
         </div>
     </div>
 
-    <div class="row mt-4 mb-4"><!--botoes-->
+    <div class="row mt-2 mb-2"><!--botoes-->
         <div class="col-sm-12">
-            <button name="btoCadastrar" class="btn btn-success" onclick= "CadastrarUsuario()">Cadastrar</button>
-            <button name="btoSair" class="btn btn-danger">Sair</button>
+            <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarParceiro()">Cadastrar</button>
+            <button name="btoSair" class="btn btn-danger"href="Parceiro_sistema.php?">Sair</button>
         </div>
     </div>
-    <hr>
+            <div class="row"> 
+                <div class="col-sm-10" id="resultado">
+            </div>
 </form>

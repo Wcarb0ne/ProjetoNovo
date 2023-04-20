@@ -34,10 +34,12 @@
             <a type="reset" name="btoLimpar" class="btn btn-dark"href="Parceiro_sistema.php?Tela=Categoria">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirCategoriaParceiro()">Excluir</button>
             <button name="btotabela" class="btn btn-info"formaction="Parceiro_sistema.php?">Tabela</button>
+        </div>
+
             <div class="row"> 
                 <div class="col-sm-10" id="resultado">
             </div>
-        </div>
+
     </div>
         
 </form>
