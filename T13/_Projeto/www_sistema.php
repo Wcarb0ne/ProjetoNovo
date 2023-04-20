@@ -28,50 +28,28 @@
 </head>
 
 <body>
-
     <?php include_once('www_autenticar.php'); ?>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <?php include_once('_header.php'); ?>
-            </div>
-        </div>
 
-        <div class="container mt-4">
+
+    <div class="container">
+        
+    <header>
             <div class="row">
                 <div class="col-sm-12">
-
+                    <?php include_once('_header.php'); ?>
                 </div>
             </div>
+        </header>
+        <div style="height: 65px;"></div>
+        <div class="container ">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-3" style="background-color: red;">
                     <?php include_once('_menu.php'); ?>
-
-
-                    <?php
-                    if ($_GET) {
-
-                        if (isset($_GET['Tela'])) {
-
-                            $tela = $_GET['Tela'];
-
-                            if ($tela  == 'Usuario') {
-                                include_once('frm_');
-                            } elseif ($tela == 'FaleConoso') {
-                                include_once('frm_');
-                            } elseif ($tela == 'Sair') {
-                                include_once('wwww_autenticarSair.php');
-                            }
-                        } else {
-                            echo '<h1> ERRO, Pagina não encontrada </h1>';
-                        }
-                    } else {
-                        include_once('_Home.php');
-                    }
-                    ?>
                 </div>
+                <div class="col-sm-9 bg-dark"></div>
             </div>
         </div>
+
     </div>
 
 
