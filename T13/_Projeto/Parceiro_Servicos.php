@@ -18,11 +18,16 @@
             <label for="Nome">Nome</label>
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Insira um novo Serviço">
         </div>
+
             <div class="col-sm-3">
                 <label for="Nome">Categoria</label>
-                <!-- <input type="checkbox" href="Parceiro_CategoriaPuxar.php" class="form-control" name="txtCategoria" id="txtCategoria"> -->
-                <?php include_once('Parceiro_CategoriaPuxar.php')?>
+                    <select class="form-control">
+                         <?php 
+                         include_once('Parceiro_CategoriaPuxar.php');
+                         ?>
+                    </select>
             </div>
+            
         <div class="col-sm-3">
             <label for="Status">Status</label>
             <select type="checkbox"name="txtStatus" id="txtStatus" class="form-control">

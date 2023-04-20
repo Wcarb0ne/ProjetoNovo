@@ -65,7 +65,8 @@
                         } else {
                             echo '<h1> ERRO, Pagina não encontrada </h1>';
                         }
-                    } else {
+                    } 
+                    else {
                         include_once('_Home.php');
                     }
                     ?>
