@@ -1,26 +1,53 @@
-<body>
-<head>
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+<body style="background-color:#043668;">
+
+  <div class="container">
+    <div class="col-sm-12">
+
+      <head style="margin-bottom: 20;">
+
+
+        <img src="css/img/teste3.jpg" class="imagem" alt="">
+
+
+
+      </head>
+
+
+      <p></p>
+
+      <div class="row">
+        <h2 style="color:white;">Planos</h2>
+        <hr style="color:white;">
+        <div class=" card-group">
+
+          <div class="col-md-4 text-center mb-3 p-2">
+            <div class="card card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-3 p-2">
+            <div class="card card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-3 p-2">
+            <div class="card card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</head>
+
 
 </body>
