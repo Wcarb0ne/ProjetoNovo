@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid topo">
   <div class="row">
-    <div class="col-sm-12 menu">
+    <div class="col-sm-12 ">
 
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">

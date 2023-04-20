@@ -1,12 +1,12 @@
 
 
-/* .menu {  
+.topo {  
   background-image: linear-gradient(to right,#032e59,#0c6bc9b9) ;
 
  
 }
 
-.menu ul {
+.topo ul {
 
   margin: 0;
   padding: 0;
@@ -17,14 +17,14 @@
 
 }
 
-.menu ul li {
+.topo ul li {
 
   display: inline-block;
   vertical-align: top;
 
 }
 
-.menu ul li a {
+.topo ul li a {
 
   font-family: 'open_sansregular';
   font-weight: bold;
@@ -39,7 +39,7 @@
 
 }
 
-.menu ul li a:after {
+.topo ul li a:after {
 
   content: '';
   position: absolute;
@@ -55,17 +55,17 @@
 
 }
 
-.menu ul li:hover a,
-.menu ul li:focus a,
-.menu ul li.active a {
+.topo ul li:hover a,
+.topo ul li:focus a,
+.topo ul li.active a {
 
   color: #ffffff;
 
 }
 
-.menu ul li:hover a:after,
-.menu ul li:focus a:after,
-.menu ul li.active a:after {
+.topo ul li:hover a:after,
+.topo ul li:focus a:after,
+.topo ul li.active a:after {
 
   opacity: 1;
 
@@ -74,4 +74,4 @@
 #dropdown-item{
 
   text-decoration: none;
-} */
+}
