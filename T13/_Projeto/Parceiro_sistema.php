@@ -34,17 +34,16 @@
         <div class="row">   
             <div class="col-sm-12">              
                  <?php include_once('Parceiro_menu.php');?>  
-                 <?php include_once('Parceiro_menu.php');?>               
              
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3 mb-1">
+            <div class="col-sm-2">
 
             </div>      
-            <div class="col-sm-6 ">
+            <div class="col-sm-8 ">
                 <?php
                     if($_GET)
                     {
@@ -77,10 +76,16 @@
                         else{
                             echo '<h1> ERRO, Pagina não encontrada </h1>';
                         }
-
+                    }
+                    else {
+                        include_once('Parceiro_Home.php');
                     }
                 ?>
             </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+            </div> 
 
         </div>
 

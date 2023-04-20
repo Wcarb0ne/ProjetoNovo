@@ -1,4 +1,4 @@
-<form action="" class="from-control" method="post" onsubmit="return false">
+<form class="from-control" method="post" onsubmit="return false">
     <div class="row">
         <div class="col-sm-10">
                 <h1>Criar Categoria</h1>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
-        <div class="col-sm-8">
+        <div class="col-sm-10">
             <button name="btoPesquisa" class="btn btn-primary" onclick="PesquisarCategoriaParceiro()">Pesquisar</button>
             <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarCategoriaParceiro()">Cadastrar</button>
             <button name="btoAlterar" class="btn btn-warning" onclick="AlterarCategoriaParceiro()">Alterar</button>
@@ -35,11 +35,9 @@
             <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirCategoriaParceiro()">Excluir</button>
             <button name="btotabela" class="btn btn-info"formaction="Parceiro_sistema.php?">Tabela</button>
         </div>
-
             <div class="row"> 
                 <div class="col-sm-10" id="resultado">
             </div>
-
     </div>
         
 </form>

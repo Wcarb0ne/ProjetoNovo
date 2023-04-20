@@ -14,7 +14,7 @@
 .section-seu-codigo .content { float:left; padding:1em 0; }
 .section_title               { width: 100%; float:left; margin-bottom:1em; font-size:1.3em; font-weight: 300; text-align: center; border-bottom: 1px #eceaea solid; padding-bottom: 1em; }
 
-.box-artigo   { width:100%; float:left; background:#fff; box-shadow: 1px 0px 1.2px 0px #e3e3e3; border-radius:3px; padding:1em; }
+.box-artigo   { width:100%; float:left; background:#fff; box-shadow: 1px 0px 1.2px 0px #fff; border-radius:3px; padding:1em; }
 
 /*Menu*/
 nav {
@@ -128,7 +128,7 @@ ul {
 @media all and (min-width: 468px) {
   
   .menu {
-      justify-content: center;
+      justify-content: center 100px;
   }
 
   .logo {

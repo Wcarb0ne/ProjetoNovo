@@ -8,7 +8,7 @@
     $nome_PCategoria = '';
     $status_PCategoria = '';
 
-    $id_PCategoria = $_POST['txtID'];
+    $id_PCategoria = $_POST['txtIDCategoria'];
 
     try
 
