@@ -1,3 +1,4 @@
+<select>
 <?php
 
     include_once('Conexao.php');
@@ -19,8 +20,7 @@
         {
 
             echo "
-                <option value='$linha[0]'>$linha[1]</option>
-
+                <option value='$linha[0]'>$linha[2]</option>s
             ";
         }
 
@@ -33,3 +33,4 @@
     }
 
 ?>
+</select>

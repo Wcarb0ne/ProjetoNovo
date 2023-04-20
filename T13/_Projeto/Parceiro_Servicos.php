@@ -19,8 +19,9 @@
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Insira um novo Serviço">
         </div>
             <div class="col-sm-3">
-            <label for="Nome">Categoria</label>
-            <input type="checkbox" class="form-control" name="txtCategoria" id="txtCategoria">
+                <label for="Nome">Categoria</label>
+                <!-- <input type="checkbox" href="Parceiro_CategoriaPuxar.php" class="form-control" name="txtCategoria" id="txtCategoria"> -->
+                <?php include_once('Parceiro_CategoriaPuxar.php')?>
             </div>
         <div class="col-sm-3">
             <label for="Status">Status</label>
