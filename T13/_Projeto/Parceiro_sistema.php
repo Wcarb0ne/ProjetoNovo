@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/bootstrap.css">w
    <!-- Cabeçalho e Rodapé --> <link rel="stylesheet" href="css/Footer_Header.css">
-   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/Parceiro_Menu.css">
-   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/fonts-icones.css">
-   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/reset.css">
+   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/MenuParceiro2.css">
+   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/fonts-icones.css">
+   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/js/MenuParceiro2.js">
+
+
    <!-- RedeSocial<link rel="stylesheet" href="css/redeSocial.css"> css ta bugando a estrutura--> 
 
    <!-- fle conosco <link rel="stylesheet" href="css/feleconosco.css"> -->
 
     <!--RODAPE --><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
     <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
-    <!--RODAPE --><link rel="stylesheet" href="css/footerAMEM.css">
     <!--icones bootstrap-->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   
     <script src="js/jquery-3.6.4.js"></script>
@@ -31,21 +32,18 @@
 <?php include_once('_header.php');?>
     <div class="container mt-1">
         <div class="row">   
-            <div class="col-sm-12">
-                <!-- <header class="main_header container">        
-                    <div class="content">
-
-                    </div> -->
-                </header>
+            <div class="col-sm-12">              
+                 <?php include_once('Parceiro_menu.php');?>  
+                 <?php include_once('Parceiro_menu.php');?>               
+             
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 mb-1">
-                <?php include_once('Parceiro_menu.php')?>
-            </div>
-        
+
+            </div>      
             <div class="col-sm-6 ">
                 <?php
                     if($_GET)

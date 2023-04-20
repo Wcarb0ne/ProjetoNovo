@@ -1,4 +1,4 @@
-
+<!-- 
         <nav class="menu-sidebar">
 
             <ul>
@@ -73,3 +73,44 @@
 
 
         </nav>
+
+         -->
+
+<section class="section-seu-codigo container">
+        
+    <div class="content">
+            
+            
+        <div class="box-artigo">
+                
+            <nav>
+                  
+                 <ul class="menu">
+                    
+                <li class="logo"><a href="#" title="Nome Empresa">Nome Empresa</a></li>
+                <li class="item"><a href="Parceiro_sistema.php" title="Home">Home</a></li>
+                <li class="item"><a href="Parceiro_sistema.php?Tela=Categoria" title="Categoria">Categoria</a></li>
+                <li class="item"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços">Serviços</a></li></li>
+                <li class="item"><a href="Parceiro_sistema.php?Tela=FaleConosco" title="Serviços">Fale Conosco</a></li></li>
+                <li class="item button secondary"><a href="Parceiro_sistema.php?Tela=Parceiro" title="Cadastro"><i class="icon icon-lock-1"></i> Cadastro</a></li>
+                <li class="item button"><a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair"><i class="icon icon-sign-out"></i> Sair</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+                  
+                </ul>
+                  
+            </nav>
+
+        </div>
+
+
+        
+    </div>
+</section>
+
+
+    
+
+
+
+
+
