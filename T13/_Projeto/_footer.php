@@ -1,9 +1,9 @@
 <footer class="wfooter">
-    <div class="container">
+    <div class="container text-left">
 
-        <div class="row">
+        <div class="row align-items-center">
 
-            <div class="col-sm-3">
+            <div class="col-sm-4">
 
                 <div class="footer-blog">
 
@@ -23,8 +23,8 @@
 
                 </div>
             </div>
-
-            <div class="col-sm-3">
+            
+            <div class="col-sm-4">
 
                 <div class="footer-tags">
                     <h3>Tags</h3>
@@ -35,7 +35,7 @@
                 </div>
 
             </div><!--Coluna 2-->
-            <div class="col-sm-3">
+            <div class="col-sm-4">
 
 
                 <div class="footer-tags">

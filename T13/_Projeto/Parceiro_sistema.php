@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/bootstrap.css">w
-   <!--cabeçalho --> <link rel="stylesheet" href="css/headerdeuruim.css">
-   <!--rodape--><link rel="stylesheet" href="css/footerAMEM.css">
+   <!-- Cabeçalho e Rodapé --> <link rel="stylesheet" href="css/Footer_Header.css">
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/Parceiro_Menu.css">
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/fonts-icones.css">
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro/reset.css">
