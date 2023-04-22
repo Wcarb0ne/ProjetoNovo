@@ -22,24 +22,24 @@
 
           <div class="col-md-4 text-center mb-3 p-2">
             <div class="card card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Special title treatment</h5>
+              <p class="card-text"style="font-family: 'Open Sans', sans-serif;">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
 
           <div class="col-md-4 text-center mb-3 p-2">
-            <div class="card card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
+              <h5 class="card-title"style="font-family: 'Open Sans', sans-serif;">Special title treatment</h5>
+              <p class="card-text"style="font-family: 'Open Sans', sans-serif;">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
 
           <div class="col-md-4 text-center mb-3 p-2">
-            <div class="card card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
+              <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Special title treatment</h5>
+              <p class="card-text" style="font-family: 'Open Sans', sans-serif;">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>

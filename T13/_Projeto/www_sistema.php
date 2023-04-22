@@ -9,6 +9,9 @@
     <script src="script.js"></script>
     <script src="js/bootstrap.js"></script>
 
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
     <!-- Cabeçalho e Rodapé -->
     <link rel="stylesheet" href="css/Footer_Header.css">
 
@@ -35,8 +38,8 @@
 
 
     <div class="container">
-        
-    <header>
+
+        <header>
             <div class="row">
                 <div class="col-sm-12">
                     <?php include_once('_header.php'); ?>
@@ -44,21 +47,21 @@
             </div>
         </header>
         <div style="height: 80px;"></div>
-        <div class="container" >
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12" >
+                <div class="col-sm-12">
                     <?php include_once('landingPage.php'); ?>
                 </div>
-               
+
             </div>
         </div>
-       
+
 
     </div>
 
 
     <footer class="footer">
-    <hr style="background-color:white;">
+        <hr style="background-color:white;">
         <div class="container-fluid">
             <?php include_once('_footer.php'); ?>
         </div>

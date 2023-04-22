@@ -7,3 +7,26 @@ background-color: #043668;
  max-width: 100%;
  height: auto;
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    font-family: 'Open Sans', sans-serif;
+}
+card{
+        font-family: 'Open Sans', sans-serif;
+ 
+}
+
+
+
+.Menudropdown{
+ color: #043668;
+
+}
