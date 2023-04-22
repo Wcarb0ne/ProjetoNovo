@@ -11,14 +11,14 @@
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/js/MenuParceiro2.js">
 
 
-   <!-- RedeSocial<link rel="stylesheet" href="css/redeSocial.css"> css ta bugando a estrutura--> 
+   <!-- RedeSocial<link rel="stylesheet" href="css/redeSocial.css"> css ta bugando a estrutura-->
 
    <!-- fle conosco <link rel="stylesheet" href="css/feleconosco.css"> -->
 
     <!--RODAPE --><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
     <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
     <!--icones bootstrap-->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  
+
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -30,20 +30,21 @@
 
 <?php include_once('Parceiro_autenticar.php');?>
 <?php include_once('_header.php');?>
-    <div class="container mt-1">
-        <div class="row">   
-            <div class="col-sm-12">              
-                 <?php include_once('Parceiro_menu.php');?>  
-             
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2">
+    <div class="container mt-5 dg-dark">
 
-            </div>      
-            <div class="col-sm-8 ">
+        <div class="row">
+
+            <div class="col-sm-12">
+                 <?php include_once('Parceiro_menu.php');?>
+            </div>
+
+        </div>
+    <!-- </div> -->
+    <!-- <div class="container "> -->
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10 ">
                 <?php
                     if($_GET)
                     {
@@ -57,12 +58,17 @@
                             }
                             elseif($tela =='Categoria')
                             {
-                                include_once('Parceiro_Categoria.php');
+                                include_once('Parceiro_CategoriaFrm.php');
                             }
                             elseif($tela =='Servicos')
                             {
-                                include_once('Parceiro_Servicos.php');
+                                include_once('Parceiro_ServicosFrm.php');
                             }
+                                elseif($tela == "TabelaServicos")
+                                {
+                                include_once('Parceiro_ServicosTabela.php');
+                                }
+
                             elseif($tela =='FaleConosco')
                             {
                                 include_once('frm_FaleConosco.php');
@@ -82,21 +88,17 @@
                     }
                 ?>
             </div>
-
-            <div class="row">
-                <div class="col-sm-2">
-            </div> 
-
+            <div class="col-sm-1">
+            </div>
         </div>
-
-
     </div>
 
     <footer class="footer">
         <div class="container-fluid">
                 <?php include_once('_footer.php');?>
         </div>
-    </footer> 
+    </footer>
     <script src="script.js"></script>
+  
 </body>
 </html>

@@ -3,17 +3,17 @@ include_once('Conexao.php');
 
     if($_POST)
     {
-            $id_PCategoria = $_POST['txtID'];
+            $id_ParceiroServicos = $_POST['txtID'];
         
         try 
         {
         
             $sql = $conn->prepare (
-                'DELETE FROM PCategoria WHERE id_PCategoria = :id_PCategoria');
+                'delete from ParceiroServicos where id_ParceiroServicos = :id_ParceiroServicos');
             
             $sql->execute(array(
 
-                ':id_PCategoria'=>$id_PCategoria
+                ':id_ParceiroServicos'=>$id_ParceiroServicos
 
             ));
             if($sql->rowCount()==1)

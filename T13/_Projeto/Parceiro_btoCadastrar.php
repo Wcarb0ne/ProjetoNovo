@@ -49,7 +49,7 @@ if($_POST)
             ':cidade_Parceiro'=>$cidade_Parceiro,
             ':uf_Parceiro'=>$uf_Parceiro,
             ':cep_Parceiro'=>$cep_Parceiro,
-            ':obs_Parceiro'=>$obs_Parceiro     
+            ':obs_Parceiro'=>$obs_Parceiro
         ));
 
         if($sql->rowCount() > 0)

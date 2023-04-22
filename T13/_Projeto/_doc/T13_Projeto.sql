@@ -90,7 +90,7 @@ values
 'ativo'
 );
 drop table Parceiro;
-select * from PCategoria;
+select * from Parceiro;
 create table FaleConosco
 (
 id_FaleConosco	int	not null auto_increment	 primary key	,
