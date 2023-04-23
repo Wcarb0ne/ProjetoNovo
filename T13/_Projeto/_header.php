@@ -43,7 +43,7 @@
             
             <div class="col-sm-4" >
             
-      <a class="navbar-link" style="background-color: white; font-family: 'Open Sans', sans-serif;" href="">Navbar</a>
+      <a class="navbar-link" style="background-color: white; font-family: 'Open Sans', sans-serif;" href="">Login</a>
       </div>
             
        
