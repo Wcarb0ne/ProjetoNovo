@@ -1,10 +1,10 @@
 <!-- <section class=""> -->
     <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data">
-        <h2>Olá! Seja Bem-Vindo(a).</h2>
+        <h2>Cadastre sua Empresa</h2>
         <br><br>
 
         <div>
-            <img class="imglogin" src="./img/user.jpg" alt="Selecione uma imagem" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
+            <img class="imglogin" src="./Cadastro-Parceiro/img/logoteste.jpg" alt="" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
             <label for="img">Selecione uma imagem</label>
             <input id="fotoPerfil" type="file" accept=".jpg,.jpeg,.png"/>
         </div><br>
@@ -78,8 +78,10 @@
             </div>
 
             <div class="col-sm-1">
-                <button type="submit" id="btn-idade" class="btn-idade"> Calcular</button>
-                <div id="stickyAge" class="msgIdade"></div>
+                <div class="my-form-control-error">
+                    <button type="submit" id="btn-idade" class="btn-idade"> Calcular</button>
+                    <div id="stickyAge" class="msgIdade"></div>
+                </div>    
             </div>
         </div>
 
@@ -108,9 +110,7 @@
                </div>
             </div>
             <!-- Proxima linha -->
-        </div>
-
-        <div class="row mt-1"><!-- BAIRRO / CIDADE / UF-->
+            <div class="row mt-1"><!-- BAIRRO / CIDADE / UF-->
             <div class="col-sm-4">
                 <label for="bairro">Bairro *</label>
                 <input type="text" class="form-control" name="bairro" id="bairro"  placeholder="Bairro"/>
@@ -178,7 +178,7 @@
             </div>
 
             <div class="col-sm-3">
-                <label for="numero">Empresa *</label>
+                <label for="adress">Empresa *</label>
                 <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Celular com DDD"/>
             </div>
             <!-- Proxima linha -->
@@ -208,10 +208,16 @@
                 <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
 
             </div>
-
+               
         </div>
 
+        <div class="row mt-3">
             <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="validarCampos();">Cadastrar</button>
             <div class="msgValidar"></div>
+        </div> 
+
+        
+
+        
     </form>
 <!-- </section> -->

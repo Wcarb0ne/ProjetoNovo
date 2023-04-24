@@ -12,14 +12,6 @@
     background-repeat: no-repeat;
 
   }
-   
-  header {
-    background: #a09692ef;
-    color:#eee;
-    padding: 0.3rem;
-    text-align: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  }
   
   h1 {
     text-align: left;
@@ -34,15 +26,7 @@
     padding-bottom: 3px;
   }
 
-  .container {
-    margin: 0 auto;
-    width: 680px;
-      /*width: 60%;
-    /*height: 60%;*/
-    max-width: 100%;
-    overflow: auto;
-    padding: 3rem 2rem;
-  }
+ 
   
   #my-form {
     padding: 2rem;
@@ -71,7 +55,7 @@
   } 
 
   #my-form input[type="date"] {
-    width: 55%;
+    width: auto;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -79,15 +63,12 @@
   }
 
   #my-form input[type="email"], [type="tel"] {
-    width: 49%;
-    padding: 15px;
-    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
 
   #my-form input[type="file"] {
-    width: 70%; 
+    width: auto; 
     display: none;     
  }
 
@@ -98,9 +79,9 @@
     border-radius: 5px;
     border: 1px solid #ccc;
   } 
-
+  
   .spancpf {
-    margin-left: 240px;
+    margin-left: auto;
     font-size: 14px; 
     display: block;         
  }
@@ -114,7 +95,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: auto;
     max-width: auto;
     padding: 4px;
     margin-bottom: -15px;
@@ -158,14 +139,14 @@
 
   .btn-idade {
     display: inline-block;
-    width: 35%;
-    padding: 7px 15px;
+    width: auto;
+    padding: 5px 15px;
     border: 0;
     background: #ec7c2b;
     color: #fff;
     border-radius: 5px;
-    margin: 5px 0;
-    margin-left: 20px;
+    margin: 35px 0;
+    margin-left: -50px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
 
@@ -197,7 +178,7 @@
     margin: 5px;
     top: 20px;
   }
-  /*RADIO*/
+  /*RADIO -  inputs formatações*/ 
 
   input[type="radio"] { 
     display: none; 

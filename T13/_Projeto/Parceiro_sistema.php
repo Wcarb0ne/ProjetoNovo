@@ -24,7 +24,8 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/dataTables.bootstrap5.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css" /> -->
+    <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css">
+    <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 
     <title>Login</title>
 
