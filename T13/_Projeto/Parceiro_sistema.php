@@ -23,6 +23,9 @@
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css" /> -->
+
     <title>Login</title>
 
 </head>
@@ -55,6 +58,10 @@
                             if($tela  == 'Parceiro')
                             {
                                 include_once('frm_Parceiro.php');
+                            }
+                            elseif($tela =='EmpresaCliente')
+                            {
+                                include_once('frm_Empresa.php');
                             }
                             elseif($tela =='Categoria')
                             {

@@ -1,4 +1,4 @@
-<form action="" class="form-control" method="POST" onsubmit="return false">
+<form action="" class="from-control" method="POST" onsubmit="return false">
     <div class="row">
         <div class="col-sm-12">
             <h1> Tela de Cadastro Empresa</h1>
