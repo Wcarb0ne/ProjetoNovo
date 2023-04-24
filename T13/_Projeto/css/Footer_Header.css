@@ -5,6 +5,11 @@
   
    
   }
+  .logo{    
+    width: 100px;
+    background-color: transparent;
+    border-radius: 20px;
+}
   
   .topo ul {
   

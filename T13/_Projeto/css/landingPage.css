@@ -1,14 +1,15 @@
-.corpo{
-background-color: #043668;
 
-}
 .imagem{
- border-radius: 15px;
+
  max-width: 100%;
  height: auto;
+ background-color: #043668;
+
 }
-body{
+.body{
     font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    
 }
 header{
     font-family: 'Open Sans', sans-serif;
@@ -19,14 +20,24 @@ footer{
 nav{
     font-family: 'Open Sans', sans-serif;
 }
-card{
+h2{
         font-family: 'Open Sans', sans-serif;
- 
+        color: #043668;
 }
-
-
 
 .Menudropdown{
  color: #043668;
-
 }
+
+.oxi{
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: black;
+    
+}
+
+
+
