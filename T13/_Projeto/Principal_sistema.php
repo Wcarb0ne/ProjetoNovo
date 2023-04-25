@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <?php include_once('www_autenticar.php'); ?>
+    
 
 
     <div class="container">
@@ -63,9 +63,9 @@
 
                             if($tela  == 'Home')
                             {
-                                include_once('frm_Parceiro.php');
+                                include_once('_Home.php');
                             }
-                    include_once('_Home.php');
+                    
 
                         }
                     }
