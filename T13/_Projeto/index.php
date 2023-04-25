@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/headerdeuruim.css">
-    <link rel="stylesheet" href="css/footerAMEM.css">
     <link rel="stylesheet" href="css/bootstrap.css">
- 
- </head>
+    <script src="script.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Cabeçalho e Rodapé -->
+    <link rel="stylesheet" href="css/Footer_Header.css">
+
+    <link rel="stylesheet" href="css/landingPage.css">
+
+    <!--fle conosco-->
+    <link rel="stylesheet" href="css/faleconosco.css">
+
+    <!--RODAPE -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <!--RODAPE -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <script src="css/Login/js/jquery.js"></script>
+
+    <title>Login</title>
+
+</head>
 
 <body>
-<?php
+    <?php include_once('www_autenticar.php'); ?>
 
-    $mensagem = "";
 
-    if($_POST)
-    {
-        include_once('Conexao.php');
+    <div class="container">
 
-        $loginParceiro = $_POST['txtLogin'];
-        $senhaParceiro = $_POST['txtSenha'];
-
-        $sql = $conn->query(
-            "select * from Parceiro where
-                login_Parceiro = '$loginParceiro' and
-                senha_Parceiro = '$senhaParceiro'
-            ");
-
-            if($sql->rowCount()==1)
-            {
-                session_start();
-                foreach($sql as $linha)
-                {
-                    $_SESSION['idParceiro'] = $linha[0];
-                    $_SESSION['nomeParceiro'] = $linha[3];
-                    $_SESSION['loginParceiro'] = $linha[9];
-                }
-
-                header('Location:www_sistema.php');
-            }
-            else
-            {
-                $mensagem = '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
-            }
-    }
-    ?>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <form action="" class="form-control" method="POST">
-                    <div class="row">
-                        <div class="col-sm-12 p-3">
-                            <div class="card bg-blue">
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-12 p-2">
-                            <input type="text" name="txtLogin" id="txtLogin"placeholder="Informe seu Login" class="form-control" required>
-                        </div>
-                        <div class="col-sm-12 p-2">
-                            <input type="password" name="txtSenha" id="txtSenha" placeholder="Informe sua Senha" class="form-control" required>
-                        </div>
-                        
-                        <?=$mensagem?>
-                        
-                        <div class="col-sm-4 p-2"></div>
-                        <div class="col-sm-4 p-2">
-                            <button name="btoOK" id="btoOK" class="btn btn-primary form-control" formaction="index.php">Entrar</button>
-                        </div>
-                        <div class="col-sm-4 p-2"></div>
-                    </div>
-                </form>
+        <header>
+            <div class="row">
+                <div class="col-sm-12">
+                    <?php include_once('_header.php'); ?>
+                </div>
             </div>
-            <div class="col-sm-3"></div>
+        </header>
+        <div style="height: 80px;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <?php include_once('landingPage.php'); ?>
+                </div>
+
+            </div>
         </div>
-        
+
+
     </div>
+
+
+    <footer class="footer">
+        <hr style="background-color:white;">
+        <div class="container-fluid">
+            <?php include_once('_footer.php'); ?>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
