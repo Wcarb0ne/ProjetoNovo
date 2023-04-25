@@ -1,9 +1,113 @@
 
+/* Cabeçalho */
+
+  .oxi{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;    
+}
+
+
+  .logo{    
+    width: 90px;
+    height: auto;
+    background-color: transparent;
+    
+}
+
+.topo{
+    font-family: 'Open Sans', sans-serif; 
+    background-image: linear-gradient(to right,#043668,#0c6bc9b9);
+    
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif; 
+
+}
+  
+
+
+  .topo ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .topo ul li {
+    display: inline-block;
+    vertical-align: Center;
+  }
+  
+  .topo ul li a {
+  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    padding: 0 35px;
+    letter-spacing: 3px;
+    position: relative;
+  
+  }
+  
+  .topo ul li a:after {
+  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fffdfd;
+    z-index: -1;
+    border-bottom: 1px solid #ffffff ;
+    opacity: 0;
+    transition: opacity 0.3s;
+  
+  }
+  
+  .topo ul li:hover a,
+  .topo ul li:focus a,
+  .topo ul li.active a {
+  
+    color: #ffffff;
+  
+  }
+  
+  .topo ul li:hover a:after,
+  .topo ul li:focus a:after,
+  .topo ul li.active a:after {
+  
+    opacity: 1;
+    color: #ffffff;
+  
+  }
+  
+  #dropdown-item{
+  
+    text-decoration: none;
+  } 
+
+  a{
+    color: white;
+  }
+
+
+
+
+/* Corpo */
 .imagem{
 
  max-width: 100%;
  height: auto;
- background-color: #043668;
+ 
  border-radius: 5%;
 
 }
@@ -37,14 +141,6 @@ h2{
  color: #043668;
 }
 
-.oxi{
-
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-
-    
-}
 
 
 

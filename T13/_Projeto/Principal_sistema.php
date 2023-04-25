@@ -38,19 +38,39 @@
 
 
     <div class="container">
-
+    <!-- Cabeçalho -->
         <header>
             <div class="row">
                 <div class="col-sm-12">
-                    <?php include_once('_header.php'); ?>
+                    <?php
+                    include_once('_header.php');
+                    ?>
                 </div>
             </div>
         </header>
+        <!--  -->
+        
         <div style="height: 80px;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <?php include_once('landingPage.php'); ?>
+                <?php
+                if($_GET)
+                    {
+                        if(isset($_GET['Tela']))
+                        {
+                            $tela = $_GET['Tela'];
+
+                            if($tela  == 'Home')
+                            {
+                                include_once('frm_Parceiro.php');
+                            }
+                    include_once('_Home.php');
+
+                        }
+                    }
+
+                    ?>
                 </div>
 
             </div>

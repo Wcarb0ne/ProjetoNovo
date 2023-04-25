@@ -1,15 +1,24 @@
 /* Header */
 
-.topo {  
-    background-image: linear-gradient(to right,#043668,#0c6bc9b9) ;
-  
-   
-  }
+
+  .oxi{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;    
+}
+
+
   .logo{    
     width: 100px;
     background-color: transparent;
     border-radius: 20px;
 }
+.topo{
+  font-family: 'Open Sans', sans-serif; 
+  background-image: linear-gradient(to right,#043668,#0c6bc9b9) ;
+  
+}
+
   
   .topo ul {
   
@@ -19,14 +28,12 @@
     position: relative;
     z-index: 1;
     text-align: center;
-  
+
   }
   
   .topo ul li {
-  
     display: inline-block;
     vertical-align: Center;
-  
   }
   
   .topo ul li a {

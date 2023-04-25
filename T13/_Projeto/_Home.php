@@ -1,5 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <img src="css/img/teste.jpg" alt="">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
 
-    <h2>   Seja Bem-Vindo
-                ao
-            Sofrimento        
-    </h2>
+
+
+    <h3>Parceiros</h3>
+
+
+</div>
