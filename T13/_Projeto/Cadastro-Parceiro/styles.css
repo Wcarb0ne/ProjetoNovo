@@ -8,8 +8,13 @@
     font-family: "Archivo", Arial, Helvetica, sans-serif;
     line-height: 1.6;
     /*background-image: radial-gradient(circle, #ff5811, #fa6a23, #f67933, #f18744, #ec9355);*/
-    background-image: linear-gradient(to right bottom, #ed5107, #e6411d, #dd3129, #d32033, #c70d3a);
+    background-image: linear-gradient(to right bottom,rgba(213,200,200,1) 42%, rgba(72,82,215,1) 100%);
     background-repeat: no-repeat;
+
+    background-image: radial-gradient(circle, rgba(246,243,243,1) 14%, rgba(70,113,252,1) 100%);
+    radial-gradient(circle, rgba(213,200,200,1) 42%, rgba(72,82,215,1) 100%);
+    
+    
 
   }
   
@@ -25,9 +30,7 @@
     font-family: 'Titillium Web', sans-serif;
     padding-bottom: 3px;
   }
-
  
-  
   #my-form {
     padding: 2rem;
     background: #ffffff;
@@ -111,21 +114,36 @@
   } 
 
   #my-form img:hover{
-    background-color: #cdc2e2;
-    border: 5px solid #340453;
+    background-color: #fff;
+    border: 5px solid rgba(72,82,215,1);
   }
   
   
   .btn-validar {
     display: block;
-    width: 80%;
+    width: 70%;
     padding: 10px 15px;
     border: 0px;
-    background-image: linear-gradient(to right, #da4919, #ed5107);
+    background-image: linear-gradient(to right,  #0d6e00, #017c01);
     border-radius: 30px;
     margin: 5px 0;
     color: #ffffff;
-    outline: 0;
+    font-size: 16px;    
+    display: grid; 
+    margin: auto; 
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .btn-Sair {
+    display: block;
+    width: 70%;
+    padding: 10px 15px;
+    border: 0px;
+    background-image: linear-gradient(to right, #f71b1b, #ff1111);
+    border-radius: 30px;
+    margin: 5px 0;
+    color: #ffffff;
     font-size: 16px;    
     display: grid; 
     margin: auto; 
@@ -134,8 +152,9 @@
   }
 
   .btn-validar:hover{
-    background-image: linear-gradient(to right, #f7761b, #FF5811); /*quando clicar no botão muda a cor*/
+    background-image: linear-gradient(to right, #20990f, #148f14); /*quando clicar no botão muda a cor*/
   }
+ 
 
   .btn-idade {
     display: inline-block;

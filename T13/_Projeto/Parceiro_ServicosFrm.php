@@ -49,7 +49,6 @@
         <div class="col-sm-1">
         </div>
             <div class="col-sm-10">
-                <button name="btotabela" class="btn btn-info"onclick="AbrirTabelaServicos()">Tabela</button>
                 <button name="btoCadastrar" class="btn btn-success"onclick="CadastrarSevicosParceiro()">Cadastrar</button>
                 <button name="btoAlterar" class="btn btn-warning"formaction="Parceiro_btoAlterar.php?Tela=Servicos">Alterar</button>
                 <a type="reset" name="btoLimpar" class="btn btn-dark"href="Parceiro_sistema.php?Tela=Servicos">Limpar</a>
@@ -60,7 +59,6 @@
     </div>
         <div class="row">
             <div class="col-sm-12" id="resultado">
-            <div class="col-sm-12" id="tabelaServicos">
         </div>
     </div>
 </form>

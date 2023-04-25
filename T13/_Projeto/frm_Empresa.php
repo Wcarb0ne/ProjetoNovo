@@ -1,4 +1,3 @@
-<!-- <section class=""> -->
     <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data">
         <h2>Cadastre sua Empresa</h2>
         <br><br>
@@ -10,25 +9,26 @@
         </div><br>
 
         <div class="row"><!-- ID / STATUS / datacadastro -->
-            <div class="col-sm-3">
+            <div class="col-sm-3"hidden>
                 <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario">
             </div>
                 <div class="col-sm-1"></div>
-            <div class="col-sm-2">
-                <select name="txtStatus" id="txtStatus" class="form-control">
-                    <option value="" selected >Selecione</option>
-                    <option value="Ativo">Ativo</option>
-                    <option value="Inativo">Inativo</option>
-                </select>
+            <div class="col-sm-2"hidden>
+                <div class="my-form-control-error">
+                    <select name="txtStatus" id="txtStatus" class="form-control">
+                        <option value="Ativo">Ativo</option>
+                        <option value="Inativo">Inativo</option>
+                    </select>
+                </div>    
             </div>
                 <div class="col-sm-1"></div>
-            <div class="col-sm-3">
+            <div class="col-sm-3"hidden>
                 <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
             </div>
         </div>
 
         <div class="row mt-3">
-            <label for="name">Dados Pessoais</label><hr>
+            <label for="name"><h4>Dados Pessoais<h4></label>
         </div>
 
         <div class="row mt-1"><!-- NOME  / CHPJ  / -->
@@ -38,7 +38,7 @@
                         <input type="text" class="form-control" id="name" placeholder="Kauã Vahz de la felipe"/>
                 </div>
             </div>
-                <div class="col-sm-2"></div>
+                <div class="col-sm-4"></div>
             <div class="col-sm-3">
                 <div class="my-form-control-error">
                     <label for="cpf">CPF *</label>
@@ -50,18 +50,18 @@
         </div>
 
         <div class="row mt-3">
-            <label for="name">Dados da Empresa</label><hr>
+            <label for="name"><h4>Dados da Empresa<h4></label>
         </div>
 
         <div class="row mt-1"><!-- EMPRESA  / CNPJ  / DATA EMISSÃO  btoCalcular-->
-            <div class="col-sm-3">
+            <div class="col-sm-5">
                 <div class="my-form-control-error">
                     <label for="apelido">Nome Empresa *</label>
-                        <input type="text" class="form-control" id="apelido" placeholder="Zaza02v" maxlength="20"/>
+                        <input type="text" class="form-control" id="apelido" placeholder="Ex: Next Tech LTDA" maxlength="20"/>
                 </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="my-form-control-error">
                     <label for="rg">CNPJ *</label>
                         <input type="text" class="rg form-control" id="rg" placeholder="XX.XXX.XXX/0001-XX"maxlength="18"/>
@@ -77,16 +77,10 @@
                </div>
             </div>
 
-            <div class="col-sm-1">
-                <div class="my-form-control-error">
-                    <button type="submit" id="btn-idade" class="btn-idade"> Calcular</button>
-                    <div id="stickyAge" class="msgIdade"></div>
-                </div>    
-            </div>
         </div>
 
         <div class="row mt-3">
-            <label for="name">Endereço</label><hr>
+            <label for="name"><h4>Endereço<h4></label>
         </div>
 
         <div class="row mt-1"><!-- EMPRESA  / CNPJ  / DATA EMISSÃO  btoCalcular-->
@@ -97,8 +91,8 @@
                 <!-- <input type="text" id="rua" placeholder="Rua, Avenida, Travessa, Estrada Seu Chico"/> -->
                 </div>
             </div>
-
-            <div class="col-sm-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
                 <div class="my-form-control-error">
                     <label for="adress">Logradouro *</label>
                         <input type="text" class="form-control" id="rua" placeholder="Rua, Avenida, Travessa, Estrada Seu Chico"/></div>
@@ -115,16 +109,16 @@
                 <label for="bairro">Bairro *</label>
                 <input type="text" class="form-control" name="bairro" id="bairro"  placeholder="Bairro"/>
             </div>
-            
+
             <div class="col-sm-4">
                 <label for="cidade">Cidade *</label>
                 <input type="text" class="form-control" name="cidade" id="cidade"  placeholder="Cidade" />
             </div>
-
-            <div class="col-sm-2">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
                 <!-- <div class="uf"> -->
                 <label for="UF">UF *</label>
-                    <select name="uf" id="uf" class="form-control">
+                    <select name="uf" id="uf" >
                         <option value=""></option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -159,11 +153,11 @@
         </div>
 
         <div class="row mt-3">
-            <label for="name">Contato</label><hr>
+            <label for="name"><h4>Contato<h4></label>
         </div>
 
         <div class="row mt-1"><!--  EMAIL  / CELULAR  / CONTATO -->
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="my-form-control-error">
                     <label for="adress">Email *</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email *"/>
@@ -185,7 +179,7 @@
         </div>
 
         <div class="row mt-3">
-            <label for="name">Dados de Login</label><hr>
+            <label for="name"><h4>Dados de Login<h4></label>
         </div> 
 
         <div class="row mt-1"><!--  LOGIN  / SENHA  / CONFIRMAR SENHA -->
@@ -196,14 +190,14 @@
                 </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="my-form-control-error">
                     <label for="senha">Senha *</label>
                     <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Informe a Senha">
                 </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <label for="senha">Confirmar Senha *</label>
                 <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
 
@@ -211,13 +205,20 @@
                
         </div>
 
-        <div class="row mt-3">
-            <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="validarCampos();">Cadastrar</button>
-            <div class="msgValidar"></div>
+        <div class="row mt-3"><!--botoes-->
+        <div class="col-sm-1"></div>            
+            <div class="col-sm-5">            
+                <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="validarCampos();">Cadastrar</button>
+                <div class="msgValidar"></div>
+            </div>
+            <div class="col-sm-5">                
+                 <button id="btn-Sair" class="btn-Sair" type="submit" value="Sair">Sair</button>
+            </div> 
+            <div class="col-sm-1"></div>            
+
         </div> 
 
         
 
         
     </form>
-<!-- </section> -->

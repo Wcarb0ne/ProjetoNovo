@@ -9,7 +9,7 @@
     <script src="script.js"></script>
     <script src="js/bootstrap.js"></script>
 
-    <!-- Fonte -->
+    <!-- Fonte -->0
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Cabeçalho e Rodapé -->
