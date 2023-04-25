@@ -67,7 +67,7 @@
 
                 <div class="col-md-6">
                     <div class="copy-text">
-                        <p>&copy; desgraçafunciona@parade.buga - Todos os Direitos Reservados.</p>
+                        <p>&copy; nextech.com.br - Todos os Direitos Reservados.</p>
                     </div>
                 </div>
 
