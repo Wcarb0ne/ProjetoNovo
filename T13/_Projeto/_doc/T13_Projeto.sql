@@ -111,7 +111,7 @@ beneficios_Planos	varchar(50)		not null		,
 descricao_Planos	varchar(255)	null		,
 dataDuracao_Planos	varchar(30)	not null		
 );
-Create table Usuario
+Create table Cliente
 (
 id_Cliente	int	not null	auto_increment primary key	,
 data_Cliente	timestamp	not null	,

@@ -55,20 +55,7 @@
             <div class="row">
                 <div class="col-sm-12">
                 <?php
-                if($_GET)
-                    {
-                        if(isset($_GET['Tela']))
-                        {
-                            $tela = $_GET['Tela'];
-
-                            if($tela  == 'Home')
-                            {
-                                include_once('_Home.php');
-                            }
-                    
-
-                        }
-                    }
+    include_once('_Home.php');
 
                     ?>
                 </div>
