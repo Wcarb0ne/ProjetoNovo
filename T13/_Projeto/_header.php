@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark mb-3 topo2" style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark mb-3 " style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
   <div class="container-fluid">
     <a class="navbar-brand" href="Index.php">
       <img src="css/img/logo1.png" class="logo" alt="">
