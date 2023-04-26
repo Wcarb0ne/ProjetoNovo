@@ -1,3 +1,6 @@
+<br>
+<form id="my-form" action="#" class="from-control" method="post">
+
 <div class="box-formulario">        
         
         <div class="formulario">
@@ -9,32 +12,34 @@
             <form action="#" method="post">
                     
                 <span>
+                    <label for="nome">Nome</label>
                     <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" autocomplete="off" required=""/>
-                    <label for="nome"> <i class="icon icon-user-1"></i> </label>
                 </span>
 
                 <span>
+                    <label for="email">E-mail</i> </label>
                     <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
-                    <label for="email"> <i class="icon icon-mail-1"></i> </label>
                 </span>
 
                 <span>
+                    <label for="assunto">Assunto</i> </label>
                     <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" autocomplete="off" required=""/>
-                    <label for="assunto"> <i class="icon icon-info"></i> </label>
                 </span>
 
                 <span>
+                    <label for="Anexo">Anexo</label>
                     <input type="file" class="form-control" id="arquivo" name="arquivo" placeholder="Anexo" autocomplete="off" required=""/>
-                    <label for="anexo"> <i class="icon icon-paperclip"></i> </label>
                 </span>
 
                 <span>
+                    <label for="mensagem">Mensagem</i> </label>
                     <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required=""></textarea>
-                    <label for="mensagem"> <i class="icon icon-comment"></i> </label>
                 </span>
 
-                <div class="box-pulse">
-                    <button type="submit" class="botao-pulse"><i class="icon icon-paper-plane-o"></i> Enviar</button>
+                <div class="row mt-4 mb-4"><!--botoes-->
+                    <div class="col-sm-1">
+                    <button type="submit" class="btn btn-success"><i class="icon icon-paper-plane-o"></i> Enviar</button>
+                    </div>
                 </div>
                 
             </form>
@@ -42,3 +47,4 @@
         </div>
 
     </div>
+</form>

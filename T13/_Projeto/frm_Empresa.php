@@ -1,4 +1,4 @@
-    <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data">
+<br>   <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data">
         <h2>Cadastre sua Empresa</h2>
         <br><br>
 
@@ -19,7 +19,7 @@
                         <option value="Ativo">Ativo</option>
                         <option value="Inativo">Inativo</option>
                     </select>
-                </div>    
+                </div>
             </div>
                 <div class="col-sm-1"></div>
             <div class="col-sm-3"hidden>
@@ -116,9 +116,9 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-3">
-                <!-- <div class="uf"> -->
-                <label for="UF">UF *</label>
-                    <select name="uf" id="uf" >
+                <div class="uf">
+                <label for="UF" >UF *</label>
+                    <select name="uf" id="uf"class="form-control" >
                         <option value=""></option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -148,7 +148,7 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-                <!-- </div>                -->
+                </div>               
             </div>
         </div>
 
@@ -180,7 +180,7 @@
 
         <div class="row mt-3">
             <label for="name"><h4>Dados de Login<h4></label>
-        </div> 
+        </div>
 
         <div class="row mt-1"><!--  LOGIN  / SENHA  / CONFIRMAR SENHA -->
             <div class="col-sm-4">
@@ -202,23 +202,23 @@
                 <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
 
             </div>
-               
+
         </div>
 
         <div class="row mt-3"><!--botoes-->
-        <div class="col-sm-1"></div>            
-            <div class="col-sm-5">            
+        <div class="col-sm-1"></div>
+            <div class="col-sm-5">
                 <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="validarCampos();">Cadastrar</button>
                 <div class="msgValidar"></div>
             </div>
-            <div class="col-sm-5">                
+            <div class="col-sm-5">
                  <button id="btn-Sair" class="btn-Sair" type="submit" value="Sair">Sair</button>
-            </div> 
-            <div class="col-sm-1"></div>            
+            </div>
+            <div class="col-sm-1"></div>
 
-        </div> 
+        </div>
 
-        
 
-        
+
+
     </form>
