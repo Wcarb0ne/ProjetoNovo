@@ -18,7 +18,7 @@
     <?php
     $mensagem = "";
     if ($_POST) {
-        include_once('conexao.php');
+        include_once('Conexao.php');
 
         $loginCliente = $_POST['txtLogin'];
         $senhaCliente = $_POST['txtSenha'];
@@ -51,49 +51,49 @@
                 <div class="col-10">
 
                     <div class="content">
+                        <center>
+                            <div class="box-artigo">
 
-                        <div class="box-artigo">
+                                <form class="frmLogin" method="post" action="#">
 
-                            <form class="frmLogin" method="post" action="#">
 
-                             
-                                <div class="login-box">
+                                    <div class="login-box">
 
-                                    <form>
-                                        <div class="user-box">
-                                            <input type="text" name="" required="">
-                                            <label>NOME</label>
-                                        </div>
-                                        <div class="user-box">
-                                            <input type="password" name="" required="">
-                                            <label>SENHA</label>
-                                        </div>
+                                        <form>
+                                            <div class="user-box">
+                                                <input type="text" name="" required="">
+                                                <label>NOME</label>
+                                            </div>
+                                            <div class="user-box">
+                                                <input type="password" name="" required="">
+                                                <label>SENHA</label>
+                                            </div>
 
-                                        <p>Sem Cadastro <a href="Cliente_cadastro.php" class="a2">CADASTRE-SE</a></p>
-                                <div class="col-sm-10">
+                                            <p>Sem Cadastro <a href="Cliente_cadastro.php" class="a2">CADASTRE-SE</a></p>
+                                            <div class="col-sm-10">
 
-                                    <p>Gostaria de Cadastrar sua empresa ?</sub><a href="frm_Empresa.php" class="a2">CADASTRE-SE</a></p>
-                                </div>
+                                                <p>Gostaria de Cadastrar sua empresa ?</sub><a href="frm_Empresa.php" class="a2">CADASTRE-SE</a></p>
+                                            </div>
 
-                                <button type="text" class="btn"formaction="Cliente_sistema.php">Entrar</button>
-                                    </form>
-                                </div>
+                                            <button type="text" class="btn" formaction="Cliente_sistema.php">Entrar</button>
+                                        </form>
+                                    </div>
 
-                                <?= $mensagem ?>
+                                    <?= $mensagem ?>
 
-                
 
-                            </form>
-                            </span>
-                            </a>
-                            </center>
-                            </form>
-                        </div>
 
+                                </form>
+                                </span>
+                                </a>
+                        </center>
+                        </form>
                     </div>
 
                 </div>
+
             </div>
+        </div>
         </div>
         </div>
     </main>
@@ -104,4 +104,3 @@
 </body>
 
 </html>
-
