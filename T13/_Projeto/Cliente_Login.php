@@ -38,7 +38,7 @@
                 $_SESSION['loginCliente'] = $linha[2];
             }
 
-            header('Location:Login_sistema.php');
+            header('Location:Cliente_sistema.php');
         } else {
             $mensagem = '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
         }
@@ -56,55 +56,52 @@
 
                             <form class="frmLogin" method="post" action="#">
 
+                             
                                 <div class="login-box">
 
                                     <form>
-
-                                        <div class="title icon icon-forward-1"> </div>
-
-                                
                                         <div class="user-box">
-                                            <input id="txtLogin" type="text" name="txtLogin" required="" oninput="loginValidacao">
-                                            <label>Nome</label>
+                                            <input type="text" name="" required="">
+                                            <label>NOME</label>
+                                        </div>
+                                        <div class="user-box">
+                                            <input type="password" name="" required="">
+                                            <label>SENHA</label>
                                         </div>
 
-                                        <div class="user-box">
-                                            <input id="txtSenha" class="" type="password" name="txtSenha" required="">
-                                            <label for="email" class="label icon icon-lock-1">SENHA</label>
-                                        </div>
-                                        <center>
+                                        <p>Sem Cadastro <a href="Cliente_cadastro.php" class="a2">CADASTRE-SE</a></p>
+                                <div class="col-sm-10">
 
-                                            <?= $mensagem ?>
-
-                                            <p>Sem Cadastro <a href="Cliente_cadastro.php" class="a2">CADASTRE-SE</a></p>
-
-                                            <p>Gostaria de Cadastrar sua empresa ?</sub><a href="frm_Empresa.php" class="a2">CADASTRE-SE</a></p>
-
-
-                                            <center> <a href="Login_sistema.php">ENVIAR<span></span> </a></center>
-
-                                    </form>
-
+                                    <p>Gostaria de Cadastrar sua empresa ?</sub><a href="frm_Empresa.php" class="a2">CADASTRE-SE</a></p>
                                 </div>
 
+                                <button type="text" class="btn"formaction="Cliente_sistema.php">Entrar</button>
+                                    </form>
+                                </div>
+
+                                <?= $mensagem ?>
+
+                
+
+                            </form>
+                            </span>
+                            </a>
+                            </center>
+                            </form>
                         </div>
+
                     </div>
+
                 </div>
             </div>
+        </div>
+        </div>
     </main>
 
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
 
-
-
-
-
-
-
-</form>
-</div>
-
 </body>
 
 </html>
+
