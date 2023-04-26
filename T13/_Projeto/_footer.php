@@ -1,4 +1,5 @@
-<footer class="text-white pt-5"  style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
+<footer class="text-white pt-5"  
+style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -24,4 +25,5 @@
       <p>© 2023 Assistência Técnica. Todos os direitos reservados.</p>
     </div>
   </div>
+  <br>
 </footer>

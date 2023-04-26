@@ -14,12 +14,12 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
- 
-    
+
+
 
     <link rel="stylesheet" href="css/ito_mapa.css">
-   
- 
+
+
 
     <!--RODAPE -->
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
@@ -29,23 +29,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/landingPage.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/landingPage.css">
 
-  <script src="js/bootstrap.js"></script>
-  <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+
+
 </head>
 
 <body>
 
 
-<?php include_once('_header.php') ?>
+    <?php include_once('_header.php') ?>
 
 
-  
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-4">
+                <div id="" class="">
 
-        <script src="Script_Mapa.js"></script>
 
+                <div class="card" style="width:18rem;">
+              
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Ca</h6>
+                    <p class="card-text"></p>
+                    b5
+                  </div>
+                </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div id="map" class="bg-dark"></div>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <?php include_once('_footer.php') ?>
+
+    <script src="Script_Mapa.js"></script>
 </body>
 
 </html>
