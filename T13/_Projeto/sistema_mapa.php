@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,8 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <!-- Cabeçalho e Rodapé -->
     <link rel="stylesheet" href="css/Footer_Header.css">
@@ -32,12 +33,13 @@
 
     <script src="js/jquery-3.6.4.js"></script>
 </head>
+
 <body>
 
 
-<div class="container">
-    <!-- Cabeçalho -->
-    <header>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
             <div class="row">
                 <div class="col-sm-12">
                     <?php
@@ -48,30 +50,34 @@
         </header> <br>
         <!--  -->
 
+        <aside class="">
 
 
-        <?php include_once('menu_mapa.php') ?>
+        </aside>
+
+        <main>
+
+            <?php include_once('menu_mapa.php') ?>
 
 
             <div style="height: 80px;"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-             
-                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
 
+                    </div>
+
+                </div>
             </div>
-        </div>
 
 
 
     </div>
 
+    </main>
 
 
-
-
-            <footer class="footer">
+    <footer class="footer">
         <hr style="background-color:white;">
         <div class="container-fluid">
             <?php include_once('_footer.php'); ?>
@@ -81,4 +87,5 @@
     <script src="Script_Mapa.js"></script>
 
 </body>
+
 </html>
