@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/landingPage.css">
 
+      <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
+
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery-3.6.4.js"></script>
 </head>

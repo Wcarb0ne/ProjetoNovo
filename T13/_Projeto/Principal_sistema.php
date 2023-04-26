@@ -18,18 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Cabeçalho e Rodapé -->
-    <link rel="stylesheet" href="css/Footer_Header.css">
-
     <link rel="stylesheet" href="css/landingPage.css">
+    
+    
 
     <!--fle conosco-->
     <link rel="stylesheet" href="css/faleconosco.css">
 
-    <!--RODAPE -->
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+        <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
 
 
