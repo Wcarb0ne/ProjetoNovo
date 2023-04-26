@@ -40,11 +40,8 @@
 
 </head>
 <body>
-
 <?php include_once('Parceiro_autenticar.php');?>
 <?php include_once('_header.php');?>
-<br>
-<br>
     <div class="container mt-5 dg-dark">
         <div class="row">
 

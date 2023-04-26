@@ -1,6 +1,4 @@
-
-<!-- <div class="col-sm-12">               -->
-                                           
+                                       
     <nav >                                  
         <ul class="menu">
             <!-- <li class="logo"><a href="#" title="ID"><=$idParceiro?></a></li> -->
@@ -16,15 +14,6 @@
                                            
         </ul>                                      
     </nav>
-               
-                       
-<!-- </div>-->
-               
-
-
-    
-
-
 
 
 
