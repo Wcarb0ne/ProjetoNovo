@@ -10,9 +10,9 @@
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/fonts-icones.css">
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/js/MenuParceiro2.js">
 
-    <!--RODAPE --><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+ 
     <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
-    <!--icones bootstrap-->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+ 
 
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
@@ -27,11 +27,14 @@
     <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css">
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/landingPage.css">
+
+
 
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery-3.6.4.js"></script>
+
+  <script src="script.js"></script>
+    <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 
     <title>Next Tech</title>
 
@@ -107,18 +110,14 @@
             </div>
         </div>
     </div>
+ </div>
 
     <footer>
-    <?php include_once('_footer.php');?>
 
-        <div class="container-fluid">
-
-        </div>
+        <?php 
+            include_once('_footer.php');
+        ?>
+   
     </footer>
-    <script src="script.js"></script>
-    <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
-
 </body>
-
-
 </html>
