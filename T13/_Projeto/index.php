@@ -14,54 +14,43 @@
   <script src="js/jquery-3.6.4.js"></script>
 </head>
 
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary topo mb-4" >
-    <div class="container-fluid " >
-      <div class="col-sm-3">
-      <a class="navbar-brand" href="#"><img src="css/img/logo1.png" class="logo" alt=""></a>
-      </div>
-      <div class="col-sm-1"></div>
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNavDropdown">
-        <ul class="navbar-nav " >
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      
-
-      <div class="col-sm-2">
-      </div>
-      <a class="navbar-brand" href="#"><img src="css/img/user.png" class="oxi" alt=""></a>
-      
-
-    </div>
-  </nav>
-
-</header>
-
-
-
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-dark mb-3 topo2" style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Index.php">
+      <img src="css/img/logo1.png" class="logo" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Principal_sistema.php">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand m-5" href="#"><img src="css/img/user.png" class="oxi" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
 
   <div class="container">
 
@@ -71,13 +60,17 @@
       <div class="container text-center">
         <div class="row align-items-Center">
 
-          <div class="col-sm-6">
+          <div class="col-sm-6" style="text-align: justify;">
             <h1> Procurando uma Boa Assistência Técnica?</h1>
-              <br>
-             <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non diam sodales, rutrum orci quis, semper dui. Aliquam nunc nulla, sollicitudin ac massa et, dignissim rhoncus odio. Cras ullamcorper eros nec porttitor pellentesque. Donec viverra sed ligula eu efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tristique, nibh vehicula faucibus ullamcorper, eros nibh facilisis purus, id gravida dolor lorem ac felis. Etiam volutpat nulla vel urna gravida, id scelerisque dui bibendum. Proin at ex mi.</h5>
+            <p> A busca por uma boa assistência técnica é extremamente importante para garantir o bom funcionamento e prolongar a vida útil de equipamentos eletrônicos, eletrodomésticos e outros dispositivos utilizados em nosso cotidiano. </p>
+            <p> Com o passar do tempo, é natural que esses equipamentos apresentem problemas e necessitem de reparos. Nesse momento, contar com uma assistência técnica confiável pode ser decisivo para evitar transtornos maiores, prejuízos financeiros e garantir a segurança do usuário. </p>
+            <p> Uma boa assistência técnica é responsável por realizar os reparos de forma adequada, seguindo as normas e padrões estabelecidos pelos fabricantes, assegurando a qualidade do serviço prestado e, consequentemente, a satisfação do cliente. </p>
+            <p> Outra vantagem de procurar uma boa assistência técnica é a garantia de peças originais e de qualidade. Peças falsificadas ou de baixa qualidade podem prejudicar o funcionamento do equipamento e até mesmo colocar a segurança do usuário em risco. </p>
+
+
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-6 pt-4">
 
             <img src="css/img/pexels-buro-millennial-1438081.jpg" class="imagem" alt="">
           </div>
@@ -124,10 +117,32 @@
   </div>
 
 </body>
-<footer class="wfooter">
-
-
-
+<footer class="text-white pt-5"  style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Endereço</h4>
+        <p>Rua Nome da Rua, 1234</p>
+        <p>Cidade - Estado</p>
+        <p>CEP 12345-678</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Contato</h4>
+        <p>Telefone: (12) 3456-7890</p>
+        <p>E-mail: contato@assistenciatecnica.com.br</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Redes sociais</h4>
+        <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p>© 2023 Assistência Técnica. Todos os direitos reservados.</p>
+    </div>
+  </div>
 </footer>
 
 </html>
