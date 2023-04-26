@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/T13/_Projeto/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/T13/_Projeto/css/FUNCIONAAAA.css">
+    
+
+
 	<title>Login</title>
  
  </head>
@@ -71,6 +75,9 @@
                             
                             <?=$mensagem?>
 
+                            <p>Sem Cadastro <a href="Cliente_cadastro.php" class="a2">Cadastre-se</a></p>
+
+                            <p>Gostaria de Cadastrar sua empresa ?</sub><a href="frm_Empresa.php" class="a2">Cadastre-se</a></p>
 
                             <button type="text" class="btn"formaction="Login_sistema.php">Entrar</button>
                             
