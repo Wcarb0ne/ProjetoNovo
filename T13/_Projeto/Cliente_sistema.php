@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+<?php include_once('Cliente_Autenticar.php');?>
 <?php include_once('conexao.php');?>
     <div class="container mt-4">
         <div class="row" id="Topo">
@@ -37,9 +37,9 @@
                                 include_once('cadastro.php');
                             }
 
-                            elseif($tela =='FaleConoso')
+                            elseif($tela =='Cadastro Empresa')
                             {
-                                include_once('Cliente_FaleConosco.php');
+                                include_once('frm_Empresa.php.php');
                             }
 
                             elseif($tela =='Sair')

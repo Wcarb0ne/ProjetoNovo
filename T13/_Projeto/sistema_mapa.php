@@ -21,8 +21,7 @@
 
 
 
-    <!--RODAPE -->
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+
     <!--RODAPE -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
@@ -40,11 +39,13 @@
 
 <body>
 
+    <?php include_once('Conexao.php') ?>
+
 
     <?php include_once('_header.php') ?>
 
 
-    <div class="container">
+    <div class="container mb-4">
         <div class="row">
             <div class="col-sm-4">
                 <div id="" class="">
@@ -133,11 +134,6 @@
 
 
     </div>
-
-
-
-
-
 
 
 

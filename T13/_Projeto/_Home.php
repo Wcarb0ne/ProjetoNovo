@@ -40,7 +40,7 @@
                                 <h5 class="card-title">'.$nome.'</h5>
                                 <p class="card-text">Endereço: '.$logradouro_Parceiro.'</p>
                                 <p class="card-text">Ramo: '.$ramo_Parceiro.'</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="sistema_mapa.php" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
