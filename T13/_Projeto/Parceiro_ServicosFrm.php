@@ -23,8 +23,8 @@
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Insira um novo Serviço">
         </div>
             <div class="col-sm-5">
-                <label for="Categoria">Categoria</label>
-                    <select class="form-control">
+                <label for="Categoria" >Categoria</label>
+                    <select class="form-control" id="txtIDC">
                          <?php 
                          include_once('Parceiro_CategoriaPuxar.php');
                          ?>

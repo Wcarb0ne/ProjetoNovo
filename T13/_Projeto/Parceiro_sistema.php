@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/bootstrap.css">
+   <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
    <!-- Cabeçalho e Rodapé --> <link rel="stylesheet" href="css/Footer_Header.css">
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/MenuParceiro2.css">
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/fonts-icones.css">
@@ -25,7 +25,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"rel="stylesheet" />
     <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css">
-    <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/landingPage.css">
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.6.4.js"></script>
 
     <title>Next Tech</title>
 
@@ -33,9 +39,10 @@
 <body>
 
 <?php include_once('Parceiro_autenticar.php');?>
-<!-- ?php include_once('_header.php');?> -->
+<?php include_once('_header.php');?>
+<br>
+<br>
     <div class="container mt-5 dg-dark">
-
         <div class="row">
 
             <div class="col-sm-12">
@@ -101,12 +108,17 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer>
+    <?php include_once('_footer.php');?>
+
         <div class="container-fluid">
-                <?php include_once('_footer.php');?>
+
         </div>
     </footer>
     <script src="script.js"></script>
-  
+    <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
+
 </body>
+
+
 </html>

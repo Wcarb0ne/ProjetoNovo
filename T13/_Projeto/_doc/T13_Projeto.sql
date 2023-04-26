@@ -81,6 +81,7 @@ create table PCategoria
     nome_PCategoria varchar(30) not null,
     status_PCategoria varchar(20) not null
 );
+select * from PCategoria;
 insert into PCategoria
 (
 nome_PCategoria,

@@ -1,5 +1,5 @@
 <br>
-<form id="my-form" action="#" class="from-control" method="POST" onsubmit="return false">
+<form id="" action="" class="from-control" method="POST" onsubmit="return false">
     <div class="row">
         <div class="col-sm-12">
             <h1> Formulario de Cadastro da Empresa</h1>

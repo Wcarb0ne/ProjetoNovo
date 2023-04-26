@@ -351,6 +351,7 @@ function PesquisarSevicosParceiro(){
 function CadastrarSevicosParceiro(){
  
     let nome_ParceiroServicos = $('#txtNome').val();
+
     let status_ParceiroServicos = $('#txtStatus').val();
     let descricao_ParceiroServicos = $('#txtDescricao').val();
     let action = 'Parceiro_ServicosBtoCadastrar.php';
@@ -360,6 +361,7 @@ function CadastrarSevicosParceiro(){
         type: 'post',
         data: {
             txtNome: nome_ParceiroServicos,
+            txtIDC: $('#txtIDC').val(),
             txtStatus: status_ParceiroServicos,
             txtDescricao: descricao_ParceiroServicos
 

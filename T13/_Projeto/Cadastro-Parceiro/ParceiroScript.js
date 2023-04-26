@@ -149,7 +149,6 @@ window.onload = function(){
 
 const submitValidar = document.querySelector("#btn-validar");
 const validar = document.querySelector(".msgValidar");
-
 const nameInput = document.querySelector("#name");
 const dateInput = document.querySelector("#dob");
 const ruaInput = document.querySelector("#rua");

@@ -1,28 +1,35 @@
 <?php
+
+// print_r($_POST);
+// return;
+
+
 include_once('Conexao.php');
 
 if($_POST)
 {
-    $nome_ParceiroServiços = $_POST['txtNome'];
-    $status_ParceiroServiços = $_POST['txtStatus'];
-    $descricao_ParceiroServiços = $_POST['txtDescricao'];
+    $nome_ParceiroServicos = $_POST['txtNome'];
+    $id_PCategoria = $_POST['txtIDC'];
+    $status_ParceiroServicos = $_POST['txtStatus'];
+    $descricao_ParceiroServicos = $_POST['txtDescricao'];
 
 
     
     
     try {
         $sql = $conn->prepare(
-            "insert into ParceiroServiços
-            (status_ParceiroServiços,nome_ParceiroServiços,descricao_ParceiroServiços)
+            "insert into ParceiroServicos
+            (status_ParceiroServicos,nome_ParceiroServicos,id_PCategoria_ParceiroServicos,descricao_ParceiroServicos)
             values
-            (:status_ParceiroServiços,:nome_ParceiroServiços,:descricao_ParceiroServiços)"
+            (:status_ParceiroServicos,:nome_ParceiroServicos,:id_PCategoria_ParceiroServicos,:descricao_ParceiroServicos)"
         );
 
         $sql->execute(array(
 
-            ':nome_ParceiroServiços'=>$nome_ParceiroServiços,
-            ':status_ParceiroServiços'=>$status_ParceiroServiços,
-            ':descricao_ParceiroServiços'=>$descricao_ParceiroServiços
+            ':nome_ParceiroServicos'=>$nome_ParceiroServicos,
+            ':id_PCategoria_ParceiroServicos'=>$id_PCategoria,
+            ':status_ParceiroServicos'=>$status_ParceiroServicos,
+            ':descricao_ParceiroServicos'=>$descricao_ParceiroServicos
 
         ));
 
