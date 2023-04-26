@@ -50,16 +50,19 @@
         <div class="col-sm-1">
         </div>
             <div class="col-sm-10">
+                <button name="btoTabela" class="btn btn-info"onclick="AbrirTabelaServicos()">Tabela</button>
+                <button name="btoTabela" class="btn btn-info"onclick="PesquisarSevicosParceiro()">Pesquisar</button>
                 <button name="btoCadastrar" class="btn btn-success"onclick="CadastrarSevicosParceiro()">Cadastrar</button>
-                <button name="btoAlterar" class="btn btn-warning"formaction="Parceiro_btoAlterar.php?Tela=Servicos">Alterar</button>
+                <button name="btoAlterar" class="btn btn-warning"onclick="AlterarCategoriaParceiro()">Alterar</button>
                 <a type="reset" name="btoLimpar" class="btn btn-dark"href="Parceiro_sistema.php?Tela=Servicos">Limpar</a>
-                <button name="btoExcluir" class="btn btn-danger"formaction="Parceiro_btoExcluir.php?Tela=Servicos">Excluir</button>
+                <button name="btoExcluir" class="btn btn-danger"onclick="ExcluirServicosParceiro()">Excluir</button>
             </div>
         <div class="col-sm-1">
         </div>
     </div>
         <div class="row">
             <div class="col-sm-12" id="resultado">
+            <div class="col-sm-12" id="tabelaServicos">
         </div>
     </div>
 </form>

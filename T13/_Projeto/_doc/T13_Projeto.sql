@@ -90,7 +90,7 @@ values
 'ativo'
 );
 drop table Parceiro;
-select * from PCategoria;
+select * from Parceiro;
 create table FaleConosco
 (
 id_FaleConosco	int	not null auto_increment	 primary key	,
@@ -111,7 +111,7 @@ beneficios_Planos	varchar(50)		not null		,
 descricao_Planos	varchar(255)	null		,
 dataDuracao_Planos	varchar(30)	not null		
 );
-Create table Cliente
+Create table Usuario
 (
 id_Cliente	int	not null	auto_increment primary key	,
 data_Cliente	timestamp	not null	,
@@ -132,7 +132,37 @@ telefone1_Cliente	varchar(14)	not null		,
 telefone2_Cliente	varchar(14)	null		,
 email_Cliente	varchar(50)	not null		,
 obs_Cliente	varchar(255)	null		
+);
+
+create table Empresa
+(
+	id_Empresa int auto_increment not null primary key,
+    status_Empresa varchar(20) not null,
+    data_Empresa timestamp not null,
+    
+    fotoPerfil_Empresa Blob null,
+    
+	nome_Empresa varchar(30) not null,
+	cpf_Empresa varchar(15) not null,
+    
+    nomeEmpresa_Empresa varchar(30) not null,
+    cnpj_Empresa varchar(15) not null,
+    dataEmissao_Empresa varchar(20) not null,
+   
+	cep_Empresa varchar(9) not null,
+    logradouro_Empresa varchar(50) not null,
+    numero_Empresa varchar(10) not null,
+    complemento_Empresa varchar(50) null,
+    bairro_Empresa varchar(50) not null,
+    cidade_Empresa varchar(50) not null,
+    uf_Empresa varchar(50) not null,
+    
+	email_Empresa varchar(30) not null unique,
+    celular_Empresa varchar(15) not null,
+    telefone_Empresa varchar(15) not null,
+    
+	login_Empresa varchar(15) not null unique,
+    senha_Empresa varchar(15) not null,
+    confirmarSenha_Empresa varchar(15) not null
 )
-
-
-
+select * from Empresa;

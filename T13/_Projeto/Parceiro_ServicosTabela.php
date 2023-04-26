@@ -1,5 +1,5 @@
 <div class="col-sm-12">
-    <form action="" class="form-control mb-2">
+    <form  id="my-form"action="#" class="form-control mb-2">
         <table id="tabelaDados" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
@@ -45,5 +45,10 @@
             $('#tabelaDados').DataTable();
         });
     </script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+
 
 </div>
