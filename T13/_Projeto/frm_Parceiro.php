@@ -1,10 +1,11 @@
-<form action="" class="from-control" method="POST" onsubmit="return false">
+<br>
+<form id="my-form" action="#" class="from-control" method="POST" onsubmit="return false">
     <div class="row">
         <div class="col-sm-12">
-            <h1> Tela de Cadastro Empresa</h1>
+            <h1> Formulario de Cadastro da Empresa</h1>
         </div>
     </div>
-
+    <br>
     <div class="row"><!-- ID / STATUS / datacadastro -->
         <div class="col-sm-4">
             <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario">
@@ -80,7 +81,7 @@
         </div>
         <div class="col-sm-3">
             <select name="txtUF" id="txtUF" class="form-control">
-                <option value="">->Selecione<-</option>
+                <option value="">Selecione Status</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
                 <option value="Amapá">AP</option>

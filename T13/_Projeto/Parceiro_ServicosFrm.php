@@ -1,9 +1,12 @@
-<form action="" class="from-control" method="post" onsubmit="return false">
+<br>
+<form id="my-form" action="#" class="from-control" method="post" onsubmit="return false">
     <div class="row">
         <div class="col-sm-12">
                 <h1>Criar Serviços</h1>
         </div>
     </div>
+    <br>
+    <br>
 
     <div class="row">
         <div class="col-sm-3">
@@ -19,9 +22,7 @@
             <label for="Nome">Nome</label>
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Insira um novo Serviço">
         </div>
-        <div class="col-sm-1">
-        </div>
-            <div class="col-sm-4">
+            <div class="col-sm-5">
                 <label for="Categoria">Categoria</label>
                     <select class="form-control">
                          <?php 

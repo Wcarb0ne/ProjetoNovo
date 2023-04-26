@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css">
     <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 
-    <title>Login</title>
+    <title>Next Tech</title>
 
 </head>
 <body>
