@@ -24,10 +24,16 @@ var greenIcon = L.icon({
 });
 
 
+// LAzaro Bueno
+L.marker([-23.46864, -46.5225], { icon: greenIcon }).addTo(map);
 
-L.marker([-23.46864, -46.52250], { icon: greenIcon }).addTo(map);
+
+// osvaldo cruz
 L.marker([-23.46760, -46.52951], { icon: greenIcon }).addTo(map);
-L.marker([-23.46740, -46.52933], { icon: greenIcon }).addTo(map);
+
+
+
+// Diogo Farias 
 L.marker([-23.46735, -46.52555], { icon: greenIcon }).addTo(map);
 
 ///////////////////////////////////////////////////////////////////////////
@@ -35,11 +41,19 @@ L.marker([-23.46735, -46.52555], { icon: greenIcon }).addTo(map);
 L.marker([-23.46932,-46.52581], { icon: greenIcon }).addTo(map);
 
 ///////////////////////////////////////////////////////////////////////////
-L.marker([-23.47031,-46.52476], { icon: greenIcon }).addTo(map);
-L.marker([-23.46899,-46.52993], { icon: greenIcon }).addTo(map);
-L.marker([-23.46035,-46.52431], { icon: greenIcon }).addTo(map);
 
-L.marker([-23.46364,-46.51419], { icon: greenIcon }).addTo(map);
+// Harry simonsen
+L.marker([-23.47031, -46.52476], { icon: greenIcon }).addTo(map);
+
+// Sete de Setembro
+L.marker([-23.46899,-46.52993], { icon: greenIcon }).addTo(map);
+
+// Humberto Porto
+L.marker([-23.46035, -46.52431], { icon: greenIcon }).addTo(map);
+
+
+// Praça Gilberto Van Mill
+L.marker([-23.46364, -46.51419], { icon: greenIcon }).addTo(map);
 
 
 
@@ -88,10 +102,10 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
 
 
 // Exemplo de uso
-const lat1 = -23.46870; // Latitude do ponto 1
-const lon1 = -46.52632; // Longitude do ponto 1
-const lat2 = -23.46932; // Latitude do ponto 2
-const lon2 = -46.52581 ; // Longitude do ponto 2
+const lat1 = -23.46932; // Latitude do ponto 1
+const lon1 = -46.52581; // Longitude do ponto 1
+const lat2 = -23.46870; // Latitude do ponto 2
+const lon2 = -46.52632 ; // Longitude do ponto 2
 
 const distancia = calcularDistancia(lat1, lon1, lat2, lon2);
 console.log(`A distância da assistencia tecnica mais proxima e de : ${distancia} km.`);

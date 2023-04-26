@@ -46,19 +46,81 @@
 
     <div class="container">
         <div class="row">
-        <div class="col-sm-4">
+            <div class="col-sm-4">
                 <div id="" class="">
 
 
-                <div class="card" style="width:18rem;">
-              
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Ca</h6>
-                    <p class="card-text"></p>
-                    b5
-                  </div>
-                </div>
+
+                    <div class="card" style="width:18rem;">
+
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted ">Assistente Rapido</h6>
+                            <p class="card-text"></p>
+                            Esta a 389 Metros do seu local
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="card" style="width:18rem;">
+
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted ">Tech Assistencia</h6>
+                            <p class="card-text"></p>
+                            Esta a 863 Metros do seu local
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+
+                    <div class="card" style="width:18rem;">
+
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted ">Concerte Agora</h6>
+                            <p class="card-text"></p>
+                            Esta a 863 Metros do seu local
+                        </div>
+                    </div>
+                    <br>
+
+
+
+                    <div class="card" style="width:18rem;">
+
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted ">Tudo Arruma</h6>
+                            <p class="card-text"></p>
+                            Esta a 863 Metros do seu local
+                        </div>
+                    </div>
+                    <br>
+
+
+
+                    <div class="card" style="width:18rem;">
+
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted ">Iruma</h6>
+                            <p class="card-text"></p>
+                            Esta a 863 Metros do seu local
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+
 
 
                 </div>
@@ -66,7 +128,7 @@
             <div class="col-sm-8">
                 <div id="map" class="bg-dark"></div>
             </div>
-            
+
         </div>
 
 
