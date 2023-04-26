@@ -41,36 +41,34 @@
 
 <body>
     <!-- Cabeçalho -->
-            <?php
-            include_once('_header.php');
-            ?>
-
+    <div class="row">
+        <?php
+        include_once('_header.php');
+        ?>
     </div>
-   
+
+
+
     <!--  -->
 
-    <div style="height: 80px;"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <?php
-                include_once('');
-                ?>
-            </div>
-        </div>
+
+    <div class="col-sm-12">
+        <?php
+        include_once('_Home.php');
+        ?>
     </div>
 
 
 
 
-   
+
 </body>
-
 <footer>
-    <?php
-    include_once('_footer.php');
-    ?>
+    <div class="row">
+        <?php
+        include_once('_footer.php');
+        ?>
+    </div>
 </footer>
-
 
 </html>
