@@ -1,5 +1,7 @@
 create database T13_Projeto;
 use T13_Projeto;
+
+select * from Parceiro;
 create table Parceiro
 (
 	id_Parceiro int auto_increment not null primary key,
@@ -112,7 +114,8 @@ beneficios_Planos	varchar(50)		not null		,
 descricao_Planos	varchar(255)	null		,
 dataDuracao_Planos	varchar(30)	not null		
 );
-Create table Usuario
+create table Cliente;
+Create table Cliente
 (
 id_Cliente	int	not null	auto_increment primary key	,
 data_Cliente	timestamp	not null	,

@@ -16,7 +16,8 @@
 
 <body>
     <?php
-    $mensagem = "";
+
+    
     if ($_POST) {
         include_once('Conexao.php');
 
@@ -40,9 +41,31 @@
 
             header('Location:Cliente_sistema.php');
         } else {
-            $mensagem = '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
+            $sql = $conn->query(
+                "select * from Parceiro where
+                    login_Parceiro = '$loginCliente' and
+                    senha_Parceiro = '$senhaCliente'
+                "
+            );
+
+            if ($sql->rowCount() == 1) {
+
+                session_start();
+
+                foreach ($sql as $linha) {
+
+                    $_SESSION['idCliente'] = $linha[0];
+                    $_SESSION['nomeCliente'] = $linha[3];
+                    $_SESSION['loginCliente'] = $linha[9];
+                }
+
+                header('Location:Parceiro_sistema.php');
+            } else {
+                $mensagem = '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
+            }
         }
     }
+
     ?>
 
     <main class="main_content container">
@@ -54,40 +77,37 @@
                         <center>
                             <div class="box-artigo">
 
-                                <form class="frmLogin" method="post" action="#">
-
+                                <form class="frmLogin" style="font-family: 'Open Sans', sans-serif; " method="post">
 
                                     <div class="login-box">
 
-                                        <form>
+                                        
                                             <div class="user-box">
-                                                <input type="text" name="" required="">
+                                                <input type="text" name="txtLogin" required="">
                                                 <label>NOME</label>
                                             </div>
                                             <div class="user-box">
-                                                <input type="password" name="" required="">
+                                                <input type="password" name="txtSenha" required="">
                                                 <label>SENHA</label>
                                             </div>
+                                            <button type="text" class="oxi3 mb-4" formaction="Cliente_Login.php">Entrar</button>
 
-                                            <p>Sem Cadastro <a href="Cliente_cadastro.php" class="a2">CADASTRE-SE</a></p>
+
+                                            <p style="color: white;">Sem Cadastro? <br><button type="text"  class="oxi4 mb-2" href="Cliente_cadastro.php">Cadastre-se</button></p>
                                             <div class="col-sm-10">
 
-                                                <p>Gostaria de Cadastrar sua empresa ?</sub><a href="frm_Empresa.php" class="a2">CADASTRE-SE</a></p>
+                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br>  <button type="text"  class="oxi4 mb-2" href="frm_Parceiro.php" >Clique aqui</button></p>
                                             </div>
 
-                                            <button type="text" class="btn" formaction="Cliente_sistema.php">Entrar</button>
-                                        </form>
+                                            
+                                        
                                     </div>
 
-                                    <?= $mensagem ?>
-
-
-
                                 </form>
-                                </span>
-                                </a>
+                            </div>
+
                         </center>
-                        </form>
+
                     </div>
 
                 </div>

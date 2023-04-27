@@ -11,10 +11,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="Index.php">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Principal_sistema.php">Serviços</a>
+          <a class="nav-link" href="Principal_sistema.php">Assistências Técnicas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sobre nós</a>
@@ -23,7 +23,7 @@
           <a class="nav-link" href="#">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-brand m-5" href="#"><img src="css/img/user.png" class="oxi" alt=""></a>
+          <a class="navbar-brand m-5" href="Cliente_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
         </li>
       </ul>
     </div>
