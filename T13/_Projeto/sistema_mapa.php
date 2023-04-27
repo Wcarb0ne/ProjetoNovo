@@ -39,8 +39,6 @@
 
 <body>
 
-    <?php include_once('Conexao.php') ?>
-
 
     <?php include_once('_header.php') ?>
 
