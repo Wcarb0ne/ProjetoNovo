@@ -90,7 +90,7 @@
                                                 <input type="password" name="txtSenha" required="">
                                                 <label>SENHA</label>
                                             </div>
-                                            <button type="text" class="oxi3 mb-4" formaction="Cliente_Login.php">Entrar</button>
+                                            <button type="text" class="oxi3 mb-4" formaction="_Login.php">Entrar</button>
 
 
                                             <p style="color: white;">Sem Cadastro? <br><button type="text"  class="oxi4 mb-2" href="Cliente_cadastro.php">Cadastre-se</button></p>

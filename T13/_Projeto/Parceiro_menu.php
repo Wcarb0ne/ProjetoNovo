@@ -2,7 +2,7 @@
     <nav >                                  
         <ul class="menu">
             <!-- <li class="logo"><a href="#" title="ID"><=$idParceiro?></a></li> -->
-            <li class="logo"><a href="#" title="Nome Empresa"><?=$nomeParceiro?></a></li>
+            <!-- <li class="logo"><a href="#" title="Nome Empresa"><?=$nome_Parceiro?></a></li> -->
             <li class="item"><a href="Parceiro_sistema.php?" title="Home">Home</a></li>
             <li class="item"><a href="Parceiro_sistema.php?Tela=Categoria" title="Categoria">Categoria</a></li>
             <li class="item"><a href="Parceiro_sistema.php?Tela=EmpresaCliente" title="Empresa">Empresa</a></li>

@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-if($_SESSION &&($_SESSION['idParceiro'])&& isset($_SESSION['nomeParceiro'])&& isset($_SESSION['loginParceiro']))
+if($_SESSION &&($_SESSION['idCliente'])&& isset($_SESSION['nomeCliente'])&& isset($_SESSION['loginCliente']))
 
 {
-    $idParceiro=$_SESSION['idParceiro'];
-    $nomeParceiro=$_SESSION['nomeParceiro'];
-    $loginParceiro=$_SESSION['loginParceiro'];
+    $idCliente=$_SESSION['idCliente'];
+    $nomeCliente=$_SESSION['nomeCliente'];
+    $loginCliente=$_SESSION['loginCliente'];
 }
 else{
     header('location:index.php');
