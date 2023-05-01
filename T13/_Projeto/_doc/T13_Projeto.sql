@@ -63,6 +63,7 @@ values
 'SP',
 '123456789',
 'obs');
+select * from Parceiro;
 create table ParceiroServicos
 (
 	id_ParceiroServicos int auto_increment not null primary key,
@@ -170,3 +171,44 @@ create table Empresa
     confirmarSenha_Empresa varchar(15) not null
 )
 select * from Empresa;
+
+
+/*banco de dados abaixo gerecimento da empresa*/
+				/*	N E X T E C H */
+create table Departamento
+(
+	id_Departamento int auto_increment not null primary key,
+    data_Departamento timestamp not null,
+    nome_Departamento varchar(30) not null,
+    status_Departamento varchar(20) not null,
+    descrição_Departamento varchar(255) not null
+);                
+create table Funcionario
+(
+	id_Funcionario int auto_increment not null primary key,
+    status_Funcionario varchar(20) not null,
+    data_Funcionario timestamp not null,      
+	nome_Funcionario varchar(30) not null,
+	cpf_Funcionario varchar(15) not null,
+	cep_Funcionario varchar(9) not null,
+    logradouro_Funcionario varchar(50) not null,
+    numero_Funcionario varchar(10) not null,
+    complemento_Funcionario varchar(50) null,
+    bairro_Funcionario varchar(50) not null,
+    cidade_Funcionario varchar(50) not null,
+    uf_Funcionario varchar(50) not null,   
+	email_Funcionario varchar(30) not null unique,
+    telefone1_Funcionario varchar(15) not null,
+    telefone2_Funcionario varchar(15) null,
+    id_Departamento_Funcionario int not null,
+	login_Funcionario varchar(15) not null unique,
+    senha_Funcionario varchar(15) not null,
+    confirmarSenha_Funcionario varchar(15) not null
+);
+create table Contrato
+(
+	id_Contrato int auto_increment not null primary key,
+    data_Contrato timestamp not null
+);
+             
+                
