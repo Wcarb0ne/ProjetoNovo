@@ -127,6 +127,7 @@ body{
 
       /* botão Cadastro */
       .oxi4 {
+        text-decoration: none;
         --color: #05a0c7;
         font-family: inherit;
         display: inline-block;
@@ -134,6 +135,7 @@ body{
         height: 2.6em;
         line-height: 2.5em;
         overflow: hidden;
+        background-color: #ffffff;
         
         font-size: 17px;
         z-index: 1;

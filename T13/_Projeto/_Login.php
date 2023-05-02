@@ -83,20 +83,20 @@
 
                                         
                                             <div class="user-box">
-                                                <input type="text" name="txtLogin" required="">
+                                                <input type="text" name="txtLogin" required >
                                                 <label>NOME</label>
                                             </div>
                                             <div class="user-box">
-                                                <input type="password" name="txtSenha" required="">
+                                                <input type="password" name="txtSenha" required >
                                                 <label>SENHA</label>
                                             </div>
                                             <button type="text" class="oxi3 mb-4" formaction="_Login.php">Entrar</button>
 
-
-                                            <p style="color: white;">Sem Cadastro? <br><button type="text"  class="oxi4 mb-2" href="Cliente_cadastro.php">Cadastre-se</button></p>
+                                            
+                                            <p style="color: white;">Sem Cadastro? <br><a class="oxi4 mb-2" href="Cliente_cadastro.php">Cadastre-se</a> </p>
                                             <div class="col-sm-10">
 
-                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br>  <button type="text"  class="oxi4 mb-2" href="frm_Parceiro.php" >Clique aqui</button></p>
+                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br><a  class="oxi4 mb-2" href="frm_Parceiro.php">Clique aqui</a></p>
                                             </div>
 
                                             
