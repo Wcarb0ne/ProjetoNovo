@@ -9,6 +9,6 @@ if($_SESSION &&($_SESSION['idFuncionario'])&& isset($_SESSION['nomeFuncionario']
     $loginFuncionario=$_SESSION['loginFuncionario'];
 }
 else{
-    header('location:index.php');
+    header('location:index.html');
 }
 ?>

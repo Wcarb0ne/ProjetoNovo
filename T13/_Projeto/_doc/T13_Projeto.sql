@@ -172,7 +172,6 @@ create table Empresa
 )
 select * from Empresa;
 
-
 /*banco de dados abaixo gerecimento da empresa*/
 				/*	N E X T E C H */
 create table Departamento

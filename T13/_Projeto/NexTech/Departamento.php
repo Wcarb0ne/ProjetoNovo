@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-sm-6">
         <label for="Departamento">Nome *</label>
-            <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Da Departamento"require>
+            <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Da Departamento">
         </div>
             <div class="col-sm-2"></div>
         <div class="col-sm-4">
