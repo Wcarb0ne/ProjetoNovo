@@ -6,6 +6,7 @@
 
    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/FUNCIONAAAA.css">
+    <link rel="stylesheet" href="css/styles.css">
     
     <script src="/Jquery/jquery-3.6.4.js"></script>
 
@@ -38,7 +39,7 @@
 
                             if($tela  == 'Cliente')
                             {
-                                include_once('cadastro.php');
+                                include_once('Cliente_cadastro.php');
                             }
 
                             elseif($tela =='Cadastro Empresa')
