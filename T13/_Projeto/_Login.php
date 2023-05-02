@@ -83,32 +83,20 @@
 
                                         
                                             <div class="user-box">
-<<<<<<< Updated upstream:T13/_Projeto/_Login.php
                                                 <input type="text" name="txtLogin" required >
                                                 <label>NOME</label>
                                             </div>
                                             <div class="user-box">
                                                 <input type="password" name="txtSenha" required >
-=======
-                                                <input type="text" name="txtLogin" >
-                                                <label>NOME</label>
-                                            </div>
-                                            <div class="user-box">
-                                                <input type="password" name="txtSenha" >
->>>>>>> Stashed changes:T13/_Projeto/Cliente_Login.php
                                                 <label>SENHA</label>
                                             </div>
                                             <button type="text" class="oxi3 mb-4" formaction="_Login.php">Entrar</button>
 
                                             
-                                            <p style="color: white;">Sem Cadastro? <br><a class="oxi4 mb-2" href="Cliente_cadastro.php">Cadastre-se</a> </p>
+                                            <p style="color: white;">Sem Cadastro? <br><a class="oxi4 mb-2" href="Cliente_cadastro.php?tela=Cliente">Cadastre-se</a> </p>
                                             <div class="col-sm-10">
 
-<<<<<<< Updated upstream:T13/_Projeto/_Login.php
-                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br><a  class="oxi4 mb-2" href="frm_Parceiro.php">Clique aqui</a></p>
-=======
-                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br><button type="text" class="oxi4 mb-2" href="frm_Empresa.php" >Clique aqui</button></p>
->>>>>>> Stashed changes:T13/_Projeto/Cliente_Login.php
+                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br><a  class="oxi4 mb-2" href="frm_Parceiro.php?tela=Parceiro">Clique aqui</a></p>
                                             </div>
 
                                             

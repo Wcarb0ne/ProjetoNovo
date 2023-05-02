@@ -13,6 +13,9 @@
   <script src="script.js"></script>
   <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 <br>
+
+
+
 <form id="my-form" action="#" class="from-control" method="POST" onsubmit="return false">
     <div class="row">
         <div class="col-sm-12">
@@ -24,17 +27,17 @@
         <div class="col-sm-4">
             <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario">
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2">
+        
+        <div class="col-sm-4">
             <select name="txtStatus" id="txtStatus" class="form-control">
                 <option value="" selected> ->Selecione<-</option>
                 <option value="Ativo">Ativo</option>
                 <option value="Inativo">Inativo</option>
             </select>
         </div>
-        <div class="col-sm-1"></div>
+        
         <div class="col-sm-4">
-            <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
+            <input type="date" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
         </div>
     </div>
 
@@ -55,10 +58,10 @@
             <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email Comercial">
         </div>
         <div class="col-sm-4">
-            <input type="text" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Telefone para Contato">
+            <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Telefone para Contato">
         </div>
         <div class="col-sm-4">
-            <input type="text" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder="Telefone da Empresa">
+            <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder="Telefone da Empresa">
         </div>
     </div>
 

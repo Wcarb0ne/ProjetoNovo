@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
 
     background-image: radial-gradient(circle, rgba(246,243,243,1) 14%, rgba(70,113,252,1) 100%);
-    radial-gradient(circle, rgba(213,200,200,1) 42%, rgba(72,82,215,1) 100%);
+
 
 
 
@@ -50,73 +50,19 @@
     display: inline-block;
   }
 
-  #my-form input[type="text"], [type="number"] {
+  #my-form input {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
-
-  #my-form input[type="date"] {
-    width: auto;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-
-  #my-form input[type="email"], [type="tel"] {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-
-  #my-form input[type="file"] {
-    width: auto;
-    display: none;
- }
-
   #my-form select {
-    /* width: auto;
-    padding: 1px;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #cccccc;*/
-  }
-
-  .spancpf {
-    margin-left: auto;
-    font-size: 14px;
-    display: block;
- }
-
-  label[for=img] {
-    text-align: center;
-    font-size: 12px;
-  }
-
-  #my-form img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    max-width: auto;
-    padding: 4px;
-    margin-bottom: -15px;
-    border-radius: 150px;
-    width: 160px;
-    height: 160px;
     border: 1px solid #ccc;
-    cursor: pointer;
-    transition: background .3s;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  #my-form img:hover{
-    background-color: #fff;
-    border: 5px solid rgba(72,82,215,1);
   }
 
 
