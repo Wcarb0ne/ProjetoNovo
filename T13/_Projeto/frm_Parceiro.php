@@ -1,3 +1,17 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"rel="stylesheet" />
+    <link rel="stylesheet" href="./Cadastro-Parceiro/styles.css">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.6.4.js"></script>
+
+  <script src="script.js"></script>
+  <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 <br>
 <form id="my-form" action="#" class="from-control" method="POST" onsubmit="return false">
     <div class="row">

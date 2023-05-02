@@ -34,7 +34,7 @@
   <script src="js/jquery-3.6.4.js"></script>
 
   <script src="script.js"></script>
-    <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
+  <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 
     <title>Next Tech</title>
 
