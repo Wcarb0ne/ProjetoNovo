@@ -29,9 +29,8 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contato</a>
         </li>
-        <li class="nav-item">
-          <a class="navbar-brand m-5" href="Cliente_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
-        </li>
+
+       
       </ul>
     </div>
   </div>
