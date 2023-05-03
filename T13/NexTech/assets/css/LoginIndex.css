@@ -50,7 +50,7 @@ body{
         left: 0;
         padding: 10px 0;
         font-size: 16px;
-        color: black;
+        color: #fff;
         pointer-events: none;
         transition: .5s;
       }
@@ -140,7 +140,7 @@ body{
       /* botão Cadastro */
       .oxi4 {
         text-decoration: none;
-        --color: #42b72a;
+        --color:#28a745;
         font-family: inherit;
         display: inline-block;
         width: 8em;
@@ -184,7 +184,7 @@ body{
         /* botão Sair */
         .oxi5 {
             text-decoration: none;
-            --color: red;
+            --color: #dc3545;
             font-family: inherit;
             display: inline-block;
             width: 8em;

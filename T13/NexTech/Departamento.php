@@ -30,12 +30,18 @@
             </select>        
         </div>
     </div>
+    <div class="row mt-1"><!-- descrição -->
+        <div class="col-sm-12">
+            <label for="Nome">Descrição</label>
+            <textarea name="txtDescricao" id="txtDescricao" class="form-control" rows="5" placeholder="Insira descrição do Departamento"></textarea>
+        </div>
+    </div>
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-10">
             <button name="btoPesquisa" class="btn btn-primary" onclick="PesquisarDepartamentoParceiro()">Pesquisar</button>
             <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarDepartamentoParceiro()">Cadastrar</button>
             <button name="btoAlterar" class="btn btn-warning" onclick="AlterarDepartamentoParceiro()">Alterar</button>
-            <a type="reset" name="btoLimpar" class="btn btn-dark"href="Parceiro_sistema.php?Tela=Departamento">Limpar</a>
+            <a type="reset" name="btoLimpar" class="btn btn-dark"href="NexTech_Sistema.php?Tela=Departamento">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirDepartamentoParceiro()">Excluir</button>
         </div>
             <div class="row"> 
