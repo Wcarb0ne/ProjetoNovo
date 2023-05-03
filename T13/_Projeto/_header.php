@@ -31,8 +31,8 @@
         </li>
         <li>
         <a class="navbar-brand m-5" href="_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
-          <ul>
-            <li class="sub-item">
+          <ul id="glauber">
+            <li  class="sub-item">
               <span class="material-icons-outlined"> grid_view </span>
               <p>Dashboard</p>
             </li>

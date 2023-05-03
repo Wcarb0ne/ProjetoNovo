@@ -5,7 +5,7 @@
   }
   
   nav {
-    background-color: #fff;
+    background-color: black;
     padding: 0 3rem;
 
   }
@@ -26,7 +26,7 @@
   li ul {
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: white ;
     align-items: flex-start;
     transition: all 0.5s ease;
     width: 20rem;

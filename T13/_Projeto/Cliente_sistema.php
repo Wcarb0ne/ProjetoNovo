@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/FUNCIONAAAA.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/icon.css">
     
     <script src="/Jquery/jquery-3.6.4.js"></script>
 
@@ -19,15 +20,15 @@
 <?php include_once('Conexao.php');?>
     <div class="container mt-4">
         <div class="row" id="Topo">
-            <div class="col-sm-12">
+            <div class="col-sm-12 mb-4">
                 <?php include_once('_header.php');?>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-sm-2">
-                <?php include_once('_menu.php');?>
-            </div>
-            <div class="col-sm-10 ">
+               
+            </div> -->
+            <div class="col-sm-12 ">
                 <?php
                     if($_GET)
                     {

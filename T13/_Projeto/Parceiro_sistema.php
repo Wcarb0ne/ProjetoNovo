@@ -7,9 +7,10 @@
    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
    <!-- Cabeçalho e Rodapé --> <link rel="stylesheet" href="css/Footer_Header.css">
 
-   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/MenuParceiro2.css">
+   
    <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/fonts-icones.css">
-   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/js/MenuParceiro2.js">
+   <!--Menu --> <link rel="stylesheet" href="css/icon.css">
+   
 
    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

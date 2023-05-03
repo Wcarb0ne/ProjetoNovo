@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/landingPage.css">
+  <link rel="stylesheet" href="css/icon.css">
 
       <!--Redes Sociais--><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
@@ -68,7 +69,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="css/img/carrossel.jpeg" class="d-block w-100" style="height: 700px; "  alt="...">
+      <img src="css/img/carrossel.jpeg" class="d-block w-100"  alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -99,6 +100,7 @@
   </button>
 </div>
 <!-- Carrossel -->
+
 
 
 

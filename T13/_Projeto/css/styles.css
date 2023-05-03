@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
 
   body {
@@ -33,6 +34,7 @@
   }
 
   #my-form {
+    margin-top: 30px;
     padding: 2rem;
     background: #ffffff;
     border-radius: 10px;
