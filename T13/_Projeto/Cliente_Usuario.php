@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bobonicado.css">
+    <link rel="stylesheet" href="css/icon.css">
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">

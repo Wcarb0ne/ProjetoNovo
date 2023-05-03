@@ -31,24 +31,31 @@
         </li>
         <li>
         <a class="navbar-brand m-5" href="_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
+<<<<<<< Updated upstream
           <ul id="glauber">
             <li  class="sub-item">
               <span class="material-icons-outlined"> grid_view </span>
               <p>Dashboard</p>
+=======
+          <ul>
+            <li class="sub-item">
+              <span class="material-icons-outlined" href="Parceiro_sistema.php"> Home</span>
+              <p></p>
+>>>>>>> Stashed changes
             </li>
             <li class="sub-item">
-              <span class="material-icons-outlined">
-                format_list_bulleted
+              <span class="material-icons-outlined" href="Parceiro_sistema.php?">
+                Serviços
               </span>
-              <p>My Orders</p>
+              <p></p>
             </li>
             <li class="sub-item">
-              <span class="material-icons-outlined"> manage_accounts </span>
-              <p>Update Profile</p>
+              <span class="material-icons-outlined" href="Parceiro_sistema.php?"> Fale Conosco </span>
+              <p></p>
             </li>
             <li class="sub-item">
-              <span class="material-icons-outlined"> logout </span>
-              <p>Logout</p>
+              <span class="material-icons-outlined" href="Parceiro_sistema.php?"> Sair</span>
+              <p></p>
             </li>
         
       </ul>
