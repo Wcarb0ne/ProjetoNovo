@@ -40,25 +40,21 @@
   <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 
     <title>Next Tech</title>
-
 </head>
+
+
 <body>
 <?php include_once('www_autenticar.php');?>
 <?php include_once('_header.php');?>
     <div class="container mt-5 dg-dark">
         <div class="row">
-
             <div class="col-sm-12">
                  <?php include_once('Parceiro_menu.php');?>
             </div>
-
         </div>
-    <!-- </div> -->
-    <!-- <div class="container "> -->
+
         <div class="row">
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-10 ">
+            <div class="col-sm-12 ">
                 <?php
                     if($_GET)
                     {
@@ -106,18 +102,14 @@
                     }
                 ?>
             </div>
-            <div class="col-sm-1">
-            </div>
+            <div class="col-sm-1"></div>
         </div>
     </div>
- </div>
+ 
 
     <footer>
-
         <?php 
-            include_once('_footer.php');
-        ?>
-   
+            include_once('_footer.php');?>
     </footer>
 </body>
 </html>
