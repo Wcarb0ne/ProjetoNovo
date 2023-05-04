@@ -57,29 +57,28 @@
                             <div class="box-artigo">
 
                                 <form class="frmLogin" style="font-family: 'Open Sans', sans-serif; " method="post">
-
+                                        
                                     <div class="login-box">
 
                                             <div class="user-box">
-                                                <h2 class="tituloLogin">Entrar na NexTech</h2>
+                                                <img src="./assets/img/freeze/logo outra.png" width="288px" height="88px" class="logo">
                                             </div>
                                             <br>
+                                            <br>
                                             <div class="user-box">
-                                                <input type="text" name="txtLogin" >
-                                                <label>NOME</label>
+                                                <input type="text" name="txtLogin" class="form-control" placeholder="  Login  ">
                                             </div>
 
-                                                <div class="col-sm-12 p-2">
-                                                    <select class="form-control" id="txtIDepart">
-                                                        <?php 
+                                                <div class="user-box">
+                                                    <select class="text55" id="txtIDepart">
+                                                            <?php 
                                                             include_once('DepartamentoPuxar.php');
                                                             ?>
                                                     </select>
                                                 </div>
 
                                             <div class="user-box">
-                                                <input type="password" name="txtSenha">
-                                                <label>SENHA</label>
+                                                <input type="password" name="txtSenha" placeholder="  Senha  ">
                                             </div>
                                             <button type="text" class="oxi3 mb-4" formaction="_Login.php">Entrar</button>
 

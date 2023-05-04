@@ -1,10 +1,10 @@
-<option value=''>-> Departamento <-</option>
-<?php
+<option value='' text-align: center;>  Selecione Departamento  </option><p text-align: center;>ettst</p>
 
+<?php
     include_once('Conexao.php');
     try
     {
-        $sql = $conn->query('select * from Funcionario ');
+        $sql = $conn->query('select * from Departamento ');
 
         foreach($sql as $linha)
         {

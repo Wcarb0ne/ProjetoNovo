@@ -180,8 +180,10 @@ create table Departamento
     data_Departamento timestamp not null,
     nome_Departamento varchar(30) not null,
     status_Departamento varchar(20) not null,
-    descrição_Departamento varchar(255) not null
+    descricao_Departamento varchar(255) not null
 );
+drop table Funcionario;
+select * from Departamento;
 ALTER TABLE Funcionario ADD CONSTRAINT id_Departamento_Funcionario FOREIGN KEY(id_Departamento_Funcionario) REFERENCES Departamento (id_Departamento);                
 create table Funcionario
 (
@@ -208,7 +210,7 @@ create table Funcionario
 insert into Funcionario
 (id_Funcionario,status_Funcionario,data_Funcionario,nome_Funcionario,cpf_Funcionario,cep_Funcionario,logradouro_Funcionario,numero_Funcionario,complemento_Funcionario,bairro_Funcionario,cidade_Funcionario,uf_Funcionario,email_Funcionario,telefone1_Funcionario,telefone2_Funcionario,id_Departamento_Funcionario,login_Funcionario,senha_Funcionario,confirmarSenha_Funcionario)
 values
-('1','ativo','03/05/2023','Felipe','156165116651','07196261','sei la','55','vila galvão','guarulhos','SP','cornoempresa@gmail.com','1185151161','','adm','123','123');
+('1','ativo','03/05/2023','Felipe','156165116651','07196261','rua sei la','55','apto50','vila galvão','guarulhos','SP','cornoempresa@gmail.com','1185151162','1185151161','1','adm','123','123');
 select * from Funcionario;
 create table Contrato
 (
