@@ -28,11 +28,13 @@
                     // print_r($linha);
                     // echo "</pre>";
 
+                    $id = $linha[0];
                     $nome = $linha['nome_Parceiro'];
                     $logradouro_Parceiro = $linha['logradouro_Parceiro'];
                     $ramo_Parceiro = $linha['ramo_Parceiro'];
 
                     echo'
+
                     <div class="col-md-3 text-center mb-3 p-1">
                         <div class="card">
                             <img src="css/img/doguin-fino.png" class="card-img-top imagem1" alt="...">
@@ -40,7 +42,7 @@
                                 <h5 class="card-title">'.$nome.'</h5>
                                 <p class="card-text">Endereço: '.$logradouro_Parceiro.'</p>
                                 <p class="card-text">Ramo: '.$ramo_Parceiro.'</p>
-                                <a href="sistema_mapa.php" class="btn btn-primary">Go somewhere</a>
+                                <a href="sistema_mapa.php?id='.$id.'" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>

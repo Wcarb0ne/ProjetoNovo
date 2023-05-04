@@ -25,35 +25,35 @@ var greenIcon = L.icon({
 
 
 // LAzaro Bueno
-L.marker([-23.46864, -46.5225], { icon: greenIcon }).addTo(map);
+//L.marker([-23.46864, -46.5225], { icon: greenIcon }).addTo(map);
 
 
 // osvaldo cruz
-L.marker([-23.46760, -46.52951], { icon: greenIcon }).addTo(map);
+//L.marker([-23.46760, -46.52951], { icon: greenIcon }).addTo(map);
 
 
 
 // Diogo Farias 
-L.marker([-23.46735, -46.52555], { icon: greenIcon }).addTo(map);
+//L.marker([-23.46735, -46.52555], { icon: greenIcon }).addTo(map);
 
 ///////////////////////////////////////////////////////////////////////////
 // mais perto \/
-L.marker([-23.46932,-46.52581], { icon: greenIcon }).addTo(map);
+//L.marker([-23.46932,-46.52581], { icon: greenIcon }).addTo(map);
 
 ///////////////////////////////////////////////////////////////////////////
 
 // Harry simonsen
-L.marker([-23.47031, -46.52476], { icon: greenIcon }).addTo(map);
+//L.marker([-23.47031, -46.52476], { icon: greenIcon }).addTo(map);
 
 // Sete de Setembro
-L.marker([-23.46899,-46.52993], { icon: greenIcon }).addTo(map);
+//L.marker([-23.46899,-46.52993], { icon: greenIcon }).addTo(map);
 
 // Humberto Porto
-L.marker([-23.46035, -46.52431], { icon: greenIcon }).addTo(map);
+//L.marker([-23.46035, -46.52431], { icon: greenIcon }).addTo(map);
 
 
 // Praça Gilberto Van Mill
-L.marker([-23.46364, -46.51419], { icon: greenIcon }).addTo(map);
+// L.marker([-23.46364, -46.51419], { icon: greenIcon }).addTo(map);
 
 
 
@@ -110,6 +110,32 @@ const lon2 = -46.52632 ; // Longitude do ponto 2
 const distancia = calcularDistancia(lat1, lon1, lat2, lon2);
 console.log(`A distância da assistencia tecnica mais proxima e de : ${distancia} km.`);
 
-function calcularperto() {
+function pegarDados() {
+  // alert("teste");
 
+  Numero = document.getElementById('Numero').value;
+  Rua = document.getElementById('Rua').value;
+  Bairro = document.getElementById('Bairro').value;
+  Cidade = document.getElementById('Cidade').value;
+  Estado = document.getElementById('Estado').value;
+
+
+  $.getJSON(`https://nominatim.openstreetmap.org/search?q=${Numero}+${Rua}+${Cidade}+${Estado}&format=json&addressdetails=1`, function (dados) {
+    if (!("erro" in dados)) {
+
+      $('#resultadotxt').val(dados[0].lat);
+      $('#resultado2txt').val(dados[0].lon);
+      
+      //Atualiza os campos com os valores da consulta.
+      var lata =  $('#resultadotxt').val();
+      var lata2 =  $('#resultado2txt').val();
+
+      
+L.marker([lata, lata2], { icon: greenIcon }).addTo(map);
+
+      
+
+    } //end if.
+
+  });
 }
