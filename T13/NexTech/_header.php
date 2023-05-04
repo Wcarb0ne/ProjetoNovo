@@ -29,9 +29,9 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#about">Home</a>
                             </li>
-                            <li><a href="#features">Departamento</a>
+                            <li><a href="NexTech_Sistema.php?Tela=Departamento">Departamento</a>
                             </li>
-                            <li><a href="#reviews">Funcionarios</a>
+                            <li><a href="NexTech_Sistema.php?Tela=Funcionario">Funcionarios</a>
                             </li>
                             <li><a href="#demo">Planos</a>
                             </li>

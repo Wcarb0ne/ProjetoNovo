@@ -23,11 +23,12 @@
 
         $loginFuncionario = $_POST['txtLogin'];
         $senhaFuncionario = $_POST['txtSenha'];
+        // $id_Departamento_Funcionario = $_POST['txtIDepart'];
 
         $sql = $conn->query(
         "select * from Funcionario where
         login_Funcionario = '$loginFuncionario' and
-        senha_Funcionario = '$senhaFuncionario'
+        senha_Funcionario = '$senhaFuncionario' 
         ");
 
         if($sql->rowCount()==1)
@@ -38,6 +39,7 @@
                 $_SESSION['idFuncionario'] = $linha[0];
                 $_SESSION['nomeFuncionario'] = $linha[3];
                 $_SESSION['loginFuncionario'] = $linha[9];
+                // $_SESSION['idDepartamentoFuncionario'] = $linha[15];
             }
             header('Location:NexTech_Sistema.php');
         }

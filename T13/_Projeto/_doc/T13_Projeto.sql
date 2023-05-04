@@ -202,7 +202,7 @@ create table Funcionario
 	email_Funcionario varchar(30) not null unique,
     telefone1_Funcionario varchar(15) not null,
     telefone2_Funcionario varchar(15) null,
-    id_Departamento_Funcionario int not null,
+    id_Departamento_Funcionario int not null, /*15*/
 	login_Funcionario varchar(15) not null unique,
     senha_Funcionario varchar(15) not null,
     confirmarSenha_Funcionario varchar(15) not null

@@ -51,13 +51,13 @@
                         {
                             $tela = $_GET['Tela'];
 
-                            if($tela  == 'Parceiro')
+                            if($tela  == 'Departamento')
                             {
-                                include_once('frm_Parceiro.php');
+                                include_once('Departamento.php');
                             }
-                            elseif($tela =='EmpresaCliente')
+                            elseif($tela =='Funcionario')
                             {
-                                include_once('frm_Empresa.php');
+                                include_once('Funcionario.php');
                             }
                             elseif($tela =='Categoria')
                             {
@@ -79,7 +79,7 @@
 
                             elseif($tela =='Sair')
                             {
-                                include_once('Parceiro_autenticarSair.php');
+                                include_once('NexTech_AutenticarSair.php');
                             }
                         }
                         else{
