@@ -5,8 +5,9 @@
 <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 <link rel="stylesheet" href="css/styles.css">
 
-<script src="jquery-3.6.4.js"></script>
-<script src="Script.js"></script>
+<script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+
 
 <title>Cliente</title>
 
@@ -34,7 +35,7 @@
 
                 <div class="col-sm-2">
                     <select name="txtStatus" id="txtStatus" class="form-control" hidden>
-                        <option value=""> ->Selecione<-< /option>
+                        <option value=""> ->Selecione<-</option>
                         <option value="Ativo" selected>Ativo</option>
                         <option value="Inativo">Inativo</option>
                     </select>
@@ -159,16 +160,22 @@
                     <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Observação(Opcional)"></textarea>
                 </div>
             </div>
+            <div class="row mt-3" id="Resultado">
+
+            </div>
 
             <div class="row mt-4 mb-4"><!--botoes-->
                 <div class="col-sm-12">
 
-                    <button name="btoCadastrar" class="btn btn-success" onclick=" CadastrarCliente()"> Cadastrar </button>
+                    <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarCliente()">Cadastrar</button>
                     <button name="btoSair" class="btn btn-danger">Sair</button>
                 </div>
 
-                <div class="col-sm-12" id="resultado"></div>
+                <div class="row">
+                    <div class="col-sm-12" id="Resultado">
 
+                    </div>
+                </div>
             </div>
 
         </form>

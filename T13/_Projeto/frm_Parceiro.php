@@ -149,6 +149,7 @@
             <div class="row">
                 <div class="col-sm-10" id="resultado">
                 </div>
+            </div>
         </form>
     </div>
 </div>

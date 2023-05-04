@@ -445,7 +445,7 @@ function AlterarCategoriaParceiro(){
 
 function CadastrarCliente(){
 
-    //alert("teste");
+    // console.log("teste");
 
  
     let status_Cliente = $('#txtStatus').val();
@@ -499,11 +499,11 @@ function CadastrarCliente(){
             $("#Resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
-            $("#resultado").empty().html(data);
+            $("#Resultado").empty().html(data);
             //$("#txtID").val($(#idGerado).text());
         },
         error: function (jqXhr, textStatus, errorMessage) {
-            $('#resultado').empty('Error ' + errorMessage);
+            $('#Resultado').empty('Error ' + errorMessage);
         }
 
     })

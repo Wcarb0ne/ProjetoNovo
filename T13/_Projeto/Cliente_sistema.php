@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/icon.css">
 
-    <script src="/Jquery/jquery-3.6.4.js"></script>
-    <script src="Script.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
 
     <title>Login</title>
 </head>

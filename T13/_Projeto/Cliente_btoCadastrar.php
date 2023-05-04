@@ -18,32 +18,33 @@ if($_POST)
     $numero_Cliente = $_POST['txtNumero'];
     $bairro_Cliente = $_POST['txtBairro'];
     $cidade_Cliente = $_POST['txtCidade'];
-    $email_Cliente = $_POST['txtEmail'];
     $uf_Cliente = $_POST['txtUF'];
     $complemento_Cliente= $_POST['txtComplemento'];
     $telefone1_Cliente = $_POST['txtTelefone1'];
     $telefone2_Cliente = $_POST['txtTelefone2'];
+    $email_Cliente = $_POST['txtEmail'];
     $obs_Cliente = $_POST['txtOBS'];
         
     try {
             $sql = $conn->prepare(
-                "insert into CadastroCliente
+                "insert into Cliente
                 (
                 status_Cliente,
                 nome_Cliente,
                 cpf_Cliente,
                 login_Cliente,
                 senha_Cliente,
+
                 cep_Cliente,
                 logradouro_Cliente,
                 numero_Cliente,
                 bairro_Cliente,
                 cidade_Cliente,
-                email_Cliente,
                 uf_Cliente,
                 complemento_Cliente,
                 telefone1_Cliente,
                 telefone2_Cliente,
+                email_Cliente,
                 obs_Cliente
                 )
 
@@ -59,11 +60,11 @@ if($_POST)
                 :numero_Cliente,
                 :bairro_Cliente,
                 :cidade_Cliente,
-                :email_Cliente,
                 :uf_Cliente,
                 :complemento_Cliente,
                 :telefone1_Cliente,
                 :telefone2_Cliente,
+                :email_Cliente,
                 :obs_Cliente)"
             );
 
@@ -78,11 +79,11 @@ if($_POST)
                 ':numero_Cliente'=> $numero_Cliente,
                 ':bairro_Cliente'=>$bairro_Cliente,
                 ':cidade_Cliente'=>$cidade_Cliente,
-                ':email_Cliente'=>$email_Cliente,
                 ':uf_Cliente'=>$uf_Cliente,
                 ':complemento_Cliente'=>$complemento_Cliente,
                 ':telefone1_Cliente'=> $telefone1_Cliente,
                 ':telefone2_Cliente'=>$telefone2_Cliente,
+                ':email_Cliente'=>$email_Cliente,
                 ':obs_Cliente'=>$obs_Cliente
             ));
 
