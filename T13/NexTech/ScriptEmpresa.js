@@ -128,9 +128,110 @@ function CadastrarDepartamento(){
 /////////////////formulario Funcionario ///////////
 function CadastrarFuncionario(){
 
+    let status_Funcionario = $('#txtStatus').val();
+    let nome_Funcionario =$('#txtNome').val();
+    let cpf_Funcionario = $('#txtCpf').val();
+
+    let cep_Funcionario = $('#txtCep').val(); 
+    let logradouro_Funcionario = $('#txtLogradouro').val(); 
+    let numero_Funcionario = $('#txtNumero').val();
+    let complemento_Funcionario = $('#txtComplemento').val();
+    let bairro_Funcionario = $('#txtBairro').val();
+    let cidade_Funcionario = $('#txtCidade').val(); 
+    let uf_Funcionario = $('#txtUF').val(); 
+
+    let email_Funcionario = $('#txtEmail').val();
+    let telefone1_Funcionario = $('#txtTelefone1').val(); 
+    let telefone2_Funcionario = $('#txtTelefone2').val();
+
+    let id_Departamento_Funcionario = $('#txtIDepart').val();
+    let login_Funcionario = $('#txtLogin').val();
+    let senha_Funcionario = $('#txtSenha').val();
+    let confirmarSenha_Funcionario = $('#txtConfirmarSenha').val();
+
+    
+    let action = 'FuncionarioBtoCadastrar.php';
+    
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                
+                txtStatus: status_Funcionario,
+                txtNome: nome_Funcionario,
+                txtCpf:cpf_Funcionario,
+                txtCep:cep_Funcionario,
+                txtLogradouro:logradouro_Funcionario,
+                txtNumero:numero_Funcionario,
+                txtComplemento:complemento_Funcionario,
+                txtBairro:bairro_Funcionario,
+                txtCidade:cidade_Funcionario,
+                txtUF:uf_Funcionario,
+                txtEmail:email_Funcionario,
+                txtTelefone1:telefone1_Funcionario,
+                txtTelefone2:telefone2_Funcionario,
+                txtIDepart:id_Departamento_Funcionario,
+                txtLogin:login_Funcionario,
+                txtSenha:senha_Funcionario,
+                txtConfirmarSenha:confirmarSenha_Funcionario
+
+
+            },
+            success: function (data, status, xhr) {
+                $("#resultado").empty().html(data);
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').empty('Error ' + errorMessage);
+            }
+    
+        })
 }
 function PesquisarFuncionario(){
+
+     let id_Funcionario = $('#txtID').val();
+      
+        let action = 'FuncionarioBtoPesquisa.php';
     
+    
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Funcionario
+               
+            },
+            success: function (data, status, xhr) {
+    
+                $("#resultado").empty().html( data );
+                $("#txtID").val($('#idGerado').text());
+                $("#txtStatus").val($('#PesquisaStatus').text());
+                $("#txtData").val($('#PesquisaData').text());
+                $("#txtNome").val($('#PesquisaNome').text());            
+                $("#txtCpf").val($('#PesquisaCpf').text());
+
+                $("#txtCep").val($('#PesquisaCep').text());
+                $("#txtLogradouro").val($('#PesquisaLogradouro').text());
+                $("#txtNumero").val($('#PesquisaNumero').text());            
+                $("#txtComplemento").val($('#PesquisaComplemento').text());
+                $("#txtBairro").val($('#PesquisaBairro').text());
+                $("#txtCidade").val($('#PesquisaCidade').text());
+                $("#txtUF").val($('#PesquisaUF').text());   
+
+                $("#txtEmail").val($('#PesquisaEmail').text());
+                $("#txtTelefone1").val($('#PesquisaTelefone1').text());
+                $("#txtTelefone2").val($('#PesquisaTelefone2').text());
+
+                $("#txtIDepart").val($('#PesquisaDepart').text());            
+                $("#txtLogin").val($('#PesquisaLogin').text());
+                $("#txtSenha").val($('#PesquisaSenha').text());
+                $("#txtConfirmarSenha").val($('#PesquisaConfirmarSenha').text());
+               
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').empty().html('Error ' + errorMessage);
+            }
+    
+        })
 }
 function ExcluirFuncionario(){
     

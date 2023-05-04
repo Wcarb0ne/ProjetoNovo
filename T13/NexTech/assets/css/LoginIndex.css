@@ -237,10 +237,12 @@ body{
             top: 5px;
             color: black;
             font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
 
           }
           .text55 option {
             font-family:'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
         }
+        
 
