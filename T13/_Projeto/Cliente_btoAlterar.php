@@ -11,7 +11,6 @@ if($_POST)
     $telefone2_Cliente = $_POST['txtTelefone2'];
     $login_Cliente = $_POST['txtLogin'];
     $senha_Cliente = $_POST['txtSenha'];
-    $confirmarSenha_Cliente = $_POST['txtConfirmarSenha'];
     $logradouro_Cliente = $_POST['txtLogradouro']; 
     $numero_Cliente = $_POST['txtNumero'];
     $complemento_Cliente = $_POST['txtComplemento'];
@@ -34,7 +33,6 @@ if($_POST)
         $telefone2_Cliente=:telefone2_Cliente,
         $login_Cliente=:login_Cliente,
         $senha_Cliente=:senha_Cliente,
-        $confirmarSenha_Cliente=:confirmarSenha_Cliente,
         $logradouro_Cliente=:logradouro_Cliente,
         $numero_Cliente=:numero_Cliente,
         $complemento_Cliente=:complemento_Cliente,
@@ -56,7 +54,6 @@ if($_POST)
             ':telefone2_Cliente'=>$telefone2_Cliente,
             ':login_Cliente'=>$login_Cliente,
             ':senha_Cliente'=>$senha_Cliente,
-            ':confirmarSenha_Cliente'=>$confirmarSenha_Cliente,
             ':logradouro_Cliente'=>$logradouro_Cliente,
             ':numero_Cliente'=>$numero_Cliente,
             ':complemento_Cliente'=>$complemento_Cliente,

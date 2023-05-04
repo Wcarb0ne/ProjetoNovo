@@ -181,9 +181,9 @@ submitValidar.addEventListener("click", (e) => {
 
   if (nameValue === "" || ruaValue === "" || numeroValue === "" || bairroValue === "" || dateValue === "" 
   || cidadeValue === ""  || cepValue === ""  || apelidoValue === ""  || cpfValue === "" || rgValue === ""
-  || ufValue === "" || emailValue === "") {
-
-
+  || ufValue === "" || emailValue === "") 
+  
+  {
     validar.textContent = "Por favor, preencha todos os campos!";
     validar.classList = "errorValidar"; //busca na classe error
 

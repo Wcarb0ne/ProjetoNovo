@@ -39,7 +39,7 @@
                 $_SESSION['loginCliente'] = $linha[2];
             }
 
-            header('Location:Cliente_Usuario.php');
+            header('Location:Cliente_sistema.php');
         } else {
             $sql = $conn->query(
                 "select * from Parceiro where

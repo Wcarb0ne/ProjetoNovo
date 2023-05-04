@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/Footer_Header.css">
     <link rel="stylesheet" href="css/FUNCIONAAAA.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/icon.css">
@@ -38,18 +40,21 @@
 
                         if ($tela  == 'Cliente') {
                             include_once('Cliente_cadastro.php');
-                        } elseif ($tela == 'Cadastro Empresa') {
-                            include_once('frm_Empresa.php');
-                        } elseif ($tela == 'tela de Usuario') {
+                       } 
+                        // elseif ($tela == 'Cadastro Empresa') {
+                        //     include_once('frm_Empresa.php');
+                        // } 
+                        elseif ($tela == 'Usuario') {
                             include_once('Cliente_Usuario.php');
-                        } elseif ($tela == 'Sair') {
+                        } 
+                        elseif ($tela == 'Sair') {
                             include_once('Cliente_AutenticarSair.php');
                         }
                     } else {
                         echo '<h1> ERRO, Pagina não encontrada </h1>';
                     }
                 } else {
-                    include_once('_Home.php');
+                    include_once('Cliente_Home.php');
                 }
                 ?>
             </div>

@@ -2,7 +2,7 @@
 include_once('conexao.php');
 
 
-$id_Cliente="";
+
 $status_Cliente="";
 $data_Cliente="";
 $nome_Cliente="";
@@ -22,19 +22,17 @@ $uf_Cliente="";
 $cep_Cliente="";
 $obs_Cliente="";
 
-if($_POST)
-{
-    $id_Cliente =$_POST['txtID'];
+    $id_Cliente =$idCliente;
     try
     {   
-        $teste = 'select * from Cliente where id_Cliente='.$id_Cliente;
+        $teste = 'select * from Cliente where id_Cliente='.$idCliente;
         $sql = $conn->query($teste);
         
         if($sql->rowCount()==1)
         {
             foreach($sql as $linha)
             {
-                $id_Cliente=$linha[0];
+                $idCliente=$linha[0];
                 $status_Cliente=$linha[1];
                 $data_Cliente=$linha[2];
                 $nome_Cliente=$linha[3];
@@ -44,7 +42,6 @@ if($_POST)
                 $telefone2_Cliente=$linha[7];
                 $login_Cliente=$linha[8];
                 $senha_Cliente=$linha[9];
-                $confirmarSenha_Cliente=$linha[10];
                 $logradouro_Cliente=$linha[11];
                 $numero_Cliente=$linha[12];
                 $complemento_Cliente=$linha[13];
@@ -86,7 +83,4 @@ if($_POST)
     {
         echo $ex->getMessage();
     }
-
-}
-
 ?>
