@@ -7,6 +7,7 @@ nav {
   background-color: black;
   padding: 0 3rem;
 
+<<<<<<< Updated upstream
 }
 
 ul {
@@ -97,3 +98,130 @@ ul li ul:hover {
   margin: 0.4rem 0;
   flex: 1;
 }
+=======
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  li {
+    list-style-type: none;
+    position: relative;
+    padding: 0.625rem 0 0.5rem;
+  }
+  li ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 254, 254) ;
+    align-items: flex-start;
+    transition: all 0.5s ease;
+    width: 20rem;
+    right: -3rem;
+    top: 4.5rem;
+    border-radius: 0.325rem;
+    gap: 0;
+    padding: 1rem 0rem;
+    opacity: 0;
+    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
+    display: none;
+
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+  
+  ul li a{
+    color: #0b60c8;
+    text-decoration: none;
+  }
+  .material-icons-outlined {
+    color: #888888;
+    transition: all 0.3s ease-out;
+  }
+  nav .wrapper{
+    position: absolute;
+    top: 65px;
+    display: flex;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #242526;
+    display: none;
+    transition: all 0.3s ease;
+  }
+  nav .wrapper.show{
+    display: block;
+    display: flex;
+  }
+  .wrapper ul{
+    width: 400px;
+    list-style: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  .wrapper ul li{
+    line-height: 55px;
+  }
+  .wrapper ul li a{
+    position: relative;
+    color: #b0b3b8;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    text-decoration: none;
+  }
+  .wrapper ul li:hover a{
+    background: #3A3B3C;
+  }
+  ul li a .icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+    background: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li a .icon span{
+    line-height: 40px;
+    font-size: 20px;
+    color: #b0b3b8;
+  }
+  ul li a i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    pointer-events: none;
+  }
+  .wrapper ul.setting-drop,
+  .wrapper ul.help-drop{
+    display: none;
+  }
+  .wrapper .arrow{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b0b3b8;
+    cursor: pointer;
+  }
+  .wrapper .arrow span{
+    margin-right: 15px;
+  }
+
+
+ 
+ 
+>>>>>>> Stashed changes
