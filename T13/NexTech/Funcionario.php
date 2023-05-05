@@ -25,7 +25,7 @@
 <body>
  <br>   
 
-    <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data">
+    <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
         <br>
         <div calss="">
             <img src="./assets/img/freeze/logo outra.png" width="288px" height="88px" class="logo">
@@ -207,14 +207,16 @@
             <div class="row mt-3"><!--botoes-->
             <div class="col-sm-1"></div>
                 <div class="col-sm-5">
-                    <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="validarCampos();">Cadastrar</button>
+                    <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="CadastrarFuncionario();">Cadastrar</button>
                     <div class="msgValidar"></div>
                 </div>
                 <div class="col-sm-5">
                     <button id="btn-Sair" class="btn-Sair" type="submit" value="Sair">Sair</button>
                 </div>
-                <div class="col-sm-1"></div>
-
+                <div class="row"> 
+                    <div class="col-sm-10" id="resultado">
+                    <div class="col-sm-10" id="tabela">
+                </div>
             </div>
         </div>
 

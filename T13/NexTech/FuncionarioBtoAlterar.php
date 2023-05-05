@@ -23,8 +23,7 @@ if($_POST)
     $login_Funcionario = $_POST['txtLogin'];
     $senha_Funcionario = $_POST['txtSenha'];
     $confirmarSenha_Funcionario = $_POST['txtConfirmarSenha'];
-
-  
+ 
     try 
     {
        

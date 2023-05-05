@@ -38,14 +38,16 @@
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-10">
-            <button name="btoPesquisa" class="btn btn-primary" onclick="PesquisarDepartamentoParceiro()">Pesquisar</button>
-            <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarDepartamentoParceiro()">Cadastrar</button>
-            <button name="btoAlterar" class="btn btn-warning" onclick="AlterarDepartamentoParceiro()">Alterar</button>
+            <button name="btoPesquisa" class="btn btn-primary" onclick="PesquisarDepartamento()">Pesquisar</button>
+            <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarDepartamento()">Cadastrar</button>
+            <button name="btoAlterar" class="btn btn-warning" onclick="AlterarDepartamento()">Alterar</button>
             <a type="reset" name="btoLimpar" class="btn btn-dark"href="NexTech_Sistema.php?Tela=Departamento">Limpar</a>
-            <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirDepartamentoParceiro()">Excluir</button>
+            <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirDepartamento()">Excluir</button>
         </div>
             <div class="row"> 
                 <div class="col-sm-10" id="resultado">
+                <div class="col-sm-10" id="tabela">
+
             </div>
     </div>
         

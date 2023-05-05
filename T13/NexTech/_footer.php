@@ -1,8 +1,8 @@
 <footer>
-    <div class="container">
+    <!-- <div class="container">
         <a href="#" class="scrollpoint sp-effect3">
-            <img src="./assets/img/freeze/logo.png" alt="" class="logo">
-        </a>
+            <img src="./assets/img/freeze/logo-transp.png" alt="" class="logo">
+        </a> -->
 
         <div class="social">
             <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
