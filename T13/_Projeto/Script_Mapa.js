@@ -1,4 +1,3 @@
-console.log('aaaaaaaaa')
 
 
 var map = L.map('map').setView([-23.46878, -46.52632], 60);
@@ -113,14 +112,14 @@ console.log(`A distância da assistencia tecnica mais proxima e de : ${distancia
 function pegarDados() {
   // alert("teste");
 
-  Numero = document.getElementById('Numero').value;
-  Rua = document.getElementById('Rua').value;
-  Bairro = document.getElementById('Bairro').value;
-  Cidade = document.getElementById('Cidade').value;
-  Estado = document.getElementById('Estado').value;
+  numero_Parceiro = document.getElementById('Numero').value;
+  logradouro_Parceiro = document.getElementById('Rua').value;
+  bairro_Parceiro = document.getElementById('Bairro').value;
+  cidade_Parceiro = document.getElementById('Cidade').value;
+  uf_Parceiro = document.getElementById('Estado').value;
 
 
-  $.getJSON(`https://nominatim.openstreetmap.org/search?q=${Numero}+${Rua}+${Cidade}+${Estado}&format=json&addressdetails=1`, function (dados) {
+  $.getJSON(`https://nominatim.openstreetmap.org/search?q=${numero_Parceiro}+${logradouro_Parceiro}+${cidade_Parceiro}+${uf_Parceiro}&format=json&addressdetails=1`, function (dados) {
     if (!("erro" in dados)) {
 
       $('#resultadotxt').val(dados[0].lat);

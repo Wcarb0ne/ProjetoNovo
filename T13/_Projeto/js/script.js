@@ -1,7 +1,7 @@
 
 /////////////////formulario Parceiro///////////
-function CadastrarParceiro(){
- 
+function CadastrarParceiro() {
+
     let status_Parceiro = $('#txtStatus').val();
     let nome_Parceiro = $('#txtNome').val();
     let cnpj_Parceiro = $('#txtCnpj').val();
@@ -55,12 +55,12 @@ function CadastrarParceiro(){
 
     })
 }
-function ParceiroPesquisar(){
+function ParceiroPesquisar() {
 
     //console.log('testtetttt');
 
     let id_Parceiro = $('#txtID').val();
-  
+
     let action = 'Parceiro_btoPesquisa.php';
 
 
@@ -69,11 +69,11 @@ function ParceiroPesquisar(){
         type: 'post',
         data: {
             txtID: id_Parceiro
-           
+
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
+            $("#resultado").empty().html(data);
             $("#txtID").val($('#idGerado').text());
             $("#txtNome").val($('#PesquisaNome').text());
             $("#txtLogin").val($('#PesquisaLogin').text());
@@ -100,7 +100,7 @@ function ParceiroPesquisar(){
     })
 
 }
-function ParceiroAlterar(){
+function ParceiroAlterar() {
 
     //console.log('testtetttt');
 
@@ -110,7 +110,7 @@ function ParceiroAlterar(){
     let senha_Parceiro = $('#txtSenha').val();
     let confirmarSenha_Parceiro = $('#txtConfirmarSenha').val();
     let email_Parceiro = $('#txtEmail').val();
-    let dataNasc_Parceiro  = $('#txtDataNasc').val();
+    let dataNasc_Parceiro = $('#txtDataNasc').val();
     let cpf_Parceiro = $('#txtCpf').val();
     let genero_Parceiro = $('#txtGenero').val();
     let telefone1_Parceiro = $('#txtTelefone1').val();
@@ -122,7 +122,7 @@ function ParceiroAlterar(){
     let status_Parceiro = $('#txtStatus').val();
     let obs_Parceiro = $('#txtObs').val();
 
-  
+
     let action = 'Parceiro_btoAlterar.php';
 
 
@@ -147,14 +147,14 @@ function ParceiroAlterar(){
             txtCep: cep_Parceiro,
             txtStatus: status_Parceiro,
             txtObs: obs_Parceiro
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
+            $("#resultado").empty().html(data);
             ParceiroPesquisar();
         },
         error: function (jqXhr, textStatus, errorMessage) {
@@ -164,10 +164,10 @@ function ParceiroAlterar(){
     })
 
 }
-function ParceiroExcluir(){
+function ParceiroExcluir() {
 
     let id_Parceiro = $('#txtID').val();
-  
+
     let action = 'Parceiro_btoExcluir.php';
 
 
@@ -176,13 +176,13 @@ function ParceiroExcluir(){
         type: 'post',
         data: {
             txtID: id_Parceiro
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
-        success: function(data, status, xhr){
-            $( "#resultado" ).empty().html( data );
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error' + errorMessage);
@@ -192,14 +192,14 @@ function ParceiroExcluir(){
 }/////////////////formulario Parceiro///////////
 
 /////////////////formulario Categoria Parceiro///////////
-function CadastrarCategoriaParceiro(){
- 
-let nome_PCategoria = $('#txtNome').val();
-let status_PCategoria = $('#txtStatus').val();
+function CadastrarCategoriaParceiro() {
 
-// console.log('testee');
+    let nome_PCategoria = $('#txtNome').val();
+    let status_PCategoria = $('#txtStatus').val();
 
-let action = 'Parceiro_CategoriaBtoCadastrar.php';
+    // console.log('testee');
+
+    let action = 'Parceiro_CategoriaBtoCadastrar.php';
 
     $.ajax({
         url: action,
@@ -218,12 +218,12 @@ let action = 'Parceiro_CategoriaBtoCadastrar.php';
 
     })
 }
-function PesquisarCategoriaParceiro(){
+function PesquisarCategoriaParceiro() {
 
     //console.log('testtetttt');
 
     let id_PCategoria = $('#txtID').val();
-  
+
     let action = 'Parceiro_CategoriaBtoPesquisa.php';
 
 
@@ -232,16 +232,16 @@ function PesquisarCategoriaParceiro(){
         type: 'post',
         data: {
             txtID: id_PCategoria
-           
+
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
+            $("#resultado").empty().html(data);
             $("#txtID").val($('#idGerado').text());
             $("#txtData").val($('#PesquisaData').text());
-            $("#txtNome").val($('#PesquisaNome').text());            
+            $("#txtNome").val($('#PesquisaNome').text());
             $("#txtStatus").val($('#PesquisaStatus').text()); //obs status nao esta puxando na caixa de txt no form
-           
+
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error ' + errorMessage);
@@ -250,10 +250,10 @@ function PesquisarCategoriaParceiro(){
     })
 
 }
-function ExcluirCategoriaParceiro(){
+function ExcluirCategoriaParceiro() {
 
     let id_PCategoria = $('#txtID').val();
-  
+
     let action = 'Parceiro_CategoriaBtoExcluir.php';
 
 
@@ -262,13 +262,13 @@ function ExcluirCategoriaParceiro(){
         type: 'post',
         data: {
             txtID: id_PCategoria
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
-        success: function(data, status, xhr){
-            $( "#resultado" ).empty().html( data );
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error' + errorMessage);
@@ -276,14 +276,14 @@ function ExcluirCategoriaParceiro(){
 
     })
 }
-function AlterarCategoriaParceiro(){
+function AlterarCategoriaParceiro() {
 
     //console.log('testtetttt');
 
     let id_PCategoria = $('#txtID').val();
     let nome_PCategoria = $('#txtNome').val();
     let status_PCategoria = $('#txtStatus').val();
-  
+
     let action = 'Parceiro_CategoriaBtoAlterar.php';
 
 
@@ -294,14 +294,14 @@ function AlterarCategoriaParceiro(){
             txtID: id_PCategoria,
             txtNome: nome_PCategoria,
             txtStatus: status_PCategoria
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
+            $("#resultado").empty().html(data);
             PesquisarCategoriaParceiror();
         },
         error: function (jqXhr, textStatus, errorMessage) {
@@ -313,13 +313,13 @@ function AlterarCategoriaParceiro(){
 }/////////////////formulario Categoria Parceiro///////////
 
 /////////////////formulario Serviços Parceiro///////////
-function AbrirTabelaServicos(){
+function AbrirTabelaServicos() {
     $('#tabelaServicos').load('Parceiro_ServicosTabela.php');
 }
-function PesquisarSevicosParceiro(){
- 
+function PesquisarSevicosParceiro() {
+
     let id_ParceiroServicos = $('#txtID').val();
-  
+
     let action = 'Parceiro_ServicosBtoPesquisa.php';
 
 
@@ -328,18 +328,18 @@ function PesquisarSevicosParceiro(){
         type: 'post',
         data: {
             txtID: id_ParceiroServicos
-           
+
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
+            $("#resultado").empty().html(data);
             $("#txtID").val($('#idGerado').text());
             $("#txtData").val($('#PesquisaData').text());
-            $("#txtNome").val($('#PesquisaNome').text());  
+            $("#txtNome").val($('#PesquisaNome').text());
 
             $("#txtStatus").val($('#PesquisaStatus').text());
             $("#txtDescricao").val($('#PesquisaDescricao').text());
-           
+
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error ' + errorMessage);
@@ -348,8 +348,8 @@ function PesquisarSevicosParceiro(){
     })
 
 }
-function CadastrarSevicosParceiro(){
- 
+function CadastrarSevicosParceiro() {
+
     let nome_ParceiroServicos = $('#txtNome').val();
 
     let status_ParceiroServicos = $('#txtStatus').val();
@@ -376,10 +376,10 @@ function CadastrarSevicosParceiro(){
 
     })
 }
-function ExcluirServicosParceiro(){
+function ExcluirServicosParceiro() {
 
     let id_Parceiro = $('#txtID').val();
-  
+
     let action = 'Parceiro_ServicosBtoExcluir.php';
 
 
@@ -388,13 +388,13 @@ function ExcluirServicosParceiro(){
         type: 'post',
         data: {
             txtID: id_ParceiroServicos
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
-        success: function(data, status, xhr){
-            $( "#resultado" ).empty().html( data );
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error' + errorMessage);
@@ -402,7 +402,7 @@ function ExcluirServicosParceiro(){
 
     })
 }
-function AlterarCategoriaParceiro(){
+function AlterarCategoriaParceiro() {
 
     //console.log('testtetttt');
 
@@ -410,7 +410,7 @@ function AlterarCategoriaParceiro(){
     let nome_ParceiroServicos = $('#txtNome').val();
     let status_ParceiroServicos = $('#txtStatus').val();
     let descricao_ParceiroServicos = $('#txtDescricao').val();
-  
+
     let action = 'Parceiro_ServicosBtoAlterar.php';
 
 
@@ -422,15 +422,15 @@ function AlterarCategoriaParceiro(){
             txtNome: nome_ParceiroServicos,
             txtStatus: status_ParceiroServicos,
             txtDescricao: descricao_ParceiroServicos
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
-             PesquisarSevicosParceiro();
+            $("#resultado").empty().html(data);
+            PesquisarSevicosParceiro();
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').append('Error ' + errorMessage);
@@ -443,14 +443,14 @@ function AlterarCategoriaParceiro(){
 
 /////////////////Cliente///////////
 
-function CadastrarCliente(){
+function CadastrarCliente() {
 
     // console.log("teste");
 
-    if($('#txtNome').val() == Float32Array){
+    if ($('#txtNome').val() == Float32Array) {
         alert(' pinto');
     }
- 
+
     let status_Cliente = $('#txtStatus').val();
     let nome_Cliente = $('#txtNome').val();
     let cpf_Cliente = $('#txtCPF').val();
@@ -479,24 +479,24 @@ function CadastrarCliente(){
         type: 'post',
         data: {
 
-         txtStatus: status_Cliente,
-         txtNome: nome_Cliente,
-         txtCPF: cpf_Cliente,
-         txtEmail: email_Cliente,
-         txtTelefone1: telefone1_Cliente,
-         txtTelefone2: telefone2_Cliente,
-         txtLogin: login_Cliente,
-         txtSenha: senha_Cliente,
-         txtLogradouro: logradouro_Cliente,
-         txtNumero: numero_Cliente,
-         txtComplemento: complemento_Cliente,
-         txtBairro: bairro_Cliente,
-         txtCidade: cidade_Cliente,
-         txtUF: uf_Cliente,
-         txtCEP: cep_Cliente,
-         txtOBS: obs_Cliente
+            txtStatus: status_Cliente,
+            txtNome: nome_Cliente,
+            txtCPF: cpf_Cliente,
+            txtEmail: email_Cliente,
+            txtTelefone1: telefone1_Cliente,
+            txtTelefone2: telefone2_Cliente,
+            txtLogin: login_Cliente,
+            txtSenha: senha_Cliente,
+            txtLogradouro: logradouro_Cliente,
+            txtNumero: numero_Cliente,
+            txtComplemento: complemento_Cliente,
+            txtBairro: bairro_Cliente,
+            txtCidade: cidade_Cliente,
+            txtUF: uf_Cliente,
+            txtCEP: cep_Cliente,
+            txtOBS: obs_Cliente
         },
-          beforsend: function () {
+        beforsend: function () {
             $("#Resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
@@ -512,7 +512,7 @@ function CadastrarCliente(){
 
 /////////////////Cliente///////////
 
-function AlterarCliente(){
+function AlterarCliente() {
 
     //console.log('testtetttt');
 
@@ -532,7 +532,7 @@ function AlterarCliente(){
     let uf_Cliente = $('#txtUF').val();
     let cep_Cliente = $('#txtCEP').val();
     let obs_Cliente = $('#txtObs').val();
-  
+
     let action = 'Parceiro_CategoriaBtoAlterar.php';
 
 
@@ -556,14 +556,14 @@ function AlterarCliente(){
             txtUF: uf_Cliente,
             txtCEP: cep_Cliente,
             txtOBS: obs_Cliente
-           
+
         },
-        beforend : function(){
+        beforend: function () {
             $("#resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html( data );
+            $("#resultado").empty().html(data);
             PesquisarCategoriaParceiror();
         },
         error: function (jqXhr, textStatus, errorMessage) {
@@ -573,10 +573,10 @@ function AlterarCliente(){
     })
 }
 
-function PesquisarCliente(){
+function PesquisarCliente() {
     console.log('foi');
     let idCliente = $('#txtID').val();
-  
+
     let action = 'Cliente.btoPesquisa.php';
 
 
@@ -585,12 +585,12 @@ function PesquisarCliente(){
         type: 'post',
         data: {
             txtID: idCliente
-           
+
         },
         success: function (data, status, xhr) {
-            
-            
-           
+
+
+
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error ' + errorMessage);
@@ -599,4 +599,49 @@ function PesquisarCliente(){
     })
 
 }
+
+///////////////////////////////MAPA/////////////////////////
+function Mapa() {
+    console.log('adsdasdassdasd');
+    let idParceiro = $('#txtID').val();
+
+    let action = 'mapa_pesquisa.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: idParceiro
+
+        },
+        success: function (data, status, xhr) {
+
+            numero_Parceiro = document.getElementById('Numero').value;
+            logradouro_Parceiro = document.getElementById('Rua').value;
+            bairro_Parceiro = document.getElementById('Bairro').value;
+            cidade_Parceiro = document.getElementById('Cidade').value;
+            uf_Parceiro = document.getElementById('Estado').value;
+
+
+            $.getJSON(`https://nominatim.openstreetmap.org/search?q=${numero_Parceiro}+${logradouro_Parceiro}+${cidade_Parceiro}+${uf_Parceiro}&format=json&addressdetails=1`, function (dados) {
+                if (!("erro" in dados)) {
+
+                    console.log(dados[0].lat, dados[0].lon);
+                    //Atualiza os campos com os valores da consulta.
+
+                } //end if.
+            });
+
+
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').empty().html('Error ' + errorMessage);
+        }
+
+    })
+
+}
+
+
 
