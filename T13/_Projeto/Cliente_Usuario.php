@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/landingPage.css">
 
   <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/jquery-3.6.4.js"></script>
 
   
@@ -71,7 +72,7 @@
                 </div>
 
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" hidden>
+                    <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" hidden value="$data_Cliente">
                 </div>
                 <div class="col-sm-1"></div>
 
@@ -79,10 +80,10 @@
 
             <div class="row mt-1"><!-- NOME  / CPF  / -->
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o Nome completo">
+                    <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o Nome completo" value="<?=$nome_Cliente?>">
                 </div>
                 <div class="col-sm-3">
-                    <input type="txt" class="form-control" name="txtCPF" id="txtCPF" placeholder="Informe o CPF">
+                    <input type="txt" class="form-control" name="txtCPF" id="txtCPF" placeholder="Informe o CPF" value="<?=$cpf_Cliente?>">
                 </div>
 
 
@@ -91,13 +92,13 @@
             <div class="row mt-3"><!--  email / telefone1 / telefone2 -->
 
                 <div class="col-sm-6">
-                    <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email">
+                    <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email" value="<?=$email_Cliente?>">
                 </div>
                 <div class="col-sm-3">
-                    <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Informe o Telefone">
+                    <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Informe o Telefone" value="<?= $telefone1_Cliente?>" >
                 </div>
                 <div class="col-sm-3">
-                    <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder=" Informe o Telefone2">
+                    <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder=" Informe o Telefone2" value="<?= $telefone2_Cliente ?>">
                 </div>
 
 
@@ -107,13 +108,13 @@
 
             <div class="row mt-3"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Informe o Login">
+                    <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Informe o Login" value="<?= $login_Cliente?>" >
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtSenha" id="txtSenha" placeholder="Digite a Senha">
+                    <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Digite a Senha" value="<?=$senha_Cliente?>">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a senha">
+                    <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a senha" value="<?=$senha_Cliente?>">
                 </div>
 
 
@@ -121,61 +122,61 @@
 
             <div class="row mt-3"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder="Insira o Logradouro">
+                    <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder="Insira o Logradouro" value="<?=$logradouro_Cliente?>">
                 </div>
                 <div class="col-sm-3">
-                    <input type="number" class="form-control" name="txtNumero" id="txtNumero" placeholder="Número da Residência">
+                    <input type="number" class="form-control" name="txtNumero" id="txtNumero" placeholder="Número da Residência" value="<?=$numero_Cliente?>">
                 </div>
 
                 <div class="col-sm-3">
-                    <input type="text" class="form-control" name="txtCEP" id="txtCEP" placeholder="Insira o CEP">
+                    <input type="text" class="form-control" name="txtCEP" id="txtCEP" placeholder="Insira o CEP" value="<?=$cep_Cliente?>">
                 </div>
             </div>
 
             <div class="row mt-3">
 
                 <div class="col-sm-3">
-                    <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder="Insira o Bairro">
+                    <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder="Insira o Bairro" value="<?=$bairro_Cliente?>">
                 </div>
 
                 <div class="col-sm-3">
-                    <input type="Text" class="form-control" name="txtCidade" id="txtCidade" placeholder="Informe a Cidade">
+                    <input type="Text" class="form-control" name="txtCidade" id="txtCidade" placeholder="Informe a Cidade" value="<?=$cidade_Cliente?>">
                 </div>
 
                 <div class="col-sm-2">
-                    <select name="txtUF" id="txtUF" class="form-control">
-                        <option value="">UF</option>
-                        <option value="Acre">AC</option>
-                        <option value="Alagoas">AL</option>
-                        <option value="Amapá">AP</option>
-                        <option value="Amazonas">AM</option>
-                        <option value="Bahia">BA</option>
-                        <option value="Ceará">CE</option>
-                        <option value="Minas gerais">DF</option>
-                        <option value="Espírito Santo">ES</option>
-                        <option value="Goiás">GO</option>
-                        <option value="Maranhão">MA</option>
-                        <option value="Mato Grosso">MT</option>
-                        <option value="Minas gerais">MG</option>
-                        <option value="Pará">PA</option>
-                        <option value="Paraíba">PB</option>
-                        <option value="Paraná">PR</option>
-                        <option value="Pernambuco">PE</option>1
-                        <option value="Piauí">PI</option>1
-                        <option value="Rio de Janeiro">RJ</option>
-                        <option value="Rio Grande do Norte">RN</option>
-                        <option value="Rio Grande do Sul">RS</option>
-                        <option value="Rondônia">RO</option>
-                        <option value="Minas gerais">RR</option>
-                        <option value="Santa Catarina">SC</option>
-                        <option value="São Paulo">SP</option>
-                        <option value="Sergipe">SE</option>
-                        <option value="Tocantins">TO</option>
+                    <select name="txtUF" id="txtUF" class="form-control" value="">
+                        <option value=""<?=($uf_Cliente=="" ? 'selected': '')?>>UF</option>
+                        <option value="Acre" <?=($uf_Cliente=="Acre" ? 'selected': '')?>>AC</option>
+                        <option value="Alagoas" <?=($uf_Cliente=="Alagoas" ? 'selected': '')?>>AL</option>
+                        <option value="Amapá" <?=($uf_Cliente=="Amapá" ? 'selected': '')?>>AP</option>
+                        <option value="Amazonas"><?=($uf_Cliente=="Amazonas" ? 'selected': '')?>AM</option>
+                        <option value="Bahia"><?=($uf_Cliente=="Bahia" ? 'selected': '')?>BA</option>
+                        <option value="Ceará" <?=($uf_Cliente=="Ceará" ? 'selected': '')?>>CE</option>
+                        <option value="Distrito Federal"<?=($uf_Cliente=="Distrito Federal" ? 'selected': '')?>>DF</option>
+                        <option value="Espírito Santo" <?=($uf_Cliente=="Espírito Santos" ? 'selected': '')?>>ES</option>
+                        <option value="Goiás" <?=($uf_Cliente=="Goiás" ? 'selected' : '')?>>GO</option>
+                        <option value="Maranhão" <?=($uf_Cliente=="Maranhão" ? 'selected' : '')?>>MA</option>
+                        <option value="Mato Grosso" <?=($uf_Cliente=="Mato Grosso" ? 'selected' : '')?>>MT</option>
+                        <option value="Minas gerais" <?=($uf_Cliente=="Minas Gerais" ? 'selected' : '')?>>MG</option>
+                        <option value="Pará" <?=($uf_Cliente=="Pará" ? 'selected' : '')?>>PA</option>
+                        <option value="Paraíba" <?=($uf_Cliente=="Paraíba" ? 'selected' : '')?>>PB</option>
+                        <option value="Paraná" <?=($uf_Cliente=="Paraná" ? 'selected' : '')?>>PR</option>
+                        <option value="Pernambuco" <?=($uf_Cliente=="Pernambuco" ? 'selected' : '')?>>PE</option>
+                        <option value="Piauí" <?=($uf_Cliente=="Piauí" ? 'selected' : '')?>>PI</option>
+                        <option value="Rio de Janeiro" <?=($uf_Cliente=="Rio de Janeiro" ? 'selected' : '')?>>RJ</option>
+                        <option value="Rio Grande do Norte" <?=($uf_Cliente=="Rio Grande do Norte" ? 'selected' : '')?>>RN</option>
+                        <option value="Rio Grande do Sul" <?=($uf_Cliente==" Rio Grande do Sul" ? 'selected' : '')?>>RS</option>
+                        <option value="Rondônia" <?=($uf_Cliente=="Rondônia" ? 'selected' : '')?>>RO</option>
+                        <option value="Roraima" <?=($uf_Cliente=="Roraima" ? 'selected' : '')?>>RR</option>
+                        <option value="Santa Catarina" <?=($uf_Cliente=="Santa Catarina" ? 'selected' : '')?>>SC</option>
+                        <option value="São Paulo" <?=($uf_Cliente=="São Paulo" ? 'selected' : '')?>>SP</option>
+                        <option value="Sergipe" <?=($uf_Cliente=="Sergipe" ? 'selected' : '')?>>SE</option>
+                        <option value="Tocantins" <?=($uf_Cliente=="Tocantins" ? 'selected' : '')?>>TO</option>
                     </select>
                 </div>
 
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Complemento(Opcional)">
+                    <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Complemento(Opcional)" value="<?=$complemento_Cliente?>">
                 </div>
 
             </div>

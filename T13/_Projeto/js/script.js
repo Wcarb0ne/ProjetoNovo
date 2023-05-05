@@ -574,7 +574,7 @@ function AlterarCliente(){
 }
 
 function PesquisarCliente(){
-    alert('foi')
+    console.log('foi');
     let idCliente = $('#txtID').val();
   
     let action = 'Cliente.btoPesquisa.php';

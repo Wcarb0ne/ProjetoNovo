@@ -34,7 +34,6 @@ if($_POST)
                 cpf_Cliente,
                 login_Cliente,
                 senha_Cliente,
-
                 cep_Cliente,
                 logradouro_Cliente,
                 numero_Cliente,

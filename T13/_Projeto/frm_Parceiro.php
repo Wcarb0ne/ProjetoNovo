@@ -107,7 +107,7 @@
                         <option value="Amazonas">AM</option>
                         <option value="Bahia">BA</option>
                         <option value="Ceará">CE</option>
-                        <option value="Minas gerais">DF</option>
+                        <option value="Distrito Federal">DF</option>
                         <option value="Espírito Santo">ES</option>
                         <option value="Goiás">GO</option>
                         <option value="Maranhão">MA</option>
@@ -122,7 +122,7 @@
                         <option value="Rio Grande do Norte">RN</option>
                         <option value="Rio Grande do Sul">RS</option>
                         <option value="Rondônia">RO</option>
-                        <option value="Minas gerais">RR</option>
+                        <option value="Roraima">RR</option>
                         <option value="Santa Catarina">SC</option>
                         <option value="São Paulo">SP</option>
                         <option value="Sergipe">SE</option>
