@@ -32,7 +32,7 @@
 <body>
 
 
-<br>   <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data">
+<br>   <form id="my-form" class="from-control" action="#" onsubmit="return false" enctype="multipart/form-data">
         <h2>Perfil</h2>
         <br><br>
 
@@ -196,7 +196,7 @@
         <div class="row mt-3"><!--botoes-->
         <div class="col-sm-1"></div>
             <div class="col-sm-5">
-                <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="AlterarCliente();">Alterar Dados</button>
+                <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="PesquisarCliente()">Alterar Dados</button>
                 <div class="msgValidar"></div>
             </div>
             <div class="col-sm-5">

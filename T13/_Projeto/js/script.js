@@ -459,7 +459,6 @@ function CadastrarCliente(){
     let telefone2_Cliente = $('#txtTelefone2').val();
     let login_Cliente = $('#txtLogin').val();
     let senha_Cliente = $('#txtSenha').val();
-
     let logradouro_Cliente = $('#txtLogradouro').val();
     let numero_Cliente = $('#txtNumero').val();
     let complemento_Cliente = $('#txtComplemento').val();
@@ -575,10 +574,10 @@ function AlterarCliente(){
 }
 
 function PesquisarCliente(){
- 
+    alert('foi')
     let idCliente = $('#txtID').val();
   
-    let action = 'Parceiro_ServicosBtoPesquisa.php';
+    let action = 'Cliente.btoPesquisa.php';
 
 
     $.ajax({
@@ -589,14 +588,8 @@ function PesquisarCliente(){
            
         },
         success: function (data, status, xhr) {
-
-            $("#resultado").empty().html( data );
-            $("#txtID").val($('#idGerado').text());
-            $("#txtData").val($('#PesquisaData').text());
-            $("#txtNome").val($('#PesquisaNome').text());  
-
-            $("#txtStatus").val($('#PesquisaStatus').text());
-            $("#txtDescricao").val($('#PesquisaDescricao').text());
+            
+            
            
         },
         error: function (jqXhr, textStatus, errorMessage) {
