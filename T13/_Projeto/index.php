@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/landingPage.css">
-  <link rel="stylesheet" href="css/icon.css">
+  
 
       <!--Redes Sociais--><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
