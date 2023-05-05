@@ -46,20 +46,20 @@
           <img src="css/img/user.png" class="profile" />
           <ul>
             <li class="sub-item">
-              <span class="material-icons-outlined">grid_view</a> <a href="Parceiro_sistema.php?"title="Home"></span>
+              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>
               <p>Home</p>
             </li>
             <li class="sub-item">
-            <span class="material-icons-outlined"> format_list_bulleted </a> <a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"></span>
+            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"> format_list_bulleted </a> </span>
               </span>
               <p>Serviços</p>
             </li>
             <li class="sub-item">
-            <span class="material-icons-outlined">manage_accounts</a><a href="Parceiro_sistema.php?Tela=FaleConosco" title="Fale Conosco"></span>
+            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=FaleConosco" title="Fale Conosco">manage_accounts</a></span>
               <p>Fale Conosco</p>
             </li>
             <li class="sub-item">
-            <span class="material-icons-outlined">logout</a>  <a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair"></span>
+            <span class="material-icons-outlined"><a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair">logout</a>  </span>
               <p>Logout</p>
             </li>
           </ul>
