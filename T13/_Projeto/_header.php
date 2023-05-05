@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/icon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <nav class="navbar navbar-expand-lg navbar-dark mb-0  " style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
   <div class="container-fluid">
     <a class="navbar-brand" href="Index.php">
@@ -30,46 +31,55 @@
           <a class="nav-link" href="#">Contato</a>
         </li>
         <li>
-        <a class="drop-btn m-5" href="_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
-          <ul id="glauber">
-           
-          <a href="Parceiro_sistema.php?">
-                     <div class="icon">
-                        <span class="fas fa-home"></span>
-                     </div>
-                     Home 
-                  </a>
-               </li>
-               <li class="setting-item">
-                  <a href="Parceiro_sistema.php?Tela=Servicos">
-                     <div class="icon">
-                        <span class="fas fa-cog"></span>
-                     </div>
-                     Serviços <i class="fas fa-angle-right"></i>
-                  </a>
-               </li>
-              <p><li class="help-item">fadhg</p> 
-                  <a href="Parceiro_sistema.php?Tela=FaleConosco">
-                     <div class="icon">
-                        <span class="fas fa-question-circle"></span>
-                     </div>
-                     Fale Conosco <i class="fas fa-angle-right"></i>
-                  </a>
-               </li>
-               <li>
-                  <a href="Parceiro_autenticarSair.php?Tela=Sair">
-                     <div class="icon">
-                        <span class="fas fa-user"></span>
-                     </div>
-                     Sair
-                  </a>
-               </li>
-               <li>
 
-            </ul>
 
-            
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+ 
+        <li>
+          <img src="css/img/user.png" class="profile" />
+          <ul>
+            <li class="sub-item">
+              <span class="material-icons-outlined">grid_view</a> <a href="Parceiro_sistema.php?"title="Home"></span>
+              <p>Home</p>
+            </li>
+            <li class="sub-item">
+            <span class="material-icons-outlined"> format_list_bulleted </a> <a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"></span>
+              </span>
+              <p>Serviços</p>
+            </li>
+            <li class="sub-item">
+            <span class="material-icons-outlined">manage_accounts</a><a href="Parceiro_sistema.php?Tela=FaleConosco" title="Fale Conosco"></span>
+              <p>Fale Conosco</p>
+            </li>
+            <li class="sub-item">
+            <span class="material-icons-outlined">logout</a>  <a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair"></span>
+              <p>Logout</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
       </ul>
     </div>
   </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
