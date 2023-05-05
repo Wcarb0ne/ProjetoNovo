@@ -239,3 +239,142 @@ function ExcluirFuncionario(){
 function AlterarFuncionario(){
     
 }/////////////////formulario Funcionario ///////////
+
+/////////////////formulario planos ///////////
+function CadastrarPlano(){
+    
+    let status_Plano = $('#txtStatus').val();
+    let nome_Plano = $('#txtNome').val();
+    let preco_Plano = $('#txtPreco').val();
+    let duracao_Plano = $('#txtDuracao').val();
+    let beneficios1_Plano = $('#txtBeneficios1').val();
+    let beneficios2_Plano = $('#txtBeneficios2').val();
+    let beneficios3_Plano = $('#txtBeneficios3').val();
+    let beneficios4_Plano = $('#txtBeneficios4').val();
+    let beneficios5_Plano = $('#txtBeneficios5').val();
+
+        
+    let action = 'PlanoBtoCadastrar.php';
+    
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtNome: nome_Plano,
+                txtStatus: status_Plano,
+                txtPreco: preco_Plano,
+                txtDuracao: duracao_Plano,
+                txtBeneficios1: beneficios1_Plano,
+                txtBeneficios2: beneficios2_Plano,
+                txtBeneficios3: beneficios3_Plano,
+                txtBeneficios4: beneficios4_Plano,
+                txtBeneficios5: beneficios5_Plano
+
+
+            },
+            success: function (data, status, xhr) {
+                $("#resultado").empty().html(data);
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').empty('Error ' + errorMessage);
+            }
+    
+        })
+    }
+    function PesquisarPlano(){
+    
+        //console.log('testtetttt');
+    
+        let id_Plano = $('#txtID').val();
+      
+        let action = 'PlanoBtoPesquisa.php';
+    
+    
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Plano
+               
+            },
+            success: function (data, status, xhr) {
+    
+                $("#resultado").empty().html( data );
+                $("#txtID").val($('#idGerado').text());
+                $("#txtData").val($('#PesquisaData').text());
+                $("#txtNome").val($('#PesquisaNome').text());            
+                $("#txtStatus").val($('#PesquisaStatus').text());
+                $("#txtDescricao").val($('#PesquisaDescricao').text());
+               
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').empty().html('Error ' + errorMessage);
+            }
+    
+        })
+    
+    }
+    function ExcluirPlano(){
+    
+        let id_Plano = $('#txtID').val();
+      
+        let action = 'PlanoBtoExcluir.php';
+    
+    
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Plano
+               
+            },
+            beforend : function(){
+                $("#resultado").html("ENVIANDO...");
+            },
+            success: function(data, status, xhr){
+                $( "#resultado" ).empty().html( data );
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').empty().html('Error' + errorMessage);
+            }
+    
+        })
+    }
+    function AlterarPlano(){
+    
+        //console.log('testtetttt');
+    
+        let id_Plano = $('#txtID').val();
+        let nome_Plano = $('#txtNome').val();
+        let status_Plano = $('#txtStatus').val();
+        let descricao_Plano = $('#txtDescricao').val();
+
+      
+        let action = 'PlanoBtoAlterar.php';
+    
+    
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Plano,
+                txtNome: nome_Plano,
+                txtStatus: status_Plano,
+                txtDescricao: descricao_Plano
+               
+            },
+            beforend : function(){
+                $("#resultado").html("ENVIANDO...");
+            },
+            success: function (data, status, xhr) {
+    
+                $("#resultado").empty().html( data );
+                PesquisarPlanor();
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').append('Error ' + errorMessage);
+            }
+    
+        })
+    
+    }/////////////////formulario Plano ///////////

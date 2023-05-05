@@ -34,13 +34,8 @@
     <div class="container mt-5 dg-dark">
         <div class="row">
 
-            <!-- <div class="col-sm-12">
-                 <php include_once('Parceiro_menu.php');?>
-            </div> -->
-
         </div>
-    <!-- </div> -->
-    <!-- <div class="container "> -->
+    </div>
         <div class="row">
             <div class="col-sm-2">
             </div>
@@ -60,9 +55,9 @@
                             {
                                 include_once('Funcionario.php');
                             }
-                            elseif($tela =='Categoria')
+                            elseif($tela =='Planos')
                             {
-                                include_once('Parceiro_CategoriaFrm.php');
+                                include_once('Planos.php');
                             }
                             elseif($tela =='Servicos')
                             {

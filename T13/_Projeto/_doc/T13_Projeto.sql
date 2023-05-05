@@ -108,16 +108,19 @@ email_FaleConosco	varchar(50)	not null,
 texto_FaleConosco	varchar(20)	not null,
 anexo_FaleConosco	blob null
 );		
-create table Planos
+create table Plano
 (
-id_Planos	int	not null	auto_increment primary key	,
-data_Planos	timestamp	not null 	,
-nome_Planos	varchar(50)	not null	unique	,
-tipo_Planos	varchar(50)	not null		,
-preço_Planos	decimal(10,5)	not null 		,
-beneficios_Planos	varchar(50)		not null		,
-descricao_Planos	varchar(255)	null		,
-dataDuracao_Planos	varchar(30)	not null		
+id_Plano int not null auto_increment primary key,
+status_Plano varchar(20) not null,
+data_Plano	timestamp not null,
+nome_Plano	varchar(50)	not null unique,
+preco_Plano decimal(10,5) not null,
+duracao_Plano varchar(30) not null,
+beneficios1_Plano varchar(50) not null,
+beneficios2_Plano varchar(50) null,
+beneficios3_Plano varchar(50) null,
+beneficios4_Plano varchar(50) null,
+beneficios5_Plano varchar(50) null	
 );
 create table Cliente;
 select * from Cliente;

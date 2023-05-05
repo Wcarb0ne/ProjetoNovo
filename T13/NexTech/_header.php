@@ -33,7 +33,7 @@
                             </li>
                             <li><a href="NexTech_Sistema.php?Tela=Funcionario">Funcionarios</a>
                             </li>
-                            <li><a href="#demo">Planos</a>
+                            <li><a href="NexTech_Sistema.php?Tela=Planos">Planos</a>
                             </li>
                             <li><a href="#getApp">Contratos</a>
                             </li>
