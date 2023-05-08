@@ -601,47 +601,5 @@ function PesquisarCliente() {
 }
 
 ///////////////////////////////MAPA/////////////////////////
-function Mapa() {
-    console.log('adsdasdassdasd');
-    let idParceiro = $('#txtID').val();
-
-    let action = 'mapa_pesquisa.php';
-
-
-    $.ajax({
-        url: action,
-        type: 'post',
-        data: {
-            txtID: idParceiro
-
-        },
-        success: function (data, status, xhr) {
-
-            numero_Parceiro = document.getElementById('Numero').value;
-            logradouro_Parceiro = document.getElementById('Rua').value;
-            bairro_Parceiro = document.getElementById('Bairro').value;
-            cidade_Parceiro = document.getElementById('Cidade').value;
-            uf_Parceiro = document.getElementById('Estado').value;
-
-
-            $.getJSON(`https://nominatim.openstreetmap.org/search?q=${numero_Parceiro}+${logradouro_Parceiro}+${cidade_Parceiro}+${uf_Parceiro}&format=json&addressdetails=1`, function (dados) {
-                if (!("erro" in dados)) {
-
-                    console.log(dados[0].lat, dados[0].lon);
-                    //Atualiza os campos com os valores da consulta.
-
-                } //end if.
-            });
-
-
-        },
-        error: function (jqXhr, textStatus, errorMessage) {
-            $('#resultado').empty().html('Error ' + errorMessage);
-        }
-
-    })
-
-}
-
 
 

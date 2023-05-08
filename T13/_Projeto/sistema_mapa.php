@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
 
-
+    
 
     <link rel="stylesheet" href="css/ito_mapa.css">
 
@@ -40,7 +40,11 @@
 <body>
 
 
-    <?php include_once('_header.php') ?>
+    <?php include_once('_header.php'); 
+    
+    include_once('mapa_Pesquisa.php');
+    
+    ?>
 
 
     <div class="container mb-4">
@@ -133,11 +137,17 @@
 
     </div>
 
-
+<input type="text" name="" id="txtID" value="<?=$id_Parceiro?>" style="display: none;" >
+<input type="text" name="" id="txtNumero" value="<?= $numero_Parceiro?>" style="display: none;" >
+<input type="text" name="" id="logradouro_Parceiro" value="<?=$logradouro_Parceiro?>" style="display: none;" >
+<input type="text" name="" id="cidade_Parceiro" value="<?=$cidade_Parceiro?>" style="display: none;" >
+<input type="text" name="" id="uf_Parceiro" value="<?=$uf_Parceiro?>" style="display: none;" >
 
     <?php include_once('_footer.php') ?>
 
     <script src="Script_Mapa.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

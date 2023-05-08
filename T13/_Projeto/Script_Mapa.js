@@ -104,7 +104,7 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
 const lat1 = -23.46932; // Latitude do ponto 1
 const lon1 = -46.52581; // Longitude do ponto 1
 const lat2 = -23.46870; // Latitude do ponto 2
-const lon2 = -46.52632 ; // Longitude do ponto 2
+const lon2 = -46.52632; // Longitude do ponto 2
 
 const distancia = calcularDistancia(lat1, lon1, lat2, lon2);
 console.log(`A distância da assistencia tecnica mais proxima e de : ${distancia} km.`);
@@ -124,17 +124,83 @@ function pegarDados() {
 
       $('#resultadotxt').val(dados[0].lat);
       $('#resultado2txt').val(dados[0].lon);
-      
+
       //Atualiza os campos com os valores da consulta.
-      var lata =  $('#resultadotxt').val();
-      var lata2 =  $('#resultado2txt').val();
+      var lata = $('#resultadotxt').val();
+      var lata2 = $('#resultado2txt').val();
 
-      
-L.marker([lata, lata2], { icon: greenIcon }).addTo(map);
 
-      
+      L.marker([lata, lata2], { icon: greenIcon }).addTo(map);
+
+
 
     } //end if.
 
   });
 }
+
+
+
+
+
+$(document).ready(function mapa() {
+
+  console.log('adsdasdassdasd');
+
+  let idParceiro = $('#txtID').val();
+  let Numero = $('#txtNumero').val();
+  let logradouro = $('#logradouro_Parceiro').val();
+  let cidade = $('#cidade_Parceiro').val();
+  let uf = $('#uf_Parceiro').val();
+
+
+  let action = 'mapa_pesquisa.php';
+
+  console.log(idParceiro)
+
+
+  $.ajax({
+    url: action,
+    type: 'post',
+    data: {
+      txtID: idParceiro
+
+    },
+    success: function (data, status, xhr) {
+
+      // numero_Parceiro = document.getElementById('Numero').value;
+      // logradouro_Parceiro = document.getElementById('Rua').value;
+      // bairro_Parceiro = document.getElementById('Bairro').value;
+      // cidade_Parceiro = document.getElementById('Cidade').value;
+      // uf_Parceiro = document.getElementById('Estado').value;
+
+
+      $.getJSON(`https://nominatim.openstreetmap.org/search?q=${Numero}+${logradouro}+${cidade}+${uf}&format=json&addressdetails=1`, function (dados) {
+        if (!("erro" in dados)) {
+
+          console.log(dados[0].lat, dados[0].lon);
+          //Atualiza os campos com os valores da consulta.
+
+             let lat1 = dados[0].lat;
+              let lon2 = dados[0].lon;
+
+    
+        
+
+          L.marker([lat1, lon2], { icon: greenIcon }).addTo(map);
+
+
+        } //end if.
+
+      });
+
+
+    },
+    error: function (jqXhr, textStatus, errorMessage) {
+      $('#resultado').empty().html('Error ' + errorMessage);
+    }
+
+  })
+
+})
+
