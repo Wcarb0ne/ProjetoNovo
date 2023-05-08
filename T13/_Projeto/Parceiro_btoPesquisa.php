@@ -2,7 +2,7 @@
 include_once('Conexao.php');
 
 
-$id_Parceiro="";
+$id_Parceiro = $idUsuario;
 $status_Parceiro="";
 $data_Parceiro="";
 $nome_Parceiro="";
@@ -23,9 +23,7 @@ $uf_Parceiro="";
 $cep_Parceiro="";
 $obs_Parceiro="";
 
-if($_POST)
-{
-    $id_Parceiro =$_POST['txtID'];
+    $id_Parceiro = $idUsuario;
     try
     {   
         $teste = 'select * from Parceiro where id_Parceiro='.$id_Parceiro;
@@ -89,6 +87,5 @@ if($_POST)
         echo $ex->getMessage();
     }
 
-}
 
 ?>

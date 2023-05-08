@@ -65,9 +65,9 @@
 
                 <div class="col-sm-2">
                     <select name="txtStatus" id="txtStatus" class="form-control" hidden>
-                        <option value=""> ->Selecione<-</option>
-                        <option value="Ativo" selected>Ativo</option>
-                        <option value="Inativo">Inativo</option>
+                        <option value="" selected> ->Selecione<-</option>
+                        <option value="Ativo" <?=($uf_Cliente=="Ativo" ? 'selected': '')?> >Ativo</option>
+                        <option value="Inativo" <?=($uf_Cliente=="Inativo" ? 'selected': '')?>>Inativo</option>
                     </select>
                 </div>
 
