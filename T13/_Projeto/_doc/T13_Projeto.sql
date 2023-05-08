@@ -25,8 +25,8 @@ create table Parceiro
     cep_Parceiro varchar(9) not null,
     obs_Parceiro varchar(255) null
 );
-Adicionar depois:
-id_plano_Parceiro int not null
+/*Adicionar depois:*/
+/*id_plano_Parceiro int not null*/
 ALTER TABLE Parceiro ADD CONSTRAINT id_plano_Parceiro FOREIGN KEY(id_plano_Parceiro) REFERENCES Plano (id_Plano);
 
 insert into Parceiro

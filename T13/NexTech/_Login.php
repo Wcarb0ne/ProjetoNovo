@@ -23,7 +23,7 @@
 
         $loginFuncionario = $_POST['txtLogin'];
         $senhaFuncionario = $_POST['txtSenha'];
-        // $id_Departamento_Funcionario = $_POST['txtIDepart'];
+        $id_Departamento_Funcionario = $_POST['txtIDepart'];
 
         $sql = $conn->query(
         "select * from Funcionario where
@@ -39,7 +39,7 @@
                 $_SESSION['idFuncionario'] = $linha[0];
                 $_SESSION['nomeFuncionario'] = $linha[3];
                 $_SESSION['loginFuncionario'] = $linha[9];
-                // $_SESSION['idDepartamentoFuncionario'] = $linha[15];
+                $_SESSION['idDepartamentoFuncionario'] = $linha[15];
             }
             header('Location:NexTech_Sistema.php');
         }
@@ -72,7 +72,7 @@
                                             </div>
 
                                                 <div class="user-box">
-                                                    <select class="text55" id="txtIDepart">
+                                                    <select class="text55"name="txtIDepart"id="txtIDepart">
                                                             <?php 
                                                             include_once('DepartamentoPuxar.php');
                                                             ?>
@@ -87,7 +87,7 @@
                                             <p> ------------------ ou ------------------ </p>
 
                                             <div class="col-sm-10">
-                                                <p><a class="oxi4 mb-2" href="Cliente_cadastro.php">Cadastre-se</a>  <a class="oxi5 mb-2" href="index.html">Sair</a></p>
+                                                <p><a class="oxi4 mb-2" href="FuncionarioCadastre-Se.php">Cadastre-se</a>  <a class="oxi5 mb-2" href="index.html">Sair</a></p>
                                             </div>
 
                                             

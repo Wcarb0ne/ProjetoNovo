@@ -27,7 +27,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#about">Home</a>
+                            <li><a href="NexTech_Sistema.php?">Home</a>
                             </li>
                             <li><a href="NexTech_Sistema.php?Tela=Departamento">Departamento</a>
                             </li>

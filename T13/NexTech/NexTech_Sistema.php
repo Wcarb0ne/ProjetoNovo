@@ -83,7 +83,7 @@
                         }
                     }
                     else {
-                        include_once('Parceiro_Home.php');
+                        include_once('_home.php');
                     }
                 ?>
             </div>

@@ -15,7 +15,8 @@
             <select class="form-control" name="txtStatus" id="txtStatus">
                 <option value="">Selecione</option>
                 <option value="Ativo">Ativo</option>
-                <option value="Inativo">Inativo</option>
+                <option value="Expirado">Expirado</option>
+                <option value="Expirado">Sem Plano</option>
             </select>
         </div>
         <div class="col-sm-4">
