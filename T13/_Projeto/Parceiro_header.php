@@ -64,7 +64,7 @@
               <p>Fale Conosco</p>
             </li>
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair">logout</a>  </span>
+            <span class="material-icons-outlined"><a href="www_autenticarSair.php" title="Sair">logout</a>  </span>
               <p>Logout</p>
             </li>
           </ul>

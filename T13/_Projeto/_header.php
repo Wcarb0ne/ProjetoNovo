@@ -66,14 +66,7 @@
         </li>
       </ul>
     </nav>
-  </body>
-</html>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
+  
 
 
 

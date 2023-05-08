@@ -25,10 +25,6 @@ create table Parceiro
     cep_Parceiro varchar(9) not null,
     obs_Parceiro varchar(255) null
 );
-/*Adicionar depois:*/
-/*id_plano_Parceiro int not null*/
-ALTER TABLE Parceiro ADD CONSTRAINT id_plano_Parceiro FOREIGN KEY(id_plano_Parceiro) REFERENCES Plano (id_Plano);
-
 insert into Parceiro
 (status_Parceiro,
 nome_Parceiro,
@@ -88,7 +84,7 @@ create table PCategoria
     nome_PCategoria varchar(30) not null,
     status_PCategoria varchar(20) not null
 );
-select * from PCategoria;
+select * from Parceiro;
 insert into PCategoria
 (
 nome_PCategoria,
@@ -123,23 +119,23 @@ beneficios4_Plano varchar(50) null,
 beneficios5_Plano varchar(50) null	
 );
 create table Cliente;
-select * from Cliente;
+select * from Plano;
 drop table Cliente;
 Create table Cliente
 (
-id_Cliente	int	not null	auto_increment primary key	, 
-data_Cliente	timestamp	not null, 
+id_Cliente	int	not null	auto_increment primary key	,
+data_Cliente	timestamp	not null,
 status_Cliente	varchar(15)	not null,
 nome_Cliente	varchar(50)	not null,
 cpf_Cliente	varchar(11)	not null,
 login_Cliente	varchar(30)	not null	unique,
 senha_Cliente	varchar(20)	not null,
 cep_Cliente	char(9)	not null,
-logradouro_Cliente	varchar(50)	not null,
+logradouro_Cliente	varchar(100)	not null,
 numero_Cliente	int	not null,
 bairro_Cliente	varchar(20)	not null,
 cidade_Cliente	varchar(20)	not null,
-uf_Cliente	varchar(20)	not null,
+uf_Cliente	char(2)	not null,
 complemento_Cliente	varchar(50)	null,
 telefone1_Cliente	varchar(14)	not null,
 telefone2_Cliente	varchar(14)	null,

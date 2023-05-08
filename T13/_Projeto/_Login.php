@@ -17,10 +17,9 @@
 <body>
     <?php
 
-    
+    include_once('Conexao.php');
     if ($_POST) {
-        include_once('Conexao.php');
-
+        
         $loginCliente = $_POST['txtLogin'];
         $senhaCliente = $_POST['txtSenha'];
 
@@ -40,6 +39,7 @@
             }
 
             header('Location:Cliente_sistema.php');
+            
         } else {
             $sql = $conn->query(
                 "select * from Parceiro where
@@ -60,8 +60,9 @@
                 }
 
                 header('Location:Parceiro_sistema.php');
+
             } else {
-                $mensagem = '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
+                echo '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
             }
         }
     }

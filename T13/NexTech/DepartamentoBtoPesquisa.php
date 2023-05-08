@@ -1,7 +1,6 @@
 <?php
 include_once('Conexao.php');
 
-
 $id_Departamento="";
 $data_Departamento="";
 $nome_Departamento="";

@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-if($_SESSION &&($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& isset($_SESSION['loginUsuario']))
+if($_SESSION && ($_SESSION['idCliente'])&& isset($_SESSION['nomeCliente'])&& isset($_SESSION['loginCliente']))
 
 {
-    $idUsuario=$_SESSION['idUsuario'];
-    $nomeUsuario=$_SESSION['nomeUsuario'];
-    $loginUsuario=$_SESSION['loginUsuario'];
+    $idUsuario=$_SESSION['idCliente'];
+    $nomeUsuario=$_SESSION['nomeCliente'];
+    $loginUsuario=$_SESSION['loginCliente'];
 }
 else{
     header('location:_Login.php');

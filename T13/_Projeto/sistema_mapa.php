@@ -39,12 +39,17 @@
 
 <body>
 
+<<<<<<< Updated upstream
 
     <?php include_once('_header.php'); 
     
     include_once('mapa_Pesquisa.php');
     
     ?>
+=======
+    <?php include_once('Conexao.php') ?>
+    <?php include_once('_header.php') ?>
+>>>>>>> Stashed changes
 
 
     <div class="container mb-4">
