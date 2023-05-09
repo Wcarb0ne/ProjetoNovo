@@ -15,7 +15,7 @@
           <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Principal_sistema.php">Serviços</a>
+          <a class="nav-link" href="_Home.php">Serviços</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -51,18 +51,29 @@
               <p>Home</p>
             </li> -->
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Cliente_sistema.php?Cliente=Dados" title="Dados"> format_list_bulleted </a> </span>
+            <span class="material-icons-outlined"><a href="Cliente_sistema.php?Cliente=Dados" title="Dados"> format_list_bulleted </span>
               </span>
               <p>Dados</p>
             </li>
+            </a> 
+
+          
+        
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Cliente_sistema.php?Cliente=FaleConosco" title="Fale Conosco">manage_accounts</a></span>
+              <span class="material-icons-outlined"><a href="#" title="Fale Conosco">manage_accounts</span>
               <p>Fale Conosco</p>
+
             </li>
+            </a>
+
+
+
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Cliente_sistema.php?Cliente=Sair" title="Sair">logout</a>  </span>
+            <span class="material-icons-outlined"><a href="Cliente_sistema.php?Cliente=Sair" title="Sair">logout </span>
               <p>Logout</p>
             </li>
+            </a> 
+
           </ul>
         </li>
       </ul>

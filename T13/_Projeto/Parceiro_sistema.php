@@ -50,7 +50,7 @@ include_once('Conexao.php');?>
     <div class="container mt-5 dg-dark">
         <div class="row">
             <div class="col-sm-12">
-                 <?php include_once('Parceiro_menu.php');?>
+              
             </div>
         </div>
 
@@ -86,7 +86,7 @@ include_once('Conexao.php');?>
 
                             elseif($parceiro =='FaleConosco')
                             {
-                                include_once('frm_FaleConosco.php');
+                                include_once('Parceiro_FaleConosco.php');
                             }
 
                             elseif($parceiro =='Sair')

@@ -14,7 +14,7 @@
           <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Principal_sistema.php">Serviços</a>
+          <a class="nav-link" href="_Home.php">Serviços</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -42,22 +42,30 @@
       rel="stylesheet"
     />
  
-        <li>
+        <li class="velhoFDP">
           <img src="css/img/user.png" class="profile" />
           <ul>
             <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>
+              <span class="material-icons-outlined" ><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>
               <p>Home</p>
             </li>
+
+
             <li class="sub-item">
             <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"> format_list_bulleted </a> </span>
               </span>
               <p>Serviços</p>
             </li>
+
+      
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=FaleConosco" title="Fale Conosco">manage_accounts</a></span>
+              <span class="material-icons-outlined"><a href="#" title="Fale Conosco">manage_accounts</span>
               <p>Fale Conosco</p>
+
             </li>
+            </a>
+
+
             <li class="sub-item">
             <span class="material-icons-outlined"><a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair">logout</a>  </span>
               <p>Logout</p>
