@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../T13/_Projeto/css/contrato.css">
 
 
-<H1>Contrato</H1>
+<h1>Contrato</h1>
 <hr>
 
 <body>
@@ -50,11 +50,43 @@
             
             <h3>DO CUSTO E DA FORMA DE PAGAMENTO</h3>
 
-            <p> a.Cláusula 4ª. O desenvolvimento completo do projeto por parte da CONTRATADA possui custo mensal de R$ R$ 0,00 a ser pago pela CONTRATANTE à CONTRATADA no décimo dia útil de cada mês, iniciando-se o pagamento em , até completarem 3 mensalidades. </p>
-            <p>  </p>
-            <p>  </p>
-            <p>  </p>
+            <p> Cláusula 4ª. O desenvolvimento completo do projeto por parte da CONTRATADA possui custo mensal de R$ R$ 0,00 a ser pago pela CONTRATANTE à CONTRATADA no décimo dia útil de cada mês, iniciando-se o pagamento em , até completarem 3 mensalidades. </p>
+            
+            <h3>DO PRAZO E CRONOGRAMA</h3>
+            
+            <p> Cláusula 5ª. O prazo do presente contrato vigora a partir do dia . Após este período o contrato é renovado automaticamente mês a mês caso não haja notificação de uma das partes. </p>
+            <p> Após , para cancelamento do contrato, uma das partes deve notificar a outra com 30 dias de antecedência (mediante confirmação da outra parte). O cancelamento anterior a tal período só pode ser feito por concordância de ambas partes, caso contrário, implicará em multa prevista na Cláusula 7ª. </p>
+            <p> Para o desenvolvimento do objeto do presente contrato as partes obedecerão às seguintes fases: </p>
+            <p> Requisição e recebimento de dados de acesso à administração de redes sociais e Google Analytics (se possível) enviada pela CONTRATANTE (até 2 dias úteis após início de projeto); </p>
+            <p> Requisição e recebimento de material gráfico, institucional e promocional marca, enviada pela CONTRATANTE, tais como logomarcas, imagens compradas, imagens dos produtos, fotografias da empresa e textos do website(até 4 dias úteis após início de projeto);</p>
+            <p> Reunião de briefing (até 2 dias úteis após início de projeto) </p>
+            <p> Entrega de plano de comunicação (em até 7 dias após briefing) </p>
+            <p> Início dos posts em redes sociais: 1 dia útil após entrega do plano </p>
+            
+            <h3>DA RESCISÃO E ALTERAÇÃO DE CLÁUSULA</h3>
 
+            <p> Cláusula 6aª. A rescisão do presente instrumento não extinguirá os direitos e obrigações que as partes tenham entre si e para com terceiros.</p>
+            <p> Cláusula 7ª. Pagará multa de 30% do valor restante de contrato contado a partir da data de rescisão unilateral, corrigido no momento do pagamento, qualquer das partes que der causa à rescisão do presente contrato por não cumprir as obrigações aqui assumidas.</p>
+            <p> Cláusula 8ª. Este contrato poderá ser revisado, ampliado, reduzido e modificado a qualquer tempo, mediante a anuência das partes envolvidas.</p>
+            
+            <h3>DA MULTA POR ATRASO NO PAGAMENTO</h3>
 
+            <p> Cláusula 9ª. A CONTRATANTE pagará multa de 1% do valor corrigido de cada parcela referida na cláusula 4ª deste contrato em caso de atraso no pagamento de qualquer parcela sem prejuízo de juros de mora à base de 1% (um por cento) ao mês, calculados pro-rata tempore entre a data do vencimento e a data do efetivo pagamento, além da correção monetária.</p>
+            <p> A cada 12 mensalidades ou ano de contrato, o contrato é reajustado seguindo tabela do IGP-M referente aos 12 meses anteriores ao mês do reajuste.</p>
+            
+            <h3>DAS CONDIÇÕES GERAIS</h3>
 
+            <p> Cláusula 10ª. A CONTRATADA não possuirá horário fixo de entrada e saída na empresa, uma vez que não existirá vínculo empregatício.</p>
+            <p> Cláusula 11ª. É livre à CONTRATADA ter seus próprios clientes, fora do âmbito deste contrato.</p>
+            
+            <h3>DO FORO</h3>
+
+            <p> Cláusula 12ª. Para dirimir quaisquer controvérsias oriundas do contrato, as partes elegem o foro da comarca de -</p>
+            <p> Por estarem assim justos e contratadas, firmam o presente instrumento.</p>
+
+        <div class="user-box">
+        <input type="text" name="txtLogin" required>
+        
+        <div class="user-box">
+        <input type="text" name="txtLogin" required>
 </body>
