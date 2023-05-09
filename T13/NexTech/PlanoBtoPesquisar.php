@@ -13,6 +13,7 @@ $beneficios2_Plano="";
 $beneficios3_Plano="";
 $beneficios4_Plano="";
 $beneficios5_Plano="";
+
 if($_POST)
 {
     $id_Plano =$_POST['txtID'];

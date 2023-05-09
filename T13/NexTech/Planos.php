@@ -36,12 +36,12 @@
         </div>
 
         <div class="col-sm-4">
-            <label for="tplano">Duração do plano</label>
+            <label for="">Duração do plano</label>
             <select class="form-control" name="txtDuracao" id="txtDuracao">
                 <option value="">Selecione</option>
-                <option value="Bronze">1 Mês</option>
-                <option value="Silver">2 Mês</option>
-                <option value="Gold">3 Mês</option>
+                <option value="1 Mês">1 Mês</option>
+                <option value="2 Mês">2 Mês</option>
+                <option value="3 Mês">3 Mês</option>
             </select>        
         </div>
 
@@ -67,7 +67,7 @@
             <input type="text" class="form-control" name="txtBeneficio4" id="txtBeneficios4" placeholder="Benficios do plano">
         </div>
         <div class="col-sm-2">
-            <input type="text" class="form-control" name="txtBeneficio4" id="txtBeneficios5" placeholder="Benficios do plano">
+            <input type="text" class="form-control" name="txtBeneficio5" id="txtBeneficios5" placeholder="Benficios do plano">
         </div>
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
@@ -75,7 +75,7 @@
             <button name="btoPesquisa" class="btn btn-primary" onclick="PesquisarPlano()">Pesquisar</button>
             <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarPlano()">Cadastrar</button>
             <button name="btoAlterar" class="btn btn-warning" onclick="AlterarPlano()">Alterar</button>
-            <a type="reset" name="btoLimpar" class="btn btn-dark"href="NexTech_Sistema.php?Tela=Plano">Limpar</a>
+            <a type="reset" name="btoLimpar" class="btn btn-dark"href="NexTech_Sistema.php?Tela=Planos">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirPlano()">Excluir</button>
         </div>
             <div class="row"> 

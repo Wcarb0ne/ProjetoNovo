@@ -183,3 +183,63 @@ create table Empresa
     confirmarSenha_Empresa varchar(15) not null
 )
 select * from Empresa;
+
+/*banco de dados abaixo gerecimento da empresa*/
+				/*	N E X T E C H */
+create table Departamento
+(
+	id_Departamento int auto_increment not null primary key,
+    data_Departamento timestamp not null,
+    nome_Departamento varchar(30) not null,
+    status_Departamento varchar(20) not null,
+    descricao_Departamento varchar(255) not null
+);
+drop table Funcionario;
+select * from Departamento;
+ALTER TABLE Funcionario ADD CONSTRAINT id_Departamento_Funcionario FOREIGN KEY(id_Departamento_Funcionario) REFERENCES Departamento (id_Departamento);                
+create table Funcionario
+(
+	id_Funcionario int auto_increment not null primary key,
+    status_Funcionario varchar(20) not null,
+    data_Funcionario timestamp not null,      
+	nome_Funcionario varchar(30) not null,
+	cpf_Funcionario varchar(15) not null,
+	cep_Funcionario varchar(9) not null,
+    logradouro_Funcionario varchar(50) not null,
+    numero_Funcionario varchar(10) not null,
+    complemento_Funcionario varchar(50) null,
+    bairro_Funcionario varchar(50) not null,
+    cidade_Funcionario varchar(50) not null,
+    uf_Funcionario varchar(50) not null,   
+	email_Funcionario varchar(30) not null unique,
+    telefone1_Funcionario varchar(15) not null,
+    telefone2_Funcionario varchar(15) null,
+    id_Departamento_Funcionario int not null, /*15*/
+	login_Funcionario varchar(15) not null unique,
+    senha_Funcionario varchar(15) not null,
+    confirmarSenha_Funcionario varchar(15) not null
+);
+insert into Funcionario
+(id_Funcionario,status_Funcionario,data_Funcionario,nome_Funcionario,cpf_Funcionario,cep_Funcionario,logradouro_Funcionario,numero_Funcionario,complemento_Funcionario,bairro_Funcionario,cidade_Funcionario,uf_Funcionario,email_Funcionario,telefone1_Funcionario,telefone2_Funcionario,id_Departamento_Funcionario,login_Funcionario,senha_Funcionario,confirmarSenha_Funcionario)
+values
+('1','ativo','03/05/2023','Felipe','156165116651','07196261','rua sei la','55','apto50','vila galvão','guarulhos','SP','cornoempresa@gmail.com','1185151162','1185151161','1','adm','123','123');
+select * from Funcionario;
+create table Contrato
+(
+	id_Contrato int auto_increment not null primary key,
+    data_Contrato timestamp not null
+);
+create table Plano
+(
+id_Plano int not null auto_increment primary key,
+status_Plano varchar(20) not null,
+data_Plano	timestamp not null,
+nome_Plano	varchar(50)	not null unique,
+preco_Plano decimal(10,5) not null,
+duracao_Plano varchar(30) not null,
+beneficios1_Plano varchar(50) not null,
+beneficios2_Plano varchar(50) null,
+beneficios3_Plano varchar(50) null,
+beneficios4_Plano varchar(50) null,
+beneficios5_Plano varchar(50) null	
+);

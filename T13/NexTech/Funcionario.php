@@ -25,7 +25,7 @@
 <body>
  <br>   
 
-    <form id="my-form" class="from-control" action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+    <form id="" class="from-control" action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
         <br>
         <div calss="">
             <img src="./assets/img/freeze/logo outra.png" width="288px" height="88px" class="logo">
@@ -37,7 +37,7 @@
                 <div class="col-sm-3">
                     <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario">
                 </div>
-                    <div class="col-sm-2"></div>
+                    <div class="col-sm-1"></div>
                 <div class="col-sm-2">
                     <div class="my-form-control-error">
                         <select name="txtStatus" id="txtStatus" class="form-control">
@@ -46,7 +46,7 @@
                         </select>
                     </div>
                 </div>
-                    <div class="col-sm-2"></div>
+                <div class="col-sm-1"></div>
                 <div class="col-sm-3">
                     <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
                 </div>
@@ -57,14 +57,14 @@
             </div>
 
             <div class="row mt-1"><!-- NOME  / CPf  / -->
-                <div class="col-sm-5">
+                <div class="col-sm-4">
                     <div class="my-form-control-error">
                         <label for="name">Nome Completo *</label>
-                            <input type="text" class="form-control" id="name" placeholder="Kauã Vahz de la felipe"/>
+                        <input type="text" class="form-control" id="name" placeholder="Kauã Vahz de la felipe"/>
                     </div>
                 </div>
-                    <div class="col-sm-3"></div>
-                <div class="col-sm-4">
+                    <div class="col-sm-4"></div>
+                <div class="col-sm-2">
                     <div class="my-form-control-error">
                         <label for="cpf">CPF *</label>
                         <input type="text" class="cpf form-control" id="cpf" placeholder="157.000.000-00" name="cpf"
@@ -79,28 +79,31 @@
             </div>
 
             <div class="row mt-1"><!-- EMPRESA  / CNPJ  / DATA EMISSÃO  btoCalcular-->
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="my-form-control-error">
                     <label for="adress">Cep *</label>
                     <input type="text" name="cep" id="cep" value="" class="mascCEP form-control" size="10" maxlength="8" placeholder="CEP" onblur="pesquisacep(this.value);"/>
                     <!-- <input type="text" id="rua" placeholder="Rua, Avenida, Travessa, Estrada Seu Chico"/> -->
                     </div>
                 </div>
-                <div class="col-sm-4">
+
+                <div class="col-sm-3">
                     <div class="my-form-control-error">
                         <label for="adress">Logradouro *</label>
                             <input type="text" class="form-control" id="rua" placeholder="Rua, Avenida, Travessa, Estrada Seu Chico"/></div>
                 </div>
 
                 <div class="col-sm-2">
-                <label for="numero">Nº *</label>
-                        <input type="text" class="form-control" id="numero" placeholder="Número"/>
+                    <label for="numero">Nº *</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Número"/>
                 </div>
+
                 </div>
                 <div class="col-sm-3">
-                <label for="Complemento">Complemento</label>
-                        <input type="text" class="form-control" id="Complemento" placeholder="Complemento"/>
+                    <label for="Complemento">Complemento</label>
+                    <input type="text" class="form-control" id="Complemento" placeholder="Complemento"/>
                 </div>
+
                 </div>
                 <!-- Proxima linha -->
                 <div class="row mt-1"><!-- BAIRRO / CIDADE / UF-->
@@ -113,10 +116,9 @@
                     <label for="cidade">Cidade *</label>
                     <input type="text" class="form-control" name="cidade" id="cidade"  placeholder="Cidade" />
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="uf">
-                    <label for="UF" >UF *</label>
+                        <label for="UF" >UF *</label>
                         <select name="uf" id="uf"class="form-control" >
                             <option value=""></option>
                             <option value="AC">Acre</option>
@@ -156,7 +158,7 @@
             </div>
 
             <div class="row mt-1"><!--  EMAIL  / CELULAR  / CONTATO -->
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="my-form-control-error">
                         <label for="adress">Email *</label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email *"/>
@@ -165,20 +167,26 @@
 
                 <div class="col-sm-3">
                     <div class="my-form-control-error">
-                        <label for="adress">Celular *</label>
-                        <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Celular com DDD"/>
+                        <label for="adress">Telefone1 *</label>
+                        <input type="tel" class="form-control" name="telefone1" id="telefone1" placeholder="Celular com DDD"/>
                     </div>
                 </div>
 
                 <div class="col-sm-3">
-                    <label for="adress">Empresa *</label>
-                    <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Celular com DDD"/>
+                    <label for="adress">Telefone2 *</label>
+                    <input type="tel" class="form-control" name="telefone2" id="telefone2" placeholder="Celular com DDD"/>
                 </div>
                 <!-- Proxima linha -->
             </div>
 
             <div class="row mt-3">
-                <label for="name"><h4>Dados de Login<h4></label>
+                <label for="name"><h4> Categoria<h4></label>
+
+                <select  class="text55 form-control"name="txtIDepart"id="txtIDepart">
+                     <?php 
+                        include_once('DepartamentoPuxar.php');
+                        ?>
+                </select>
             </div>
 
             <div class="row mt-1"><!--  LOGIN  / SENHA  / CONFIRMAR SENHA -->
@@ -189,14 +197,14 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="my-form-control-error">
                         <label for="senha">Senha *</label>
                         <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Informe a Senha">
                     </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <label for="senha">Confirmar Senha *</label>
                     <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
 
@@ -219,7 +227,6 @@
                 </div>
             </div>
         </div>
-
     </form>
  <br>
 </body>

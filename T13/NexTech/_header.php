@@ -18,7 +18,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="fa fa-bars fa-lg"></span>
                         </button>
-                        <a class="navbar-brand" href="./index.html">
+                        <a class="navbar-brand" href="NexTech_Sistema.php?">
                             <img src="./assets/img/freeze/logo-transp.png" width="288px" height="88px" class="logo">
                         </a>
                     </div>

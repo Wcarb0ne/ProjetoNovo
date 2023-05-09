@@ -27,9 +27,8 @@ function CadastrarDepartamento(){
     
         })
     }
-    function PesquisarDepartamento(){
+function PesquisarDepartamento(){
     
-        //console.log('testtetttt');
     
         let id_Departamento = $('#txtID').val();
       
@@ -60,7 +59,7 @@ function CadastrarDepartamento(){
         })
     
     }
-    function ExcluirDepartamento(){
+function ExcluirDepartamento(){
     
         let id_Departamento = $('#txtID').val();
       
@@ -86,7 +85,7 @@ function CadastrarDepartamento(){
     
         })
     }
-    function AlterarDepartamento(){
+function AlterarDepartamento(){
     
         //console.log('testtetttt');
     
@@ -281,13 +280,13 @@ function CadastrarPlano(){
     
         })
     }
-    function PesquisarPlano(){
+function PesquisarPlano(){
     
         //console.log('testtetttt');
     
         let id_Plano = $('#txtID').val();
       
-        let action = 'PlanoBtoPesquisa.php';
+        let action = 'PlanoBtoPesquisar.php';
     
     
         $.ajax({
@@ -301,11 +300,18 @@ function CadastrarPlano(){
     
                 $("#resultado").empty().html( data );
                 $("#txtID").val($('#idGerado').text());
-                $("#txtData").val($('#PesquisaData').text());
-                $("#txtNome").val($('#PesquisaNome').text());            
                 $("#txtStatus").val($('#PesquisaStatus').text());
-                $("#txtDescricao").val($('#PesquisaDescricao').text());
-               
+                $("#txtData").val($('#PesquisaData').text());
+                $("#txtNome").val($('#PesquisaNome').text()); 
+                $("#txtPreco").val($('#PesquisaPreco').text());
+                $("#txtDuracao").val($('#PesquisaDuracao').text());
+                $("#txtBeneficios1").val($('#PesquisaBeneficios1').text());
+                $("#txtBeneficios2").val($('#PesquisaBeneficios2').text());            
+                $("#txtBeneficios3").val($('#PesquisaBeneficios3').text());            
+                $("#txtBeneficios4").val($('#PesquisaBeneficios4').text());            
+                $("#txtBeneficios5").val($('#PesquisaBeneficios5').text());            
+            
+                
             },
             error: function (jqXhr, textStatus, errorMessage) {
                 $('#resultado').empty().html('Error ' + errorMessage);
@@ -313,8 +319,8 @@ function CadastrarPlano(){
     
         })
     
-    }
-    function ExcluirPlano(){
+}
+function ExcluirPlano(){
     
         let id_Plano = $('#txtID').val();
       
@@ -339,15 +345,22 @@ function CadastrarPlano(){
             }
     
         })
-    }
-    function AlterarPlano(){
+}
+function AlterarPlano(){
     
         //console.log('testtetttt');
     
         let id_Plano = $('#txtID').val();
-        let nome_Plano = $('#txtNome').val();
         let status_Plano = $('#txtStatus').val();
-        let descricao_Plano = $('#txtDescricao').val();
+        let nome_Plano = $('#txtNome').val();
+        let preco_Plano = $('#txtPreco').val();
+        let duracao_Plano = $('#txtDuracao').val();
+        let beneficios1_Plano = $('#txtBeneficos1').val();
+        let beneficios2_Plano = $('#txtBeneficos2').val();
+        let beneficios3_Plano = $('#txtBeneficos3').val();
+        let beneficios4_Plano = $('#txtBeneficos4').val();
+        let beneficios5_Plano = $('#txtBeneficos5').val();
+
 
       
         let action = 'PlanoBtoAlterar.php';
@@ -360,8 +373,14 @@ function CadastrarPlano(){
                 txtID: id_Plano,
                 txtNome: nome_Plano,
                 txtStatus: status_Plano,
-                txtDescricao: descricao_Plano
-               
+                txtPreco: preco_Plano,
+                txtDuracao: duracao_Plano,
+                txtBeneficos1: beneficios1_Plano,
+                txtBeneficos2: beneficios2_Plano,
+                txtBeneficos3: beneficios3_Plano,
+                txtBeneficos4: beneficios4_Plano,
+                txtBeneficos5: beneficios5_Plano
+
             },
             beforend : function(){
                 $("#resultado").html("ENVIANDO...");
@@ -369,7 +388,7 @@ function CadastrarPlano(){
             success: function (data, status, xhr) {
     
                 $("#resultado").empty().html( data );
-                PesquisarPlanor();
+                PesquisarPlano();
             },
             error: function (jqXhr, textStatus, errorMessage) {
                 $('#resultado').append('Error ' + errorMessage);
@@ -377,4 +396,4 @@ function CadastrarPlano(){
     
         })
     
-    }/////////////////formulario Plano ///////////
+}/////////////////formulario Plano ///////////
