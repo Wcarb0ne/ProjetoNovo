@@ -1,5 +1,7 @@
 <?php
 include_once('Conexao.php');
+
+
 if($_POST)
 {
     $id_Parceiro = $_POST['txtID'];    
@@ -12,7 +14,6 @@ if($_POST)
     $telefone2_Parceiro = $_POST['txtTelefone2'];
     $login_Parceiro = $_POST['txtLogin'];
     $senha_Parceiro = $_POST['txtSenha'];
-    $confirmarSenha_Parceiro = $_POST['txtConfirmarSenha'];
     $logradouro_Parceiro = $_POST['txtLogradouro']; 
     $numero_Parceiro = $_POST['txtNumero'];
     $complemento_Parceiro = $_POST['txtComplemento'];
@@ -26,25 +27,25 @@ if($_POST)
     {
        
         $sql = $conn->prepare('update Parceiro set
-        $nome_Parceiro =:nome_Parceiro, 
-        $status_Parceiro=:status_Parceiro,
-        $nome_Parceiro=:nome_Parceiro,
-        $cnpj_Parceiro=:cnpj_Parceiro,
-        $ramo_Parceiro=:ramo_Parceiro,
-        $email_Parceiro=:email_Parceiro,
-        $telefone1_Parceiro=:telefone1_Parceiro,
-        $telefone2_Parceiro=:telefone2_Parceiro,
-        $login_Parceiro=:login_Parceiro,
-        $senha_Parceiro=:senha_Parceiro,
-        $confirmarSenha_Parceiro=:confirmarSenha_Parceiro,
-        $logradouro_Parceiro=:logradouro_Parceiro,
-        $numero_Parceiro=:numero_Parceiro,
-        $complemento_Parceiro=:complemento_Parceiro,
-        $bairro_Parceiro=:bairro_Parceiro,
-        $cidade_Parceiro=:cidade_Parceiro,
-        $uf_Parceiro=:uf_Parceiro,
-        $cep_Parceiro=:cep_Parceiro,
-        $obs_Parceiro=:obs_Parceiro  
+        
+        nome_Parceiro =:nome_Parceiro, 
+        status_Parceiro=:status_Parceiro,
+        cnpj_Parceiro=:cnpj_Parceiro,
+        ramo_Parceiro=:ramo_Parceiro,
+        email_Parceiro=:email_Parceiro,
+        telefone1_Parceiro=:telefone1_Parceiro,
+        telefone2_Parceiro=:telefone2_Parceiro,
+        login_Parceiro=:login_Parceiro,
+        senha_Parceiro=:senha_Parceiro,
+        logradouro_Parceiro=:logradouro_Parceiro,
+        numero_Parceiro=:numero_Parceiro,
+        complemento_Parceiro=:complemento_Parceiro,
+        bairro_Parceiro=:bairro_Parceiro,
+        cidade_Parceiro=:cidade_Parceiro,
+        uf_Parceiro=:uf_Parceiro,
+        cep_Parceiro=:cep_Parceiro,
+        obs_Parceiro=:obs_Parceiro  
+
         where id_Parceiro=:id_Parceiro'
         );   
 
@@ -59,7 +60,6 @@ if($_POST)
             ':telefone2_Parceiro'=>$telefone2_Parceiro,
             ':login_Parceiro'=>$login_Parceiro,
             ':senha_Parceiro'=>$senha_Parceiro,
-            ':confirmarSenha_Parceiro'=>$confirmarSenha_Parceiro,
             ':logradouro_Parceiro'=>$logradouro_Parceiro,
             ':numero_Parceiro'=>$numero_Parceiro,
             ':complemento_Parceiro'=>$complemento_Parceiro,

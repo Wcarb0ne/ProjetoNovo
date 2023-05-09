@@ -90,12 +90,15 @@
   .btn-Sair {
     display: block;
     width: 70%;
+    text-decoration: none;
+    text-align: center;
     padding: 10px 15px;
     border: 0px;
     background-image: linear-gradient(to right, #f71b1b, #ff1111);
     border-radius: 30px;
     margin: 5px 0;
     color: #ffffff;
+
     font-size: 16px;
     display: grid;
     margin: auto;
@@ -104,8 +107,10 @@
   }
 
   .btn-Sair:hover{
-    background-image: linear-gradient(to right, #f71b1b, rgba(240, 21, 21, 0.541)); /*quando clicar no botão muda a cor*/
+    background-image: linear-gradient(to right, #f71b1b, rgba(240, 21, 21, 0.541));
+    color: #ffffff; /*quando clicar no botão muda a cor*/
   }
+  
 
 
   .btn-idade {

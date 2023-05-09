@@ -11,8 +11,13 @@
 <script src="js/jquery-3.6.4.js"></script>
 
 <script src="js/script.js"></script>
-<script src="js/ParceiroScript.js"></script>
+<!-- <script src="js/ParceiroScript.js"></script> -->
 <br>
+<?php
+include_once('Conexao.php'); 
+include_once('www_autenticar.php');
+include_once('Parceiro_btoPesquisa.php');
+ ?>
 
 <title>Parceiro</title>
 <div class="container">
@@ -27,7 +32,7 @@
             <br>
             <div class="row"><!-- ID / STATUS / datacadastro -->
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario" value="<?=$id_Parceiro?>" disabled hidden>
+                    <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario" value="<?=$idUsuario?>" disabled >
                 </div>
 
                 <div class="col-sm-4">
@@ -136,14 +141,15 @@
 
             <div class="row mt-4"><!-- Observação -->
                 <div class="col-sm-12">
-                    <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Insira a observação do cadastro (campo não obrigatório)" value="<?=$obs_Parceiro?>"></textarea>
+                    <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Insira a observação do cadastro (campo não obrigatório)" ><?=$obs_Parceiro?></textarea>
                 </div>
             </div>
 
             <div class="row mt-2 mb-2"><!--botoes-->
                 <div class="col-sm-12">
-                    <button name="btoCadastrar" class="btn btn-success" onclick="ParceiroPesquisar()">Pesquisar</button>
-                    <button name="btoSair" class="btn btn-danger" href="Parceiro_sistema.php?">Sair</button>
+                    <button name="btoCadastrar" class="btn btn-success" onclick="ParceiroAlterar()">Alterar</button>
+                   <a name="btoSair" class="btn btn-danger" href="Parceiro_sistema.php?Parceiro=Sair">Deslogar</a>
+                   
                 </div>
             </div>
             <div class="row">

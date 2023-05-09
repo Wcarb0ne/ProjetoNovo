@@ -24,6 +24,7 @@ if($_POST)
     {
        
         $sql = $conn->prepare('update Cliente set
+        
         $nome_Cliente =:nome_Cliente, 
         $status_Cliente=:status_Cliente,
         $nome_Cliente=:nome_Cliente,
@@ -41,6 +42,7 @@ if($_POST)
         $uf_Cliente=:uf_Cliente,
         $cep_Cliente=:cep_Cliente,
         $obs_Cliente=:obs_Cliente
+
         where id_Cliente=:id_Cliente'
         );   
 

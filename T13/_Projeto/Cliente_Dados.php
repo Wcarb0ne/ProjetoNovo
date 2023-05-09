@@ -22,10 +22,13 @@
 
   
  
-  <?php include_once('www_autenticar.php'); ?>
-  <script>
+  <?php include_once('www_autenticar.php');
+include_once('Conexao.php');
+include_once('Cliente_btoPesquisa.php');
+?>
+  <!-- <script>
     $(window).on('load', PesquisarCliente());
-  </script>
+  </script> -->
   
   
   
@@ -205,7 +208,7 @@
                 <div class="msgValidar"></div>
             </div>
             <div class="col-sm-5">
-                 <button id="btn-Sair" class="btn-Sair" type="submit"  value="Sair">Deslogar</button>
+                 <a id="btn-Sair" class="btn-Sair" type="submit"  value="Sair">Deslogar</a>
             </div>
             <div class="col-sm-1"></div>
 

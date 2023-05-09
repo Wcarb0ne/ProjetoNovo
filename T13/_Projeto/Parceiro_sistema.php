@@ -44,7 +44,8 @@
 
 
 <body>
-<?php include_once('www_autenticar.php');?>
+<?php include_once('www_autenticar.php');
+include_once('Conexao.php');?>
 <?php include_once('Parceiro_header.php');?>
     <div class="container mt-5 dg-dark">
         <div class="row">

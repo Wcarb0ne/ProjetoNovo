@@ -20,7 +20,7 @@
 
 
 <body>
-    <?php include_once('www_autenticar.php'); ?>
+    <?php include_once('Conexao.php'); include_once('www_autenticar.php'); ?>
     <?php include_once('Cliente_header.php'); ?>
 
 

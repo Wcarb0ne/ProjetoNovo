@@ -74,23 +74,23 @@ function ParceiroPesquisar() {
         success: function (data, status, xhr) {
 
             $("#resultado").empty().html(data);
-            $("#txtID").val($('#idGerado').text());
-            $("#txtNome").val($('#PesquisaNome').text());
-            $("#txtLogin").val($('#PesquisaLogin').text());
-            $("#txtSenha").val($('#PesquisaSenha').text());
-            $("#txtEmail").val($('#PesquisaEmail').text());
-            $("#txtDataNasc").val($('#PesquisaDataNasc').text());
-            $("#txtCpf").val($('#PesquisaCpf').text());
-            $("#txtGenero").val($('#PesquisaGenero').text());
-            $("#txtTelefone1").val($('#PesquisaTelefone1').text());
-            $("#txtTelefone2").val($('#PesquisaTelefone2').text());
-            $("#txtLogradouro").val($('#PesquisaLogradouro').text());
-            $("#txtCidade").val($('#PesquisaCidade').text());
-            $("#txtUF").val($('#PesquisaUF').text());
-            $("#txtCep").val($('#PesquisaCep').text());
-            $("#txtData").val($('#PesquisaCadastro').text());
-            $("#txtStatus").val($('#PesquisaStatus').text()); //obs status nao esta puxando na caixa de txt no form
-            $("#txtObs").val($('#PesquisaObs').text());
+            // $("#txtID").val($('#idGerado').text());
+            // $("#txtNome").val($('#PesquisaNome').text());
+            // $("#txtLogin").val($('#PesquisaLogin').text());
+            // $("#txtSenha").val($('#PesquisaSenha').text());
+            // $("#txtEmail").val($('#PesquisaEmail').text());
+            // $("#txtDataNasc").val($('#PesquisaDataNasc').text());
+            // $("#txtCpf").val($('#PesquisaCpf').text());
+            // $("#txtGenero").val($('#PesquisaGenero').text());
+            // $("#txtTelefone1").val($('#PesquisaTelefone1').text());
+            // $("#txtTelefone2").val($('#PesquisaTelefone2').text());
+            // $("#txtLogradouro").val($('#PesquisaLogradouro').text());
+            // $("#txtCidade").val($('#PesquisaCidade').text());
+            // $("#txtUF").val($('#PesquisaUF').text());
+            // $("#txtCep").val($('#PesquisaCep').text());
+            // $("#txtData").val($('#PesquisaCadastro').text());
+            // $("#txtStatus").val($('#PesquisaStatus').text()); //obs status nao esta puxando na caixa de txt no form
+            // $("#txtObs").val($('#PesquisaObs').text());
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').empty().html('Error ' + errorMessage);
@@ -101,28 +101,28 @@ function ParceiroPesquisar() {
 }
 function ParceiroAlterar() {
 
-    //console.log('testtetttt');
-
     let id_Parceiro = $('#txtID').val();
+    let status_Parceiro = $('#txtStatus').val();
     let nome_Parceiro = $('#txtNome').val();
-    let login_Parceiro = $('#txtLogin').val();
-    let senha_Parceiro = $('#txtSenha').val();
-    let confirmarSenha_Parceiro = $('#txtConfirmarSenha').val();
+    let cnpj_Parceiro = $('#txtCnpj').val();
+    let ramo_Parceiro = $('#txtRamo').val();
     let email_Parceiro = $('#txtEmail').val();
-    let dataNasc_Parceiro = $('#txtDataNasc').val();
-    let cpf_Parceiro = $('#txtCpf').val();
-    let genero_Parceiro = $('#txtGenero').val();
     let telefone1_Parceiro = $('#txtTelefone1').val();
     let telefone2_Parceiro = $('#txtTelefone2').val();
+    let login_Parceiro = $('#txtLogin').val();
+    let senha_Parceiro = $('#txtSenha').val();
     let logradouro_Parceiro = $('#txtLogradouro').val();
+    let numero_Parceiro = $('#txtNumero').val();
+    let complemento_Parceiro = $('#txtComplemento').val();
+    let bairro_Parceiro = $('#txtBairro').val();
     let cidade_Parceiro = $('#txtCidade').val();
     let uf_Parceiro = $('#txtUF').val();
     let cep_Parceiro = $('#txtCep').val();
-    let status_Parceiro = $('#txtStatus').val();
     let obs_Parceiro = $('#txtObs').val();
 
 
     let action = 'Parceiro_btoAlterar.php';
+    console.log('testtetttt');
 
 
     $.ajax({
@@ -131,20 +131,21 @@ function ParceiroAlterar() {
         data: {
             txtID: id_Parceiro,
             txtNome: nome_Parceiro,
-            txtLogin: login_Parceiro,
-            txtSenha: senha_Parceiro,
-            txtConfirmarSenha: confirmarSenha_Parceiro,
+            txtStatus: status_Parceiro,
+            txtCnpj: cnpj_Parceiro,
+            txtRamo: ramo_Parceiro,
             txtEmail: email_Parceiro,
-            txtDataNasc: dataNasc_Parceiro,
-            txtCpf: cpf_Parceiro,
-            txtGenero: genero_Parceiro,
             txtTelefone1: telefone1_Parceiro,
             txtTelefone2: telefone2_Parceiro,
+            txtLogin: login_Parceiro,
+            txtSenha: senha_Parceiro,          
             txtLogradouro: logradouro_Parceiro,
+            txtNumero: numero_Parceiro,
+            txtComplemento: complemento_Parceiro,
+            txtBairro: bairro_Parceiro,
             txtCidade: cidade_Parceiro,
             txtUF: uf_Parceiro,
             txtCep: cep_Parceiro,
-            txtStatus: status_Parceiro,
             txtObs: obs_Parceiro
 
         },
@@ -152,9 +153,8 @@ function ParceiroAlterar() {
             $("#resultado").html("ENVIANDO...");
         },
         success: function (data, status, xhr) {
-
-            $("#resultado").empty().html(data);
-            ParceiroPesquisar();
+            $("#resultado").html(data);
+            
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').append('Error ' + errorMessage);
@@ -446,10 +446,6 @@ function CadastrarCliente() {
 
     // console.log("teste");
 
-    if ($('#txtNome').val() == Float32Array) {
-        alert(' pinto');
-    }
-
     let status_Cliente = $('#txtStatus').val();
     let nome_Cliente = $('#txtNome').val();
     let cpf_Cliente = $('#txtCPF').val();
@@ -493,7 +489,7 @@ function CadastrarCliente() {
             txtCidade: cidade_Cliente,
             txtUF: uf_Cliente,
             txtCEP: cep_Cliente,
-            txtOBS: obs_Cliente
+            txtObs: obs_Cliente
         },
         beforsend: function () {
             $("#Resultado").html("ENVIANDO...");
@@ -532,7 +528,7 @@ function AlterarCliente() {
     let cep_Cliente = $('#txtCEP').val();
     let obs_Cliente = $('#txtObs').val();
 
-    let action = 'Parceiro_CategoriaBtoAlterar.php';
+    let action = 'Cliente_btoAlterar.php';
 
 
     $.ajax({

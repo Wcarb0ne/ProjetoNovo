@@ -84,11 +84,11 @@
 
                                         
                                             <div class="user-box">
-                                                <input type="text" name="txtLogin" required >
+                                                <input type="text" name="txtLogin"  >
                                                 <label>NOME</label>
                                             </div>
                                             <div class="user-box">
-                                                <input type="password" name="txtSenha" required >
+                                                <input type="password" name="txtSenha"  >
                                                 <label>SENHA</label>
                                             </div>
                                             <button type="text" class="oxi3 mb-4" formaction="_Login.php">Entrar</button>

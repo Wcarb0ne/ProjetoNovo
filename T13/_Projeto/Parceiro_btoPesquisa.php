@@ -2,7 +2,7 @@
 include_once('Conexao.php');
 
 
-$id_Parceiro = "";
+
 $status_Parceiro="";
 $data_Parceiro="";
 $nome_Parceiro="";
@@ -13,7 +13,6 @@ $telefone1_Parceiro="";
 $telefone2_Parceiro="";
 $login_Parceiro="";
 $senha_Parceiro="";
-$confirmarSenha_Parceiro="";
 $logradouro_Parceiro="";
 $numero_Parceiro="";
 $complemento_Parceiro="";
@@ -52,29 +51,25 @@ $obs_Parceiro="";
                 $uf_Parceiro=$linha[16]; 
                 $cep_Parceiro=$linha[17];
                 $obs_Parceiro=$linha[18];
-                // =$linha[19];
+                
             }
-            echo"
-            <p>id_Parceiro: <span id='idGerado'>$id_Parceiro</span></p>
-            <p>nome_Parceiro: <span id='PesquisaNome'>$nome_Parceiro</span></p>
-            <p>login_Parceiro: <span id='PesquisaLogin'>$login_Parceiro</span></p>
-            <p>senha_Parceiro: <span id='PesquisaSenha'>$senha_Parceiro</span></p>
-
-            <p>email_Parceiro: <span id='PesquisaEmail'>$email_Parceiro</span></p>
-            <p>dataNasc_Parceiro: <span id='PesquisaDataNasc'>$dataNasc_Parceiro</span></p>
-            <p>cpf_Parceiro: <span id='PesquisaCpf'>$cpf_Parceiro</span></p>
-            <p>genero_Parceiro: <span id='PesquisaGenero'>$genero_Parceiro</span></p>
-            <p>telefone1_Parceiro: <span id='PesquisaTelefone1'>$telefone1_Parceiro</span></p>
-            <p>telefone2_Parceiro: <span id='PesquisaTelefone2'>$telefone2_Parceiro</span></p>
-            <p>logradouro_Parceiro: <span id='PesquisaLogradouro'>$logradouro_Parceiro</span></p>
-            <p>cidade_Parceiro: <span id='PesquisaCidade'>$cidade_Parceiro</span></p>
-            <p>uf_Parceiro: <span id='PesquisaUF'>$uf_Parceiro</span></p>
-            <p>cep_Parceiro: <span id='PesquisaCep'>$cep_Parceiro</span></p>
-            <p>cadastro_Parceiro: <span id='PesquisaCadastro'>$cadastro_Parceiro</span></p>
-            <p>status_Parceiro: <span id='PesquisaStatus'>$status_Parceiro</span></p>
-            <p>obs_Parceiro: <span id='PesquisaObs'>$$obs_Parceiro</span></p>
+            // echo"
+            // <p>id_Parceiro: <span id='idGerado'>$id_Parceiro</span></p>
+            // <p>nome_Parceiro: <span id='PesquisaNome'>$nome_Parceiro</span></p>
+            // <p>login_Parceiro: <span id='PesquisaLogin'>$login_Parceiro</span></p>
+            // <p>senha_Parceiro: <span id='PesquisaSenha'>$senha_Parceiro</span></p>
+            // <p>email_Parceiro: <span id='PesquisaEmail'>$email_Parceiro</span></p>
+            // <p>cpf_Parceiro: <span id='PesquisaCpf'>$cnpj_Parceiro</span></p>
+            // <p>telefone1_Parceiro: <span id='PesquisaTelefone1'>$telefone1_Parceiro</span></p>
+            // <p>telefone2_Parceiro: <span id='PesquisaTelefone2'>$telefone2_Parceiro</span></p>
+            // <p>logradouro_Parceiro: <span id='PesquisaLogradouro'>$logradouro_Parceiro</span></p>
+            // <p>cidade_Parceiro: <span id='PesquisaCidade'>$cidade_Parceiro</span></p>
+            // <p>uf_Parceiro: <span id='PesquisaUF'>$uf_Parceiro</span></p>
+            // <p>cep_Parceiro: <span id='PesquisaCep'>$cep_Parceiro</span></p>
+            // <p>status_Parceiro: <span id='PesquisaStatus'>$status_Parceiro</span></p>
+            // <p>obs_Parceiro: <span id='PesquisaObs'>$$obs_Parceiro</span></p>
             
-            ";
+            // ";
         } 
         else
         {
