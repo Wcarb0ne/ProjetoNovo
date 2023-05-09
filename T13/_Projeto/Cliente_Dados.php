@@ -21,9 +21,13 @@
   <script src="js/jquery-3.6.4.js"></script>
 
   
-  <?php include_once('_header.php'); ?>
+ 
   <?php include_once('www_autenticar.php'); ?>
-  <?php include_once('Cliente_btoPesquisa.php'); ?>
+  <script>
+    $(window).on('load', PesquisarCliente());
+  </script>
+  
+  
   
 
     <title>Perfil do Usúario</title>
@@ -37,11 +41,11 @@
         <h2>Perfil</h2>
         <br><br>
 
-        <div>
+        <!-- <div>
             <img class="imglogin" src="css/img/logo.png" alt="" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
             <label for="img">Selecione uma imagem</label>
             <input id="fotoPerfil" type="file" accept=".jpg,.jpeg,.png"/>
-        </div><br>
+        </div><br> -->
         
 
         
@@ -60,7 +64,7 @@
             <br>
             <div class="row"><!-- ID / STATUS / datacadastro -->
                 <div class="col-sm-2">
-                    <input type="number" class="form-control" name="txtID" id="txtID" placeholder="ID Cliente" disabled value="<?=$idCliente?>">
+                    <input type="number" class="form-control" name="txtID" id="txtID" placeholder="ID Cliente" disabled value="<?=$id_Cliente;?>">
                 </div>
 
                 <div class="col-sm-2">

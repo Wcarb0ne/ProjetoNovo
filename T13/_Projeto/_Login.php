@@ -20,22 +20,22 @@
     include_once('Conexao.php');
     if ($_POST) {
         
-        $loginCliente = $_POST['txtLogin'];
-        $senhaCliente = $_POST['txtSenha'];
+        $loginUsuario = $_POST['txtLogin'];
+        $senhaUsuario = $_POST['txtSenha'];
 
         $sql = $conn->query(
             "select * from Cliente where
-                login_Cliente = '$loginCliente' and
-                senha_Cliente = '$senhaCliente'
+                login_Cliente = '$loginUsuario' and
+                senha_Cliente = '$senhaUsuario'
             "
         );
 
         if ($sql->rowCount() == 1) {
             session_start();
             foreach ($sql as $linha) {
-                $_SESSION['idCliente'] = $linha[0];
-                $_SESSION['nomeCliente'] = $linha[1];
-                $_SESSION['loginCliente'] = $linha[2];
+                $_SESSION['idUsuario'] = $linha[0];
+                $_SESSION['nomeUsuario'] = $linha[1];
+                $_SESSION['loginUsuario'] = $linha[2];
             }
 
             header('Location:Cliente_sistema.php');
@@ -43,8 +43,8 @@
         } else {
             $sql = $conn->query(
                 "select * from Parceiro where
-                    login_Parceiro = '$loginCliente' and
-                    senha_Parceiro = '$senhaCliente'
+                    login_Parceiro = '$loginUsuario' and
+                    senha_Parceiro = '$senhaUsuario'
                 "
             );
 
@@ -54,9 +54,9 @@
 
                 foreach ($sql as $linha) {
 
-                    $_SESSION['idCliente'] = $linha[0];
-                    $_SESSION['nomeCliente'] = $linha[3];
-                    $_SESSION['loginCliente'] = $linha[9];
+                    $_SESSION['idUsuario'] = $linha[0];
+                    $_SESSION['nomeUsuario'] = $linha[3];
+                    $_SESSION['loginUsuario'] = $linha[9];
                 }
 
                 header('Location:Parceiro_sistema.php');
@@ -94,10 +94,10 @@
                                             <button type="text" class="oxi3 mb-4" formaction="_Login.php">Entrar</button>
 
                                             
-                                            <p style="color: white;">Sem Cadastro? <br><a class="oxi4 mb-2" href="Cliente_cadastro.php?tela=Cliente">Cadastre-se</a> </p>
+                                            <p style="color: white;">Sem Cadastro? <br><a class="oxi4 mb-2" href="Cliente_cadastro.php?Cliente=cadastro">Cadastre-se</a> </p>
                                             <div class="col-sm-10">
 
-                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br><a  class="oxi4 mb-2" href="frm_Parceiro.php?tela=Parceiro">Clique aqui</a></p>
+                                                <p style="color: white;">Gostaria de Cadastrar sua empresa?<br><a  class="oxi4 mb-2" href="frm_Parceiro.php?Parceiro=cadastro">Clique aqui</a></p>
                                             </div>
 
                                             

@@ -21,34 +21,29 @@
 
 <body>
     <?php include_once('www_autenticar.php'); ?>
-    <?php include_once('_header.php'); ?>
-    <div class="container mt-5 dg-dark">
-        <div class="row">
-            <div class="col-sm-12">
-                <?php include_once('Cliente_header.php'); ?>
-            </div>
-        </div>
+    <?php include_once('Cliente_header.php'); ?>
+
 
         <div class="row">
             <div class="col-sm-12 ">
                 <?php
                 if ($_GET) {
 
-                    if (isset($_GET['Tela'])) {
+                    if (isset($_GET['Cliente'])) {
 
-                        $tela = $_GET['Tela'];
+                        $cliente = $_GET['Cliente'];
 
-                        if ($tela  == 'Cliente') {
+                        if ($cliente  == 'cadastro') {
                             include_once('Cliente_cadastro.php');
                        } 
-                        // elseif ($tela == 'Cadastro Empresa') {
+                        // elseif ($cliente == 'Cadastro Empresa') {
                         //     include_once('frm_Empresa.php');
                         // } 
-                        elseif ($tela == 'Usuario') {
-                            include_once('Cliente_Usuario.php');
+                        elseif ($cliente == 'Dados') {
+                            include_once('Cliente_Dados.php');
                         } 
-                        elseif ($tela == 'Sair') {
-                            include_once('Cliente_AutenticarSair.php');
+                        elseif ($cliente == 'Sair') {
+                            include_once('www_AutenticarSair.php');
                         }
                     } else {
                         echo '<h1> ERRO, Pagina não encontrada </h1>';

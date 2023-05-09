@@ -12,7 +12,6 @@ $telefone1_Cliente="";
 $telefone2_Cliente="";
 $login_Cliente="";
 $senha_Cliente="";
-$confirmarSenha_Cliente="";
 $logradouro_Cliente="";
 $numero_Cliente="";
 $complemento_Cliente="";
@@ -23,7 +22,7 @@ $cep_Cliente="";
 $obs_Cliente="";
 
     
-    $id_Cliente = $idUsuario;
+$id_Cliente = $idUsuario;
     try
     {   
         $teste = 'select * from Cliente where id_Cliente='.$id_Cliente;
@@ -53,25 +52,25 @@ $obs_Cliente="";
                 $obs_Cliente=$linha[17];
             }
 
-            // echo"
-            // <p>id_Cliente: <span id='idGerado'>$idCliente</span></p>
-            // <p>nome_Cliente: <span id='PesquisaNome'>$nome_Cliente</span></p>
-            // <p>login_Cliente: <span id='PesquisaLogin'>$login_Cliente</span></p>
-            // <p>senha_Cliente: <span id='PesquisaSenha'>$senha_Cliente</span></p>
-            // <p>email_Cliente: <span id='PesquisaEmail'>$email_Cliente</span></p>
-            // <p>cpf_Cliente: <span id='PesquisaCpf'>$cpf_Cliente</span></p>
-            // <p>genero_Cliente: <span id='PesquisaGenero'>$bairro_Cliente</span></p>
-            // <p>telefone1_Cliente: <span id='PesquisaTelefone1'>$telefone1_Cliente</span></p>
-            // <p>telefone2_Cliente: <span id='PesquisaTelefone2'>$telefone2_Cliente</span></p>
-            // <p>logradouro_Cliente: <span id='PesquisaLogradouro'>$logradouro_Cliente</span></p>
-            // <p>cidade_Cliente: <span id='PesquisaCidade'>$cidade_Cliente</span></p>
-            // <p>uf_Cliente: <span id='PesquisaUF'>$uf_Cliente</span></p>
-            // <p>cep_Cliente: <span id='PesquisaCep'>$cep_Cliente</span></p>
-            // <p>cadastro_Cliente: <span id='PesquisaCadastro'>$data_Cliente</span></p>
-            // <p>status_Cliente: <span id='PesquisaStatus'>$status_Cliente</span></p>
-            // <p>obs_Cliente: <span id='PesquisaObs'>$obs_Cliente</span></p>
+            echo"
+            <p>id_Cliente: <span id='idGerado'>$id_Cliente</span></p>
+            <p>nome_Cliente: <span id='PesquisaNome'>$nome_Cliente</span></p>
+            <p>login_Cliente: <span id='PesquisaLogin'>$login_Cliente</span></p>
+            <p>senha_Cliente: <span id='PesquisaSenha'>$senha_Cliente</span></p>
+            <p>email_Cliente: <span id='PesquisaEmail'>$email_Cliente</span></p>
+            <p>cpf_Cliente: <span id='PesquisaCpf'>$cpf_Cliente</span></p>
+            <p>genero_Cliente: <span id='PesquisaGenero'>$bairro_Cliente</span></p>
+            <p>telefone1_Cliente: <span id='PesquisaTelefone1'>$telefone1_Cliente</span></p>
+            <p>telefone2_Cliente: <span id='PesquisaTelefone2'>$telefone2_Cliente</span></p>
+            <p>logradouro_Cliente: <span id='PesquisaLogradouro'>$logradouro_Cliente</span></p>
+            <p>cidade_Cliente: <span id='PesquisaCidade'>$cidade_Cliente</span></p>
+            <p>uf_Cliente: <span id='PesquisaUF'>$uf_Cliente</span></p>
+            <p>cep_Cliente: <span id='PesquisaCep'>$cep_Cliente</span></p>
+            <p>cadastro_Cliente: <span id='PesquisaCadastro'>$data_Cliente</span></p>
+            <p>status_Cliente: <span id='PesquisaStatus'>$status_Cliente</span></p>
+            <p>obs_Cliente: <span id='PesquisaObs'>$obs_Cliente</span></p>
             
-            // ";
+            ";
         } 
         else
         {

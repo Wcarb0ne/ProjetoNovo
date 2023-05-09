@@ -57,7 +57,7 @@ function CadastrarParceiro() {
 }
 function ParceiroPesquisar() {
 
-    //console.log('testtetttt');
+    console.log('testtetttt');
 
     let id_Parceiro = $('#txtID').val();
 
@@ -78,7 +78,6 @@ function ParceiroPesquisar() {
             $("#txtNome").val($('#PesquisaNome').text());
             $("#txtLogin").val($('#PesquisaLogin').text());
             $("#txtSenha").val($('#PesquisaSenha').text());
-            $("#txtConfirmarSenha").val($('#PesquisaConfirmarSenha').text());
             $("#txtEmail").val($('#PesquisaEmail').text());
             $("#txtDataNasc").val($('#PesquisaDataNasc').text());
             $("#txtCpf").val($('#PesquisaCpf').text());
@@ -575,7 +574,7 @@ function AlterarCliente() {
 
 function PesquisarCliente() {
     console.log('foi');
-    let idCliente = $('#txtID').val();
+    let id_Cliente= $('#txtID').val();
 
     let action = 'Cliente.btoPesquisa.php';
 
@@ -584,7 +583,7 @@ function PesquisarCliente() {
         url: action,
         type: 'post',
         data: {
-            txtID: idCliente
+            txtID: id_Cliente
 
         },
         success: function (data, status, xhr) {

@@ -58,39 +58,39 @@
                 <?php
                     if($_GET)
                     {
-                        if(isset($_GET['Tela']))
+                        if(isset($_GET['Parceiro']))
                         {
-                            $tela = $_GET['Tela'];
+                            $parceiro = $_GET['Parceiro'];
 
-                            if($tela  == 'Parceiro')
+                            if($parceiro  == 'cadastro')
                             {
                                 include_once('frm_Parceiro.php');
                             }
-                            elseif($tela =='EmpresaCliente')
+                            elseif($parceiro =='dados')
                             {
-                                include_once('frm_Empresa.php');
+                                include_once('Parceiro_Dados.php');
                             }
-                            elseif($tela =='Categoria')
+                            elseif($parceiro =='Categoria')
                             {
                                 include_once('Parceiro_CategoriaFrm.php');
                             }
-                            elseif($tela =='Servicos')
+                            elseif($parceiro =='Servicos')
                             {
                                 include_once('Parceiro_ServicosFrm.php');
                             }
-                                elseif($tela == "TabelaServicos")
+                                elseif($parceiro == "TabelaServicos")
                                 {
                                 include_once('Parceiro_ServicosTabela.php');
                                 }
 
-                            elseif($tela =='FaleConosco')
+                            elseif($parceiro =='FaleConosco')
                             {
                                 include_once('frm_FaleConosco.php');
                             }
 
-                            elseif($tela =='Sair')
+                            elseif($parceiro =='Sair')
                             {
-                                include_once('Parceiro_autenticarSair.php');
+                                include_once('www_autenticarSair.php');
                             }
                         }
                         else{

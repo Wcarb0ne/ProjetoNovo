@@ -50,7 +50,7 @@
               <p>Home</p>
             </li> -->
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"> format_list_bulleted </a> </span>
+            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Serviços"> format_list_bulleted </a> </span>
               </span>
               <p>Dados</p>
             </li>
@@ -60,11 +60,11 @@
               <p>Chat</p>
             </li>
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=FaleConosco" title="Fale Conosco">manage_accounts</a></span>
+            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=FaleConosco" title="Fale Conosco">manage_accounts</a></span>
               <p>Fale Conosco</p>
             </li>
             <li class="sub-item">
-            <span class="material-icons-outlined"><a href="www_autenticarSair.php" title="Sair">logout</a>  </span>
+            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Sair" title="Sair">logout</a>  </span>
               <p>Logout</p>
             </li>
           </ul>
