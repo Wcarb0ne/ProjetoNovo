@@ -40,12 +40,12 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre nós</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Saiba Mais</a>
         
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="">teste</a></li>
+          <li><a class="dropdown-item" href="Sobre_nos.php">Sobre Nós</a></li>
 
-          <li><a class="dropdown-item" href="">teste2</a></li>
+          <li><a class="dropdown-item" href="planos.php">Planos</a></li>
            
         </ul>
         </li>
@@ -69,7 +69,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="css/img/carrossel.jpeg" class="d-block w-100"  alt="...">
+      <img src="css/img/carrossel.jpeg" class="d-block w-100 "  alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>

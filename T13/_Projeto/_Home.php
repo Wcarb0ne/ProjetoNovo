@@ -44,7 +44,7 @@
     </div>
     <br>
 
-    <h3>Destaques</h3>
+    <h3>Aqui estão as melhores perto de você </h3>
     <hr>
     <div class="container-fluid">
 
@@ -96,3 +96,5 @@
 
 
 </div>
+
+<?php include_once('_footer.php') ?>

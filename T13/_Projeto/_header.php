@@ -21,7 +21,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre nós</a>
         
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="">Felipe</a></li>
+          <li><a class="dropdown-item" href="Sobre_nos.php">Felipe</a></li>
 
           <li><a class="dropdown-item" href="">Corno</a></li>
            
