@@ -130,7 +130,7 @@
                     </select>
                 </div>
                 <div class="col-sm-3">
-                    <input type="number" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep">
+                    <input type="number" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep" onblur="pesquisacep(this.value);">
                 </div>
             </div>
 

@@ -44,11 +44,12 @@ include_once('Cliente_btoPesquisa.php');
         <h2>Perfil</h2>
         <br><br>
 
-        <!-- <div>
-            <img class="imglogin" src="css/img/logo.png" alt="" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
+        <div> 
+        <img class="imglogin" src="css/img/logo.png" alt="" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
             <label for="img">Selecione uma imagem</label>
             <input id="fotoPerfil" type="file" accept=".jpg,.jpeg,.png"/>
-        </div><br> -->
+        </div>
+        <br> 
         
 
         
@@ -222,6 +223,8 @@ include_once('Cliente_btoPesquisa.php');
     </form>
 
 </body>
+
+
 
 </html>
 

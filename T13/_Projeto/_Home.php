@@ -32,7 +32,10 @@
 
 
 
-    <?php include_once('_header.php') ?>
+    <?php include_once('_header.php');
+       include('Conexao.php');
+    
+    ?>
 
 <div class="container-fluid">
     <div class="row">
@@ -54,7 +57,7 @@
             <?php
 
 
-            include('Conexao.php');
+         
             try {
 
                 $sql = $conn->query("select * from Parceiro where status_Parceiro = 'ativo'");

@@ -6,15 +6,10 @@
 <link rel="stylesheet" href="css/styles.css">
 
 <script src="js/jquery-3.6.4.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 
 <title>Cliente</title>
-
-
-
-
-
 
 <div class="container">
     <div class="col-sm-1"></div>
@@ -28,6 +23,19 @@
                 </div>
             </div>
             <br>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="max-width">
+                        <div class="imageContainer">
+                            <img src="./css/img/manoel-gomes.jpg" alt="Selecione uma imagem" id="imgPhoto">
+                        </div>
+                    </div>
+                    <input type="file" id="flImage" name="fImage" accept="image/*" hidden>
+                </div>
+            </div>
+
+            <br>
             <div class="row"><!-- ID / STATUS / datacadastro -->
                 <div class="col-sm-2">
                     <input type="number" class="form-control" name="txtID" id="txtID" placeholder="ID Cliente" disabled hidden>
@@ -35,7 +43,7 @@
 
                 <div class="col-sm-2">
                     <select name="txtStatus" id="txtStatus" class="form-control" hidden>
-                        <option value=""> ->Selecione<-</option>
+                        <option value=""> ->Selecione<-< /option>
                         <option value="Ativo" selected>Ativo</option>
                         <option value="Inativo">Inativo</option>
                     </select>
@@ -59,6 +67,7 @@
 
             </div>
 
+
             <div class="row mt-3"><!--  email / telefone1 / telefone2 -->
 
                 <div class="col-sm-6">
@@ -71,10 +80,8 @@
                     <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder=" Informe o Telefone2">
                 </div>
 
-
-
-
             </div>
+
 
             <div class="row mt-3"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
                 <div class="col-sm-4">
@@ -175,10 +182,39 @@
                     <div class="col-sm-12" id="Resultado">
 
                     </div>
+                    <textarea id="base64Code" rows="5" class="form-control"></textarea>
+                    
                 </div>
             </div>
 
         </form>
     </div>
+    <script>
+        var foto = document.getElementById('imgPhoto');
+        var file = document.getElementById('flImage');
+
+
+        foto.addEventListener('click', () => {
+            file.click();
+
+            var reader = new FileReader();
+
+            reader.onloadend = function() {
+                var caminho = reader.result;
+                // var caminhoLimpo = reader.result;
+
+                foto.src = caminho;
+                $("#base64Code").val(caminho);
+
+                
+            }
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                foto.src = "";
+            }
+
+        });
+    </script>
 
 </div>

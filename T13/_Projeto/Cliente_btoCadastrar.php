@@ -24,6 +24,7 @@ if($_POST)
     $telefone2_Cliente = $_POST['txtTelefone2'];
     $email_Cliente = $_POST['txtEmail'];
     $obs_Cliente = $_POST['txtObs'];
+    $foto_Cliente = $_POST['fImage'];
         
     try {
             $sql = $conn->prepare(
@@ -44,7 +45,8 @@ if($_POST)
                 telefone1_Cliente,
                 telefone2_Cliente,
                 email_Cliente,
-                obs_Cliente
+                obs_Cliente,
+                foto_Cliente
                 )
 
                 values
@@ -64,7 +66,9 @@ if($_POST)
                 :telefone1_Cliente,
                 :telefone2_Cliente,
                 :email_Cliente,
-                :obs_Cliente)"
+                :obs_Cliente,
+                :foto_Cliente
+                )"
             );
 
             $sql->execute(array(
@@ -83,7 +87,8 @@ if($_POST)
                 ':telefone1_Cliente'=> $telefone1_Cliente,
                 ':telefone2_Cliente'=>$telefone2_Cliente,
                 ':email_Cliente'=>$email_Cliente,
-                ':obs_Cliente'=>$obs_Cliente
+                ':obs_Cliente'=>$obs_Cliente,
+                ':foto_Cliente'=>$foto_Cliente
             ));
 
             if($sql->rowCount() > 0)

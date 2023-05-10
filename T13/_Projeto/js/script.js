@@ -462,6 +462,7 @@ function CadastrarCliente() {
     let uf_Cliente = $('#txtUF').val();
     let cep_Cliente = $('#txtCEP').val();
     let obs_Cliente = $('#txtObs').val();
+    let foto_Cliente = $('#base64CodePHP')
 
 
 
@@ -490,7 +491,8 @@ function CadastrarCliente() {
             txtCidade: cidade_Cliente,
             txtUF: uf_Cliente,
             txtCEP: cep_Cliente,
-            txtObs: obs_Cliente
+            txtObs: obs_Cliente,
+            fImage: foto_Cliente,
         },
         beforsend: function () {
             $("#Resultado").html("ENVIANDO...");
@@ -597,6 +599,51 @@ function PesquisarCliente() {
 
 }
 
-///////////////////////////////MAPA/////////////////////////
+// Validar CEP
+function limparFormulario() {
+    document.getElementById('#txtUF').value = (""); 
+    document.getElementById('#txtBairro').value = ("");
+    document.getElementById('#txtCidade').value = (""); 
+    document.getElementById('#txtLogradouro').value = (""); 
+  }
+  
+  function meu_callback(endereco) {
+    if (!("erro" in endereco)) {
+      document.getElementById('#txtUF').value=(endereco.uf);
+      document.getElementById('#txtBairro').value=(endereco.bairro);
+      document.getElementById('#txtCidade').value=(endereco.localidade);
+      document.getElementById('#txtLogradouro').value=(endereco.logradouro);
+    } else {
+      limparFormulario();
+      alert("CEP não encontrado");
+    }
+  }
+  
+  function pesquisacep(valor) {
+    const cep = valor.replace(/\D/g, '');
+  
+    if (cep != ""){
+      const validacep = /^[0-9]{8}$/; 
+      
+      if(validacep.test(cep)) {
+        document.getElementById('#txtUF').value="...";
+        document.getElementById('#txtBairro').value="...";
+        document.getElementById('#txtCidade').value="...";
+        document.getElementById('#txtLogradouro').value="...";
+  
+        const script = document.createElement('script');
+  
+        script.src = 'https://viacep.com.br/ws/'+ cep +'/json/?callback=meu_callback';
+  
+        document.body.appendChild(script);
+  
+      } else {
+        limparFormulario();
+        alert("Formato de CEP inválido");
+      }
+    } else{
+      limparFormulario();
+    }
+  };
 
 

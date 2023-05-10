@@ -67,6 +67,8 @@ cpfCheck = function (el) {
 
 //----------- MÁSCARA CEP
 
+
+
 function limparFormulario() {
   document.getElementById('uf').value = (""); 
   document.getElementById('bairro').value = ("");
@@ -75,6 +77,7 @@ function limparFormulario() {
 }
 
 function meu_callback(endereco) {
+  
   if (!("erro" in endereco)) {
     document.getElementById('uf').value=(endereco.uf);
     document.getElementById('bairro').value=(endereco.bairro);
