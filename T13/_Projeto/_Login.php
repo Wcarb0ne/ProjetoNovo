@@ -62,6 +62,7 @@
                 header('Location:Parceiro_sistema.php');
 
             } else {
+                
                 echo '<div class="col-sm-12 p-2"><p>Usuário ou senha inválido</p></div>';
             }
         }

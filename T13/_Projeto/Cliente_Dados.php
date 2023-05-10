@@ -22,8 +22,8 @@
 
   
  
-  <?php include_once('www_autenticar.php');
-include_once('Conexao.php');
+<?php include_once('Conexao.php');
+include_once('www_autenticar.php');
 include_once('Cliente_btoPesquisa.php');
 ?>
   <!-- <script>
@@ -194,7 +194,7 @@ include_once('Cliente_btoPesquisa.php');
 
             <div class="row mt-3"><!-- Observação -->
                 <div class="col-sm-12 ">
-                    <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Observação(Opcional)"></textarea>
+                    <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Observação(Opcional)"><?=$obs_Cliente?></textarea>
                 </div>
             </div>
 
@@ -204,11 +204,11 @@ include_once('Cliente_btoPesquisa.php');
         <div class="row mt-3"><!--botoes-->
         <div class="col-sm-1"></div>
             <div class="col-sm-5">
-                <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="PesquisarCliente()">Alterar Dados</button>
+                <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="AlterarCliente()">Alterar Dados</button>
                 <div class="msgValidar"></div>
             </div>
             <div class="col-sm-5">
-                 <a id="btn-Sair" class="btn-Sair" type="submit"  value="Sair">Deslogar</a>
+                 <a id="btn-Sair" class="btn-Sair" type="submit" href="Cliente_sistema.php?Cliente=Sair" value="Sair">Deslogar</a>
             </div>
             <div class="col-sm-1"></div>
 

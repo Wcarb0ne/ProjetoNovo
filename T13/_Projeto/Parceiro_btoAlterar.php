@@ -1,7 +1,5 @@
 <?php
 include_once('Conexao.php');
-
-
 if($_POST)
 {
     $id_Parceiro = $_POST['txtID'];    
@@ -79,5 +77,3 @@ if($_POST)
         echo $ex->getMessage();
     }
 }
-?>
-    

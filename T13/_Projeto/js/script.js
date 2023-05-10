@@ -122,7 +122,7 @@ function ParceiroAlterar() {
 
 
     let action = 'Parceiro_btoAlterar.php';
-    console.log('testtetttt');
+    // console.log('testtetttt');
 
 
     $.ajax({
@@ -445,7 +445,7 @@ function AlterarCategoriaParceiro() {
 function CadastrarCliente() {
 
     // console.log("teste");
-
+    
     let status_Cliente = $('#txtStatus').val();
     let nome_Cliente = $('#txtNome').val();
     let cpf_Cliente = $('#txtCPF').val();
@@ -474,6 +474,7 @@ function CadastrarCliente() {
         type: 'post',
         data: {
 
+            
             txtStatus: status_Cliente,
             txtNome: nome_Cliente,
             txtCPF: cpf_Cliente,
@@ -509,8 +510,8 @@ function CadastrarCliente() {
 
 function AlterarCliente() {
 
-    //console.log('testtetttt');
-
+    
+    let id_Cliente= $('#txtID').val();
     let status_Cliente = $('#txtStatus').val();
     let nome_Cliente = $('#txtNome').val();
     let cpf_Cliente = $('#txtCPF').val();
@@ -529,12 +530,13 @@ function AlterarCliente() {
     let obs_Cliente = $('#txtObs').val();
 
     let action = 'Cliente_btoAlterar.php';
-
+    console.log('testtetttt');
 
     $.ajax({
         url: action,
         type: 'post',
         data: {
+            txtID: id_Cliente,
             txtStatus: status_Cliente,
             txtNome: nome_Cliente,
             txtCPF: cpf_Cliente,
@@ -550,7 +552,7 @@ function AlterarCliente() {
             txtCidade: cidade_Cliente,
             txtUF: uf_Cliente,
             txtCEP: cep_Cliente,
-            txtOBS: obs_Cliente
+            txtObs: obs_Cliente
 
         },
         beforend: function () {
@@ -558,8 +560,8 @@ function AlterarCliente() {
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html(data);
-            PesquisarCategoriaParceiror();
+            $("#resultado").html(data);
+            
         },
         error: function (jqXhr, textStatus, errorMessage) {
             $('#resultado').append('Error ' + errorMessage);
@@ -569,7 +571,7 @@ function AlterarCliente() {
 }
 
 function PesquisarCliente() {
-    console.log('foi');
+    // console.log('foi');
     let id_Cliente= $('#txtID').val();
 
     let action = 'Cliente.btoPesquisa.php';
@@ -583,7 +585,7 @@ function PesquisarCliente() {
 
         },
         success: function (data, status, xhr) {
-
+            
 
 
         },

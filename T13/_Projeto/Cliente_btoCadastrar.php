@@ -23,7 +23,7 @@ if($_POST)
     $telefone1_Cliente = $_POST['txtTelefone1'];
     $telefone2_Cliente = $_POST['txtTelefone2'];
     $email_Cliente = $_POST['txtEmail'];
-    $obs_Cliente = $_POST['txtOBS'];
+    $obs_Cliente = $_POST['txtObs'];
         
     try {
             $sql = $conn->prepare(

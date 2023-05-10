@@ -1,11 +1,11 @@
 <?php
-include_once('conexao.php');
+include_once('Conexao.php');
 if($_POST)
 {
     $id_Cliente = $_POST['txtID'];    
     $status_Cliente = $_POST['txtStatus'];
     $nome_Cliente = $_POST['txtNome'];
-    $cpf_Cliente = $_POST['txtCpf'];
+    $cpf_Cliente = $_POST['txtCPF'];
     $email_Cliente = $_POST['txtEmail'];
     $telefone1_Cliente = $_POST['txtTelefone1']; 
     $telefone2_Cliente = $_POST['txtTelefone2'];
@@ -17,7 +17,7 @@ if($_POST)
     $bairro_Cliente = $_POST['txtBairro'];
     $cidade_Cliente = $_POST['txtCidade']; 
     $uf_Cliente = $_POST['txtUF']; 
-    $cep_Cliente = $_POST['txtCep'];
+    $cep_Cliente = $_POST['txtCEP'];
     $obs_Cliente = $_POST['txtObs'];
 
     try 
@@ -25,23 +25,23 @@ if($_POST)
        
         $sql = $conn->prepare('update Cliente set
         
-        $nome_Cliente =:nome_Cliente, 
-        $status_Cliente=:status_Cliente,
-        $nome_Cliente=:nome_Cliente,
-        $cpf_Cliente=:cpf_Cliente,
-        $email_Cliente=:email_Cliente,
-        $telefone1_Cliente=:telefone1_Cliente,
-        $telefone2_Cliente=:telefone2_Cliente,
-        $login_Cliente=:login_Cliente,
-        $senha_Cliente=:senha_Cliente,
-        $logradouro_Cliente=:logradouro_Cliente,
-        $numero_Cliente=:numero_Cliente,
-        $complemento_Cliente=:complemento_Cliente,
-        $bairro_Cliente=:bairro_Cliente,
-        $cidade_Cliente=:cidade_Cliente,
-        $uf_Cliente=:uf_Cliente,
-        $cep_Cliente=:cep_Cliente,
-        $obs_Cliente=:obs_Cliente
+        
+        status_Cliente=:status_Cliente,
+        nome_Cliente =:nome_Cliente,           
+        cpf_Cliente=:cpf_Cliente,
+        email_Cliente=:email_Cliente,
+        telefone1_Cliente=:telefone1_Cliente,
+        telefone2_Cliente=:telefone2_Cliente,
+        login_Cliente=:login_Cliente,
+        senha_Cliente=:senha_Cliente,
+        logradouro_Cliente=:logradouro_Cliente,
+        numero_Cliente=:numero_Cliente,
+        complemento_Cliente=:complemento_Cliente,
+        bairro_Cliente=:bairro_Cliente,
+        cidade_Cliente=:cidade_Cliente,
+        uf_Cliente=:uf_Cliente,
+        cep_Cliente=:cep_Cliente,
+        obs_Cliente=:obs_Cliente
 
         where id_Cliente=:id_Cliente'
         );   
@@ -57,8 +57,8 @@ if($_POST)
             ':login_Cliente'=>$login_Cliente,
             ':senha_Cliente'=>$senha_Cliente,
             ':logradouro_Cliente'=>$logradouro_Cliente,
-            ':numero_Cliente'=>$numero_Cliente,
-            ':complemento_Cliente'=>$complemento_Cliente,
+            ':numero_Cliente'=>$numero_Cliente,         
+            ':complemento_Cliente'=>$complemento_Cliente,     
             ':bairro_Cliente'=>$bairro_Cliente,
             ':cidade_Cliente'=>$cidade_Cliente,
             ':uf_Cliente'=>$uf_Cliente,
@@ -67,6 +67,7 @@ if($_POST)
         ));
         if($sql->rowCount()==1)
         {
+            "<script>PesquisarCliente()</script>";
             echo "<p>Dados alterados com sucesso</p>";
         }
     }
