@@ -646,4 +646,51 @@ function limparFormulario() {
     }
   };
 
+//////////////////////////////Contrato////////////////////
+function Contrato() {
 
+     console.log("teste");
+
+    let cnpj_Contrato = $('#txtcnpj').val();
+    let nome_Contrato = $('#txtNome').val();
+    let valor_Contrato = $('#txtValor').val();
+    let tipo_Contrato = $('#txtTipo').val();
+    let dataEmissao_Contrato = $('#txtEmissao').val();
+    let dataTermino_Contrato = $('#txtTermino').val();
+   
+    
+
+
+    let action = 'contrato.teste.php';
+
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+
+            txtCnpj: cnpj_Contrato,
+            txtNome: nome_Contrato,
+            txtValor: valor_Contrato,
+            txtTipo: tipo_Contrato,
+            txtEmissao: dataEmissao_Contrato,
+            txtTermino: dataTermino_Contrato,
+         
+            
+        },
+        beforsend: function () {
+            $("#Resultado").html("ENVIANDO...");
+        },
+        success: function (data, status, xhr) {
+            $("#Resultado").empty().html(data);
+            //$("#txtID").val($(#idGerado).text());
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#Resultado').empty('Error ' + errorMessage);
+        }
+
+    })
+}
+
+/////////////////Contrato///////////

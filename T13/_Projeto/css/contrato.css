@@ -10,6 +10,7 @@ body{
     margin-top: 50px;
     margin-left: 160px;
     margin-right: 160px;
+    margin-block-end: 100px;
     background-color: rgb(255, 255, 255);
 }
 

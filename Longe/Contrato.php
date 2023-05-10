@@ -1,11 +1,13 @@
 <link rel="stylesheet" href="../T13/_Projeto/css/contrato.css">
 
+<script src="../T13/_Projeto/js/jquery-3.6.4.js"></script>
+    <script src="../T13/_Projeto/js/script.js"></script>
 
 <h1>Contrato</h1>
 <hr>
 
 <body>
-
+<?php  include_once('T13/_Projeto/Conexao.php')  ?>
     <h3>Contrato de Prestação de Serviços</h3>
     <div class="user-box">
         <p>CONTRATANTE:</p>
@@ -84,9 +86,18 @@
             <p> Cláusula 12ª. Para dirimir quaisquer controvérsias oriundas do contrato, as partes elegem o foro da comarca de -</p>
             <p> Por estarem assim justos e contratadas, firmam o presente instrumento.</p>
 
-        <div class="user-box">
-        <input type="text" name="txtLogin" required>
-        
-        <div class="user-box">
-        <input type="text" name="txtLogin" required>
+
+
+
+
+            <div class="user-box"></div>
+            <label for="data">Data de Início:</label>
+      <input type="date" name="data" id="data" required>
+
+        <div class="user-box"></div>
+         <label for="data">Data de Término:</label>
+      <input type="date" name="data" id="data" required>
+
+      <button name="btoContrato" class="btn btn-success" onclick="Contrato()">Enviar</button>
+
 </body>
