@@ -25,8 +25,7 @@ if($_POST)
     $confirmarSenha_Funcionario = $_POST['txtConfirmarSenha'];
 
     /*17 campos acima*/ 
-    
-    
+       
     try {
         $sql = $conn->prepare(
             "insert into Funcionario

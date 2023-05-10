@@ -26,7 +26,7 @@ function CadastrarDepartamento(){
             }
     
         })
-    }
+}
 function PesquisarDepartamento(){
     
     
@@ -58,7 +58,7 @@ function PesquisarDepartamento(){
     
         })
     
-    }
+}
 function ExcluirDepartamento(){
     
         let id_Departamento = $('#txtID').val();
@@ -84,7 +84,7 @@ function ExcluirDepartamento(){
             }
     
         })
-    }
+}
 function AlterarDepartamento(){
     
         //console.log('testtetttt');
@@ -114,7 +114,7 @@ function AlterarDepartamento(){
             success: function (data, status, xhr) {
     
                 $("#resultado").empty().html( data );
-                PesquisarDepartamentor();
+                PesquisarDepartamento();
             },
             error: function (jqXhr, textStatus, errorMessage) {
                 $('#resultado').append('Error ' + errorMessage);
@@ -122,7 +122,7 @@ function AlterarDepartamento(){
     
         })
     
-    }/////////////////formulario Departamento ///////////
+}/////////////////formulario Departamento ///////////
 
 /////////////////formulario Funcionario ///////////
 function CadastrarFuncionario(){
@@ -233,10 +233,93 @@ function PesquisarFuncionario(){
         })
 }
 function ExcluirFuncionario(){
+
+    let id_Funcionario = $('#txtID').val();
+      
+    let action = 'FuncionarioBtoExcluir.php';
     
+    
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_Funcionario
+               
+        },
+        beforend : function(){
+            $("#resultado").html("ENVIANDO...");
+        },
+        success: function(data, status, xhr){
+            $( "#resultado" ).empty().html( data );
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+        $('#resultado').empty().html('Error' + errorMessage);
+        }
+    
+        })
 }
 function AlterarFuncionario(){
+
+    let status_Funcionario = $('#txtStatus').val();
+    let nome_Funcionario =$('#txtNome').val();
+    let cpf_Funcionario = $('#txtCpf').val();
+
+    let cep_Funcionario = $('#txtCep').val(); 
+    let logradouro_Funcionario = $('#txtLogradouro').val(); 
+    let numero_Funcionario = $('#txtNumero').val();
+    let complemento_Funcionario = $('#txtComplemento').val();
+    let bairro_Funcionario = $('#txtBairro').val();
+    let cidade_Funcionario = $('#txtCidade').val(); 
+    let uf_Funcionario = $('#txtUF').val(); 
+
+    let email_Funcionario = $('#txtEmail').val();
+    let telefone1_Funcionario = $('#txtTelefone1').val(); 
+    let telefone2_Funcionario = $('#txtTelefone2').val();
+
+    let id_Departamento_Funcionario = $('#txtIDepart').val();
+    let login_Funcionario = $('#txtLogin').val();
+    let senha_Funcionario = $('#txtSenha').val();
+    let confirmarSenha_Funcionario = $('#txtConfirmarSenha').val();
+
+    let action = 'FuncionarioBtoAlterar.php';
+       
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Funcionario,               
+                txtStatus: status_Funcionario,
+                txtNome: nome_Funcionario,
+                txtCpf:cpf_Funcionario,
+                txtCep:cep_Funcionario,
+                txtLogradouro:logradouro_Funcionario,
+                txtNumero:numero_Funcionario,
+                txtComplemento:complemento_Funcionario,
+                txtBairro:bairro_Funcionario,
+                txtCidade:cidade_Funcionario,
+                txtUF:uf_Funcionario,
+                txtEmail:email_Funcionario,
+                txtTelefone1:telefone1_Funcionario,
+                txtTelefone2:telefone2_Funcionario,
+                txtIDepart:id_Departamento_Funcionario,
+                txtLogin:login_Funcionario,
+                txtSenha:senha_Funcionario,
+                txtConfirmarSenha:confirmarSenha_Funcionario
+               
+            },
+            beforend : function(){
+                $("#resultado").html("ENVIANDO...");
+            },
+            success: function (data, status, xhr) {
     
+                $("#resultado").empty().html( data );
+                PesquisarFuncionario();
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').append('Error ' + errorMessage);
+            }
+    
+        })
 }/////////////////formulario Funcionario ///////////
 
 /////////////////formulario planos ///////////
@@ -279,7 +362,7 @@ function CadastrarPlano(){
             }
     
         })
-    }
+}
 function PesquisarPlano(){
     
         //console.log('testtetttt');
@@ -392,6 +475,8 @@ function AlterarPlano(){
             },
             error: function (jqXhr, textStatus, errorMessage) {
                 $('#resultado').append('Error ' + errorMessage);
+                PesquisarPlano()
+
             }
     
         })
