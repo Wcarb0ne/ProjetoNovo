@@ -45,9 +45,11 @@ include_once('Cliente_btoPesquisa.php');
         <br><br>
 
         <div> 
-        <img class="imglogin" src="css/img/logo.png" alt="" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
-            <label for="img">Selecione uma imagem</label>
-            <input id="fotoPerfil" type="file" accept=".jpg,.jpeg,.png"/>
+        
+            <input name="txtImg" id="txtImg" type="file" class="form-control" onchange="previewFile(this)"/>
+						<img id="preImg" src="<?='data:image/jpeg;base64,'.$foto_Cliente?>" height="200"  alt="Image preview...">
+
+
         </div>
         <br> 
         

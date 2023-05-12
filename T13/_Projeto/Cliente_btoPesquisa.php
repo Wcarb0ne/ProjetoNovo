@@ -50,6 +50,7 @@ $id_Cliente = $idUsuario;
                 $telefone2_Cliente=$linha[15];
                 $email_Cliente=$linha[16];
                 $obs_Cliente=$linha[17];
+                $foto_Cliente=$linha[18];
             }
 
             // echo"

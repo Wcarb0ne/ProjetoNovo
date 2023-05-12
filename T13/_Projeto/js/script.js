@@ -462,11 +462,24 @@ function CadastrarCliente() {
     let uf_Cliente = $('#txtUF').val();
     let cep_Cliente = $('#txtCEP').val();
     let obs_Cliente = $('#txtObs').val();
-    let foto_Cliente = $('#base64CodePHP')
+    let foto_Cliente = $('#base64CodePHP').val();
 
 
 
     let action = 'Cliente_btoCadastrar.php';
+
+    // if (status_Cliente == null)
+    // {
+    //     alert("erro");
+    //     return;
+    // }
+    // if (isNumeric(cep_Cliente))
+    // {
+    //     alert("Apenas numeros");
+    //     return;
+    // }
+    // if (isNumeric(nome_Cliente))
+
 
 
 

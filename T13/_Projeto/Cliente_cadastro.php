@@ -26,12 +26,8 @@
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <div class="max-width">
-                        <div class="imageContainer">
-                            <img src="./css/img/manoel-gomes.jpg" alt="Selecione uma imagem" id="imgPhoto">
-                        </div>
-                    </div>
-                    <input type="file" id="flImage" name="fImage" accept="image/*" hidden>
+                <input name="txtImg" id="txtImg" type="file" class="form-control" onchange="previewFile(this)"/>
+						<img id="preImg" src="" height="200" alt="Image preview...">
                 </div>
             </div>
 
@@ -170,6 +166,8 @@
             <div class="row mt-3" id="Resultado">
 
             </div>
+            <textarea id="base64Code" rows="5" class="form-control"></textarea>
+						<textarea id="base64CodePHP" rows="5" class="form-control"></textarea>
 
             <div class="row mt-4 mb-4"><!--botoes-->
                 <div class="col-sm-12">
@@ -189,7 +187,7 @@
 
         </form>
     </div>
-    <script>
+    <!-- <script>
         var foto = document.getElementById('imgPhoto');
         var file = document.getElementById('flImage');
 
@@ -215,6 +213,36 @@
             }
 
         });
-    </script>
+    </script> -->
+
+    <script>
+function previewFile(element) {
+  
+  var preview = document.getElementById('preImg');
+  var file    = document.getElementById('txtImg').files[0];
+
+  var reader  = new FileReader();
+
+  reader.onloadend = function () {
+	var caminho = reader.result;
+    // var caminhoLimpo = reader.result;
+    
+	preview.src = caminho;
+	$("#base64Code").val(caminho);
+
+	caminhoLimpo = caminho.substring(caminho.indexOf("base64,")+7);
+	$("#base64CodePHP").val(caminhoLimpo);
+
+  }
+
+  if (file) {
+    reader.readAsDataURL(file);
+  } else {
+    preview.src = "";
+  }
+  
+}
+</script>
+
 
 </div>
