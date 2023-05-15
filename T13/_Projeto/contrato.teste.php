@@ -1,19 +1,18 @@
 <?php
 
-sleep(3);
 
 print_r($_POST);
-return;
+//return;
 include_once('Conexao.php');
 
 if($_POST)
 {
     $cnpj_Contrato = $_POST['txtcnpj'];
-    $nome_Contrato = $_POST['txtNome'];
+    $nome_Contrato = $_POST['txtnome'];
     $valor_Contrato = $_POST['txtvalor'];
     $tipo_Contrato = $_POST['txttipo'];
-    $dataEmissao_Contrato = $_POST['tfxtdataEmissao'];
-    $dataTermino_Contrato = $_POST['txtTermino'];
+    $dataEmissao_Contrato = $_POST['txtemissao'];
+    $dataTermino_Contrato = $_POST['txttermino'];
   
         
     try {
@@ -49,7 +48,7 @@ if($_POST)
 
             if($sql->rowCount() > 0)
             {
-                echo "<p>Dados cadastrados com sucesso</p>";
+                echo "<p>Contrato Assinado com Sucesso</p>";
                 echo "<p>Id Gerado: ".$conn->lastInsertId()."</p>";
             }
         
@@ -57,10 +56,7 @@ if($_POST)
             echo $ex->getMessage();
         }
     }   
-    else
-    {
-        //header('Location:index.php');
-    }
+   
 
     ?>
 
