@@ -36,7 +36,7 @@
           <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="_Home.php">Serviços</a>
+          <a class="nav-link" href="_Home.php">Home</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -49,9 +49,7 @@
            
         </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
+      
         <li class="nav-item">
           <a class="navbar-brand m-5" href="_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
         </li>

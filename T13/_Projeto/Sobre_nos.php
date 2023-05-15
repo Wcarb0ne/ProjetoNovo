@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="css/landingPage.css">
 </head>
 <body>
+	 
 	<header>
 		 <?php include_once('_header.php') ?>  
 	</header>

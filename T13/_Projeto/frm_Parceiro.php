@@ -143,7 +143,8 @@
             <div class="row mt-2 mb-2"><!--botoes-->
                 <div class="col-sm-12">
                     <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarParceiro()">Cadastrar</button>
-                    <button name="btoSair" class="btn btn-danger" href="Parceiro_sistema.php?">Sair</button>
+                
+                    <a name="btoSair" class="btn btn-danger" href="_Home.php">Sair</a>
                 </div>
             </div>
             <div class="row">

@@ -11,6 +11,8 @@
 
     <!-- Cabeçalho e Rodapé -->
     <link rel="stylesheet" href="css/landingPage.css">
+
+    <link rel="stylesheet" href="css/malsase.css">
     
     
 
@@ -41,7 +43,27 @@
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <img src="css/img/teste.jpg" class="imagem" alt="">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="css/img/Velho1.png" class=" triste" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="css/img/Velho2.png" class=" triste" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="css/img/Velho3.png" class=" triste" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         </div>
         <div class="col-sm-3"></div>
     </div>
