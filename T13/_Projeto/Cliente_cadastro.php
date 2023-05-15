@@ -57,7 +57,7 @@
                     <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o Nome completo">
                 </div>
                 <div class="col-sm-3">
-                    <input type="txt" class="form-control" name="txtCPF" id="txtCPF" placeholder="Informe o CPF">
+                    <input type="text" class="form-control" name="txtCPF" id="txtCPF" placeholder="Informe o CPF">
                 </div>
 
 

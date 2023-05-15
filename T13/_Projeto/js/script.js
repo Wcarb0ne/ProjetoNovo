@@ -22,38 +22,128 @@ function CadastrarParceiro() {
     let obs_Parceiro = $('#txtObs').val();
     let action = 'Parceiro_btoCadastrar.php';
 
-    $.ajax({
-        url: action,
-        type: 'post',
-        data: {
-            txtStatus: status_Parceiro,
-            txtNome: nome_Parceiro,
-            txtCnpj: cnpj_Parceiro,
-            txtRamo: ramo_Parceiro,
-            txtEmail: email_Parceiro,
-            txtTelefone1: telefone1_Parceiro,
-            txtTelefone2: telefone2_Parceiro,
-            txtLogin: login_Parceiro,
-            txtSenha: senha_Parceiro,
-            txtConfirmarSenha: confirmarSenha_Parceiro,
-            txtLogradouro: logradouro_Parceiro,
-            txtNumero: numero_Parceiro,
-            txtComplemento: complemento_Parceiro,
-            txtBairro: bairro_Parceiro,
-            txtCidade: cidade_Parceiro,
-            txtUF: uf_Parceiro,
-            txtCep: cep_Parceiro,
-            txtObs: obs_Parceiro
-        },
-        success: function (data, status, xhr) {
-            $("#resultado").empty().html(data);
-            //$("#txtID").val($(#idGerado).text());
-        },
-        error: function (jqXhr, textStatus, errorMessage) {
-            $('#resultado').append('Error ' + errorMessage);
-        }
+    if ($("#txtStatus").val() == '') {
+        alert("erro");
+        return;
+    }
+    if ($("#txtNome").val() == '') {
+        alert("Campo Nome Obrigatório");
+        return;
+    }
+    if ($.isNumeric($("#txtNome").val())) {
+        alert("Apenas Letras");
+        return;
+    }
+    if ($("#txtCnpj").val() == null) {
+        alert("CPF obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCnpj").val())) {
+        alert("Apenas Números");
+        return;
+    }
+    if ($('#txtRamo').val() == null) {
+        alert("Ramo obrigatório");
+        return;
+    }
 
-    })
+    if ($('#txtEmail').val() == null) {
+        alert("E-mail obrigatório");
+        return;
+    }
+
+    if ($("#txtTelefone1").val() == null) {
+        alert("Campo Telefone1 obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtTelefone1").val())) {
+        alert("Preencha telefone com números");
+        return;
+    }
+    if ($("#txtBairro").val() == null) {
+        alert("Bairro obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtBairro").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($.isNumeric($("#txtCidade").val() == null)) {
+        alert("Campo Cidade Obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($("#txtCEP").val() = null) {
+        alert("CEP obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCEP").val())) {
+        alert("Preencha o CEP com números")
+        return;
+    }
+    if ($("#txtUF").val().trim() === '') {
+        alert("Estado(UF) é Obrigatório");
+        return;
+    }
+    if ($("#txtSenha").val() == null) {
+        alert("Senha é Obrigatória");
+        return;
+    }
+    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+        alert("A senha deve ser idêntica ao confirmar Senha");
+        return;
+    }
+    if ($("#txtNumero").val() == null) {
+        alert("Número da Residência é obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtNumero").val())) {
+        alert("Número da Residência não pode conter letras");
+        return;
+    }
+
+    if ($("#txtLogin").val() == null) {
+        alert("Login é Obrigatório");
+        return;
+    }
+    else {
+
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtStatus: status_Parceiro,
+                txtNome: nome_Parceiro,
+                txtCnpj: cnpj_Parceiro,
+                txtRamo: ramo_Parceiro,
+                txtEmail: email_Parceiro,
+                txtTelefone1: telefone1_Parceiro,
+                txtTelefone2: telefone2_Parceiro,
+                txtLogin: login_Parceiro,
+                txtSenha: senha_Parceiro,
+                txtConfirmarSenha: confirmarSenha_Parceiro,
+                txtLogradouro: logradouro_Parceiro,
+                txtNumero: numero_Parceiro,
+                txtComplemento: complemento_Parceiro,
+                txtBairro: bairro_Parceiro,
+                txtCidade: cidade_Parceiro,
+                txtUF: uf_Parceiro,
+                txtCep: cep_Parceiro,
+                txtObs: obs_Parceiro
+            },
+            success: function (data, status, xhr) {
+                $("#resultado").empty().html(data);
+                //$("#txtID").val($(#idGerado).text());
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').append('Error ' + errorMessage);
+            }
+
+        })
+    }
 }
 function ParceiroPesquisar() {
 
@@ -121,46 +211,137 @@ function ParceiroAlterar() {
     let obs_Parceiro = $('#txtObs').val();
 
 
-    let action = 'Parceiro_btoAlterar.php';
-    // console.log('testtetttt');
+    if ($("#txtStatus").val() == '') {
+        alert("erro");
+        return;
+    }
+    if ($("#txtNome").val() == '') {
+        alert("Campo Nome Obrigatório");
+        return;
+    }
+    if ($.isNumeric($("#txtNome").val())) {
+        alert("Apenas Letras");
+        return;
+    }
+    if ($("#txtCnpj").val() == null) {
+        alert("CPF obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCnpj").val())) {
+        alert("Apenas Números");
+        return;
+    }
+    if ($('#txtRamo').val() == null) {
+        alert("Ramo obrigatório");
+        return;
+    }
+
+    if ($('#txtEmail').val() == null) {
+        alert("E-mail obrigatório");
+        return;
+    }
+
+    if ($("#txtTelefone1").val() == null) {
+        alert("Campo Telefone1 obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtTelefone1").val())) {
+        alert("Preencha telefone com números");
+        return;
+    }
+    if ($("#txtBairro").val() == null) {
+        alert("Bairro obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtBairro").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($.isNumeric($("#txtCidade").val() == null)) {
+        alert("Campo Cidade Obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($("#txtCEP").val() = null) {
+        alert("CEP obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCEP").val())) {
+        alert("Preencha o CEP com números")
+        return;
+    }
+    if ($("#txtUF").val().trim() === '') {
+        alert("Estado(UF) é Obrigatório");
+        return;
+    }
+    if ($("#txtSenha").val() == null) {
+        alert("Senha é Obrigatória");
+        return;
+    }
+    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+        alert("A senha deve ser idêntica ao confirmar Senha");
+        return;
+    }
+    if ($("#txtNumero").val() == null) {
+        alert("Número da Residência é obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtNumero").val())) {
+        alert("Número da Residência não pode conter letras");
+        return;
+    }
+
+    if ($("#txtLogin").val() == null) {
+        alert("Login é Obrigatório");
+        return;
+    }
+    else {
 
 
-    $.ajax({
-        url: action,
-        type: 'post',
-        data: {
-            txtID: id_Parceiro,
-            txtNome: nome_Parceiro,
-            txtStatus: status_Parceiro,
-            txtCnpj: cnpj_Parceiro,
-            txtRamo: ramo_Parceiro,
-            txtEmail: email_Parceiro,
-            txtTelefone1: telefone1_Parceiro,
-            txtTelefone2: telefone2_Parceiro,
-            txtLogin: login_Parceiro,
-            txtSenha: senha_Parceiro,          
-            txtLogradouro: logradouro_Parceiro,
-            txtNumero: numero_Parceiro,
-            txtComplemento: complemento_Parceiro,
-            txtBairro: bairro_Parceiro,
-            txtCidade: cidade_Parceiro,
-            txtUF: uf_Parceiro,
-            txtCep: cep_Parceiro,
-            txtObs: obs_Parceiro
+        let action = 'Parceiro_btoAlterar.php';
+        // console.log('testtetttt');
 
-        },
-        beforend: function () {
-            $("#resultado").html("ENVIANDO...");
-        },
-        success: function (data, status, xhr) {
-            $("#resultado").html(data);
-            
-        },
-        error: function (jqXhr, textStatus, errorMessage) {
-            $('#resultado').append('Error ' + errorMessage);
-        }
 
-    })
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Parceiro,
+                txtNome: nome_Parceiro,
+                txtStatus: status_Parceiro,
+                txtCnpj: cnpj_Parceiro,
+                txtRamo: ramo_Parceiro,
+                txtEmail: email_Parceiro,
+                txtTelefone1: telefone1_Parceiro,
+                txtTelefone2: telefone2_Parceiro,
+                txtLogin: login_Parceiro,
+                txtSenha: senha_Parceiro,
+                txtLogradouro: logradouro_Parceiro,
+                txtNumero: numero_Parceiro,
+                txtComplemento: complemento_Parceiro,
+                txtBairro: bairro_Parceiro,
+                txtCidade: cidade_Parceiro,
+                txtUF: uf_Parceiro,
+                txtCep: cep_Parceiro,
+                txtObs: obs_Parceiro
+
+            },
+            beforend: function () {
+                $("#resultado").html("ENVIANDO...");
+            },
+            success: function (data, status, xhr) {
+                $("#resultado").html(data);
+
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').append('Error ' + errorMessage);
+            }
+
+        })
+    }
 
 }
 function ParceiroExcluir() {
@@ -445,7 +626,7 @@ function AlterarCategoriaParceiro() {
 function CadastrarCliente() {
 
     // console.log("teste");
-    
+
     let status_Cliente = $('#txtStatus').val();
     let nome_Cliente = $('#txtNome').val();
     let cpf_Cliente = $('#txtCPF').val();
@@ -454,6 +635,7 @@ function CadastrarCliente() {
     let telefone2_Cliente = $('#txtTelefone2').val();
     let login_Cliente = $('#txtLogin').val();
     let senha_Cliente = $('#txtSenha').val();
+    let ConfirmarSenha_Cliente = $('#txtConfirmarSenha').val();
     let logradouro_Cliente = $('#txtLogradouro').val();
     let numero_Cliente = $('#txtNumero').val();
     let complemento_Cliente = $('#txtComplemento').val();
@@ -468,65 +650,136 @@ function CadastrarCliente() {
 
     let action = 'Cliente_btoCadastrar.php';
 
-    // if (status_Cliente == null)
-    // {
-    //     alert("erro");
-    //     return;
-    // }
-    // if (isNumeric(cep_Cliente))
-    // {
-    //     alert("Apenas numeros");
-    //     return;
-    // }
-    // if (isNumeric(nome_Cliente))
+
+    if ($("#txtStatus").val() == '') {
+        alert("erro");
+        return;
+    }
+    if ($("#txtNome").val() == '') {
+        alert("Campo Nome Obrigatório");
+        return;
+    }
+    if ($.isNumeric($("#txtNome").val())) {
+        alert("Apenas Letras");
+        return;
+    }
+    if ($("#txtCPF").val() == null) {
+        alert("CPF obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCPF").val())) {
+        alert("Apenas Números");
+        return;
+    }
+    if ($('#txtEmail').val() == null) {
+        alert("E-mail obrigatório");
+        return;
+    }
+
+    if ($("#txtTelefone1").val() == null) {
+        alert("Campo Telefone1 obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtTelefone1").val())) {
+        alert("Preencha telefone com números");
+        return;
+    }
+    if ($("#txtBairro").val() == null) {
+        alert("Bairro obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtBairro").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($.isNumeric($("#txtCidade").val() == null)) {
+        alert("Campo Cidade Obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($("#txtCEP").val() = null) {
+        alert("CEP obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCEP").val())) {
+        alert("Preencha o CEP com números")
+        return;
+    }
+    if ($("#txtUF").val().trim() === '') {
+        alert("Estado(UF) é Obrigatório");
+        return;
+    }
+    if ($("#txtSenha").val() == null) {
+        alert("Senha é Obrigatória");
+        return;
+    }
+    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+        alert("A senha deve ser idêntica ao confirmar Senha");
+        return;
+    }
+    if ($("#txtNumero").val() == null) {
+        alert("Número da Residência é obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtNumero").val())) {
+        alert("Número da Residência não pode conter letras");
+        return;
+    }
+
+    if ($("#txtLogin").val() == null) {
+        alert("Login é Obrigatório");
+        return;
+    }
+    else {
 
 
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtStatus: status_Cliente,
+                txtNome: nome_Cliente,
+                txtCPF: cpf_Cliente,
+                txtEmail: email_Cliente,
+                txtTelefone1: telefone1_Cliente,
+                txtTelefone2: telefone2_Cliente,
+                txtLogin: login_Cliente,
+                txtSenha: senha_Cliente,
+                txtLogradouro: logradouro_Cliente,
+                txtNumero: numero_Cliente,
+                txtComplemento: complemento_Cliente,
+                txtBairro: bairro_Cliente,
+                txtCidade: cidade_Cliente,
+                txtUF: uf_Cliente,
+                txtCEP: cep_Cliente,
+                txtObs: obs_Cliente,
+                fImage: foto_Cliente,
 
+            },
+            beforsend: function () {
+                $("#Resultado").html("ENVIANDO...");
+            },
+            success: function (data, status, xhr) {
+                $("#Resultado").empty().html(data);
+                //$("#txtID").val($(#idGerado).text());
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#Resultado').empty('Error ' + errorMessage);
+            }
 
-    $.ajax({
-        url: action,
-        type: 'post',
-        data: {
-
-            
-            txtStatus: status_Cliente,
-            txtNome: nome_Cliente,
-            txtCPF: cpf_Cliente,
-            txtEmail: email_Cliente,
-            txtTelefone1: telefone1_Cliente,
-            txtTelefone2: telefone2_Cliente,
-            txtLogin: login_Cliente,
-            txtSenha: senha_Cliente,
-            txtLogradouro: logradouro_Cliente,
-            txtNumero: numero_Cliente,
-            txtComplemento: complemento_Cliente,
-            txtBairro: bairro_Cliente,
-            txtCidade: cidade_Cliente,
-            txtUF: uf_Cliente,
-            txtCEP: cep_Cliente,
-            txtObs: obs_Cliente,
-            fImage: foto_Cliente,
-        },
-        beforsend: function () {
-            $("#Resultado").html("ENVIANDO...");
-        },
-        success: function (data, status, xhr) {
-            $("#Resultado").empty().html(data);
-            //$("#txtID").val($(#idGerado).text());
-        },
-        error: function (jqXhr, textStatus, errorMessage) {
-            $('#Resultado').empty('Error ' + errorMessage);
-        }
-
-    })
+        })
+    }
 }
 
 /////////////////Cliente///////////
 
 function AlterarCliente() {
 
-    
-    let id_Cliente= $('#txtID').val();
+
+    let id_Cliente = $('#txtID').val();
     let status_Cliente = $('#txtStatus').val();
     let nome_Cliente = $('#txtNome').val();
     let cpf_Cliente = $('#txtCPF').val();
@@ -545,49 +798,134 @@ function AlterarCliente() {
     let obs_Cliente = $('#txtObs').val();
 
     let action = 'Cliente_btoAlterar.php';
-    console.log('testtetttt');
+    // console.log('testtetttt');
 
-    $.ajax({
-        url: action,
-        type: 'post',
-        data: {
-            txtID: id_Cliente,
-            txtStatus: status_Cliente,
-            txtNome: nome_Cliente,
-            txtCPF: cpf_Cliente,
-            txtEmail: email_Cliente,
-            txtTelefone1: telefone1_Cliente,
-            txtTelefone2: telefone2_Cliente,
-            txtLogin: login_Cliente,
-            txtSenha: senha_Cliente,
-            txtLogradouro: logradouro_Cliente,
-            txtNumero: numero_Cliente,
-            txtComplemento: complemento_Cliente,
-            txtBairro: bairro_Cliente,
-            txtCidade: cidade_Cliente,
-            txtUF: uf_Cliente,
-            txtCEP: cep_Cliente,
-            txtObs: obs_Cliente
+    if ($("#txtStatus").val() == '') {
+        alert("erro");
+        return;
+    }
+    if ($("#txtNome").val() == '') {
+        alert("Campo Nome Obrigatório");
+        return;
+    }
+    if ($.isNumeric($("#txtNome").val())) {
+        alert("Apenas Letras");
+        return;
+    }
+    if ($("#txtCPF").val() == null) {
+        alert("CPF obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCPF").val())) {
+        alert("Apenas Números");
+        return;
+    }
+    if ($('#txtEmail').val() == null) {
+        alert("E-mail obrigatório");
+        return;
+    }
 
-        },
-        beforend: function () {
-            $("#resultado").html("ENVIANDO...");
-        },
-        success: function (data, status, xhr) {
+    if ($("#txtTelefone1").val() == null) {
+        alert("Campo Telefone1 obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtTelefone1").val())) {
+        alert("Preencha telefone com números");
+        return;
+    }
+    if ($("#txtBairro").val() == null) {
+        alert("Bairro obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtBairro").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($.isNumeric($("#txtCidade").val() == null)) {
+        alert("Campo Cidade Obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($("#txtCEP").val() = null) {
+        alert("CEP obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCEP").val())) {
+        alert("Preencha o CEP com números")
+        return;
+    }
+    if ($("#txtUF").val().trim() === '') {
+        alert("Estado(UF) é Obrigatório");
+        return;
+    }
+    if ($("#txtSenha").val() == null) {
+        alert("Senha é Obrigatória");
+        return;
+    }
+    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+        alert("A senha deve ser idêntica ao confirmar Senha");
+        return;
+    }
+    if ($("#txtNumero").val() == null) {
+        alert("Número da Residência é obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtNumero").val())) {
+        alert("Número da Residência não pode conter letras");
+        return;
+    }
 
-            $("#resultado").html(data);
-            
-        },
-        error: function (jqXhr, textStatus, errorMessage) {
-            $('#resultado').append('Error ' + errorMessage);
-        }
+    if ($("#txtLogin").val() == null) {
+        alert("Login é Obrigatório");
+        return;
+    }
+    else {
 
-    })
+        $.ajax({
+            url: action,
+            type: 'post',
+            data: {
+                txtID: id_Cliente,
+                txtStatus: status_Cliente,
+                txtNome: nome_Cliente,
+                txtCPF: cpf_Cliente,
+                txtEmail: email_Cliente,
+                txtTelefone1: telefone1_Cliente,
+                txtTelefone2: telefone2_Cliente,
+                txtLogin: login_Cliente,
+                txtSenha: senha_Cliente,
+                txtLogradouro: logradouro_Cliente,
+                txtNumero: numero_Cliente,
+                txtComplemento: complemento_Cliente,
+                txtBairro: bairro_Cliente,
+                txtCidade: cidade_Cliente,
+                txtUF: uf_Cliente,
+                txtCEP: cep_Cliente,
+                txtObs: obs_Cliente
+
+            },
+            beforend: function () {
+                $("#resultado").html("ENVIANDO...");
+            },
+            success: function (data, status, xhr) {
+
+                $("#resultado").html(data);
+
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#resultado').append('Error ' + errorMessage);
+            }
+
+        })
+    }
 }
 
 function PesquisarCliente() {
     // console.log('foi');
-    let id_Cliente= $('#txtID').val();
+    let id_Cliente = $('#txtID').val();
 
     let action = 'Cliente.btoPesquisa.php';
 
@@ -600,7 +938,7 @@ function PesquisarCliente() {
 
         },
         success: function (data, status, xhr) {
-            
+
 
 
         },
@@ -614,55 +952,55 @@ function PesquisarCliente() {
 
 // Validar CEP
 function limparFormulario() {
-    document.getElementById('#txtUF').value = (""); 
+    document.getElementById('#txtUF').value = ("");
     document.getElementById('#txtBairro').value = ("");
-    document.getElementById('#txtCidade').value = (""); 
-    document.getElementById('#txtLogradouro').value = (""); 
-  }
-  
-  function meu_callback(endereco) {
+    document.getElementById('#txtCidade').value = ("");
+    document.getElementById('#txtLogradouro').value = ("");
+}
+
+function meu_callback(endereco) {
     if (!("erro" in endereco)) {
-      document.getElementById('#txtUF').value=(endereco.uf);
-      document.getElementById('#txtBairro').value=(endereco.bairro);
-      document.getElementById('#txtCidade').value=(endereco.localidade);
-      document.getElementById('#txtLogradouro').value=(endereco.logradouro);
+        document.getElementById('#txtUF').value = (endereco.uf);
+        document.getElementById('#txtBairro').value = (endereco.bairro);
+        document.getElementById('#txtCidade').value = (endereco.localidade);
+        document.getElementById('#txtLogradouro').value = (endereco.logradouro);
     } else {
-      limparFormulario();
-      alert("CEP não encontrado");
-    }
-  }
-  
-  function pesquisacep(valor) {
-    const cep = valor.replace(/\D/g, '');
-  
-    if (cep != ""){
-      const validacep = /^[0-9]{8}$/; 
-      
-      if(validacep.test(cep)) {
-        document.getElementById('#txtUF').value="...";
-        document.getElementById('#txtBairro').value="...";
-        document.getElementById('#txtCidade').value="...";
-        document.getElementById('#txtLogradouro').value="...";
-  
-        const script = document.createElement('script');
-  
-        script.src = 'https://viacep.com.br/ws/'+ cep +'/json/?callback=meu_callback';
-  
-        document.body.appendChild(script);
-  
-      } else {
         limparFormulario();
-        alert("Formato de CEP inválido");
-      }
-    } else{
-      limparFormulario();
+        alert("CEP não encontrado");
     }
-  };
+}
+
+function pesquisacep(valor) {
+    const cep = valor.replace(/\D/g, '');
+
+    if (cep != "") {
+        const validacep = /^[0-9]{8}$/;
+
+        if (validacep.test(cep)) {
+            document.getElementById('#txtUF').value = "...";
+            document.getElementById('#txtBairro').value = "...";
+            document.getElementById('#txtCidade').value = "...";
+            document.getElementById('#txtLogradouro').value = "...";
+
+            const script = document.createElement('script');
+
+            script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
+
+            document.body.appendChild(script);
+
+        } else {
+            limparFormulario();
+            alert("Formato de CEP inválido");
+        }
+    } else {
+        limparFormulario();
+    }
+};
 
 //////////////////////////////Contrato////////////////////
 function Contrato() {
 
-     console.log("teste");
+    console.log("teste");
 
     let cnpj_Contrato = $('#txtcnpj').val();
     let nome_Contrato = $('#txtNome').val();
@@ -670,8 +1008,8 @@ function Contrato() {
     let tipo_Contrato = $('#txtTipo').val();
     let dataEmissao_Contrato = $('#txtEmissao').val();
     let dataTermino_Contrato = $('#txtTermino').val();
-   
-    
+
+
 
 
     let action = 'contrato.teste.php';
@@ -689,8 +1027,8 @@ function Contrato() {
             txtTipo: tipo_Contrato,
             txtEmissao: dataEmissao_Contrato,
             txtTermino: dataTermino_Contrato,
-         
-            
+
+
         },
         beforsend: function () {
             $("#Resultado").html("ENVIANDO...");
