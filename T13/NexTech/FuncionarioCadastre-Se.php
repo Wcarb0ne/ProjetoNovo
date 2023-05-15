@@ -210,7 +210,6 @@
                     <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha">
 
                 </div>
-
             </div>
 
             <div class="row mt-3"><!--botoes-->

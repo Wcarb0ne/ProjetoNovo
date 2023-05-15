@@ -257,91 +257,91 @@ function is_cpf (c) {
   });
   
   
-  //----------- CALCULAR IDADE
+  // //----------- CALCULAR IDADE
   
-  const submitAge = document.querySelector("#btn-idade");
-  const messageAge = document.querySelector(".msgIdade");
+  // const submitAge = document.querySelector("#btn-idade");
+  // const messageAge = document.querySelector(".msgIdade");
   
-  submitAge.addEventListener("click", (e) => {
-    e.preventDefault();
+  // submitAge.addEventListener("click", (e) => {
+  //   e.preventDefault();
   
-    const messageAge = document.querySelector(".msgIdade");  
+  //   const messageAge = document.querySelector(".msgIdade");  
       
-      //collect input from HTML form and convert into date format  
-      const userinput = document.getElementById("dob").value;  
-      const dob = new Date(userinput);  
+  //     //collect input from HTML form and convert into date format  
+  //     const userinput = document.getElementById("dob").value;  
+  //     const dob = new Date(userinput);  
         
-      //check user provide input or not  
-      if(userinput==null || userinput==''){  
-        document.getElementById(".msgIdade").innerHTML = alert("**Escolha uma data por favor!");    
-        return false;   
-      }   
+  //     //check user provide input or not  
+  //     if(userinput==null || userinput==''){  
+  //       document.getElementById(".msgIdade").innerHTML = alert("**Escolha uma data por favor!");    
+  //       return false;   
+  //     }   
         
-      //execute if user entered a date   
-      else {  
-      //extract and collect only date from date-time string  
-      const mdate = userinput.toString();  
-      const dobYear = parseInt(mdate.substring(0,4), 10);  
-      const dobMonth = parseInt(mdate.substring(5,7), 10);  
-      const dobDate = parseInt(mdate.substring(8,10), 10);  
+  //     //execute if user entered a date   
+  //     else {  
+  //     //extract and collect only date from date-time string  
+  //     const mdate = userinput.toString();  
+  //     const dobYear = parseInt(mdate.substring(0,4), 10);  
+  //     const dobMonth = parseInt(mdate.substring(5,7), 10);  
+  //     const dobDate = parseInt(mdate.substring(8,10), 10);  
         
-      //get the current date from system  
-      const today = new Date();  
-      //date string after broking  
-      const birthday = new Date(dobYear, dobMonth-1, dobDate);  
+  //     //get the current date from system  
+  //     const today = new Date();  
+  //     //date string after broking  
+  //     const birthday = new Date(dobYear, dobMonth-1, dobDate);  
         
-      //calculate the difference of dates  
-      const diffInMillisecond = today.valueOf() - birthday.valueOf();  
+  //     //calculate the difference of dates  
+  //     const diffInMillisecond = today.valueOf() - birthday.valueOf();  
     
-      //convert the difference in milliseconds and store in day and year variable          
-      const year_age = Math.floor(diffInMillisecond / 31536000000);  
-      const day_age = Math.floor((diffInMillisecond % 31536000000) / 86400000);  
+  //     //convert the difference in milliseconds and store in day and year variable          
+  //     const year_age = Math.floor(diffInMillisecond / 31536000000);  
+  //     const day_age = Math.floor((diffInMillisecond % 31536000000) / 86400000);  
     
-      const month_age = Math.floor(day_age/30);          
-      day_ageday_age = day_age % 30;  
+  //     const month_age = Math.floor(day_age/30);          
+  //     day_ageday_age = day_age % 30;  
             
-      const tMnt= (month_age + (year_age*12));  
-      const tDays =(tMnt*30) + day_age;  
+  //     const tMnt= (month_age + (year_age*12));  
+  //     const tDays =(tMnt*30) + day_age;  
          
-      //Invalid date    
-        if (dob>today) {  
-          document.getElementById(".msgIdade").innerHTML = alert("Data inválida");  
-        }  
-        else {          
-          //document.getElementById(".msgIdade").innerHTML = alert(year_age + " ano(s) " + month_age + " meses " + day_age + " dia(s)"); 
-          messageAge.innerHTML = "Idade: " + year_age + " ano(s), " + month_age + " meses e " + day_age + " dia(s)";
-          messageAge.classList = "errorAge";      
-        }  
-     }  
+  //     //Invalid date    
+  //       if (dob>today) {  
+  //         document.getElementById(".msgIdade").innerHTML = alert("Data inválida");  
+  //       }  
+  //       else {          
+  //         //document.getElementById(".msgIdade").innerHTML = alert(year_age + " ano(s) " + month_age + " meses " + day_age + " dia(s)"); 
+  //         messageAge.innerHTML = "Idade: " + year_age + " ano(s), " + month_age + " meses e " + day_age + " dia(s)";
+  //         messageAge.classList = "errorAge";      
+  //       }  
+  //    }  
       
-  });
+  // });
   
   
-  //ESCOLHA FOTO
-  let photo = document.getElementById('imgPhoto');
-  let file = document.getElementById('fotoPerfil');
+  // //ESCOLHA FOTO
+  // let photo = document.getElementById('imgPhoto');
+  // let file = document.getElementById('fotoPerfil');
   
   
-  photo.addEventListener("click", (e) => {
-    e.preventDefault();
-      file.click();
-  });
+  // photo.addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //     file.click();
+  // });
   
-  file.addEventListener('change', () => {
+  // file.addEventListener('change', () => {
   
-      if(file.files.length <=0) {
-          return;
-      }
+  //     if(file.files.length <=0) {
+  //         return;
+  //     }
   
-      let reader = new FileReader();
+  //     let reader = new FileReader();
   
-      reader.onload = () => {
-          photo.src = reader.result;
-      }
+  //     reader.onload = () => {
+  //         photo.src = reader.result;
+  //     }
   
-      reader.readAsDataURL(file.files[0]);
+  //     reader.readAsDataURL(file.files[0]);
   
   
-  });
+  // });
   
   

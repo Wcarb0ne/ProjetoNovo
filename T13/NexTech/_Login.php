@@ -28,7 +28,8 @@
         $sql = $conn->query(
         "select * from Funcionario where
         login_Funcionario = '$loginFuncionario' and
-        senha_Funcionario = '$senhaFuncionario' 
+        senha_Funcionario = '$senhaFuncionario' and
+        id_departamento_Funcionario ='$idDepartamento'
         ");
 
         if($sql->rowCount()==1)

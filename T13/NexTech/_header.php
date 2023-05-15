@@ -37,9 +37,9 @@
                             </li>
                             <li><a href="#getApp">Contratos</a>
                             </li>
-                            <li><a href="#support">Chat</a>
+                            <li><a href="#support"></a>
                             </li>
-                            <li><a class="getApp" href="_Login.php">Area Funcionario</a>
+                            <li><a class="getApp" href="_Login.php"><?=$nomeFuncionario?></a>
                             </li>
                         </ul>
                     </div>
