@@ -15,24 +15,20 @@
           <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="_Home.php">Serviços</a>
+          <a class="nav-link" href="_Home.php">Home</a>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre nós</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Saiba mais</a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">Felipe</a></li>
+            <li><a class="dropdown-item" href="Sobre_nos.php">Sobre nós</a></li>
 
-            <li><a class="dropdown-item" href="">Corno</a></li>
+            <li><a class="dropdown-item" href="planos.php">Planos</a></li>
 
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-        <li>
-
+       
 
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />

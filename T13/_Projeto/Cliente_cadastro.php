@@ -86,10 +86,10 @@
                     <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Informe o Login">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtSenha" id="txtSenha" placeholder="Digite a Senha">
+                    <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Digite a Senha">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a senha">
+                    <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a senha">
                 </div>
 
 
@@ -175,14 +175,10 @@
                 <div class="col-sm-12">
 
                     <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarCliente()">Cadastrar</button>
-                    <button name="btoSair" class="btn btn-danger">Sair</button>
+                   <a href="_Home.php" name="btoSair" class="btn btn-danger">Sair</a>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-12" id="Resultado">
-
-                    </div>
-                    
+            
 
                 </div>
             </div>

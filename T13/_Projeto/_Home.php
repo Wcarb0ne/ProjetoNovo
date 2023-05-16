@@ -85,7 +85,7 @@
                     $nome = $linha['nome_Parceiro'];
                     $logradouro_Parceiro = $linha['logradouro_Parceiro'];
                     $ramo_Parceiro = $linha['ramo_Parceiro'];
-
+                    $foto_Parceiro = $linha['foto_Parceiro'];
                     echo'
 
                     <div class="col-md-3 text-center mb-3 p-1">
