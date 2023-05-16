@@ -20,6 +20,7 @@ function CadastrarParceiro() {
     let uf_Parceiro = $('#txtUF').val();
     let cep_Parceiro = $('#txtCep').val();
     let obs_Parceiro = $('#txtObs').val();
+    let foto_Parceiro = $('#base64CodePHP').val();
     let action = 'Parceiro_btoCadastrar.php';
 
     if ($("#txtStatus").val() == '') {
@@ -31,7 +32,7 @@ function CadastrarParceiro() {
         return;
     }
     if ($.isNumeric($("#txtNome").val())) {
-        alert("Apenas Letras");
+        alert("Campo nome deve conter Apenas Letras");
         return;
     }
     if ($("#txtCnpj").val() == null) {
@@ -64,23 +65,24 @@ function CadastrarParceiro() {
         alert("Bairro obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtBairro").val())) {
-        alert("Apenas letras");
+    if ($.isNumeric($("#txtBairro").val())) {
+        alert("Bairro deve conter Apenas letras");
         return;
     }
     if ($.isNumeric($("#txtCidade").val() == null)) {
         alert("Campo Cidade Obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtCidade").val())) {
-        alert("Apenas letras");
-        return;
-    }
-    if ($("#txtCEP").val() = null) {
+    if ($("#txtCep").val() == null) {
         alert("CEP obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtCEP").val())) {
+    if ($.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }
+
+    if (!$.isNumeric($("#txtCep").val())) {
         alert("Preencha o CEP com números")
         return;
     }
@@ -132,7 +134,8 @@ function CadastrarParceiro() {
                 txtCidade: cidade_Parceiro,
                 txtUF: uf_Parceiro,
                 txtCep: cep_Parceiro,
-                txtObs: obs_Parceiro
+                txtObs: obs_Parceiro,
+                txtImg: foto_Parceiro 
             },
             success: function (data, status, xhr) {
                 $("#resultado").empty().html(data);
@@ -220,7 +223,7 @@ function ParceiroAlterar() {
         return;
     }
     if ($.isNumeric($("#txtNome").val())) {
-        alert("Apenas Letras");
+        alert("Nome deve possuir Apenas Letras");
         return;
     }
     if ($("#txtCnpj").val() == null) {
@@ -254,7 +257,7 @@ function ParceiroAlterar() {
         return;
     }
     if (!$.isNumeric($("#txtBairro").val())) {
-        alert("Apenas letras");
+        alert("Bairro deve conter Apenas letras");
         return;
     }
     if ($.isNumeric($("#txtCidade").val() == null)) {
@@ -262,7 +265,7 @@ function ParceiroAlterar() {
         return;
     }
     if (!$.isNumeric($("#txtCidade").val())) {
-        alert("Apenas letras");
+        alert("Cidade deve conter Apenas letras");
         return;
     }
     if ($("#txtCEP").val() = null) {
@@ -688,7 +691,7 @@ function CadastrarCliente() {
         alert("Bairro obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtBairro").val())) {
+    if ($.isNumeric($("#txtBairro").val())) {
         alert("Apenas letras");
         return;
     }
@@ -696,7 +699,7 @@ function CadastrarCliente() {
         alert("Campo Cidade Obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtCidade").val())) {
+    if ($.isNumeric($("#txtCidade").val())) {
         alert("Apenas letras");
         return;
     }
@@ -1000,7 +1003,6 @@ function pesquisacep(valor) {
 //////////////////////////////Contrato////////////////////
 function Contrato() {
 
-<<<<<<< Updated upstream
     console.log("teste");
 
     let cnpj_Contrato = $('#txtcnpj').val();
@@ -1011,18 +1013,6 @@ function Contrato() {
     let dataTermino_Contrato = $('#txtTermino').val();
 
 
-=======
- 
-
-    let cnpj_Contrato = $('#txtcnpj').val();
-    let nome_Contrato = $('#txtnome').val();
-    let valor_Contrato = $('#txtvalor').val();
-    let tipo_Contrato = $('#txttipo').val();
-    let dataEmissao_Contrato = $('#txtemissao').val();
-    let dataTermino_Contrato = $('#txttermino').val();
-   
-    
->>>>>>> Stashed changes
 
 
     let action = 'contrato.teste.php';
@@ -1034,7 +1024,6 @@ function Contrato() {
         type: 'post',
         data: {
 
-<<<<<<< Updated upstream
             txtCnpj: cnpj_Contrato,
             txtNome: nome_Contrato,
             txtValor: valor_Contrato,
@@ -1043,16 +1032,6 @@ function Contrato() {
             txtTermino: dataTermino_Contrato,
 
 
-=======
-            txtcnpj: cnpj_Contrato,
-            txtnome: nome_Contrato,
-            txtvalor: valor_Contrato,
-            txttipo: tipo_Contrato,
-            txtemissao: dataEmissao_Contrato,
-            txttermino: dataTermino_Contrato
-         
-            
->>>>>>> Stashed changes
         },
         success: function (data, status, xhr) {
             $("#Resultado").empty().html(data);

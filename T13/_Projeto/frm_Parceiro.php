@@ -11,7 +11,7 @@
 <script src="js/jquery-3.6.4.js"></script>
 
 <script src="js/script.js"></script>
-<script src="js/ParceiroScript.js"></script>
+<!-- <script src="js/ParceiroScript.js"></script> -->
 <br>
 
 <title>Parceiro</title>
@@ -24,6 +24,15 @@
                     <h1> Formulario de Cadastro da Empresa</h1>
                 </div>
             </div>
+            <div class="row">
+            <div class="col-sm-4"></div>
+                <div class="col-sm-3 m-5">
+                    <img id="preImg" src="css/img/Photo-Camera-PNG.png" height="200" width="285" style="border-radius: 70px;border-color:blue" alt="Image preview...">
+                    <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
+                    <label for='txtImg' class="Perfil">Imagem de Perfil &#187;</label>
+                </div>
+                <div class="col-sm-3"></div>
+                </div>
             <br>
             <div class="row"><!-- ID / STATUS / datacadastro -->
                 <div class="col-sm-4">
@@ -100,7 +109,7 @@
                 </div>
                 <div class="col-sm-3">
                     <select name="txtUF" id="txtUF" class="form-control">
-                        <option value="">Selecione Status</option>
+                        <option value="">UF</option>
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
                         <option value="Amapá">AP</option>
@@ -130,14 +139,18 @@
                     </select>
                 </div>
                 <div class="col-sm-3">
-                    <input type="number" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep" onblur="pesquisacep(this.value);">
+                    <input type="number" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep" >
                 </div>
             </div>
-
+            <!-- onblur="pesquisacep(this.value);" -->
             <div class="row mt-4"><!-- Observação -->
                 <div class="col-sm-12">
                     <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Insira a observação do cadastro (campo não obrigatório)"></textarea>
                 </div>
+            </div>
+            <div class="container">
+            <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
+            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
             </div>
 
             <div class="row mt-2 mb-2"><!--botoes-->
@@ -154,3 +167,32 @@
         </form>
     </div>
 </div>
+
+<script>
+        function previewFile(element) {
+
+            var preview = document.getElementById('preImg');
+            var file = document.getElementById('txtImg').files[0];
+
+            var reader = new FileReader();
+
+            reader.onloadend = function() {
+                var caminho = reader.result;
+                // var caminhoLimpo = reader.result;
+
+                preview.src = caminho;
+                $("#base64Code").val(caminho);
+
+                caminhoLimpo = caminho.substring(caminho.indexOf("base64,") + 7);
+                $("#base64CodePHP").val(caminhoLimpo);
+
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+
+        }
+    </script>

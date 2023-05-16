@@ -25,10 +25,12 @@
             <br>
             <div class="row">
                 <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                <input name="txtImg" id="txtImg" type="file" class="form-control" onchange="previewFile(this)"/>
-						<img id="preImg" src="" height="200" alt="Image preview...">
+                <div class="col-sm-3 m-5">
+                    <img id="preImg" src="css/img/Photo-Camera-PNG.png" height="200" width="285" style="border-radius: 70px;border-color:blue" alt="Image preview...">
+                    <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
+                    <label for='txtImg' class="Perfil">Imagem de Perfil &#187;</label>
                 </div>
+                <div class="col-sm-3"></div>
             </div>
 
             <br>
@@ -166,8 +168,8 @@
             <div class="row mt-3" id="Resultado">
 
             </div>
-            <textarea id="base64Code" rows="5" class="form-control"></textarea>
-						<textarea id="base64CodePHP" rows="5" class="form-control"></textarea>
+            <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
+            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
 
             <div class="row mt-4 mb-4"><!--botoes-->
                 <div class="col-sm-12">
@@ -180,20 +182,20 @@
                     <div class="col-sm-12" id="Resultado">
 
                     </div>
-                    <textarea id="base64Code" rows="5" class="form-control"></textarea>
                     
+
                 </div>
             </div>
 
         </form>
     </div>
-    <!-- <script>
-        var foto = document.getElementById('imgPhoto');
-        var file = document.getElementById('flImage');
 
 
-        foto.addEventListener('click', () => {
-            file.click();
+    <script>
+        function previewFile(element) {
+
+            var preview = document.getElementById('preImg');
+            var file = document.getElementById('txtImg').files[0];
 
             var reader = new FileReader();
 
@@ -201,48 +203,22 @@
                 var caminho = reader.result;
                 // var caminhoLimpo = reader.result;
 
-                foto.src = caminho;
+                preview.src = caminho;
                 $("#base64Code").val(caminho);
 
-                
+                caminhoLimpo = caminho.substring(caminho.indexOf("base64,") + 7);
+                $("#base64CodePHP").val(caminhoLimpo);
+
             }
+
             if (file) {
                 reader.readAsDataURL(file);
             } else {
-                foto.src = "";
+                preview.src = "";
             }
 
-        });
-    </script> -->
-
-    <script>
-function previewFile(element) {
-  
-  var preview = document.getElementById('preImg');
-  var file    = document.getElementById('txtImg').files[0];
-
-  var reader  = new FileReader();
-
-  reader.onloadend = function () {
-	var caminho = reader.result;
-    // var caminhoLimpo = reader.result;
-    
-	preview.src = caminho;
-	$("#base64Code").val(caminho);
-
-	caminhoLimpo = caminho.substring(caminho.indexOf("base64,")+7);
-	$("#base64CodePHP").val(caminhoLimpo);
-
-  }
-
-  if (file) {
-    reader.readAsDataURL(file);
-  } else {
-    preview.src = "";
-  }
-  
-}
-</script>
+        }
+    </script>
 
 
 </div>

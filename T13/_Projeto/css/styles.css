@@ -16,9 +16,30 @@
   }
 
 /* ------ */
-.input[type='file'] {
-    display: none;
+/* Esconde o input */
+input[type='file'] {
+  display: none;
 }
+
+/* Aparência que terá o seletor de arquivo */
+.Perfil{
+  display: inline-block;
+  background-color: #3498db;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 20px
+}
+
+/* #preImg{
+  border-radius: 100px;
+  border-color: #3498db;
+  height:"200"; 
+  width:"285";
+
+} */
+
 
 .max-width {
     max-width: 500px;

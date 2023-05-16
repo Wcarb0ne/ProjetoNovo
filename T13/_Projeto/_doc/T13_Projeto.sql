@@ -23,7 +23,8 @@ create table Parceiro
     cidade_Parceiro varchar(50) not null,
     uf_Parceiro varchar(50) not null,
     cep_Parceiro varchar(9) not null,
-    obs_Parceiro varchar(255) null
+    obs_Parceiro varchar(255) null,
+    foto_Parceiro blob null
 );
 insert into Parceiro
 (status_Parceiro,

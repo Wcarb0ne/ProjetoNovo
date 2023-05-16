@@ -14,7 +14,11 @@
     background-color: transparent;
     
 }
-
+.tome{
+font-family: 'Open Sans', sans-serif;
+ background: linear-gradient(-45deg,#043668,#0c6bc9b9);
+ 
+}
 .topo{
     font-family: 'Open Sans', sans-serif; 
     background-image: linear-gradient(to right,#043668,#0c6bc9b9);
