@@ -26,9 +26,17 @@ include_once('Parceiro_btoPesquisa.php');
         <form id="my-form" action="#" class="from-control" method="POST" onsubmit="return false">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1> Formulario de Cadastro da Empresa</h1>
+                    <h1> Perfil Parceiro</h1>
                 </div>
             </div>
+            <div class="row">
+            <div class="col-sm-12 text-center">
+                <img id="preImg" src="<?=$foto_Parceiro?>" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
+                <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
+                <center><label for='txtImg' class="Perfil" style="width: 300px;">Imagem de Perfil &#187;</label></center>
+            </div>
+        </div>
+
             <br>
             <div class="row"><!-- ID / STATUS / datacadastro -->
                 <div class="col-sm-4">
@@ -37,9 +45,9 @@ include_once('Parceiro_btoPesquisa.php');
 
                 <div class="col-sm-4">
                     <select name="txtStatus" id="txtStatus" class="form-control" hidden>
-                        <option value="" selected> ->Selecione<-< /option>
-                        <option value="Ativo" <?=($uf_Parceiro=="Ativo" ? 'selected': '')?> >Ativo</option>
-                        <option value="Inativo" <?=($uf_Parceiro=="Inativo" ? 'selected': '')?>>Inativo</option>
+                        <option value="" > ->Selecione<-< /option>
+                        <option value="Ativo" <?=($status_Parceiro=="Ativo" ? 'selected': '')?> >Ativo</option>
+                        <option value="Inativo" <?=($status_Parceiro=="Inativo" ? 'selected': '')?>>Inativo</option>
                     </select>
                 </div>
 
@@ -162,3 +170,32 @@ include_once('Parceiro_btoPesquisa.php');
         </form>
     </div>
 </div>
+
+<script>
+        function previewFile(element) {
+
+            var preview = document.getElementById('preImg');
+            var file = document.getElementById('txtImg').files[0];
+
+            var reader = new FileReader();
+
+            reader.onloadend = function() {
+                var caminho = reader.result;
+                // var caminhoLimpo = reader.result;
+
+                preview.src = caminho;
+                $("#base64Code").val(caminho);
+
+                caminhoLimpo = caminho;
+                $("#base64CodePHP").val(caminhoLimpo).substring(caminho.indexOf("base64,") + 7);
+
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+
+        }
+    </script>

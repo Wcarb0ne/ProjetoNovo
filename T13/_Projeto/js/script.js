@@ -20,7 +20,7 @@ function CadastrarParceiro() {
     let uf_Parceiro = $('#txtUF').val();
     let cep_Parceiro = $('#txtCep').val();
     let obs_Parceiro = $('#txtObs').val();
-    let foto_Parceiro = $('#base64CodePHP').val();
+    let foto_Parceiro = $('#base64Code').val();
     let action = 'Parceiro_btoCadastrar.php';
 
     if ($("#txtStatus").val() == '') {
@@ -212,7 +212,7 @@ function ParceiroAlterar() {
     let uf_Parceiro = $('#txtUF').val();
     let cep_Parceiro = $('#txtCep').val();
     let obs_Parceiro = $('#txtObs').val();
-    let foto_Parceiro= $('#base64CodePHP').val();
+    let foto_Parceiro= $('#base64Code').val();
 
 
     if ($("#txtStatus").val() == '') {
@@ -257,7 +257,7 @@ function ParceiroAlterar() {
         alert("Bairro obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtBairro").val())) {
+    if ($.isNumeric($("#txtBairro").val())) {
         alert("Bairro deve conter Apenas letras");
         return;
     }
@@ -265,18 +265,15 @@ function ParceiroAlterar() {
         alert("Campo Cidade Obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtCidade").val())) {
+    if ($.isNumeric($("#txtCidade").val())) {
         alert("Cidade deve conter Apenas letras");
         return;
     }
-    if ($("#txtCEP").val() = null) {
+    if ($("#txtCep").val() == null) {
         alert("CEP obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtCEP").val())) {
-        alert("Preencha o CEP com números")
-        return;
-    }
+
     if ($("#txtUF").val().trim() === '') {
         alert("Estado(UF) é Obrigatório");
         return;
@@ -403,7 +400,7 @@ function CadastrarCliente() {
     let uf_Cliente = $('#txtUF').val();
     let cep_Cliente = $('#txtCEP').val();
     let obs_Cliente = $('#txtObs').val();
-    let foto_Cliente = $('#base64CodePHP').val();
+    let foto_Cliente = $('#base64Code').val();
 
 
 
@@ -555,6 +552,7 @@ function AlterarCliente() {
     let uf_Cliente = $('#txtUF').val();
     let cep_Cliente = $('#txtCEP').val();
     let obs_Cliente = $('#txtObs').val();
+    let foto_Cliente = $('#base64Code').val();
 
     let action = 'Cliente_btoAlterar.php';
     // console.log('testtetttt');
@@ -663,7 +661,8 @@ function AlterarCliente() {
                 txtCidade: cidade_Cliente,
                 txtUF: uf_Cliente,
                 txtCEP: cep_Cliente,
-                txtObs: obs_Cliente
+                txtObs: obs_Cliente,
+                fImage: foto_Cliente
 
             },
             beforend: function () {

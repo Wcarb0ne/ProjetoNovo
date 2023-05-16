@@ -21,6 +21,7 @@ $cidade_Parceiro="";
 $uf_Parceiro="";
 $cep_Parceiro="";
 $obs_Parceiro="";
+$foto_Parceiro="";
 
     $id_Parceiro = $idUsuario;
     try
@@ -51,6 +52,7 @@ $obs_Parceiro="";
                 $uf_Parceiro=$linha[16]; 
                 $cep_Parceiro=$linha[17];
                 $obs_Parceiro=$linha[18];
+                $foto_Parceiro=$linha[19];
                 
             }
             // echo"

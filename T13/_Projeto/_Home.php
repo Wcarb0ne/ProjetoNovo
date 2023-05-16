@@ -25,14 +25,6 @@
 
 
 
-    <script src="css/Login/js/jquery.js"></script>
-
-
-
-
-
-
-
 
     <?php include_once('_header.php');
        include('Conexao.php');
@@ -82,7 +74,7 @@
          
             try {
 
-                $sql = $conn->query("select * from Parceiro where status_Parceiro = 'ativo'");
+                $sql = $conn->query("select * from Parceiro where status_Parceiro = 'Ativo'");
                
                 foreach ($sql as $linha) {
                     // echo "<pre>";
@@ -98,7 +90,7 @@
 
                     <div class="col-md-3 text-center mb-3 p-1">
                         <div class="card">
-                            <img src="css/img/doguin-fino.png" class="card-img-top imagem1" alt="...">
+                        <img src="'.$foto_Parceiro.'" class="card-img-top imagem1"  alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">'.$nome.'</h5>
                                 <p class="card-text">Endereço: '.$logradouro_Parceiro.'</p>

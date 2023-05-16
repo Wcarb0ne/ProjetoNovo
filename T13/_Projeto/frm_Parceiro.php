@@ -149,8 +149,8 @@
                 </div>
             </div>
             <div class="container">
-            <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
-            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
+            <textarea  id="base64Code" rows="5" class="form-control"></textarea>
+            <textarea  id="base64CodePHP" rows="5" class="form-control"></textarea>
             </div>
 
             <div class="row mt-2 mb-2"><!--botoes-->

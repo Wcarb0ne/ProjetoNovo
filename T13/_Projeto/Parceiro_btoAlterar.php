@@ -20,6 +20,7 @@ if($_POST)
     $uf_Parceiro = $_POST['txtUF']; 
     $cep_Parceiro = $_POST['txtCep']; 
     $obs_Parceiro = $_POST['txtObs'];
+    $foto_Parceiro = $_POST['fImage'];
 
     try 
     {
@@ -42,7 +43,8 @@ if($_POST)
         cidade_Parceiro=:cidade_Parceiro,
         uf_Parceiro=:uf_Parceiro,
         cep_Parceiro=:cep_Parceiro,
-        obs_Parceiro=:obs_Parceiro  
+        obs_Parceiro=:obs_Parceiro,
+        foto_Parceiro=:foto_Parceiro  
 
         where id_Parceiro=:id_Parceiro'
         );   
@@ -65,7 +67,8 @@ if($_POST)
             ':cidade_Parceiro'=>$cidade_Parceiro,
             ':uf_Parceiro'=>$uf_Parceiro,
             ':cep_Parceiro'=>$cep_Parceiro,
-            ':obs_Parceiro'=>$obs_Parceiro
+            ':obs_Parceiro'=>$obs_Parceiro,
+            ':foto_Parceiro'=>$foto_Parceiro
         ));
         if($sql->rowCount()==1)
         {

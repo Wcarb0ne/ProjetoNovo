@@ -207,7 +207,7 @@
                 $("#base64Code").val(caminho);
 
                 caminhoLimpo = caminho;
-                $("#base64CodePHP").val(caminhoLimpo);
+                $("#base64CodePHP").val(caminhoLimpo).substring(caminho.indexOf("base64,") + 7);
 
             }
 
