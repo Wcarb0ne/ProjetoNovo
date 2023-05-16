@@ -9,12 +9,9 @@
 
     <!-- Bootstrap 3.3.2 -->
 
-
-
     <link rel="stylesheet" href="./assets/css/testefrm.css">
-
-
-
+    <script src=""></script>
+    <script src="ScriptEmpresa.js"></script>
 
     <title>Next Tech</title>
 
@@ -32,141 +29,147 @@
                             <p class="card-category">Seja Bem-Vindo a Empresa!</p>
                         </div>
                         <div class="card-body">
-                            <form>
+                            <form method="POST" onsubmit="return false">
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">ID usar (disabled)</label>
-                                            <input type="text" class="form-control" disabled="">
+                                            <input type="text" class="form-control" disabled=""placeholder="ID">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">status</label>
-                                            <input type="text" class="form-control" disabled="">
+                                            <input type="text" class="form-control" disabled=""placeholder="Status">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">data cadastro</label>
-                                            <input type="email" class="form-control" disabled="">
+                                            <input type="email" class="form-control" disabled=""placeholder="Data cadastro">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Nome completo</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Nome completo">
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Cpf</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Cpf">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Cep</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Cep">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Logradouro</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Logradouro">
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Número</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Número">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Complemento</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Complemento">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Bairro</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Bairro">
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Cidade</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Cidade">
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">UF</label>
-                                            <input type="text" class="form-control">
+                                            <select name="txtUF" id="txtUF" class="form-control">
+                                                <option value="">UF</option>
+                                                <option value="Acre">AC</option>
+                                                <option value="Alagoas">AL</option>
+                                                <option value="Amapá">AP</option>
+                                                <option value="Amazonas">AM</option>
+                                                <option value="Bahia">BA</option>
+                                                <option value="Ceará">CE</option>
+                                                <option value="Minas gerais">DF</option>
+                                                <option value="Espírito Santo">ES</option>
+                                                <option value="Goiás">GO</option>
+                                                <option value="Maranhão">MA</option>
+                                                <option value="Mato Grosso">MT</option>
+                                                <option value="Minas gerais">MG</option>
+                                                <option value="Pará">PA</option>
+                                                <option value="Paraíba">PB</option>
+                                                <option value="Paraná">PR</option>
+                                                <option value="Pernambuco">PE</option>1
+                                                <option value="Piauí">PI</option>1
+                                                <option value="Rio de Janeiro">RJ</option>
+                                                <option value="Rio Grande do Norte">RN</option>
+                                                <option value="Rio Grande do Sul">RS</option>
+                                                <option value="Rondônia">RO</option>
+                                                <option value="Minas gerais">RR</option>
+                                                <option value="Santa Catarina">SC</option>
+                                                <option value="São Paulo">SP</option>
+                                                <option value="Sergipe">SE</option>
+                                                <option value="Tocantins">TO</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Id departamento</label>
-                                            <input type="text" class="form-control"disabled="">
-                                        </div>
-                                    </div>
-                                </div> -->
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">E-mail</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="E-mail">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Telefone</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Telefone">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Telefone (Opcional)</label>
-                                            <input type="text" class="form-control">
+                                            <label class="bmd-label-floating"></label>
+                                            <input type="text" class="form-control"placeholder="Telefone (Opcional)">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Id departamento</label>
-                                            <input type="text" class="form-control">
+                                            <select name="txtIDepart"id="txtIDepart" class="form-control">
+                                                <?php 
+                                                include_once('DepartamentoPuxar.php');
+                                                ?>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Login</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Login">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Senha</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control"placeholder="Senha">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">Confirmar senha</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" placeholder="Confirmar senha">
                                         </div>
                                     </div>
                                 </div>
@@ -178,30 +181,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary pull-right">Cadastrar</button>
-                                <button type="submit" class="btn btn-primary pull-right">Limpar</button>
-                                <button type="submit" class="btn btn-primary pull-right">Sair</button>
-
+                                </div>                                
+                                <button name="btoCadastrar" class="btn btn-success"onclick="CadastrarFuncionario()">Cadastrar</button>
+                                <button name="btoLimpar" class="btn btn-black"href="FuncionarioCadastre-Se.php">Limpar</button>
+                                <a type="reset" name="btoLimpar" class="btn btn-danger"href="_Login.php">Sair</a>
                                 <div class="clearfix"></div>
+                                <div class="row">
+                                    <div class="col-sm-12" id="Resultado">
+                                </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-profile">
-                        <div class="card-avatar">
-                            <a href="javascript:varial da adc foto;">
-                                <img class="img" src="./assets/img/Sistema img/wgtsobrinha.jpg">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-category text-gray">CEO / Co-System</h6>
-                            <h4 class="card-title">Wellington Carbone</h4>
-                            <p class="card-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                            </p>
-                            <a href="3" class="btn btn-primary btn-round">let's fucking Go</a>
                         </div>
                     </div>
                 </div>
