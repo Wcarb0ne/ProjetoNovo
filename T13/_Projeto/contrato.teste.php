@@ -7,6 +7,7 @@ include_once('Conexao.php');
 
 if($_POST)
 {
+    $id_Parceiro_Contrato = $_POST['txtID'];
     $cnpj_Contrato = $_POST['txtcnpj'];
     $nome_Contrato = $_POST['txtnome'];
     $valor_Contrato = $_POST['txtvalor'];
@@ -19,16 +20,18 @@ if($_POST)
             $sql = $conn->prepare(
                 "insert into Contrato
                 (
+                id_Parceiro_Contrato,
                 cnpj_Contrato,
                 nome_Contrato,
                 valor_Contrato,
                 tipo_Contrato,
                 dataEmissao_Contrato,
-                dataTermino_Contrato
+                dataTermino_Contrato,
                 )
 
                 values
                 ( 
+                id_Parceiro_Contrato,
                 :cnpj_Contrato,
                 :nome_Contrato,
                 :valor_Contrato,
@@ -38,6 +41,7 @@ if($_POST)
             );
 
             $sql->execute(array(
+                ':id_Parceiro_Contrato'=>$id_Parceiro_Contrato,
                 ':cnpj_Contrato'=>$cnpj_Contrato,
                 ':nome_Contrato'=> $nome_Contrato,
                 ':valor_Contrato'=> $valor_Contrato,
