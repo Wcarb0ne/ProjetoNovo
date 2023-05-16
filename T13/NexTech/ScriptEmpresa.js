@@ -147,10 +147,94 @@ function CadastrarFuncionario(){
     let login_Funcionario = $('#txtLogin').val();
     let senha_Funcionario = $('#txtSenha').val();
     let confirmarSenha_Funcionario = $('#txtConfirmarSenha').val();
-
-    
+  
     let action = 'FuncionarioBtoCadastrar.php';
-    
+
+    if ($("#txtStatus").val() == '') {
+        alert("erro");
+        return;
+    }
+    if ($("#txtNome").val() == '') {
+        alert("Campo Nome Obrigatório");
+        return;
+    }
+    if ($.isNumeric($("#txtNome").val())) {
+        alert("Apenas Letras");
+        return;
+    }
+    if ($("#txtCpf").val() == null) {
+        alert("CPF obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCpf").val())) {
+        alert("Apenas Números");
+        return;
+    }
+    if ($("#txtCEP").val() = null) {
+        alert("CEP obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCEP").val())) {
+        alert("Preencha o CEP com números")
+        return;
+    }
+    if ($('#txtLogradouro').val() == null) {
+        alert("Logradouro é obrigatório");
+        return;
+    }
+    if ($("#txtNumero").val() == null) {
+        alert("Número da Residência é obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtNumero").val())) {
+        alert("Número da Residência não pode conter letras");
+        return;
+    }
+    if ($("#txtBairro").val() == null) {
+        alert("Bairro obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtBairro").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($.isNumeric($("#txtCidade").val() == null)) {
+        alert("Campo Cidade Obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }   
+    if ($("#txtUF").val().trim() === '') {
+        alert("Estado(UF) é Obrigatório");
+        return;
+    }
+    if ($('#txtEmail').val() == null) {
+        alert("E-mail obrigatório");
+        return;
+    }
+    if ($("#txtTelefone1").val() == null) {
+        alert("Campo Telefone1 obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtTelefone1").val())) {
+        alert("Preencha telefone com números");
+        return;
+    }
+    if ($("#txtLogin").val() == null) {
+        alert("Login é Obrigatório");
+        return;
+    }
+    if ($("#txtSenha").val() == null) {
+        alert("Senha é Obrigatória");
+        return;
+    }
+    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+        alert("A senha deve ser idêntica ao confirmar Senha");
+        return;
+    }
+    else {
         $.ajax({
             url: action,
             type: 'post',
@@ -184,6 +268,7 @@ function CadastrarFuncionario(){
             }
     
         })
+    }    
 }
 function PesquisarFuncionario(){
 
@@ -280,9 +365,93 @@ function AlterarFuncionario(){
     let login_Funcionario = $('#txtLogin').val();
     let senha_Funcionario = $('#txtSenha').val();
     let confirmarSenha_Funcionario = $('#txtConfirmarSenha').val();
-
+    
     let action = 'FuncionarioBtoAlterar.php';
-       
+    if ($("#txtStatus").val() == '') {
+        alert("erro");
+        return;
+    }
+    if ($("#txtNome").val() == '') {
+        alert("Campo Nome Obrigatório");
+        return;
+    }
+    if ($.isNumeric($("#txtNome").val())) {
+        alert("Apenas Letras");
+        return;
+    }
+    if ($("#txtCpf").val() == null) {
+        alert("CPF obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCpf").val())) {
+        alert("Apenas Números");
+        return;
+    }
+    if ($("#txtCEP").val() = null) {
+        alert("CEP obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCEP").val())) {
+        alert("Preencha o CEP com números")
+        return;
+    }
+    if ($('#txtLogradouro').val() == null) {
+        alert("Logradouro é obrigatório");
+        return;
+    }
+    if ($("#txtNumero").val() == null) {
+        alert("Número da Residência é obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtNumero").val())) {
+        alert("Número da Residência não pode conter letras");
+        return;
+    }
+    if ($("#txtBairro").val() == null) {
+        alert("Bairro obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtBairro").val())) {
+        alert("Apenas letras");
+        return;
+    }
+    if ($.isNumeric($("#txtCidade").val() == null)) {
+        alert("Campo Cidade Obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtCidade").val())) {
+        alert("Apenas letras");
+        return;
+    }   
+    if ($("#txtUF").val().trim() === '') {
+        alert("Estado(UF) é Obrigatório");
+        return;
+    }
+    if ($('#txtEmail').val() == null) {
+        alert("E-mail obrigatório");
+        return;
+    }
+    if ($("#txtTelefone1").val() == null) {
+        alert("Campo Telefone1 obrigatório");
+        return;
+    }
+    if (!$.isNumeric($("#txtTelefone1").val())) {
+        alert("Preencha telefone com números");
+        return;
+    }
+    if ($("#txtLogin").val() == null) {
+        alert("Login é Obrigatório");
+        return;
+    }
+    if ($("#txtSenha").val() == null) {
+        alert("Senha é Obrigatória");
+        return;
+    }
+    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+        alert("A senha deve ser idêntica ao confirmar Senha");
+        return;
+    }
+    else { 
         $.ajax({
             url: action,
             type: 'post',
@@ -320,6 +489,7 @@ function AlterarFuncionario(){
             }
     
         })
+    }    
 }/////////////////formulario Funcionario ///////////
 
 /////////////////formulario planos ///////////
