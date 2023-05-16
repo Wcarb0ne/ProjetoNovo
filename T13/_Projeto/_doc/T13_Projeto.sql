@@ -45,7 +45,7 @@ uf_Parceiro,
 cep_Parceiro,
 obs_Parceiro)
 values
-('ativo',
+('Ativo',
 'nome',
 '121231651',
 'ramo',
@@ -59,7 +59,7 @@ values
 'complemento',
 'bairro',
 'cidade',
-'SP',
+'São Paulo',
 '123456789',
 'obs');
 create table ParceiroServicos
@@ -150,7 +150,8 @@ complemento_Cliente	varchar(50)	null		,
 telefone1_Cliente	varchar(14)	not null		,
 telefone2_Cliente	varchar(14)	null		,
 email_Cliente	varchar(50)	not null		,
-obs_Cliente	varchar(255)	null		
+obs_Cliente	varchar(255)	null,
+foto_Cliente blob	null
 );
 
 create table Empresa

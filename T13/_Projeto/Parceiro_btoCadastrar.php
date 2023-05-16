@@ -20,7 +20,7 @@ if($_POST)
     $uf_Parceiro = $_POST['txtUF']; 
     $cep_Parceiro = $_POST['txtCep']; 
     $obs_Parceiro = $_POST['txtObs'];
-    $foto_Parceiro = $_POST['txtImg'];
+    $foto_Parceiro = $_POST['fImage'];
     
     try {
         $sql = $conn->prepare(

@@ -20,6 +20,7 @@ $cidade_Cliente="";
 $uf_Cliente="";
 $cep_Cliente="";
 $obs_Cliente="";
+$foto_Cliente="";
 
     
 $id_Cliente = $idUsuario;
@@ -52,6 +53,8 @@ $id_Cliente = $idUsuario;
                 $obs_Cliente=$linha[17];
                 $foto_Cliente=$linha[18];
             }
+            
+// echo $foto_Cliente;
 
             // echo"
             // <p>id_Cliente: <span id='idGerado'>$id_Cliente</span></p>

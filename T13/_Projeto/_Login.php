@@ -34,8 +34,8 @@
             session_start();
             foreach ($sql as $linha) {
                 $_SESSION['idUsuario'] = $linha[0];
-                $_SESSION['nomeUsuario'] = $linha[1];
-                $_SESSION['loginUsuario'] = $linha[2];
+                $_SESSION['nomeUsuario'] = $linha[3];
+                $_SESSION['loginUsuario'] = $linha[5];
             }
 
             header('Location:Cliente_sistema.php');
@@ -49,9 +49,7 @@
             );
 
             if ($sql->rowCount() == 1) {
-
                 session_start();
-
                 foreach ($sql as $linha) {
 
                     $_SESSION['idUsuario'] = $linha[0];

@@ -8,7 +8,8 @@
   <title>NexTech</title>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/landingPage.css">
+<link rel="stylesheet" href="css/landingPage.css">
+
   
 
       <!--Redes Sociais--><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
@@ -17,13 +18,10 @@
   <script src="js/jquery-3.6.4.js"></script>
 </head>
 
+
 <body>
-
-
-
-
 <nav class="navbar navbar-expand-lg navbar-dark mb-0 tome" >
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <a class="navbar-brand" href="Index.php">
       <img src="css/img/logo1.png" class="logo" alt="">
     </a>

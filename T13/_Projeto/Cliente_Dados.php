@@ -44,13 +44,18 @@ include_once('Cliente_btoPesquisa.php');
         <h2>Perfil</h2>
         <br><br>
 
-        <div> 
+        <div class="row">
         
-            <input name="txtImg" id="txtImg" type="file" class="form-control" onchange="previewFile(this)"/>
-						<img id="preImg" src="<?='data:image/jpeg;base64,'.$foto_Cliente?>" height="200"  alt="Image preview...">
+                <div class="col-sm-12 text-center">
+                   
+        <img id="preImg" src="css/img/Photo-Camera-PNG.png" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
+                    <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
+                    <center><label for='txtImg' class="Perfil" style="width: 300px;">Imagem de Perfil &#187;</label></center>
 
 
-        </div>
+                    </div>
+                
+                </div>
         <br> 
         
 
@@ -64,7 +69,7 @@ include_once('Cliente_btoPesquisa.php');
         <form action="" class="form-control" id="my-form" method="POST" onsubmit="return false">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1> Tela de Cadastro</h1>
+                    
                 </div>
             </div>
             <br>

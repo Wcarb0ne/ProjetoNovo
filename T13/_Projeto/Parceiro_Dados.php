@@ -145,6 +145,9 @@ include_once('Parceiro_btoPesquisa.php');
                 </div>
             </div>
 
+            <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
+            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
+
             <div class="row mt-2 mb-2"><!--botoes-->
                 <div class="col-sm-12">
                     <button name="btoCadastrar" class="btn btn-success" onclick="ParceiroAlterar()">Alterar</button>

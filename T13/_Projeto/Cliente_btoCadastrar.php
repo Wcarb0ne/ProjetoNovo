@@ -24,7 +24,7 @@ if($_POST)
     $telefone2_Cliente = $_POST['txtTelefone2'];
     $email_Cliente = $_POST['txtEmail'];
     $obs_Cliente = $_POST['txtObs'];
-    $foto_Cliente = $_POST['txtImg'];
+    $foto_Cliente = $_POST['fImage'];
         
     try {
             $sql = $conn->prepare(
