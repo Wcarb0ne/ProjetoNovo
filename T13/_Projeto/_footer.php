@@ -17,7 +17,7 @@ style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(t
         <h4>Redes sociais</h4>
         <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.instagram.com/tjbemici" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
       </div>
     </div>
     <hr>

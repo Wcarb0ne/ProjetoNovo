@@ -46,13 +46,13 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="css/img/Velho1.png" class=" triste" alt="...">
+      <img src="css/img/Velho1.png" class="d-block w-100 triste" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="css/img/Velho2.png" class=" triste" alt="...">
+      <img src="css/img/Velho2.png" class="d-block w-100 triste" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="css/img/Velho3.png" class=" triste" alt="...">
+      <img src="css/img/Velho3.png" class="d-block w-100 triste" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -93,13 +93,12 @@
                     $nome = $linha['nome_Parceiro'];
                     $logradouro_Parceiro = $linha['logradouro_Parceiro'];
                     $ramo_Parceiro = $linha['ramo_Parceiro'];
-                    $foto_Parceiro = $linha ['foto_Parceiro'];
 
                     echo'
 
                     <div class="col-md-3 text-center mb-3 p-1">
                         <div class="card">
-                            <img src="css/img/doguin-fino.png" class="card-img-top imagem1" '.$foto_Parceiro.' alt="...">
+                            <img src="css/img/doguin-fino.png" class="card-img-top imagem1" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">'.$nome.'</h5>
                                 <p class="card-text">Endereço: '.$logradouro_Parceiro.'</p>

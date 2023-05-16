@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
 
-    
+
 
     <link rel="stylesheet" href="css/ito_mapa.css">
 
@@ -40,94 +40,65 @@
 <body>
 
 
-<div class=" z-index: -1; ">
-    <?php include_once('_header.php'); 
-   
-    include_once('mapa_Pesquisa.php');
-    
-    ?>
+    <div class=" z-index: -1; ">
+        <?php include_once('_header.php');
 
-</div>
+        include_once('mapa_Pesquisa.php');
+
+        ?>
+
+    </div>
 
 
     <div class="container mb-4">
         <div class="row">
             <div class="col-sm-4">
                 <div id="" class="">
+                    <?php
+                    try {
+
+
+                        $id = $_GET['id'];
+
+                        $teste = 'select * from Parceiro where Id_Parceiro=' . $id;
+                        $sql = $conn->query($teste);
+
+
+                        foreach ($sql as $linha) {
+                            // echo "<pre>";
+                            // print_r($linha);
+                            // echo "</pre>";
+
+                            $id = $linha[0];
+                            $nome = $linha['nome_Parceiro'];
+                            $logradouro_Parceiro = $linha['logradouro_Parceiro'];
+                            $ramo_Parceiro = $linha['ramo_Parceiro'];
+                            $obs_Parceiro = $linha['obs_Parceiro'];
+
+                            echo '
+
+            <div class="card">
+                <img src="css/img/doguin-fino.png" class="card-img-top imagem1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">' . $nome . '</h5>
+                    <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
+                    
+                    <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
+                    <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
+                    <p class="card-text">Obs: ' . $obs_Parceiro . '</p>
+                   
+               
+            </div>
+        </div>
+        ';
+                        }
+                    } catch (PDOException $ex) {
+                        echo $ex->getMessage();
+                    }
 
 
 
-                    <div class="card" style="width:18rem;">
-
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Assistente Rapido</h6>
-                            <p class="card-text"></p>
-                            Esta a 389 Metros do seu local
-                        </div>
-                    </div>
-                    <br>
-
-
-                    <div class="card" style="width:18rem;">
-
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Tech Assistencia</h6>
-                            <p class="card-text"></p>
-                            Esta a 863 Metros do seu local
-                        </div>
-                    </div>
-                    <br>
-
-
-
-
-
-
-                    <div class="card" style="width:18rem;">
-
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Concerte Agora</h6>
-                            <p class="card-text"></p>
-                            Esta a 863 Metros do seu local
-                        </div>
-                    </div>
-                    <br>
-
-
-
-                    <div class="card" style="width:18rem;">
-
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Tudo Arruma</h6>
-                            <p class="card-text"></p>
-                            Esta a 863 Metros do seu local
-                        </div>
-                    </div>
-                    <br>
-
-
-
-                    <div class="card" style="width:18rem;">
-
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Iruma</h6>
-                            <p class="card-text"></p>
-                            Esta a 863 Metros do seu local
-                        </div>
-                    </div>
-                    <br>
-
-
-
-
-
-
-
+                    ?>
 
                 </div>
             </div>
@@ -140,11 +111,11 @@
 
     </div>
 
-<input type="text" name="" id="txtID" value="<?=$id_Parceiro?>" style="display: none;" >
-<input type="text" name="" id="txtNumero" value="<?= $numero_Parceiro?>" style="display: none;" >
-<input type="text" name="" id="logradouro_Parceiro" value="<?=$logradouro_Parceiro?>" style="display: none;" >
-<input type="text" name="" id="cidade_Parceiro" value="<?=$cidade_Parceiro?>" style="display: none;" >
-<input type="text" name="" id="uf_Parceiro" value="<?=$uf_Parceiro?>" style="display: none;" >
+    <input type="text" name="" id="txtID" value="<?= $id_Parceiro ?>" style="display: none;">
+    <input type="text" name="" id="txtNumero" value="<?= $numero_Parceiro ?>" style="display: none;">
+    <input type="text" name="" id="logradouro_Parceiro" value="<?= $logradouro_Parceiro ?>" style="display: none;">
+    <input type="text" name="" id="cidade_Parceiro" value="<?= $cidade_Parceiro ?>" style="display: none;">
+    <input type="text" name="" id="uf_Parceiro" value="<?= $uf_Parceiro ?>" style="display: none;">
 
     <?php include_once('_footer.php') ?>
 

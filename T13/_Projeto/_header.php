@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <nav class="navbar navbar-expand-lg navbar-dark mb-0  " style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="Index.php">
+    <a class="navbar-brand" href="#">
       <img src="css/img/logo1.png" class="logo" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

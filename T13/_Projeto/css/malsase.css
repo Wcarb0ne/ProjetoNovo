@@ -1,7 +1,27 @@
-.triste{
+.triste {
 
 
-height: 520px;
-width: 500%;
+    height: 250px;
+    width: 500%;
+
+}
+
+
+
+.veloz {
+
+
+
+
+    height: 300px;
+    width: 100%;
+
+
+}
+
+.carduim {
+
+    z-index: -1;
+
 
 }

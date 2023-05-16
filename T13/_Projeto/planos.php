@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="css/malsase.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/landingPage.css">
@@ -65,8 +66,8 @@
                     <div class="col-sm-2"></div>
                     <div class="col-sm-2">
 
-                    <div class="card" style="width:18rem;">
-                            <img src="css/img/oro.png" class="card-img-top" alt="...">
+                    <div class="card carduim" style="width:18rem;">
+                            <img src="css/img/oro.png" class=" card-img-top  " alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Plano ouro</h5>
                                 <h6 class="card-subtitle mb-2 text-muted ">Avançado</h6>

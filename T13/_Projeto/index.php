@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="css/landingPage.css">
+<link rel="stylesheet" href="css/malsase.css">
 
   
 
@@ -57,48 +58,6 @@
 </nav>
 
 <!-- Carrossel -->
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="css/img/carrossel.jpeg" class="d-block w-100 "  alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="css/img/carrossel.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="css/img/carrossel.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- Carrossel -->
-
-
-
 
 
 
@@ -140,25 +99,25 @@
 
         <div class="col-md-4 text-center mb-3 p-2">
           <div class="card card-body">
-            <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Básico</h5>
-            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Saiba Mais</a>
+            <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Bronze</h5>
+            <p class="card-text" style="font-family: 'Open Sans', sans-serif;"> No nosso plano Bronze você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 3 meses</p>
+            <a href="planos.php" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
 
         <div class="col-md-4 text-center mb-3 p-2">
           <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
-            <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Intermediário</h5>
-            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Saiba Mais</a>
+            <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Prata</h5>
+            <p class="card-text" style="font-family: 'Open Sans', sans-serif;"> No nosso plano Prata você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 6 meses</p>
+            <a href="planos.php" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
 
         <div class="col-md-4 text-center mb-3 p-2">
           <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
-            <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Avançado</h5>
-            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Saiba Mais</a>
+            <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Ouro</h5>
+            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">No nosso plano Ouro você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 9 meses mais bonus de 3 meses completos</p>
+            <a href="planos.php" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
 
@@ -186,7 +145,7 @@
         <h4>Redes sociais</h4>
         <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.instagram.com/tjbemici" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
       </div>
     </div>
     <hr>
