@@ -44,9 +44,9 @@
 
 
 <body>
-<?php include_once('www_autenticar.php');
+<?php 
 include_once('Conexao.php');?>
-<?php include_once('Parceiro_header.php');?>
+<?php include_once('www_autenticar.php');?>
     <div class="container mt-5 dg-dark">
         <div class="row">
             <div class="col-sm-12">
@@ -71,18 +71,18 @@ include_once('Conexao.php');?>
                             {
                                 include_once('Parceiro_Dados.php');
                             }
-                            elseif($parceiro =='Categoria')
-                            {
-                                include_once('Parceiro_CategoriaFrm.php');
-                            }
-                            elseif($parceiro =='Servicos')
-                            {
-                                include_once('Parceiro_ServicosFrm.php');
-                            }
-                                elseif($parceiro == "TabelaServicos")
-                                {
-                                include_once('Parceiro_ServicosTabela.php');
-                                }
+                            // elseif($parceiro =='Categoria')
+                            // {
+                            //     include_once('Parceiro_CategoriaFrm.php');
+                            // }
+                            // elseif($parceiro =='Servicos')
+                            // {
+                            //     include_once('Parceiro_ServicosFrm.php');
+                            // }
+                                // elseif($parceiro == "TabelaServicos")
+                                // {
+                                // include_once('Parceiro_ServicosTabela.php');
+                                // }
 
                             elseif($parceiro =='FaleConosco')
                             {
@@ -99,7 +99,7 @@ include_once('Conexao.php');?>
                         }
                     }
                     else {
-                        include_once('Parceiro_Home.php');
+                        include_once('Parceiro_Dados.php');
                     }
                 ?>
             </div>

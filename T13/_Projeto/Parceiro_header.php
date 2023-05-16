@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <nav class="navbar navbar-expand-lg navbar-dark mb-0  " style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="css/img/logo1.png" class="logo" alt="">
+    <a class="navbar-brand" href="_Home.php">
+      <img src="css/img/logo1.png" class="logo"  alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
         <li>
-          <img src="css/img/user.png" class="profile" />
+          <a href="Parceiro_sistema.php?Parceiro=dados"><img src="css/img/user.png" class="profile" /></a>
           <ul>
             <!-- <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>

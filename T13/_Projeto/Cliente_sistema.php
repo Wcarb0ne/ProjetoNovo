@@ -20,8 +20,8 @@
 
 
 <body>
-    <?php include_once('Conexao.php'); include_once('www_autenticar.php'); ?>
-    <?php include_once('Cliente_header.php'); ?>
+    <?php include_once('Conexao.php');  ?>
+    <?php include_once('www_autenticar.php');?>
 
 
         <div class="row">
@@ -49,7 +49,7 @@
                         echo '<h1> ERRO, Pagina não encontrada </h1>';
                     }
                 } else {
-                    include_once('Cliente_Home.php');
+                    include_once('Cliente_Dados.php');
                 }
                 ?>
             </div>

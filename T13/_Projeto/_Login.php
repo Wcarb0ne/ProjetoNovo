@@ -36,6 +36,8 @@
                 $_SESSION['idUsuario'] = $linha[0];
                 $_SESSION['nomeUsuario'] = $linha[3];
                 $_SESSION['loginUsuario'] = $linha[5];
+                $_SESSION['TipoUsuario'] = "Cliente";
+
             }
 
             header('Location:Cliente_sistema.php');
@@ -55,6 +57,7 @@
                     $_SESSION['idUsuario'] = $linha[0];
                     $_SESSION['nomeUsuario'] = $linha[3];
                     $_SESSION['loginUsuario'] = $linha[9];
+                    $_SESSION['TipoUsuario'] = "Parceiro";
                 }
 
                 header('Location:Parceiro_sistema.php');
