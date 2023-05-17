@@ -202,8 +202,7 @@
                 preview.src = caminho;
                 $("#base64Code").val(caminho);
 
-                caminhoLimpo = caminho;
-                $("#base64CodePHP").val(caminhoLimpo).substring(caminho.indexOf("base64,") + 7);
+                
 
             }
 

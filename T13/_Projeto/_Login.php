@@ -36,7 +36,8 @@
                 $_SESSION['idUsuario'] = $linha[0];
                 $_SESSION['nomeUsuario'] = $linha[3];
                 $_SESSION['loginUsuario'] = $linha[5];
-                $_SESSION['TipoUsuario'] = "Cliente";
+                $_SESSION['headerUsuario'] = "Cliente";
+                $_SESSION['ImgUsuario'] = $linha[18];
 
             }
 
@@ -49,7 +50,7 @@
                     senha_Parceiro = '$senhaUsuario'
                 "
             );
-
+            
             if ($sql->rowCount() == 1) {
                 session_start();
                 foreach ($sql as $linha) {
@@ -57,7 +58,8 @@
                     $_SESSION['idUsuario'] = $linha[0];
                     $_SESSION['nomeUsuario'] = $linha[3];
                     $_SESSION['loginUsuario'] = $linha[9];
-                    $_SESSION['TipoUsuario'] = "Parceiro";
+                    $_SESSION['headerUsuario'] = "Parceiro";
+                    $_SESSION['ImgUsuario'] = $linha[19];
                 }
 
                 header('Location:Parceiro_sistema.php');

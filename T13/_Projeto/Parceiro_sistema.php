@@ -35,9 +35,8 @@
 
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery-3.6.4.js"></script>
+  <script src="js/script.js"></script>
 
-  <script src="script.js"></script>
-  <script src="./Cadastro-Parceiro/ParceiroScript.js"></script>
 
     <title>Next Tech</title>
 </head>
@@ -75,10 +74,10 @@ include_once('Conexao.php');?>
                             // {
                             //     include_once('Parceiro_CategoriaFrm.php');
                             // }
-                            // elseif($parceiro =='Servicos')
-                            // {
-                            //     include_once('Parceiro_ServicosFrm.php');
-                            // }
+                            elseif($parceiro =='Servicos')
+                            {
+                                include_once('Parceiro_ServicosFrm.php');
+                            }
                                 // elseif($parceiro == "TabelaServicos")
                                 // {
                                 // include_once('Parceiro_ServicosTabela.php');
@@ -99,7 +98,7 @@ include_once('Conexao.php');?>
                         }
                     }
                     else {
-                        include_once('Parceiro_Dados.php');
+                        // include_once('Parceiro_Dados.php');
                     }
                 ?>
             </div>

@@ -195,8 +195,7 @@
 
 
                     <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
-            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
-
+           
                     <div class="row mt-3"><!-- Observação -->
                         <div class="col-sm-12 ">
                             <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Observação(Opcional)"><?= $obs_Cliente ?></textarea>
@@ -243,9 +242,6 @@
 
                 preview.src = caminho;
                 $("#base64Code").val(caminho);
-
-                caminhoLimpo = caminho;
-                $("#base64CodePHP").val(caminhoLimpo).substring(caminho.indexOf("base64,") + 7);
 
             }
 

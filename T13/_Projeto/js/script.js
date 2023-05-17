@@ -94,7 +94,7 @@ function CadastrarParceiro() {
         alert("Senha é Obrigatória");
         return;
     }
-    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+    if ($("#txtSenha").val() != $("#txtConfirmarSenha").val()) {
         alert("A senha deve ser idêntica ao confirmar Senha");
         return;
     }
@@ -282,7 +282,7 @@ function ParceiroAlterar() {
         alert("Senha é Obrigatória");
         return;
     }
-    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+    if ($("#txtSenha").val() != $("#txtConfirmarSenha").val()) {
         alert("A senha deve ser idêntica ao confirmar Senha");
         return;
     }
@@ -373,6 +373,153 @@ function ParceiroExcluir() {
 
     })
 }/////////////////formulario Parceiro///////////
+
+/////////////////formulario Serviços Parceiro///////////
+function AbrirTabelaServicos() {
+    $('#tabelaServicos').load('Parceiro_ServicosTabela.php');
+}
+function PesquisarSevicosParceiro() {
+
+    let id_ParceiroServicos = $('#txtID').val();
+
+    let action = 'Parceiro_ServicosBtoPesquisa.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_ParceiroServicos
+
+        },
+        success: function (data, status, xhr) {
+
+            $("#resultado").empty().html(data);
+            $("#txtID").val($('#idGerado').text());
+            $("#txtData").val($('#PesquisaData').text());
+            $("#txtNome").val($('#PesquisaNome').text());
+
+            $("#txtStatus").val($('#PesquisaStatus').text());
+            $("#txtDescricao").val($('#PesquisaDescricao').text());
+
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').empty().html('Error ' + errorMessage);
+        }
+
+    })
+
+}
+// function CadastrarSevicosParceiro() {
+
+//     let id_ParceiroServicos=$('#txtID').val();
+//     let data_ParceiroServicos= $('#txtData').val()
+//     let status_ParceiroServicos = $('#txtStatus').val();
+//     let nomeCliente_ParceiroServicos = $('#txtNomeCliente').val();
+//     let cpfCliente_ParceiroServicos= $('#txtCPFCliente').val();
+//     let contatoCliente_ParceiroServicos= $('#txtContatoCliente').val();
+//     let emailCliente_ParceiroServicos= $('#txtEmailCliente').val();
+//     let nomeProd_ParceiroServicos= $('#txtNomeProd').val();
+//     let categoria_ParceiroServicos= $('#txtCate').val();
+//     let marca__ParceiroServicos= $('#txtMarca').val();
+//     let serie_ParceiroServicos=$('#txtSerie').val();
+//     let descricao_ParceiroServicos = $('#txtDescricao').val();
+//     let 
+//     let action = 'Parceiro_ServicosBtoCadastrar.php';
+
+//     $.ajax({
+//         url: action,
+//         type: 'post',
+//         data: {
+//             txtData
+// txtID
+// txtStatus
+// txtNomeCliente
+// txtCPFCliente
+// txtContatoCliente
+// txtEmailCliente
+// txtNomeProd
+// txtCate
+// txtMarca
+// txtSerie
+// txtDescricao
+// txtDescricaoSolu
+// txtvalor
+
+//         },
+//         success: function (data, status, xhr) {
+//             $("#resultado").empty().html(data);
+//             //$("#txtID").val($(#idGerado).text());
+//         },
+//         error: function (jqXhr, textStatus, errorMessage) {
+//             $('#resultado').append('Error ' + errorMessage);
+//         }
+
+//     })
+// }
+function ExcluirServicosParceiro() {
+
+    let id_Parceiro = $('#txtID').val();
+
+    let action = 'Parceiro_ServicosBtoExcluir.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_ParceiroServicos
+
+        },
+        beforend: function () {
+            $("#resultado").html("ENVIANDO...");
+        },
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').empty().html('Error' + errorMessage);
+        }
+
+    })
+}
+function AlterarServicosParceiro() {
+
+    //console.log('testtetttt');
+
+    let id_ParceiroServicos = $('#txtID').val();
+    let nome_ParceiroServicos = $('#txtNome').val();
+    let status_ParceiroServicos = $('#txtStatus').val();
+    let descricao_ParceiroServicos = $('#txtDescricao').val();
+
+    let action = 'Parceiro_ServicosBtoAlterar.php';
+
+
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_ParceiroServicos,
+            txtNome: nome_ParceiroServicos,
+            txtStatus: status_ParceiroServicos,
+            txtDescricao: descricao_ParceiroServicos
+
+        },
+        beforend: function () {
+            $("#resultado").html("ENVIANDO...");
+        },
+        success: function (data, status, xhr) {
+
+            $("#resultado").empty().html(data);
+            PesquisarSevicosParceiro();
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').append('Error ' + errorMessage);
+        }
+
+    })
+}
+/////////////////Categoria Serviços Parceiro///////////
 
 
 
@@ -472,7 +619,7 @@ function CadastrarCliente() {
         alert("Senha é Obrigatória");
         return;
     }
-    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+    if ($("#txtSenha").val() != $("#txtConfirmarSenha").val()) {
         alert("A senha deve ser idêntica ao confirmar Senha");
         return;
     }
@@ -598,7 +745,7 @@ function AlterarCliente() {
         alert("Apenas letras");
         return;
     }
-    if ($.isNumeric($("#txtCidade").val() == null)) {
+    if ($("#txtCidade").val() == null) {
         alert("Campo Cidade Obrigatório");
         return;
     }
@@ -622,7 +769,7 @@ function AlterarCliente() {
         alert("Senha é Obrigatória");
         return;
     }
-    if ($.isNumeric($("#txtSenha").val() != $("#txtConfirmarSenha").val())) {
+    if ($("#txtSenha").val() != $("#txtConfirmarSenha").val()) {
         alert("A senha deve ser idêntica ao confirmar Senha");
         return;
     }

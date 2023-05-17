@@ -1,4 +1,4 @@
-<?php include_once('www_autenticar.php'); include_once('Conexao.php'); include_once('Parceiro_btoPesquisa.php');?>
+<?php include_once('Conexao.php'); include_once('Parceiro_btoPesquisa.php');?>
 
 <link rel="stylesheet" href="css/icon.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -14,6 +14,9 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Parceiro_sistema.php?Parceiro=Servicos">Serviços</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="_Home.php">Home</a>
@@ -42,15 +45,15 @@
               <p>Home</p>
             </li> -->
             <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Serviços"> format_list_bulleted </span>
+              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Dados"> format_list_bulleted </span>
               </span>
               <p>Dados</p>
               </a>
             </li>
             <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"> format_list_bulleted </span>
+              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Servicos" title="Servicos"> format_list_bulleted </span>
               </span>
-              <p>Chat</p>
+              <p>Serviços</p>
               </a>
             </li>
             <li class="sub-item">
@@ -65,6 +68,7 @@
               <p>Logout</p>
             </li>
             </a>
+            
           </ul>
         </li>
 
