@@ -96,7 +96,7 @@
         <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
           <div class="card z-index-0">
             <div class="card-header text-center pt-4">
-              <h5><img src="../NexTech/assets/LoginNext/logo Nextech.png" width="160px" height="100px" class="logo"></h5>
+              <h5><img src="../NexTech/assets/LoginNext/logo login2.png" width="200px" height="150px" class="logo"></h5>
             </div>
             <div class="card-body">
               <form role="form"  style="font-family: 'Open Sans', sans-serif; " method="post">
