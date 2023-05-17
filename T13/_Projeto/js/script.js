@@ -594,7 +594,7 @@ function AlterarCliente() {
         alert("Bairro obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtBairro").val())) {
+    if ($.isNumeric($("#txtBairro").val())) {
         alert("Apenas letras");
         return;
     }
@@ -602,11 +602,11 @@ function AlterarCliente() {
         alert("Campo Cidade Obrigatório");
         return;
     }
-    if (!$.isNumeric($("#txtCidade").val())) {
+    if ($.isNumeric($("#txtCidade").val())) {
         alert("Apenas letras");
         return;
     }
-    if ($("#txtCEP").val() = null) {
+    if ($("#txtCEP").val() == null) {
         alert("CEP obrigatório");
         return;
     }

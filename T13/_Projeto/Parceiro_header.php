@@ -1,3 +1,4 @@
+<?php include_once('www_autenticar.php'); include_once('Conexao.php'); include_once('Parceiro_btoPesquisa.php');?>
 
 <link rel="stylesheet" href="css/icon.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -46,32 +47,18 @@
               <p>Dados</p>
               </a>
             </li>
-
-
-
             <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"> format_list_bulleted </span>
               </span>
               <p>Chat</p>
               </a>
             </li>
-
-
-
-
-
             <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=FaleConosco" title="Fale Conosco">manage_accounts</span>
               <p>Fale Conosco</p>
 
             </li>
             </a>
-
-
-
-
-
-
 
             <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Sair" title="Sair">logout </span>

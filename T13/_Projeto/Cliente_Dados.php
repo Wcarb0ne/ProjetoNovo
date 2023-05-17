@@ -47,7 +47,7 @@
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <img id="preImg" src="css/img/Photo-Camera-PNG.png" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
+                <img id="preImg" src="<?=$foto_Cliente?>" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
                 <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
                 <center><label for='txtImg' class="Perfil" style="width: 300px;">Imagem de Perfil &#187;</label></center>
             </div>
@@ -77,8 +77,8 @@
                         <div class="col-sm-2">
                             <select name="txtStatus" id="txtStatus" class="form-control" hidden>
                                 <option value="" selected> ->Selecione<-< /option>
-                                <option value="Ativo" <?= ($uf_Cliente == "Ativo" ? 'selected' : '') ?>>Ativo</option>
-                                <option value="Inativo" <?= ($uf_Cliente == "Inativo" ? 'selected' : '') ?>>Inativo</option>
+                                <option value="Ativo" <?= ($status_Cliente == "Ativo" ? 'selected' : '') ?>>Ativo</option>
+                                <option value="Inativo" <?= ($status_Cliente == "Inativo" ? 'selected' : '') ?>>Inativo</option>
                             </select>
                         </div>
 
@@ -194,7 +194,8 @@
 
 
 
-
+                    <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
+            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
 
                     <div class="row mt-3"><!-- Observação -->
                         <div class="col-sm-12 ">
@@ -227,6 +228,32 @@
 
 </body>
 
-
-
 </html>
+<script>
+        function previewFile(element) {
+
+            var preview = document.getElementById('preImg');
+            var file = document.getElementById('txtImg').files[0];
+
+            var reader = new FileReader();
+
+            reader.onloadend = function() {
+                var caminho = reader.result;
+                // var caminhoLimpo = reader.result;
+
+                preview.src = caminho;
+                $("#base64Code").val(caminho);
+
+                caminhoLimpo = caminho;
+                $("#base64CodePHP").val(caminhoLimpo).substring(caminho.indexOf("base64,") + 7);
+
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+
+        }
+    </script>

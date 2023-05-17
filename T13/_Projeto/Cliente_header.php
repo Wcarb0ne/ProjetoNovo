@@ -1,4 +1,4 @@
-<?php include_once('www_autenticar.php'); include_once('Conexao.php');?>
+<?php include_once('www_autenticar.php'); include_once('Conexao.php'); include_once('Cliente_btoPesquisa.php');?>
 <link rel="stylesheet" href="css/icon.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <nav class="navbar navbar-expand-lg navbar-dark mb-0  " style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">

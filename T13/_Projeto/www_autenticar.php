@@ -7,12 +7,13 @@ if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& iss
     $idUsuario=$_SESSION['idUsuario'];
     $nomeUsuario=$_SESSION['nomeUsuario'];
     $loginUsuario=$_SESSION['loginUsuario'];
+    $TipoUsuario=$_SESSION['TipoUsuario'];
     
     if($_SESSION['TipoUsuario'] = "Cliente"){
         include_once('Cliente_header.php');
     }
     else if ($_SESSION['TipoUsuario'] = "Parceiro"){
-        include_once('Parceiro_header');
+        include_once('Parceiro_header.php');
     }
     else{
         include_once('_header.php');
