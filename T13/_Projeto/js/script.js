@@ -394,13 +394,13 @@ function PesquisarSevicosParceiro() {
         },
         success: function (data, status, xhr) {
 
-            $("#resultado").empty().html(data);
-            $("#txtID").val($('#idGerado').text());
-            $("#txtData").val($('#PesquisaData').text());
-            $("#txtNome").val($('#PesquisaNome').text());
+            // $("#resultado").empty().html(data);
+            // $("#txtID").val($('#idGerado').text());
+            // $("#txtData").val($('#PesquisaData').text());
+            // $("#txtNome").val($('#PesquisaNome').text());
 
-            $("#txtStatus").val($('#PesquisaStatus').text());
-            $("#txtDescricao").val($('#PesquisaDescricao').text());
+            // $("#txtStatus").val($('#PesquisaStatus').text());
+            // $("#txtDescricao").val($('#PesquisaDescricao').text());
 
         },
         error: function (jqXhr, textStatus, errorMessage) {
@@ -425,7 +425,9 @@ function CadastrarSevicosParceiro() {
     let serie_ParceiroServicos = $('#txtSerie').val();
     let descricao_ParceiroServicos = $('#txtDescricao').val();
     let descricaoSolu_ParceiroServicos = $('#txtDescricaoSolu').val();
-    let valor_ParceiroServicos = $('#txtValor').val();
+    let valor_ParceiroServicos = $('#txtvalor').val();
+    let id_Parceiro_ParceiroServicos = $('#txtIDPar').val();
+    let nomeServico_ParceiroServicos = $('#txtNomeServico').val();
 
     let action = 'Parceiro_ServicosBtoCadastrar.php';
 
@@ -447,6 +449,8 @@ function CadastrarSevicosParceiro() {
             txtDescricao: descricao_ParceiroServicos,
             txtDescricaoSolu: descricaoSolu_ParceiroServicos,
             txtvalor: valor_ParceiroServicos,
+            txtIDPar:id_Parceiro_ParceiroServicos,
+            txtNomeServico:nomeServico_ParceiroServicos,
 
         },
         success: function (data, status, xhr) {
@@ -491,9 +495,20 @@ function AlterarServicosParceiro() {
     //console.log('testtetttt');
 
     let id_ParceiroServicos = $('#txtID').val();
-    let nome_ParceiroServicos = $('#txtNome').val();
+    let data_ParceiroServicos = $('#txtData').val()
     let status_ParceiroServicos = $('#txtStatus').val();
+    let nomeCliente_ParceiroServicos = $('#txtNomeCliente').val();
+    let cpfCliente_ParceiroServicos = $('#txtCPFCliente').val();
+    let contatoCliente_ParceiroServicos = $('#txtContatoCliente').val();
+    let emailCliente_ParceiroServicos = $('#txtEmailCliente').val();
+    let nomeProd_ParceiroServicos = $('#txtNomeProd').val();
+    let categoria_ParceiroServicos = $('#txtCate').val();
+    let marca_ParceiroServicos = $('#txtMarca').val();
+    let serie_ParceiroServicos = $('#txtSerie').val();
     let descricao_ParceiroServicos = $('#txtDescricao').val();
+    let descricaoSolu_ParceiroServicos = $('#txtDescricaoSolu').val();
+    let valor_ParceiroServicos = $('#txtValor').val();
+    let id_Parceiro_ParceiroServicos = $('#txtIDPar').val();
 
     let action = 'Parceiro_ServicosBtoAlterar.php';
 
@@ -503,9 +518,20 @@ function AlterarServicosParceiro() {
         type: 'post',
         data: {
             txtID: id_ParceiroServicos,
-            txtNome: nome_ParceiroServicos,
+            txtData: data_ParceiroServicos,
             txtStatus: status_ParceiroServicos,
-            txtDescricao: descricao_ParceiroServicos
+            txtNomeCliente: nomeCliente_ParceiroServicos,
+            txtCPFCliente: cpfCliente_ParceiroServicos,
+            txtContatoCliente: contatoCliente_ParceiroServicos,
+            txtEmailCliente: emailCliente_ParceiroServicos,
+            txtNomeProd: nomeProd_ParceiroServicos,
+            txtCate: categoria_ParceiroServicos,
+            txtMarca: marca_ParceiroServicos,
+            txtSerie: serie_ParceiroServicos,
+            txtDescricao: descricao_ParceiroServicos,
+            txtDescricaoSolu: descricaoSolu_ParceiroServicos,
+            txtvalor: valor_ParceiroServicos,
+            txtIDPar:id_Parceiro_ParceiroServicos,
 
         },
         beforend: function () {

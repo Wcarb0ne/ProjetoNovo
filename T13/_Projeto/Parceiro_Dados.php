@@ -5,8 +5,6 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
-
-
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery-3.6.4.js"></script>
 
@@ -18,6 +16,12 @@ include_once('Conexao.php');
 
 include_once('Parceiro_btoPesquisa.php');
 ?>
+<style>
+label{
+    font-family: 'Open Sans', sans-serif;
+}
+
+</style>
 
 <title>Parceiro</title>
 
@@ -41,78 +45,95 @@ include_once('Parceiro_btoPesquisa.php');
             <br>
             <div class="row"><!-- ID / STATUS / datacadastro -->
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario" value="<?= $idUsuario ?>" disabled>
+                    <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Usuario" value="<?= $idUsuario ?>" disabled hidden>
                 </div>
 
-                <div class="col-sm-4">
-                    <select name="txtStatus" id="txtStatus" class="form-control">
-                        <option value=""> ->Selecione<-< /option>
+                <div class="col-sm-5">
+                    <select name="txtStatus" id="txtStatus" class="form-control" hidden>
+                        <option value=""> ->Selecione<-</option>
                         <option value="Ativo" <?= ($status_Parceiro == "Ativo" ? 'selected' : '') ?>>Ativo</option>
                         <option value="Inativo" <?= ($status_Parceiro == "Inativo" ? 'selected' : '') ?>>Inativo</option>
                     </select>
                 </div>
 
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" value="<?= $data_Parceiro ?>">
+                <div class="col-sm-3">
+                <label  >Data Cadastro</label>
+                    <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" value="<?= $data_Parceiro ?>" disabled>
                 </div>
             </div>
 
             <div class="row mt-3"><!-- NOME  / CNPJ  / RAMO -->
                 <div class="col-sm-6">
+                <label  >Nome</label>
                     <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o nome da empresa" value="<?= $nome_Parceiro ?>">
                 </div>
                 <div class="col-sm-3">
+                <label >CNPJ</label>
                     <input type="number" class="form-control" name="txtCnpj" id="txtCnpj" placeholder="Informe o Cnpj" value="<?= $cnpj_Parceiro ?>">
                 </div>
                 <div class="col-sm-3">
+                <label> Ramo </label>
                     <input type="text" class="form-control" name="txtRamo" id="txtRamo" placeholder="Informe o Ramo" value="<?= $ramo_Parceiro ?>">
                 </div>
             </div>
 
             <div class="row mt-3"><!--  email / telefone1 / telefone2 -->
                 <div class="col-sm-4">
+                <label  >E-mail</label>
                     <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email Comercial" value="<?= $email_Parceiro ?>">
                 </div>
                 <div class="col-sm-4">
+                <label  >Tel1</label>
                     <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Telefone para Contato" value="<?= $telefone1_Parceiro ?>">
                 </div>
                 <div class="col-sm-4">
+                <label  >Tel2</label>
                     <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder="Telefone da Empresa" value="<?= $telefone2_Parceiro ?>">
                 </div>
             </div>
 
             <div class="row mt-3"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
                 <div class="col-sm-4">
+                <label  >Login</label>
                     <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Login do usuário" value="<?= $login_Parceiro ?>">
                 </div>
                 <div class="col-sm-4">
+                <label  >Senha</label>
                     <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Informe a Senha" value="<?= $senha_Parceiro ?>">
                 </div>
                 <div class="col-sm-4">
+                <label  >Confirm.Senha</label>
                     <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a Senha" value="<?= $senha_Parceiro ?>">
                 </div>
             </div>
 
             <div class="row mt-3"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
                 <div class="col-sm-3">
+                <label  >Logradouro(Rua)</label>
                     <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder=" Informe seu Endereço" value="<?= $logradouro_Parceiro ?>">
                 </div>
                 <div class="col-sm-3">
+                <label  >Nº</label>
                     <input type="number" class="form-control" name="txtNumero" id="txtNumero" placeholder="Insira o Numero" value="<?= $numero_Parceiro ?>">
                 </div>
                 <div class="col-sm-3">
+                <label >Complemento</label>
                     <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Informe o Complemento" value="<?= $complemento_Parceiro ?>">
+                </div>
+                <div class="col-sm-3">
+                <label >Bairro</label>
+                    <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder=" Informe seu Bairro" value="<?= $bairro_Parceiro ?>">
                 </div>
             </div>
 
             <div class="row mt-4"><!-- BAIRRO / CIDADE / UF / CEP -->
+
                 <div class="col-sm-3">
-                    <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder=" Informe seu Bairro" value="<?= $bairro_Parceiro ?>">
-                </div>
-                <div class="col-sm-3">
+                <label >Cidade</label>
                     <input type="text" class="form-control" name="txtCidade" id="txtCidade" placeholder=" Informe sua Cidade" value="<?= $cidade_Parceiro ?>">
                 </div>
                 <div class="col-sm-3">
+                <label >Estado(UF)</label>
                     <select name="txtUF" id="txtUF" class="form-control" value="">
                         <option value="" <?= ($uf_Parceiro == "" ? 'selected' : '') ?>>UF</option>
                         <option value="Acre" <?= ($uf_Parceiro == "Acre" ? 'selected' : '') ?>>AC</option>
@@ -144,12 +165,14 @@ include_once('Parceiro_btoPesquisa.php');
                     </select>
                 </div>
                 <div class="col-sm-3">
+                <label >CEP</label>
                     <input type="number" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep" value="<?= $cep_Parceiro ?>">
                 </div>
             </div>
 
             <div class="row mt-4"><!-- Observação -->
                 <div class="col-sm-12">
+                <label >Observação</label>
                     <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Insira a observação do cadastro (campo não obrigatório)"><?= $obs_Parceiro ?></textarea>
                 </div>
             </div>

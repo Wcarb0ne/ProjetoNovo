@@ -6,6 +6,8 @@
 
 include_once('Conexao.php');
 
+
+
 if($_POST)
 {
     
@@ -21,6 +23,8 @@ if($_POST)
     $descricao_ParceiroServicos = $_POST['txtDescricao'];
     $descricaoSolu_ParceiroServicos = $_POST['txtDescricaoSolu'];
     $valor_ParceiroServicos = $_POST['txtvalor'];
+    $id_Parceiro_ParceiroServicos = $_POST['txtIDPar'];
+    $nomeServico_ParceiroServicos = $_POST['txtNomeServico'];
 
     
     
@@ -28,10 +32,10 @@ if($_POST)
         $sql = $conn->prepare(
             "insert into ParceiroServicos
             (status_ParceiroServicos,nomeCliente_ParceiroServicos,cpfCliente_ParceiroServicos,contatoCliente_ParceiroServicos,
-            emailCliente_ParceiroServicos ,nomeProd_ParceiroServicos,categoria_ParceiroServicos,marca_ParceiroServicos,serie_ParceiroServicos,descricao_ParceiroServicos,descricaoSolu_ParceiroServicos,valor_ParceiroServicos)
+            emailCliente_ParceiroServicos ,nomeProd_ParceiroServicos,categoria_ParceiroServicos,marca_ParceiroServicos,serie_ParceiroServicos,descricao_ParceiroServicos,descricaoSolu_ParceiroServicos,valor_ParceiroServicos,id_Parceiro_ParceiroServicos,nomeServico_ParceiroServicos)
             values
             (:status_ParceiroServicos,:nomeCliente_ParceiroServicos,:cpfCliente_ParceiroServicos,:contatoCliente_ParceiroServicos,
-            :emailCliente_ParceiroServicos ,:nomeProd_ParceiroServicos,:categoria_ParceiroServicos,:marca_ParceiroServicos,:serie_ParceiroServicos,:descricao_ParceiroServicos,:descricaoSolu_ParceiroServicos,:valor_ParceiroServicos)"
+            :emailCliente_ParceiroServicos ,:nomeProd_ParceiroServicos,:categoria_ParceiroServicos,:marca_ParceiroServicos,:serie_ParceiroServicos,:descricao_ParceiroServicos,:descricaoSolu_ParceiroServicos,:valor_ParceiroServicos,:id_Parceiro_ParceiroServicos,:nomeServico_ParceiroServicos)"
         );
 
         $sql->execute(array(
@@ -48,8 +52,9 @@ if($_POST)
             ':serie_ParceiroServicos'=>$serie_ParceiroServicos,
             ':descricao_ParceiroServicos'=>$descricao_ParceiroServicos,
             ':descricaoSolu_ParceiroServicos'=>$descricaoSolu_ParceiroServicos,
-            ':valor_ParceiroServicos'=>$valor_ParceiroServicos
-
+            ':valor_ParceiroServicos'=>$valor_ParceiroServicos,
+            ':id_Parceiro_ParceiroServicos'=>$id_Parceiro_ParceiroServicos,
+            ':nomeServico_ParceiroServicos'=>$nomeServico_ParceiroServicos
         ));
 
         if($sql->rowCount() > 0)
