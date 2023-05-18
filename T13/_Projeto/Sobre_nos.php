@@ -3,6 +3,8 @@
 <head>
 	<title>Sobre nós</title>
 	<link rel="stylesheet" type="text/css" href="css/SobreNos.css">
+	<link rel="stylesheet" type="text/css" href="fru-fruDoSobreNos/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="fru-fruDoSobreNos/css/rotating-card.css">
 
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -46,6 +48,11 @@ Além disso, nossa plataforma oferece um sistema de acompanhamento de reparo em 
 Na Nextech, estamos comprometidos em fornecer uma experiência de usuário excepcional. Com uma equipe dedicada e experiente, estamos sempre prontos para ajudar nossos usuários a encontrar a assistência técnica certa e receber o serviço de qualidade que merecem.</p>
 		</section>
 	</main>
+
+
+	<?php include_once('fru-fruDoSobreNos/FuncEmpresa.php') ?>
+
+
 	<footer>
 		<?php include_once('_footer.php') ?>
 	</footer>

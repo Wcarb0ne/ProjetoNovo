@@ -31,6 +31,9 @@
     
     ?>
 <style>
+h3{
+text-align: center;
+}
 
 </style>
 
@@ -40,7 +43,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
+      <img src="css/img/essa copiar poha.jpg" class="" alt="...">
     </div>
   
         </div>
