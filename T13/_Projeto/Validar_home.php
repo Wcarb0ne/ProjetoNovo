@@ -1,6 +1,8 @@
 <?php
-include_once('www_autenticar.php');
 
+
+
+session_start();
 
 if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& isset($_SESSION['loginUsuario'])&& isset($_SESSION['TipoUsuario']))
 
@@ -10,12 +12,19 @@ if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& iss
     $loginUsuario=$_SESSION['loginUsuario'];
    
     if($_SESSION['TipoUsuario'] = "Cliente"){
-        include_once('Cliente_header.php');
+        include_once('_Home.php');
     }
     else if ($_SESSION['TipoUsuario'] = "Parceiro"){
-        include_once('Parceiro_header');
+        include_once('_Home.php');
     }
 }
+else{
+    include_once('_Home_colado.php');
+
+
+}
+
+
 
 
 ?>

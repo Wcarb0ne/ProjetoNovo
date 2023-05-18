@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& isset($_SESSION['loginUsuario'])&& isset($_SESSION['headerUsuario'])&& isset($_SESSION['ImgUsuario']))
@@ -16,9 +17,7 @@ if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& iss
     else if ($TipoUsuario == "Parceiro"){
         include_once('Parceiro_header.php');
     }
-    else{
-        include_once('_header.php');
-    }
+   
 }
 
 else{

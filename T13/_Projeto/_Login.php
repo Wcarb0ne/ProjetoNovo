@@ -62,7 +62,7 @@
                     $_SESSION['ImgUsuario'] = $linha[19];
                 }
 
-                header('Location:Parceiro_sistema.php');
+                header('Location:_Home.php');
 
             } else {
                 

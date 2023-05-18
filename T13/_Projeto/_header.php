@@ -11,64 +11,26 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
+          <a class="nav-link active" aria-current="page" href="Validar_index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="_Home.php">Home</a>
+          <a class="nav-link" href="Validar_home.php">Home</a>
         </li>
 
         <li class="nav-item dropdown">
           <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Saiba Mais </a>
         
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="Sobre_nos.php">Sobre nós</a></li>
+          <li><a class="dropdown-item" href="Validar_sobre_nos.php">Sobre nós</a></li>
 
-          <li><a class="dropdown-item" href="planos.php">Planos</a></li>
+          <li><a class="dropdown-item" href="Validar_planos.php">Planos</a></li>
            
         </ul>
         </li>
     
-       
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
- 
-        <li class="velhoFDP">
-          <img src="css/img/user.png" class="profile" />
-          <ul>
-            <li class="sub-item">
-              <span class="material-icons-outlined" ><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>
-              <p>Home</p>
-            </li>
-
-
-            <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Tela=Servicos" title="Serviços"> format_list_bulleted </a> </span>
-              </span>
-              <p>Serviços</p>
-            </li>
-
-      
-            <li class="sub-item">
-              <span class="material-icons-outlined"><a href="#" title="Fale Conosco">manage_accounts</span>
-              <p>Fale Conosco</p>
-
-            </li>
-            </a>
-
-
-            <li class="sub-item">
-            <span class="material-icons-outlined"><a href="Parceiro_autenticarSair.php?Tela=Sair" title="Sair">logout</a>  </span>
-              <p>Logout</p>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="navbar-brand m-5" href="_Login.php"><img src="css/img/user.png" class="oxi" alt=""></a>
         </li>
-      </ul>
     </nav>
   
 

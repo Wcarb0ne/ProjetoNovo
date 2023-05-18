@@ -41,7 +41,7 @@
 
 
     <div class=" z-index: -1; ">
-        <?php include_once('_header.php');
+        <?php include_once('validar_Header.php');
 
         include_once('mapa_Pesquisa.php');
 

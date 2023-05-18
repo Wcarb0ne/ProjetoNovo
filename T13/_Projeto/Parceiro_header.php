@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
+          <a class="nav-link active" aria-current="page" href="Validar_index.php">Ínicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="Parceiro_sistema.php?Parceiro=Servicos">Serviços</a>

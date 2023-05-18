@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="css/landingPage.css">
 <link rel="stylesheet" href="css/malsase.css">
+<link rel="stylesheet" href="css/icon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
   
 
@@ -18,15 +20,15 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery-3.6.4.js"></script>
 </head>
-
+<?php
+include_once('www_autenticar.php');
+?>
 
 
 <body>
-<?php 
 
-
-include_once('_header.php') ?>
-
+    
+          
 <!-- Carrossel -->
 
 
@@ -86,7 +88,7 @@ include_once('_header.php') ?>
         <div class="col-md-4 text-center mb-3 p-2">
           <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
             <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Ouro</h5>
-            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">No nosso plano Ouro você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 9 meses mais bonus de 3 meses completos</p>
+            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">No nosso plano Ouro você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 9 meses mais bonus de 3 meses</p>
             <a href="planos.php" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>

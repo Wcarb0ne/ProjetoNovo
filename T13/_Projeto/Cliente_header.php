@@ -15,7 +15,7 @@
           <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="_Home.php">Home</a>
+          <a class="nav-link" href="Validar_index.php">Home</a>
         </li>
 
         <li class="nav-item dropdown">

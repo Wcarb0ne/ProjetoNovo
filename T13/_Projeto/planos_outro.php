@@ -28,7 +28,8 @@
 
 <body>
     <header>
-        <?php include_once('www_autenticar.php') ?>
+    <?php include_once('_header.php');
+       include('Conexao.php'); ?>
     </header>
     <div class="container">
 
