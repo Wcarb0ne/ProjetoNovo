@@ -35,6 +35,9 @@ include_once('Conexao.php');
 
 ?>
 <style>
+h3{
+text-align: center;
+}
 
 </style>
 
@@ -47,6 +50,12 @@ include_once('Conexao.php');
                 <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
             </div>
 
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="css/img/essa copiar poha.jpg" class="" alt="...">
+    </div>
+  
         </div>
         <div class="col-sm-3"></div>
     </div>
