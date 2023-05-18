@@ -8,28 +8,47 @@ include_once('Conexao.php');
 
 if($_POST)
 {
-    $nome_ParceiroServicos = $_POST['txtNome'];
-    $id_PCategoria = $_POST['txtIDC'];
+    
     $status_ParceiroServicos = $_POST['txtStatus'];
+    $nome_ParceiroServicos = $_POST['txtNomeCliente'];
+    $cpfCliente_ParceiroServicos = $_POST['txtCPFCliente'];
+    $contatoCliente_ParceiroServicos = $_POST['txtContatoCliente'];
+    $emailCliente_ParceiroServicos = $_POST['txtEmailCliente'];
+    $nomeProd_ParceiroServicos = $_POST['txtNomeProd'];
+    $categoria_ParceiroServicos= $_POST['txtCate'];
+    $marca_ParceiroServicos = $_POST['txtMarca'];
+    $serie_ParceiroServicos = $_POST['txtSerie'];
     $descricao_ParceiroServicos = $_POST['txtDescricao'];
-
+    $descricaoSolu_ParceiroServicos = $_POST['txtDescricaoSolu'];
+    $valor_ParceiroServicos = $_POST['txtvalor'];
 
     
     
     try {
         $sql = $conn->prepare(
             "insert into ParceiroServicos
-            (status_ParceiroServicos,nome_ParceiroServicos,id_PCategoria_ParceiroServicos,descricao_ParceiroServicos)
+            (status_ParceiroServicos,nomeCliente_ParceiroServicos,cpfCliente_ParceiroServicos,contatoCliente_ParceiroServicos,
+            emailCliente_ParceiroServicos ,nomeProd_ParceiroServicos,categoria_ParceiroServicos,marca_ParceiroServicos,serie_ParceiroServicos,descricao_ParceiroServicos,descricaoSolu_ParceiroServicos,valor_ParceiroServicos)
             values
-            (:status_ParceiroServicos,:nome_ParceiroServicos,:id_PCategoria_ParceiroServicos,:descricao_ParceiroServicos)"
+            (:status_ParceiroServicos,:nomeCliente_ParceiroServicos,:cpfCliente_ParceiroServicos,:contatoCliente_ParceiroServicos,
+            :emailCliente_ParceiroServicos ,:nomeProd_ParceiroServicos,:categoria_ParceiroServicos,:marca_ParceiroServicos,:serie_ParceiroServicos,:descricao_ParceiroServicos,:descricaoSolu_ParceiroServicos,:valor_ParceiroServicos)"
         );
 
         $sql->execute(array(
 
-            ':nome_ParceiroServicos'=>$nome_ParceiroServicos,
-            ':id_PCategoria_ParceiroServicos'=>$id_PCategoria,
+            
             ':status_ParceiroServicos'=>$status_ParceiroServicos,
-            ':descricao_ParceiroServicos'=>$descricao_ParceiroServicos
+            ':nomeCliente_ParceiroServicos'=>$nome_ParceiroServicos,
+            ':cpfCliente_ParceiroServicos'=>$cpfCliente_ParceiroServicos,
+            ':contatoCliente_ParceiroServicos'=>$contatoCliente_ParceiroServicos,
+            ':emailCliente_ParceiroServicos'=>$emailCliente_ParceiroServicos ,
+            ':nomeProd_ParceiroServicos'=>$nomeProd_ParceiroServicos,
+            ':categoria_ParceiroServicos'=>$categoria_ParceiroServicos,
+            ':marca_ParceiroServicos'=>$marca_ParceiroServicos,
+            ':serie_ParceiroServicos'=>$serie_ParceiroServicos,
+            ':descricao_ParceiroServicos'=>$descricao_ParceiroServicos,
+            ':descricaoSolu_ParceiroServicos'=>$descricaoSolu_ParceiroServicos,
+            ':valor_ParceiroServicos'=>$valor_ParceiroServicos
 
         ));
 

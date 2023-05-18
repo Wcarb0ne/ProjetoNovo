@@ -1,3 +1,5 @@
+<script src="js/jquery-3.6.4.js"></script>
+  <script src="js/script.js"></script>
 <br>
 <form id="my-form" action="#" class="from-control" method="post" onsubmit="return false">
     <div class="container-fluid">
@@ -122,7 +124,7 @@
             <button name="btoTabela" class="btn btn-info" onclick="AbrirTabelaServicos()">Tabela</button>
             <button name="btoTabela" class="btn btn-info" onclick="PesquisarSevicosParceiro()">Pesquisar</button>
             <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarSevicosParceiro()">Cadastrar</button>
-            <button name="btoAlterar" class="btn btn-warning" onclick="AlterarCategoriaParceiro()">Alterar</button>
+            <button name="btoAlterar" class="btn btn-warning" onclick="AlterarServicosParceiro()">Alterar</button>
             <a type="reset" name="btoLimpar" class="btn btn-dark" href="Parceiro_sistema.php?Tela=Servicos">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirServicosParceiro()">Excluir</button>
         </div>

@@ -135,7 +135,7 @@ function CadastrarParceiro() {
                 txtUF: uf_Parceiro,
                 txtCep: cep_Parceiro,
                 txtObs: obs_Parceiro,
-                fImage: foto_Parceiro 
+                fImage: foto_Parceiro
             },
             success: function (data, status, xhr) {
                 $("#resultado").empty().html(data);
@@ -212,7 +212,7 @@ function ParceiroAlterar() {
     let uf_Parceiro = $('#txtUF').val();
     let cep_Parceiro = $('#txtCep').val();
     let obs_Parceiro = $('#txtObs').val();
-    let foto_Parceiro= $('#base64Code').val();
+    let foto_Parceiro = $('#base64Code').val();
 
 
     if ($("#txtStatus").val() == '') {
@@ -329,7 +329,7 @@ function ParceiroAlterar() {
                 txtCep: cep_Parceiro,
                 txtObs: obs_Parceiro,
                 fImage: foto_Parceiro
-                
+
 
             },
             beforend: function () {
@@ -410,53 +410,56 @@ function PesquisarSevicosParceiro() {
     })
 
 }
-// function CadastrarSevicosParceiro() {
+function CadastrarSevicosParceiro() {
 
-//     let id_ParceiroServicos=$('#txtID').val();
-//     let data_ParceiroServicos= $('#txtData').val()
-//     let status_ParceiroServicos = $('#txtStatus').val();
-//     let nomeCliente_ParceiroServicos = $('#txtNomeCliente').val();
-//     let cpfCliente_ParceiroServicos= $('#txtCPFCliente').val();
-//     let contatoCliente_ParceiroServicos= $('#txtContatoCliente').val();
-//     let emailCliente_ParceiroServicos= $('#txtEmailCliente').val();
-//     let nomeProd_ParceiroServicos= $('#txtNomeProd').val();
-//     let categoria_ParceiroServicos= $('#txtCate').val();
-//     let marca__ParceiroServicos= $('#txtMarca').val();
-//     let serie_ParceiroServicos=$('#txtSerie').val();
-//     let descricao_ParceiroServicos = $('#txtDescricao').val();
-//     let 
-//     let action = 'Parceiro_ServicosBtoCadastrar.php';
+    let id_ParceiroServicos = $('#txtID').val();
+    let data_ParceiroServicos = $('#txtData').val()
+    let status_ParceiroServicos = $('#txtStatus').val();
+    let nomeCliente_ParceiroServicos = $('#txtNomeCliente').val();
+    let cpfCliente_ParceiroServicos = $('#txtCPFCliente').val();
+    let contatoCliente_ParceiroServicos = $('#txtContatoCliente').val();
+    let emailCliente_ParceiroServicos = $('#txtEmailCliente').val();
+    let nomeProd_ParceiroServicos = $('#txtNomeProd').val();
+    let categoria_ParceiroServicos = $('#txtCate').val();
+    let marca_ParceiroServicos = $('#txtMarca').val();
+    let serie_ParceiroServicos = $('#txtSerie').val();
+    let descricao_ParceiroServicos = $('#txtDescricao').val();
+    let descricaoSolu_ParceiroServicos = $('#txtDescricaoSolu').val();
+    let valor_ParceiroServicos = $('#txtValor').val();
 
-//     $.ajax({
-//         url: action,
-//         type: 'post',
-//         data: {
-//             txtData
-// txtID
-// txtStatus
-// txtNomeCliente
-// txtCPFCliente
-// txtContatoCliente
-// txtEmailCliente
-// txtNomeProd
-// txtCate
-// txtMarca
-// txtSerie
-// txtDescricao
-// txtDescricaoSolu
-// txtvalor
+    let action = 'Parceiro_ServicosBtoCadastrar.php';
 
-//         },
-//         success: function (data, status, xhr) {
-//             $("#resultado").empty().html(data);
-//             //$("#txtID").val($(#idGerado).text());
-//         },
-//         error: function (jqXhr, textStatus, errorMessage) {
-//             $('#resultado').append('Error ' + errorMessage);
-//         }
+    $.ajax({
+        url: action,
+        type: 'post',
+        data: {
+            txtID: id_ParceiroServicos,
+            txtData: data_ParceiroServicos,
+            txtStatus: status_ParceiroServicos,
+            txtNomeCliente: nomeCliente_ParceiroServicos,
+            txtCPFCliente: cpfCliente_ParceiroServicos,
+            txtContatoCliente: contatoCliente_ParceiroServicos,
+            txtEmailCliente: emailCliente_ParceiroServicos,
+            txtNomeProd: nomeProd_ParceiroServicos,
+            txtCate: categoria_ParceiroServicos,
+            txtMarca: marca_ParceiroServicos,
+            txtSerie: serie_ParceiroServicos,
+            txtDescricao: descricao_ParceiroServicos,
+            txtDescricaoSolu: descricaoSolu_ParceiroServicos,
+            txtvalor: valor_ParceiroServicos,
 
-//     })
-// }
+        },
+        success: function (data, status, xhr) {
+            $("#resultado").empty().html(data);
+            //$("#txtID").val($(#idGerado).text());
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#resultado').append('Error ' + errorMessage);
+        }
+
+    })
+}
+
 function ExcluirServicosParceiro() {
 
     let id_Parceiro = $('#txtID').val();

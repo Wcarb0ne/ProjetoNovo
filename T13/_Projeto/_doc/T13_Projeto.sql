@@ -62,14 +62,24 @@ values
 'São Paulo',
 '123456789',
 'obs');
+select * from ParceiroServicos;
 create table ParceiroServicos
 (
 	id_ParceiroServicos int auto_increment not null primary key,
     data_ParceiroServicos timestamp not null,
-    nome_ParceiroServicos varchar(30) not null,
-    id_PCategoria_ParceiroServicos int not null,
     status_ParceiroServicos varchar(20) not null,
-    descricao_ParceiroServicos varchar(255) not null
+    nomeCliente_ParceiroServicos varchar(30) not null,
+    cpfCliente_ParceiroServicos  int not null,
+    contatoCliente_ParceiroServicos  varchar(20) not null,
+    emailCliente_ParceiroServicos varchar(50) not null,
+    nomeProd_ParceiroServicos varchar(30) not null,
+    categoria_ParceiroServicos varchar (20) not null,
+    marca_ParceiroServicos varchar (20) not null,
+    serie_ParceiroServicos varchar(50) not null,
+    descricao_ParceiroServicos varchar(255)  null,
+    descricaoSolu_ParceiroServicos varchar(255) null,
+    valor_ParceiroServicos varchar(15) null
+    
 );
 ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
 drop table PCategoria;
