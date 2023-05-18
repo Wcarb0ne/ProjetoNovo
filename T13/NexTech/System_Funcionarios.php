@@ -23,11 +23,11 @@
 
 <body>
   <div class="container-scroller">
-    <!-- partial:assets/System_assets/System_partials/_navbar.html -->
+    <!-- partial:assets/System_assets/System_partials/_navbar.php -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="System_Home.html"><img src="assets/System_images/logo outra.png" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="System_Home.html"><img src="assets/System_images/logo Nextech.png" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="System_Home.php"><img src="assets/System_images/logo outra.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="System_Home.php"><img src="assets/System_images/logo Nextech.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -122,7 +122,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:assets/System_assets/System_partials/_settings-panel.html -->
+      <!-- partial:assets/System_assets/System_partials/_settings-panel.php -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
@@ -210,11 +210,11 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.php -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="System_Home.html">
+            <a class="nav-link" href="System_Home.php">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Painel de Controle</span>
             </a>
@@ -227,7 +227,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Departamento.html">Departamento</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Departamento.php">Departamento</a></li>
               </ul>
             </div>
           </li>
@@ -239,7 +239,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="System_Funcionarios.html">Funcionários</a></li>
+                <li class="nav-item"><a class="nav-link" href="System_Funcionarios.php">Funcionários</a></li>
               </ul>
             </div>
           </li>
@@ -251,7 +251,7 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Graficos.html">Gráficos basico</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Graficos.php">Gráficos basico</a></li>
               </ul>
             </div>
           </li>
@@ -263,7 +263,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Perfil_Usuario.html">Perfil de Usuario</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Perfil_Usuario.php">Perfil de Usuario</a></li>
               </ul>
             </div>
           </li>
@@ -275,13 +275,13 @@
             </a>
             <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="error-500.html"> 500 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="error-404.php"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="error-500.php"> 500 </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="error-500.html">
+            <a class="nav-link" href="error-500.php">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Pagina em Construção</span>
             </a>
@@ -454,7 +454,7 @@
             </div> -->
            
         <!-- content-wrapper ends -->
-        <!-- partial:assets/System_assets/System_partials/_footer.html -->
+        <!-- partial:assets/System_assets/System_partials/_footer.php -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  Nextech technology. Todos os direitos reservados.</span>

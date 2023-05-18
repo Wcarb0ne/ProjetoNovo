@@ -52,7 +52,7 @@
 ?>
     <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent mt-4">
     <div class="container">
-      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="index.html">
+      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="#">
         <img src="../NexTech/assets/img/freeze/logo-transp.png" width="235px" height="65px" class="logo">
       </a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +120,7 @@
                   </label>
                 </div>
                 <div class="text-center">
-                  <button type="sumit" class="btn bg-gradient-dark w-100 my-4 mb-2">Entrar</button>
+                  <button type="sumit" class="btn bg-gradient-dark w-100 my-4 mb-2"formaction="_Login.php">Entrar</button>
                 </div>
                 <p class="text-sm mt-3 mb-0">Não tem uma conta? <a href="FuncionarioCadastre-Se.php" class="text-dark font-weight-bolder"> Inscrever-se</a></p>
               </form>

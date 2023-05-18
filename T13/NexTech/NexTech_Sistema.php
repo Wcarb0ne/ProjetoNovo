@@ -19,27 +19,16 @@
     <script src="./ScriptEmpresa.js"></script>
 
     <script type="text/javascript" src="./assets/js/modernizr.custom.32033.js"></script>
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     
     <title>Next Tech</title>
 
 </head>
 <body>
 <?php include_once('NexTech_Autenticar.php');?>
-<?php include_once('_header.php');?>
-    <div class="container mt-5 dg-dark">
-        <div class="row">
-
-        </div>
-    </div>
-        <div class="row">
-            <div class="col-sm-2">
-            </div>
-            <div class="col-sm-10">
+<?php include_once('System_home.php');?>
+    <
+    
+            <div class="col-sm-12">
                 <?php
                     if($_GET)
                     {
@@ -49,30 +38,20 @@
 
                             if($tela  == 'Departamento')
                             {
-                                include_once('Departamento.php');
+                                include_once('System_Departamento.php');
                             }
                             elseif($tela =='Funcionario')
                             {
-                                include_once('Funcionario.php');
+                                include_once('System_Funcionario.php');
                             }
-                            elseif($tela =='Planos')
+                            elseif($tela =='Graficos')
                             {
-                                include_once('Planos.php');
+                                include_once('System_Graficos.php');
                             }
-                            elseif($tela =='Servicos')
+                            elseif($tela =='Perfil')
                             {
-                                include_once('Parceiro_ServicosFrm.php');
-                            }
-                                elseif($tela == "TabelaServicos")
-                                {
-                                include_once('Parceiro_ServicosTabela.php');
-                                }
-
-                            elseif($tela =='FaleConosco')
-                            {
-                                include_once('frm_FaleConosco.php');
-                            }
-
+                                include_once('System_Perfil_Usuario.php');
+                            }   
                             elseif($tela =='Sair')
                             {
                                 include_once('NexTech_AutenticarSair.php');
@@ -82,23 +61,11 @@
                             echo '<h1> ERRO, Pagina não encontrada </h1>';
                         }
                     }
-                    else {
-                        include_once('_home.php');
-                    }
+                    
                 ?>
             </div>
             
-        </div>
-    </div>
- </div>
-
-    <footer>
-
-        <?php 
-            include_once('_footer.php');
-        ?>
    
-    </footer>
 
     <script src="./assets/js/jquery-1.11.1.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>

@@ -12,20 +12,23 @@
   <link rel="stylesheet" href="assets/System_vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="assets/System_vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="assets/System_vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/System_js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="assets/System_css/vertical-layout-light/style.css">
   <!-- endinject -->
-  .<link rel="shortcut icon" href="assets/System_images/logo Nextech.png" />
+  <link rel="shortcut icon" href="assets/System_images/logo Nextech.png" />
 </head>
-
 <body>
+<?php include_once('NexTech_Autenticar.php');?>
   <div class="container-scroller">
-    <!-- partial:assets/System_assets/System_partials/_navbar.html -->
+    <!-- partial:partials/_navbar.php -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="System_Home.html"><img src="assets/System_images/logo outra.png" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="System_Home.html"><img src="assets/System_images/logo Nextech.png" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="System_Home.php"><img src="assets/System_images/logo outra.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="System_Home.php"><img src="assets/System_images/logo Nextech.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -96,10 +99,10 @@
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="assets/System_images/faces/felipe.png" alt="profile"/>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" href="/T13/NexTech/System_Home.html" aria-labelledby="profileDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
                 <i class="ti-settings text-primary"></i>
-                Settings
+                Perfil
               </a>
               <a class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
@@ -120,7 +123,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:assets/System_assets/System_partials/_settings-panel.html -->
+      <!-- partial:partials/_settings-panel.php -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
@@ -208,11 +211,11 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.php -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="System_Home.html">
+            <a class="nav-link" href="System_Home.php">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Painel de Controle</span>
             </a>
@@ -225,7 +228,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Departamento.html">Departamento</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Departamento.php">Departamento</a></li>
               </ul>
             </div>
           </li>
@@ -237,7 +240,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="System_Funcionarios.html">Funcionários</a></li>
+                <li class="nav-item"><a class="nav-link" href="System_Funcionarios.php">Funcionários</a></li>
               </ul>
             </div>
           </li>
@@ -249,7 +252,7 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Graficos.html">Gráficos basico</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Graficos.php">Gráficos basico</a></li>
               </ul>
             </div>
           </li>
@@ -261,7 +264,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Perfil_Usuario.html">Perfil de Usuario</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Perfil_Usuario.php">Perfil de Usuario</a></li>
               </ul>
             </div>
           </li>
@@ -273,13 +276,13 @@
             </a>
             <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="error-500.html"> 500 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="error-404.php"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="error-500.php"> 500 </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="error-500.html">
+            <a class="nav-link" href="error-500.php">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Pagina em Construção</span>
             </a>
@@ -290,165 +293,178 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            
-            <div class="col-lg-12 grid-margin stretch-card">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Boas-vindas | <?=$nomeFuncionario?></h3>
+                  <h6 class="font-weight-normal mb-0">“O êxito de amanhã é a determinação de hoje” <span class="text-primary"> Bora trabalhar!</span></h6>
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <button class="btn btn-sm btn-light bg-white" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <a class="dropdown-item" href="#"><?=$id_Departamento_Funcionario?></a>
+                    </button>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card tale-bg">
+                <div class="card-people mt-auto">
+                  <img src="assets/System_images/dashboard/people.svg" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>22<sup>C</sup></h2>
+                      </div>
+                      <div class="ml-2">
+                        <h4 class="location font-weight-normal">Guarulhos-SP</h4>
+                        <h6 class="font-weight-normal">Brasil</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <p class="mb-4">Total de Ordens</p>
+                      <p class="fs-30 mb-2">20</p>
+                      <!-- <p>10.00% (30 days)</p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Tota</p>
+                      <p class="fs-30 mb-2">61344</p>
+                      <!-- <p>22.00% (30 days)</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Número de Funcionários</p>
+                      <p class="fs-30 mb-2">4</p>
+                      <!-- <p>2.00% (30 days)</p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 stretch-card transparent">
+                  <div class="card card-light-danger">
+                    <div class="card-body">
+                      <p class="mb-4">Número de Clientes</p>
+                      <p class="fs-30 mb-2">5</p>
+                      <!-- <p>0.22% (30 days)</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Funcionario em construção</h4>
+                  <p class="card-title">detalhes da Plataforma</p><!-- Order Details -->
+                  <p class="font-weight-500">O número total de sessões dentro do intervalo de datas. É o período em que um usuário está ativamente envolvido com seu site, página ou aplicativo etc</p>
+                  <div class="d-flex flex-wrap mb-5">
+                    <div class="mr-5 mt-3">
+                      <p class="text-muted">Valor das ordens</p>
+                      <h3 class="text-primary fs-30 font-weight-medium">12.300</h3>
+                    </div>
+                    <div class="mr-5 mt-3">
+                      <p class="text-muted">Ordens de serviços</p>
+                      <h3 class="text-primary fs-30 font-weight-medium">1.400</h3>
+                    </div>
+                    <div class="mr-5 mt-3">
+                      <p class="text-muted">Usuarios</p>
+                      <h3 class="text-primary fs-30 font-weight-medium">71.56%</h3>
+                    </div>
+                    <div class="mt-3">
+                      <p class="text-muted">Downloads</p>
+                      <h3 class="text-primary fs-30 font-weight-medium">34040</h3>
+                    </div>
+                  </div>
+                  <canvas id="order-chart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                 <div class="d-flex justify-content-between">
+                  <p class="card-title">Relatório de vendas</p>
+                  <a href="#" class="text-info">Ver tudo</a>
+                 </div>
+                  <p class="font-weight-500">O número total de sessões dentro do intervalo de datas. É o período em que um usuário está ativamente envolvido com seu site, página ou aplicativo etc</p>
+                  <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
+                  <canvas id="sales-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title mb-0">Lista de Projetos</p><!-- Top Products -->
                   <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                       <thead>
                         <tr>
-                          <th>
-                            User
-                          </th>
-                          <th>
-                            First name
-                          </th>
-                          <th>
-                            Progress
-                          </th>
-                          <th>
-                            Amount
-                          </th>
-                          <th>
-                            Deadline
-                          </th>
+                          <th>Nome</th>
+                          <th>Data</th>
+                          <th>Status</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face1.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Herman Beck
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
+                          <td>Search Engine Marketing</td>
+                          <td>21 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-success">Finalizado</div></td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face2.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Messsy Adam
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $245.30
-                          </td>
-                          <td>
-                            July 1, 2015
-                          </td>
+                          <td>Search Engine Optimization</td>
+                          <td>13 Jun 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-success">Finalizado</div></td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face3.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            John Richards
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $138.00
-                          </td>
-                          <td>
-                            Apr 12, 2015
-                          </td>
+                          <td>Display Advertising</td>
+                          <td>28 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pendente</div></td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face4.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Peter Meggik
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
+                          <td>Pay Per Click Advertising</td>
+                          <td>30 Jun 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pendente</div></td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face5.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Edward
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 160.25
-                          </td>
-                          <td>
-                            May 03, 2015
-                          </td>
+                          <td>E-Mail Marketing</td>
+                          <td>01 Nov 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-danger">Cancelado</div></td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face6.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            John Doe
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 123.21
-                          </td>
-                          <td>
-                            April 05, 2015
-                          </td>
+                          <td>Referral Marketing</td>
+                          <td>20 Mar 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pendente</div></td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face7.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Henry Tom
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 150.00
-                          </td>
-                          <td>
-                            June 16, 2015
-                          </td>
+                          <td>Social media marketing</td>
+                          <!-- <td class="font-weight-bold">$897</td> -->
+                          <td>26 Oct 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-success">Finalizado</div></td>
                         </tr>
                       </tbody>
                     </table>
@@ -456,175 +472,99 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-lg-12 grid-margin stretch-card">
+            
+            <div class="col-md-4 stretch-card grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">tabela dos func, talvez</h4>
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>
-                            #
-                          </th>
-                          <th>
-                            First name
-                          </th>
-                          <th>
-                            Progress
-                          </th>
-                          <th>
-                            Amount
-                          </th>
-                          <th>
-                            Deadline
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Herman Beck
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            2
-                          </td>
-                          <td>
-                            Messsy Adam
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $245.30
-                          </td>
-                          <td>
-                            July 1, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            3
-                          </td>
-                          <td>
-                            John Richards
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $138.00
-                          </td>
-                          <td>
-                            Apr 12, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            4
-                          </td>
-                          <td>
-                            Peter Meggik
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            5
-                          </td>
-                          <td>
-                            Edward
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 160.25
-                          </td>
-                          <td>
-                            May 03, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            6
-                          </td>
-                          <td>
-                            John Doe
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 123.21
-                          </td>
-                          <td>
-                            April 05, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            7
-                          </td>
-                          <td>
-                            Henry Tom
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 150.00
-                          </td>
-                          <td>
-                            June 16, 2015
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <p class="card-title">Notifications</p>
+                  <ul class="icon-data-list">
+                    <li>
+                      <div class="d-flex">
+                        <img src="assets/System_images/faces/face1.jpg" alt="user">
+                        <div>
+                          <p class="text-info mb-1">Isabella Becker</p>
+                          <p class="mb-0">todes</p>
+                          <small>9:30 am</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <img src="assets/System_images/faces/face2.jpg" alt="user">
+                        <div>
+                          <p class="text-info mb-1">Adam Warren</p>
+                          <p class="mb-0">inclusivo </p>
+                          <small>10:30 am</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                      <img src="assets/System_images/faces/face3.jpg" alt="user">
+                     <div>
+                      <p class="text-info mb-1">Leonard Thornton</p>
+                      <p class="mb-0">teste</p>
+                      <small>11:30 am</small>
+                     </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <img src="assets/System_images/faces/face4.jpg" alt="user">
+                        <div>
+                          <p class="text-info mb-1">George Morrison</p>
+                          <p class="mb-0">teste</p>
+                          <small>8:50 am</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <img src="assets/System_images/faces/face5.jpg" alt="user">
+                        <div>
+                        <p class="text-info mb-1">Ryan Cortez</p>
+                        <p class="mb-0">teste.</p>
+                        <small>9:00 am</small>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Adicionar outra tabela muito complexa essa </p>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="table-responsive">
+                        <table id="example" class="display expandable-table" style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Quote#</th>
+                              <th>Product</th>
+                              <th>Business type</th>
+                              <th>Policy holder</th>
+                              <th>Premium</th>
+                              <th>Status</th>
+                              <th>Updated at</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                      </table>
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
-            </div> -->
-          </div>
+            </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:assets/System_assets/System_partials/_footer.html -->
+        <!-- partial:partials/_footer.php -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  Nextech technology. Todos os direitos reservados.</span>
@@ -638,10 +578,16 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
+
   <!-- plugins:js -->
   <script src="assets/System_vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
+  <script src="assets/System_vendors/chart.js/Chart.min.js"></script>
+  <script src="assets/System_vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="assets/System_vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="assets/System_js/dataTables.select.min.js"></script>
+
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="assets/System_js/off-canvas.js"></script>
@@ -651,7 +597,10 @@
   <script src="assets/System_js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="assets/System_js/dashboard.js"></script>
+  <script src="assets/System_js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
 </body>
 
 </html>
+

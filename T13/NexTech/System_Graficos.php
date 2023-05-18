@@ -21,11 +21,11 @@
 
 <body>
   <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
+    <!-- partial:assets/System_assets/System_partials/_navbar.php -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="System_Home.html"><img src="assets/System_images/logo outra.png" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="System_Home.html"><img src="assets/System_images/logo Nextech.png" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="index.php"><img src="assets/System_images/logo outra.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.php"><img src="assets/System_images/logo Nextech.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -84,7 +84,7 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">>Novos Funcionarios</h6>
+                  <h6 class="preview-subject font-weight-normal">Novos Funcionarios</h6>
                   <p class="font-weight-light small-text mb-0 text-muted">
                     Em construção
                   </p>
@@ -99,7 +99,7 @@
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
                 <i class="ti-settings text-primary"></i>
-                Perfil
+                Settings
               </a>
               <a class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
@@ -120,7 +120,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_settings-panel.html -->
+      <!-- partial:assets/System_assets/System_partials/_settings-panel.php -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
@@ -208,11 +208,11 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.php -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="System_Home.html">
+            <a class="nav-link" href="System_Home.php">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Painel de Controle</span>
             </a>
@@ -225,7 +225,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Departamento.html">Departamento</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Departamento.php">Departamento</a></li>
               </ul>
             </div>
           </li>
@@ -237,7 +237,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="System_Funcionarios.html">Funcionários</a></li>
+                <li class="nav-item"><a class="nav-link" href="System_Funcionarios.php">Funcionários</a></li>
               </ul>
             </div>
           </li>
@@ -249,7 +249,7 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Graficos.html">Gráficos basico</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Graficos.php">Gráficos basico</a></li>
               </ul>
             </div>
           </li>
@@ -261,7 +261,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="System_Perfil_Usuario.html">Perfil de Usuario</a></li>
+                <li class="nav-item"> <a class="nav-link" href="System_Perfil_Usuario.php">Perfil de Usuario</a></li>
               </ul>
             </div>
           </li>
@@ -273,13 +273,13 @@
             </a>
             <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="error-500.html"> 500 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="error-404.php"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="error-500.php"> 500 </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="error-500.html">
+            <a class="nav-link" href="error-500.php">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Pagina em Construção</span>
             </a>
@@ -290,73 +290,62 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-lg-12 grid-margin">
+            <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Departamentos</h4>
-                  <div class="row">
-                  </div>
-                  <form id="my-form"  action="#"class="from-control" method="post" onsubmit="return false">
-                    <div class="row">
-                        <div class="col-sm-12">
-                                <h1>Criar Departamento</h1>
-                        </div>
-                    </div>
-                    <br>
-                
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" name="txtID" id="txtID" placeholder="ID Departamento">
-                        </div>
-                            <div class="col-sm-3"></div>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                        <label for="Departamento">Nome *</label>
-                            <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Da Departamento">
-                        </div>
-                            <div class="col-sm-2"></div>
-                        <div class="col-sm-4">
-                            <label for="Status">Status</label>
-                            <select class="form-control" name="txtStatus" id="txtStatus">
-                                <option value="Ativo">Ativo</option>
-                                <option value="Inativo">Inativo</option>
-                            </select>        
-                        </div>
-                    </div>
-                    <div class="row mt-1"><!-- descrição -->
-                        <div class="col-sm-12">
-                            <label for="Nome">Descrição</label>
-                            <textarea name="txtDescricao" id="txtDescricao" class="form-control" rows="5" placeholder="Insira descrição do Departamento"></textarea>
-                        </div>
-                    </div>
-                    <div class="row mt-4 mb-4"><!--botoes-->
-                        <div class="col-sm-10">
-                            <button name="btoPesquisa" class="btn btn-primary" onclick="PesquisarDepartamento()">Pesquisar</button>
-                            <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarDepartamento()">Cadastrar</button>
-                            <button name="btoAlterar" class="btn btn-warning" onclick="AlterarDepartamento()">Alterar</button>
-                            <a type="reset" name="btoLimpar" class="btn btn-dark"href="NexTech_Sistema.html?Tela=Departamento">Limpar</a>
-                            <button name="btoExcluir" class="btn btn-danger" onclick="ExcluirDepartamento()">Excluir</button>
-                        </div>
-                            <div class="row"> 
-                                <div class="col-sm-10" id="resultado">
-                                <div class="col-sm-10" id="tabela">
-                
-                            </div>
-                    </div>
-                        
-                </form>
+                  <h4 class="card-title">Line chart</h4>
+                  <canvas id="lineChart"></canvas>
                 </div>
               </div>
             </div>
-           
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Bar chart</h4>
+                  <canvas id="barChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Area chart</h4>
+                  <canvas id="areaChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Doughnut chart</h4>
+                  <canvas id="doughnutChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 grid-margin grid-margin-lg-0 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pie chart</h4>
+                  <canvas id="pieChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin grid-margin-lg-0 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Scatter chart</h4>
+                  <canvas id="scatterChart"></canvas>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:assets/System_assets/System_partials/_footer.html -->
+        <!-- partial:assets/System_assets/System_partials/_footer.php -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  Nextech technology. Todos os direitos reservados.</span>
@@ -374,14 +363,18 @@
   <script src="assets/System_vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
+  <script src="assets/System_vendors/chart.js/Chart.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="assets/System_js/off-canvas.js"></script>
   <script src="assets/System_js/hoverable-collapse.js"></script>
   <script src="assets/System_js/template.js"></script>
   <script src="assets/System_js/settings.js"></script>
-  <script src="assets/System_js/todolist.js"></script>
+  <script src="assets/System_assets/System_js/todolist.js"></script>
   <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="assets/System_js/chart.js"></script>
+  <!-- End custom js for this page-->
 </body>
 
 </html>
