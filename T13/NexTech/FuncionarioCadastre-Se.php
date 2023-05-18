@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="assets/System_images/logo Nextech.png">
 
     <!-- Bootstrap 3.3.2 -->
 
     <link rel="stylesheet" href="./assets/css/testefrm.css">
-    <script src=""></script>
+    <script src="./assets/js/jquery-1.11.1.min.js"></script>
     <script src="ScriptEmpresa.js"></script>
 
     <title>Next Tech</title>
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <div class="clearfix"></div>
     <div class="content">
         <div class="container-fluid">
@@ -38,7 +39,9 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control" disabled=""placeholder="Status">
+                                        <select class="form-control" name="txtStatus" id="txtStatus">
+                                                <option value="Ativo">Ativo</option>
+                                            </select> 
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -196,6 +199,7 @@
             </div>
         </div>
     </div>
+    
 
 </body>
 
