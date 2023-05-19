@@ -1,4 +1,16 @@
-<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/landingPage.css">
 
@@ -13,39 +25,39 @@
     <link rel="stylesheet" href="css/landingPage.css">
 
     <link rel="stylesheet" href="css/malsase.css">
-    
-    
+
+
 
     <!--fle conosco-->
     <link rel="stylesheet" href="css/faleconosco.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-        <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
+    <!--RODAPE -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
 
 
 
     <?php
-    
+
     include_once('Validar_home.php');
     include_once('_header.php');
-       include('Conexao.php');
-    
-    ?>
-<style>
+    include('Conexao.php');
 
-</style>
+    ?>
+
+</head>
 
 <body>
-  
 
-<div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
-    </div>
-  
+
+    <div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
+            </div>
+
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -57,15 +69,15 @@
 
         <div class="row">
             <!-- Começa aqui o modelo da impressão do PHP -->
-            
+
             <?php
 
 
-         
+
             try {
 
                 $sql = $conn->query("select * from Parceiro where status_Parceiro = 'Ativo'");
-               
+
                 foreach ($sql as $linha) {
                     // echo "<pre>";
                     // print_r($linha);
@@ -76,22 +88,21 @@
                     $logradouro_Parceiro = $linha['logradouro_Parceiro'];
                     $ramo_Parceiro = $linha['ramo_Parceiro'];
                     $foto_Parceiro = $linha['foto_Parceiro'];
-                    echo'
+                    echo '
 
                     <div class="col-md-3 text-center mb-3 p-1">
                         <div class="card">
-                        <img src="'.$foto_Parceiro.'" class="card-img-top imagem1"  alt="...">
+                        <img src="' . $foto_Parceiro . '" class="card-img-top imagem1"  alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">'.$nome.'</h5>
-                                <p class="card-text">Endereço: '.$logradouro_Parceiro.'</p>
-                                <p class="card-text">Ramo: '.$ramo_Parceiro.'</p>
-                                <a href="sistema_mapa.php?id='.$id.'" class="btn btn-primary" >Go somewhere</a>
+                                <h5 class="card-title">' . $nome . '</h5>
+                                <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
+                                <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
+                                <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Go somewhere</a>
                             </div>
                         </div>
                     </div>
                     ';
                 }
-                
             } catch (PDOException $ex) {
                 echo $ex->getMessage();
             }
@@ -102,7 +113,10 @@
     </div>
 
 
-</div>
+    </div>
 
-<?php include_once('_footer.php') ?>
+    <?php include_once('_footer.php') ?>
 </body>
+
+
+</html>

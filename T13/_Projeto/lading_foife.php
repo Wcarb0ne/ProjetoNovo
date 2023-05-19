@@ -27,11 +27,15 @@ include_once('www_autenticar.php');
 
 <body>
 
-    
-          
-<!-- Carrossel -->
 
-
+<style>
+  h1{
+    font-size: 40px;
+  }
+  p{
+    font-size: 19px;
+  }
+</style>
 
 
   <div class="container">
@@ -54,7 +58,7 @@ include_once('www_autenticar.php');
 
           <div class="col-sm-6 pt-4">
 
-            <img src="css/img/pexels-buro-millennial-1438081.jpg" class="imagem" alt="">
+            <img src="css/img/_318c9977-5c65-4fd8-a174-c1d3b5dd7d3e copiar.jpg" class="imagem" alt="">
           </div>
         </div>
       </div>
@@ -70,6 +74,7 @@ include_once('www_autenticar.php');
       <div class=" card-group">
 
         <div class="col-md-4 text-center mb-3 p-2">
+        <img src="css/img/one4.png" class="card-img-top" alt="...">
           <div class="card card-body">
             <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Bronze</h5>
             <p class="card-text" style="font-family: 'Open Sans', sans-serif;"> No nosso plano Bronze você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 3 meses</p>
@@ -78,6 +83,7 @@ include_once('www_autenticar.php');
         </div>
 
         <div class="col-md-4 text-center mb-3 p-2">
+        <img src="css/img/ata.png" class="card-img-top" alt="...">
           <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
             <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Prata</h5>
             <p class="card-text" style="font-family: 'Open Sans', sans-serif;"> No nosso plano Prata você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 6 meses</p>
@@ -86,9 +92,10 @@ include_once('www_autenticar.php');
         </div>
 
         <div class="col-md-4 text-center mb-3 p-2">
+        <img src="css/img/oro.png" class=" card-img-top  " alt="...">
           <div class="card card-body" style="font-family: 'Open Sans', sans-serif;">
             <h5 class="card-title" style="font-family: 'Open Sans', sans-serif;">Ouro</h5>
-            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">No nosso plano Ouro você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 9 meses mais bonus de 3 meses</p>
+            <p class="card-text" style="font-family: 'Open Sans', sans-serif;">No nosso plano Ouro você tera direito de receber um icone personalizado para ficar em destaque durante o periodo de 9 meses mais bonus de 3 meses completos</p>
             <a href="planos.php" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>

@@ -74,17 +74,18 @@
                             $logradouro_Parceiro = $linha['logradouro_Parceiro'];
                             $ramo_Parceiro = $linha['ramo_Parceiro'];
                             $obs_Parceiro = $linha['obs_Parceiro'];
+                            $foto_Parceiro = $linha['foto_Parceiro'];
 
                             echo '
 
             <div class="card">
-                <img src="css/img/doguin-fino.png" class="card-img-top imagem1" alt="...">
+                <img src="'.$foto_Parceiro.'" class="card-img-top imagem1" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">' . $nome . '</h5>
                     <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
                     
                     <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
-                    <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
+              
                     <p class="card-text">Obs: ' . $obs_Parceiro . '</p>
                    
                
