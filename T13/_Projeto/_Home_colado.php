@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 
 
 
@@ -97,7 +97,7 @@
                                 <h5 class="card-title">' . $nome . '</h5>
                                 <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
                                 <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
-                                <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Go somewhere</a>
+                                <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
                             </div>
                         </div>
                     </div>

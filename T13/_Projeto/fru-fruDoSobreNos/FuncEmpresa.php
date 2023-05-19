@@ -7,11 +7,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <link href='css/bootstrap.css' rel='stylesheet' />
-
-<link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
-
-<link href='css/rotating-card.css' rel='stylesheet' />
 
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -20,8 +15,6 @@
 
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <style>
-     
-
         .navbar-default .navbar-nav>li>a {
             padding: 15px 15px;
             margin: 5px 0;
@@ -94,291 +87,297 @@
     <div class="row">
         <h1 class="title">
             Esta é a nossa equipe incrível
-                        <br>
+            <br>
             <small>"Não gostuei, asmei ." - Príncipe ouro negro</small>
         </h1>
-        <div class="col-sm-10 col-sm-offset-1"><!-- Felipe -->
-            <div class="col-md-3 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="./fru-fruDoSobreNos/images/rotating_card_thumb2.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="./fru-fruDoSobreNos/images/felipe.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Felipe</h3>
-                                    <p class="profession">GEO</p>
-                                    <p class="text-center">"sei la sei la sei la e sei la
-                                        ainda nao sei ainda nao sei so bora"</p>
-                                </div>
-                                <div class="footer">
-                                    <i class="fa fa-mail-forward"></i> 
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Descrição do trabalho</h4>
-                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
-                                        others...</p>
-
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>
-                                                Gists 
-                                            </p>
+        <div class="card-group">
+            <div class="col-sm-12 col-sm-offset-1"><!-- Felipe -->
+                <div class="row">
+                    <div class=" col-md-3 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="fru-fruDoSobreNos/images/download.jpeg" />
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="./fru-fruDoSobreNos/images/felipe.png" />
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Felipe</h3>
+                                            <p class="profession">GEO</p>
+                                            <p class="text-center">"sei la sei la sei la e sei la
+                                                ainda nao sei ainda nao sei so bora"</p>
                                         </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-                                                
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>35</h4>
-                                            <p>
-                                                Projetos
-                                            </p>
+                                        <div class="footer">
+                                            <i class="fa fa-mail-forward"></i>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Descrição do trabalho</h4>
+                                            <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                                                others...</p>
 
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-                </div> 
-            </div><!-- Felipe -->
-            <div class="col-md-3 col-sm-6"><!-- thiago -->
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="./fru-fruDoSobreNos/images/rotating_card_thumb2.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="./fru-fruDoSobreNos/images/Thiago.jpg" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Thiago</h3>
-                                    <p class="profession">Web Mapping Engineer</p>
-                                    <p class="text-center">"sei la sei la sei la e sei la
-                                        ainda nao sei ainda nao sei so bora"</p>
-                                </div>
-                                <div class="footer">
-                                    <i class="fa fa-mail-forward"></i> 
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Descrição do trabalho</h4>
-                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
-                                        others...</p>
+                                            <div class="stats-container">
+                                                <div class="stats">
+                                                    <h4>235</h4>
+                                                    <p>
+                                                        Gists
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4></h4>
+                                                    <p>
 
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>
-                                                Gists 
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-                                                
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>35</h4>
-                                            <p>
-                                                Projetos
-                                            </p>
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>35</h4>
+                                                    <p>
+                                                        Projetos
+                                                    </p>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-                </div> 
-            </div> <!-- thiago -->
-            <div class="col-md-3 col-sm-6"><!-- Kauã -->
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="./fru-fruDoSobreNos/images/rotating_card_thumb.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="./fru-fruDoSobreNos/images/Kauã.jpg" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Kauã</h3>
-                                    <p class="profession">Web design</p>
-                                    <p class="text-center">"sei la sei la sei la e sei la
-                                        ainda nao sei ainda nao sei so bora"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i> 
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-pinterest fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-instagram fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Descrição do trabalho</h4>
-                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
-                                        others...</p>
-
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>
-                                                Gists 
-                                            </p>
+                        </div>
+                    </div><!-- Felipe -->
+                    <div class="col-md-3 col-sm-6"><!-- thiago -->
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="fru-fruDoSobreNos/images/desktop-wallpaper-3840x1080-one-piece-one-piece-sunny.jpg" />
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="./fru-fruDoSobreNos/images/Thiago.jpg" />
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Thiago</h3>
+                                            <p class="profession">Web Mapping Engineer</p>
+                                            <p class="text-center">"sei la sei la sei la e sei la
+                                                ainda nao sei ainda nao sei so bora"</p>
                                         </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-                                                
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>35</h4>
-                                            <p>
-                                                Projects
-                                            </p>
+                                        <div class="footer">
+                                            <i class="fa fa-mail-forward"></i>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Descrição do trabalho</h4>
+                                            <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                                                others...</p>
 
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-                </div> 
-            </div><!--Kauã -->
-            <!--<div class="col-sm-1"></div> -->
-            <div class="col-md-3 col-sm-6"><!-- wellington -->
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="./fru-fruDoSobreNos/images/rotating_card_thumb3.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="./fru-fruDoSobreNos/images/wellington.jpeg" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Wellington</h3>
-                                    <p class="profession">Web system</p>
+                                            <div class="stats-container">
+                                                <div class="stats">
+                                                    <h4>235</h4>
+                                                    <p>
+                                                        Gists
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4></h4>
+                                                    <p>
 
-                                    <p class="text-center">"sei la sei la sei la e sei la
-                                        ainda nao sei ainda nao sei so bora"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i> 
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>35</h4>
+                                                    <p>
+                                                        Projetos
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-pinterest fa-fw"></i></a>
+                                            <a href="https://www.instagram.com/tjbemici/" class="google"><i class="fa fa-instagram fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Descrição do trabalho</h4>
-                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
-                                        others...</p>
-
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>
-                                                Gists 
-                                            </p>
+                        </div>
+                    </div> <!-- thiago -->
+                    <div class="col-md-3 col-sm-6"><!-- Kauã -->
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="fru-fruDoSobreNos/images/captain-jack-sparrow-wallpaper-3840x1080_75.jpg" />
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="./fru-fruDoSobreNos/images/Kauã.jpg" />
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Kauã</h3>
+                                            <p class="profession">Web design</p>
+                                            <p class="text-center">"sei la sei la sei la e sei la
+                                                ainda nao sei ainda nao sei so bora"</p>
                                         </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-                                                
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>35</h4>
-                                            <p>
-                                                Projetos
-                                            </p>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Descrição do trabalho</h4>
+                                            <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                                                others...</p>
 
+                                            <div class="stats-container">
+                                                <div class="stats">
+                                                    <h4>235</h4>
+                                                    <p>
+                                                        Gists
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4></h4>
+                                                    <p>
+
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>35</h4>
+                                                    <p>
+                                                        Projects
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://br.pinterest.com/kauadenlson/" class="facebook"><i class="fa fa-pinterest fa-fw"></i></a>
+                                            <a href="https://www.instagram.com/kauadenilson7/" class="google"><i class="fa fa-instagram fa-fw"></i></a>
+                                            <a href="https://twitter.com/home" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="footer">
-                                <div class=" text-center">
+                        </div>
+                    </div><!--Kauã -->
+                    <!--<div class="col-sm-1"></div> -->
+                    <div class="col-md-3 col-sm-6"><!-- wellington -->
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="fru-fruDoSobreNos/images/1856728.jpg" />
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="./fru-fruDoSobreNos/images/wellington.jpeg" />
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Wellington</h3>
+                                            <p class="profession">Web system</p>
 
+                                            <p class="text-center">"sei la sei la sei la e sei la
+                                                ainda nao sei ainda nao sei so bora"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"Let's fucking go, that's my awesome motto!"</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Descrição do trabalho</h4>
+                                            <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                                                others...</p>
+
+                                            <div class="stats-container">
+                                                <div class="stats">
+                                                    <h4>235</h4>
+                                                    <p>
+                                                        Gists
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4></h4>
+                                                    <p>
+
+                                                    </p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>35</h4>
+                                                    <p>
+                                                        Projetos
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class=" text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-pinterest fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-instagram fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>
                 </div>
-            </div> 
-        </div> 
-    </div> <!-- wellington -->
-    <div class="space-200"></div>
+            </div>
+        </div> <!-- wellington -->
+        <div class="space-200"></div>
+    </div>
 </div>
 
-<script src="./js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="./js/jquery-3.6.4.js" type="text/javascript"></script>
 <script src="./js/bootstrap.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    $().ready(function () {
+    $().ready(function() {
         $('[rel="tooltip"]').tooltip();
 
-        $('a.scroll-down').click(function (e) {
+        $('a.scroll-down').click(function(e) {
             e.preventDefault();
             scroll_target = $(this).data('href');
             $('html, body').animate({
@@ -397,7 +396,6 @@
             $card.addClass('hover');
         }
     }
-
 </script>
 
 </body>
