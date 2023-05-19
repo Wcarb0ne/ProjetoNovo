@@ -52,7 +52,7 @@ Na Nextech, estamos comprometidos em fornecer uma experiência de usuário excep
 	</main>
 
 
-	<?php include_once('fru-fruDoSobreNos/FuncEmpresa.php') ?>
+	<?php include_once('./fru-fruDoSobreNos/FuncEmpresa.php') ?>
 
 
 	<footer>
