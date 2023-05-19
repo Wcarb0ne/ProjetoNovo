@@ -3,14 +3,11 @@ include_once('Parceiro_btoPesquisa.php'); ?>
 
 
 <style>
+  .teste {
 
-.teste{
+    z-index: 1;
 
-z-index: 1;
-
-}
-
-
+  }
 </style>
 
 <link rel="stylesheet" href="css/icon.css">
@@ -59,36 +56,40 @@ z-index: 1;
               <p>Home</p>
             </li> -->
             <div class="teste">
-            <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Dados"> format_list_bulleted </span>
-              </span>
-              <p>Dados</p>
+              <li class="sub-item">
+                <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Dados"> format_list_bulleted 
+                </span>
+                <p>Dados</p>
+                </a>
+              </li>
+
+
+              <li class="sub-item">
+                <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Servicos" title="Servicos"> format_list_bulleted </span>
+                
+                <p>Serviços</p>
+                </a>
+              </li>
+
+              <li class="sub-item">
+                <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=FaleConosco" title="Fale Conosco">manage_accounts</span>
+                <p>Fale Conosco</p>
+                </a>
+              </li>
+
+
+              <li class="sub-item">
+                <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Sair" title="Sair">logout </span>
+                <p>Logout</p>
+              </li>
               </a>
-            </li>
-            <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Servicos" title="Servicos"> format_list_bulleted </span>
-              </span>
-              <p>Serviços</p>
-              </a>
-            </li>
-            <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=FaleConosco" title="Fale Conosco">manage_accounts</span>
-              <p>Fale Conosco</p>
-
-            </li>
-            </a>
-
-            <li class="sub-item">
-              <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Sair" title="Sair">logout </span>
-              <p>Logout</p>
-            </li>
-            </a>
-
           </ul>
         </li>
-
+      
       </ul>
-      </div>
+    </div>
+  </div>
+
 </nav>
 </body>
 
