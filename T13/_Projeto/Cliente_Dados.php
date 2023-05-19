@@ -230,11 +230,11 @@ label{
                             <div class="row mt-3"><!--botoes-->
                                 <div class="col-sm-1"></div>
                                 <div class="col-sm-5">
-                                    <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="AlterarCliente()">Alterar Dados</button>
+                                    <button id="btn-validar" class="btn-validar" type="submit" value="Alterar" onclick="AlterarCliente()"><b> Alterar Dados</b></button>
                                     <div class="msgValidar"></div>
                                 </div>
                                 <div class="col-sm-5">
-                                    <a id="btn-Sair" class="btn-Sair" type="submit" href="Cliente_sistema.php?Cliente=Sair" value="Sair">Deslogar</a>
+                                    <a id="btn-Sair" class="btn-Sair" type="submit" href="Cliente_sistema.php?Cliente=Sair" value="Sair"><b> Deslogar</b></a>
                                 </div>
                                 <div class="col-sm-1"></div>
 

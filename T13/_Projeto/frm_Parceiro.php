@@ -149,16 +149,19 @@
                 </div>
             </div>
             <div class="container">
-            <textarea  id="base64Code" rows="5" class="form-control"></textarea>
-            <textarea  id="base64CodePHP" rows="5" class="form-control"></textarea>
+            <textarea hidden  id="base64Code" rows="5" class="form-control"></textarea>
+            
             </div>
 
-            <div class="row mt-2 mb-2"><!--botoes-->
-                <div class="col-sm-12">
-                    <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarParceiro()">Cadastrar</button>
-                
-                    <a name="btoSair" class="btn btn-danger" href="_Home.php">Sair</a>
-                </div>
+            <div class="row mt-3"><!--botoes-->
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                    <button name="btn-validar2 " class="btn-validar2  " onclick="CadastrarParceiro()">Cadastrar</button>
+            </div>
+            
+                    <div class="col-sm-5">
+                    <a name="btn-Sair" class="btn-Sair" href="_Login.php">Sair</a>
+                    </div>
             </div>
             <div class="row">
                 <div class="col-sm-10" id="resultado">

@@ -20,7 +20,6 @@ include_once('Parceiro_btoPesquisa.php');
 label{
     font-family: 'Open Sans', sans-serif;
 }
-
 </style>
 
 <title>Parceiro</title>
@@ -180,12 +179,19 @@ label{
             <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
             <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
 
-            <div class="row mt-2 mb-2"><!--botoes-->
-                <div class="col-sm-12">
-                    <button name="btoCadastrar" class="btn btn-success" onclick="ParceiroAlterar()">Alterar</button>
-                    <a name="btoSair" class="btn btn-danger" href="Parceiro_sistema.php?Parceiro=Sair">Deslogar</a>
-
+            <div class="row mt-3"><!--botoes-->
+                
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <button name="btn-validar" class="btn-validar " onclick="ParceiroAlterar()"><b>Alterar</b> </button>
                 </div>
+                <div class="col-sm-5">
+                    <a name="btoSair" class="btn-Sair" href="Parceiro_sistema.php?Parceiro=Sair"><b>Deslogar</b> </a>
+                </div>
+
+                    <div class="col-sm-1"></div>
+
+                
             </div>
             <div class="row">
                 <div class="col-sm-10" id="resultado">

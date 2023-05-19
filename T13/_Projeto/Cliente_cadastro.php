@@ -169,14 +169,17 @@
 
             </div>
             <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
-            <textarea hidden id="base64CodePHP" rows="5" class="form-control"></textarea>
+           
 
-            <div class="row mt-4 mb-4"><!--botoes-->
-                <div class="col-sm-12">
-
-                    <button name="btoCadastrar" class="btn btn-success" onclick="CadastrarCliente()">Cadastrar</button>
-                   <a href="_Home.php" name="btoSair" class="btn btn-danger">Sair</a>
-                </div>
+            <div class="row mt-4 mb-3"><!--botoes-->
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                    <button name="btn-validar2 " class="btn-validar2 " onclick="CadastrarCliente()">Cadastrar</button>
+            </div>
+                    <div class="col-sm-5">
+                    <a href="_Home.php" name="btn-Sair" class="btn-Sair">Sair</a>
+                    </div>
+                
 
             
 
