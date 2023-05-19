@@ -54,8 +54,57 @@ if($_POST)
 
         if($sql->rowCount() > 0)
         {
-            echo "<p>Dados cadastrados com sucesso</p>";
-            echo "<p id='idGerado'>".$conn->lastInsertId()."</p>";
+            
+            // echo "<p>Dados cadastrados com sucesso</p>";
+            // echo "<p id='idGerado'>".$conn->lastInsertId()."</p>";
+
+            echo '
+            
+            
+<div class="container mt-3" hidden>
+<h3>Modal Example</h3>
+<p>Click on the button to open the modal.</p>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" id="joaquim">
+  Open modal
+</button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+  <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Cadastro Realizado com Sucesso</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+    <p>Parabéns <B>'.$nome_Parceiro.'</B>!
+    Seus dados foram cadastrados com sucesso</p><br>
+        <p id="idGerado">ID:'.$conn->lastInsertId().'</p>
+
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <a class="btn btn-danger" href="_Login.php">Fechar</a>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script>
+    var botoes = document.getElementById("joaquim");
+    botoes.click();
+</script>
+
+            ';
+          
         }
     
     } catch (PDOException $ex) {

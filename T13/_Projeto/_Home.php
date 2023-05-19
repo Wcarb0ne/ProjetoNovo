@@ -36,72 +36,81 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
 
+    <style>
+        .card {
+            width: 250px;
+            height: 350px;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        }
+        .passou{
+            background-color: white;
+            transition: background-color 2s;
+        }
+        .passou:hover{
+            background-color: lightgray;
+        }
+         h3 {
+            text-align: center;
+        }
+    </style>
+</head>
 
+<body>
 
-    <?php
+ <?php
 
 
     include_once('validar_Header.php');
     include_once('Conexao.php');
 
     ?>
-    <style>
-        h3 {
-            text-align: center;
-        }
-    </style>
-
-
-</head>
-
-<body>
-
-
-<div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
-                </div>
-
+    <div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
             </div>
 
         </div>
 
-        
-    <div class="container-fluid">
-
-      
-                <br>
-
-                <h3>Aqui estão as melhores perto de você </h3>
-                <hr>
+    </div>
 
 
-                <div class="row">
-                    <!-- Começa aqui o modelo da impressão do PHP -->
-
-                    <?php
+    <div class="container">
 
 
+        <br>
 
-                    try {
+        <h3>Aqui estão as melhores perto de você </h3>
+        <hr>
 
-                        $sql = $conn->query("select * from Parceiro where status_Parceiro = 'Ativo'");
 
-                        foreach ($sql as $linha) {
-                            // echo "<pre>";
-                            // print_r($linha);
-                            // echo "</pre>";
+        <div class="row">
+            <!-- Começa aqui o modelo da impressão do PHP -->
 
-                            $id = $linha[0];
-                            $nome = $linha['nome_Parceiro'];
-                            $logradouro_Parceiro = $linha['logradouro_Parceiro'];
-                            $ramo_Parceiro = $linha['ramo_Parceiro'];
-                            $foto_Parceiro = $linha['foto_Parceiro'];
-                            echo '
+            <?php
+            try {
 
-                    <div class="col-md-3 text-center mb-3 p-1">
-                        <div class="card">
+                $sql = $conn->query("select * from Parceiro where status_Parceiro = 'Ativo'");
+
+                foreach ($sql as $linha) {
+                    // echo "<pre>";
+                    // print_r($linha);
+                    // echo "</pre>";
+
+                    $id = $linha[0];
+                    $nome = $linha['nome_Parceiro'];
+                    $logradouro_Parceiro = $linha['logradouro_Parceiro'];
+                    $ramo_Parceiro = $linha['ramo_Parceiro'];
+                    $foto_Parceiro = $linha['foto_Parceiro'];
+
+
+
+                    echo '
+
+                    <div class="col-md-3 text-center mb-3 ">
+                        <div class="card w-100 passou">
                         <img src="' . $foto_Parceiro . '" class="card-img-top imagem1"  alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">' . $nome . '</h5>
@@ -112,17 +121,19 @@
                         </div>
                     </div>
                     ';
-                        }
-                    } catch (PDOException $ex) {
-                        echo $ex->getMessage();
-                    }
-                    ?>
+                }
+            } catch (PDOException $ex) {
+                echo $ex->getMessage();
+            }
+            ?>
 
-                    <!-- Termina aqui o modelo PHP -->
-                </div>
-            </div>
+
+            <!-- Termina aqui o modelo PHP -->
 
         </div>
+    </div>
+
+    </div>
     </div>
 
 
