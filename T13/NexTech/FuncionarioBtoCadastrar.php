@@ -5,7 +5,7 @@ if($_POST)
 {
     $status_Funcionario = $_POST['txtStatus'];
     $nome_Funcionario = $_POST['txtNome'];
-    $cpf_Funcionario = $_POST['txtCnpj'];
+    $cpf_Funcionario = $_POST['txtCpf'];
 
     $cep_Funcionario = $_POST['txtCep']; 
     $logradouro_Funcionario = $_POST['txtLogradouro']; 

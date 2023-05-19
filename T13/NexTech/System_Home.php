@@ -229,7 +229,7 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="System_Departamento.php">Departamento</a></li>
-              </ul>
+              </ul>              <!-- NexTech_Sistema.php?Tela=Departamento -->
             </div>
           </li>
           <li class="nav-item">
@@ -289,6 +289,7 @@
           </li>
         </ul>
       </nav>
+      
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
@@ -303,8 +304,30 @@
                  <div class="justify-content-end d-flex">
                   <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
                     <button class="btn btn-sm btn-light bg-white" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <a class="dropdown-item" href="#"><?=$id_Departamento_Funcionario?></a>
-                    </button>
+                        
+                        <?php
+                              include_once('Conexao.php');
+                              try
+                              {
+                                  $sql = $conn->query('select * from Departamento ');
+
+                                  foreach($sql as $linha)
+                                  {
+                                      echo "
+                                          <h4 value='$linha[0]'>$linha[2]</h4>
+                                      ";
+                                  }
+
+                              }
+                              catch(PDOException $e)
+                              {
+
+                                  echo $e->getMessage();
+
+                              }
+                          ?>
+                        
+                  </button>
                   </div>
                  </div>
                 </div>
@@ -534,7 +557,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
+            <!-- <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">Adicionar outra tabela muito complexa essa </p>
@@ -561,7 +584,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.php -->

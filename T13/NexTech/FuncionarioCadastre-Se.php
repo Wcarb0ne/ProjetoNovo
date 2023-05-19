@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include_once('Conexao.php') ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/testefrm.css">
     <script src="./assets/js/jquery-1.11.1.min.js"></script>
     <script src="ScriptEmpresa.js"></script>
+    <script src=""></script>
+
 
     <title>Next Tech</title>
 
@@ -153,7 +155,7 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <select name="txtIDepart"id="txtIDepart" class="form-control">
+                                            <select name="txtDepart"id="txtDepart" class="form-control">
                                                 <?php 
                                                 include_once('DepartamentoPuxar.php');
                                                 ?>
@@ -190,7 +192,7 @@
                                 <a type="reset" name="btoLimpar" class="btn btn-danger"href="_Login.php">Sair</a>
                                 <div class="clearfix"></div>
                                 <div class="row">
-                                    <div class="col-sm-12" id="Resultado">
+                                    <div class="col-sm-12" id="resultado">
                                 </div>
                             </form>
                         </div>

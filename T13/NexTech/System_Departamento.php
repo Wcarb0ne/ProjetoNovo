@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="assets/System_css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="assets/System_images/logo Nextech.png" />
+
+  <script src="./assets/js/jquery-1.11.1.min.js"></script>
+    <script src="ScriptEmpresa.js"></script>
 </head>
 
 <body>

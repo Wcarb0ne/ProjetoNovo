@@ -16,7 +16,14 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="assets/System_css/vertical-layout-light/style.css">
   <!-- endinject -->
-  .<link rel="shortcut icon" href="assets/System_images/logo Nextech.png" />
+  <link rel="shortcut icon" href="assets/System_images/logo Nextech.png" />
+  <script src="./assets/js/jquery-1.11.1.min.js"></script>
+    <script src="ScriptEmpresa.js"></script>
+
+    <?php include_once('Conexao.php');
+    include_once('NexTech_autenticar.php');
+    include_once('FuncionarioBtoPesquisa.php');
+    ?>
 </head>
 
 <body>
@@ -294,164 +301,163 @@
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Funcionario em construção</h4>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>
-                            User
-                          </th>
-                          <th>
-                            First name
-                          </th>
-                          <th>
-                            Progress
-                          </th>
-                          <th>
-                            Amount
-                          </th>
-                          <th>
-                            Deadline
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face1.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Herman Beck
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face2.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Messsy Adam
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $245.30
-                          </td>
-                          <td>
-                            July 1, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face3.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            John Richards
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $138.00
-                          </td>
-                          <td>
-                            Apr 12, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face4.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Peter Meggik
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face5.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Edward
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 160.25
-                          </td>
-                          <td>
-                            May 03, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face6.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            John Doe
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 123.21
-                          </td>
-                          <td>
-                            April 05, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="assets/System_images/faces/face7.jpg" alt="image"/>
-                          </td>
-                          <td>
-                            Henry Tom
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 150.00
-                          </td>
-                          <td>
-                            June 16, 2015
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <h4 class="card-title">Perfil de Funcionario</h4>
+                  <form method="POST" onsubmit="return false">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control" name="txtID" id="txtID" disabled=""placeholder="ID"value="<?=$idFuncionario; ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                        <select class="form-control" name="txtStatus" id="txtStatus"value="<?=$status_Funcionario; ?>">
+                                                <option value="" selected>Selecione o status</option>
+                                                <option value="Ativo" <?= ($status_Funcionario == "Ativo" ? 'selected' : '') ?>>Ativo</option>
+                                                <option value="Inativo" <?= ($status_Funcionario == "Inativo" ? 'selected' : '') ?>>Inativo</option>
+                                            </select> 
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control" name="txtData" id="txtData" disabled=""placeholder="Data cadastro"value="<?$data_Funcionario; ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtNome" id="txtNome"placeholder="Nome completo"value="<?=$nome_Funcionario; ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtCpf" id="txtCpf"placeholder="Cpf" value="<?= $cpf_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtCep" id="txtCep"placeholder="Cep" value="<?= $cep_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtLogradouro" id="txtLogradouro"placeholder="Logradouro" value="<?= $logradouro_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtNumero" id="txtNumero"placeholder="Número" value="<?= $numero_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtComplemento" id="txtComplemento"placeholder="Complemento" value="<?= $complemento_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtBairro" id="txtBairro"placeholder="Bairro" value="<?= $bairro_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtCidade" id="txtCidade"placeholder="Cidade" value="<?= $cidade_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <select name="txtUF" id="txtUF" class="form-control">
+                                            <option value="" <?= ($uf_Funcionario == "" ? 'selected' : '') ?>>UF</option>
+                                            <option value="Acre" <?= ($uf_Funcionario == "Acre" ? 'selected' : '') ?>>AC</option>
+                                            <option value="Alagoas" <?= ($uf_Funcionario == "Alagoas" ? 'selected' : '') ?>>AL</option>
+                                            <option value="Amapá" <?= ($uf_Funcionario == "Amapá" ? 'selected' : '') ?>>AP</option>
+                                            <option value="Amazonas"><?= ($uf_Funcionario == "Amazonas" ? 'selected' : '') ?>AM</option>
+                                            <option value="Bahia"><?= ($uf_Funcionario == "Bahia" ? 'selected' : '') ?>BA</option>
+                                            <option value="Ceará" <?= ($uf_Funcionario == "Ceará" ? 'selected' : '') ?>>CE</option>
+                                            <option value="Distrito Federal" <?= ($uf_Funcionario == "Distrito Federal" ? 'selected' : '') ?>>DF</option>
+                                            <option value="Espírito Santo" <?= ($uf_Funcionario == "Espírito Santos" ? 'selected' : '') ?>>ES</option>
+                                            <option value="Goiás" <?= ($uf_Funcionario == "Goiás" ? 'selected' : '') ?>>GO</option>
+                                            <option value="Maranhão" <?= ($uf_Funcionario == "Maranhão" ? 'selected' : '') ?>>MA</option>
+                                            <option value="Mato Grosso" <?= ($uf_Funcionario == "Mato Grosso" ? 'selected' : '') ?>>MT</option>
+                                            <option value="Minas gerais" <?= ($uf_Funcionario == "Minas Gerais" ? 'selected' : '') ?>>MG</option>
+                                            <option value="Pará" <?= ($uf_Funcionario == "Pará" ? 'selected' : '') ?>>PA</option>
+                                            <option value="Paraíba" <?= ($uf_Funcionario == "Paraíba" ? 'selected' : '') ?>>PB</option>
+                                            <option value="Paraná" <?= ($uf_Funcionario == "Paraná" ? 'selected' : '') ?>>PR</option>
+                                            <option value="Pernambuco" <?= ($uf_Funcionario == "Pernambuco" ? 'selected' : '') ?>>PE</option>
+                                            <option value="Piauí" <?= ($uf_Funcionario == "Piauí" ? 'selected' : '') ?>>PI</option>
+                                            <option value="Rio de Janeiro" <?= ($uf_Funcionario == "Rio de Janeiro" ? 'selected' : '') ?>>RJ</option>
+                                            <option value="Rio Grande do Norte" <?= ($uf_Funcionario == "Rio Grande do Norte" ? 'selected' : '') ?>>RN</option>
+                                            <option value="Rio Grande do Sul" <?= ($uf_Funcionario == " Rio Grande do Sul" ? 'selected' : '') ?>>RS</option>
+                                            <option value="Rondônia" <?= ($uf_Funcionario == "Rondônia" ? 'selected' : '') ?>>RO</option>
+                                            <option value="Roraima" <?= ($uf_Funcionario == "Roraima" ? 'selected' : '') ?>>RR</option>
+                                            <option value="Santa Catarina" <?= ($uf_Funcionario == "Santa Catarina" ? 'selected' : '') ?>>SC</option>
+                                            <option value="São Paulo" <?= ($uf_Funcionario == "São Paulo" ? 'selected' : '') ?>>SP</option>
+                                            <option value="Sergipe" <?= ($uf_Funcionario == "Sergipe" ? 'selected' : '') ?>>SE</option>
+                                            <option value="Tocantins" <?= ($uf_Funcionario == "Tocantins" ? 'selected' : '') ?>>TO</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtEmail" id="txtEmail"placeholder="E-mail" value="<?= $email_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtTelefone1" id="txtTelefone1"placeholder="Telefone" value="<?= $telefone1_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group bmd-form-group">
+                                            <label class="bmd-label-floating"></label>
+                                            <input type="text" class="form-control"name="txtTelefone2" id="txtTelefone2"placeholder="Telefone (Opcional)" value="<?= $telefone2_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <select name="txtDepart"id="txtDepart" class="form-control">
+                                                <?php 
+                                                include_once('DepartamentoPuxar.php');
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtLogin" id="txtLogin"placeholder="Login" value="<?= $login_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtSenha" id="txtSenha"placeholder="Senha" value="<?= $senha_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group bmd-form-group">
+                                            <input type="text" class="form-control"name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirmar senha" value="<?= $confirmarSenha_Funcionario ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                                        
+                                <button name="btoCadastrar" class="btn btn-warning"onclick="AlterarFuncionario()">Alterar</button>
+                                <a type="reset" name="btoLimpar" class="btn btn-danger"href="_Login.php">Sair</a>
+                                <div class="clearfix"></div>
+                                <div class="row">
+                                    <div class="col-sm-12" id="resultado">
+                                </div>
+                            </form>
                   </div>
                 </div>
               </div>

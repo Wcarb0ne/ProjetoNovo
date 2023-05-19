@@ -61,28 +61,28 @@ if($_POST)
 
                 
             }
-            echo"
-                <p>id_Funcionario: <span id='idGerado'>$id_Funcionario</span></p>           
-                <p>status_Funcionario: <span id='PesquisaStatus'>$status_Funcionario</span></p>
-                <p>data_Funcionario: <span id='PesquisaData'>$data_Funcionario</span></p>
-                <p>nome_Funcionario: <span id='PesquisaNome'>$nome_Funcionario</span></p>
-                <p>cpf_Funcionario: <span id='PesquisaCpf'>$cpf_Funcionario</span></p>
-                <p>cep_Funcionario: <span id='PesquisaCep'>$cep_Funcionario</span></p>           
-                <p>logradouro_Funcionario: <span id='PesquisaLogradouro'>$logradouro_Funcionario</span></p>
-                <p>numero_Funcionario: <span id='PesquisaNumero'>$numero_Funcionario</span></p>
-                <p>complemento_Funcionario: <span id='PesquisaComplemento'>$complemento_Funcionario</span></p>
-                <p>bairro_Funcionario: <span id='PesquisaBairro'>$bairro_Funcionario</span></p>
-                <p>cidade_Funcionario: <span id='PesquisaCidade'>$cidade_Funcionario</span></p>           
-                <p>uf_Funcionario: <span id='PesquisaUF'>$uf_Funcionario</span></p>
-                <p>email_Funcionario: <span id='PesquisaEmail'>$email_Funcionario</span></p>
-                <p>telefone1_Funcionario: <span id='PesquisaTelefone1'>$telefone1_Funcionario</span></p>
-                <p>telefone2_Funcionario: <span id='PesquisaTelefone2'>$telefone2_Funcionario</span></p>
-                <p>id_Departamento_Funcionario: <span id='PesquisaDepart'>$id_Departamento_Funcionario</span></p>           
-                <p>login_Funcionario: <span id='PesquisaLogin'>$login_Funcionario</span></p>
-                <p>senha_Funcionario: <span id='PesquisaSenha'>$senha_Funcionario</span></p>
-                <p>confirmarSenha_Funcionario: <span id='PesquisaComfirmarSenha'>$confirmarSenha_Funcionario</span></p>
+            // echo"
+            //     <p>id_Funcionario: <span id='idGerado'>$id_Funcionario</span></p>           
+            //     <p>status_Funcionario: <span id='PesquisaStatus'>$status_Funcionario</span></p>
+            //     <p>data_Funcionario: <span id='PesquisaData'>$data_Funcionario</span></p>
+            //     <p>nome_Funcionario: <span id='PesquisaNome'>$nome_Funcionario</span></p>
+            //     <p>cpf_Funcionario: <span id='PesquisaCpf'>$cpf_Funcionario</span></p>
+            //     <p>cep_Funcionario: <span id='PesquisaCep'>$cep_Funcionario</span></p>           
+            //     <p>logradouro_Funcionario: <span id='PesquisaLogradouro'>$logradouro_Funcionario</span></p>
+            //     <p>numero_Funcionario: <span id='PesquisaNumero'>$numero_Funcionario</span></p>
+            //     <p>complemento_Funcionario: <span id='PesquisaComplemento'>$complemento_Funcionario</span></p>
+            //     <p>bairro_Funcionario: <span id='PesquisaBairro'>$bairro_Funcionario</span></p>
+            //     <p>cidade_Funcionario: <span id='PesquisaCidade'>$cidade_Funcionario</span></p>           
+            //     <p>uf_Funcionario: <span id='PesquisaUF'>$uf_Funcionario</span></p>
+            //     <p>email_Funcionario: <span id='PesquisaEmail'>$email_Funcionario</span></p>
+            //     <p>telefone1_Funcionario: <span id='PesquisaTelefone1'>$telefone1_Funcionario</span></p>
+            //     <p>telefone2_Funcionario: <span id='PesquisaTelefone2'>$telefone2_Funcionario</span></p>
+            //     <p>id_Departamento_Funcionario: <span id='PesquisaDepart'>$id_Departamento_Funcionario</span></p>           
+            //     <p>login_Funcionario: <span id='PesquisaLogin'>$login_Funcionario</span></p>
+            //     <p>senha_Funcionario: <span id='PesquisaSenha'>$senha_Funcionario</span></p>
+            //     <p>confirmarSenha_Funcionario: <span id='PesquisaComfirmarSenha'>$confirmarSenha_Funcionario</span></p>
 
-             ";
+            //  ";
         } 
         else
         {

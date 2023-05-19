@@ -23,13 +23,13 @@
 
         $loginFuncionario = $_POST['txtLogin'];
         $senhaFuncionario = $_POST['txtSenha'];
-        $id_Departamento_Funcionario = $_POST['txtIDepart'];
+        $id_Departamento_Funcionario = $_POST['txtDepart'];
 
         $sql = $conn->query(
         "select * from Funcionario where
         login_Funcionario = '$loginFuncionario' and
         senha_Funcionario = '$senhaFuncionario' and
-        id_departamento_Funcionario ='$idDepartamento'
+        id_Departamento_Funcionario ='$id_Departamento_Funcionario'
         ");
 
         if($sql->rowCount()==1)
@@ -104,7 +104,7 @@
                   <input type="text" class="form-control" placeholder="Login" aria-label="Name" name="txtLogin">
                 </div>
                 <div class="mb-3"class="form-control">
-                    <select name="txtIDepart"id="txtIDepart">
+                    <select class="form-control" name="txtDepart"id="txtDepart">
                         <?php 
                         include_once('DepartamentoPuxar.php');
                         ?>

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png">
     
-    <!-- Bootstrap 3.3.2 -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
@@ -26,7 +24,6 @@
 <body>
 <?php include_once('NexTech_Autenticar.php');?>
 <?php include_once('System_home.php');?>
-    <
     
             <div class="col-sm-12">
                 <?php

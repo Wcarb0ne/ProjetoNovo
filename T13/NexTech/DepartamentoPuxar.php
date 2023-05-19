@@ -1,4 +1,4 @@
-<option value='' text-align: center;>  Selecione Departamento  </option><p text-align: center;>ettst</p>
+<option value='' text-align: center;>  Selecione Departamento  </option><p text-align: center;></p>
 
 <?php
     include_once('Conexao.php');
