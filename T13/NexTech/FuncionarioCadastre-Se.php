@@ -34,7 +34,7 @@
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control" disabled=""placeholder="ID">
+                                            <input type="text" class="form-control" name="txtID" id="txtID" disabled=""placeholder="ID">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -46,55 +46,55 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="email" class="form-control" disabled=""placeholder="Data cadastro">
+                                            <input type="email" class="form-control" name="txtData" id="txtData" disabled=""placeholder="Data cadastro">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Nome completo">
+                                            <input type="text" class="form-control"name="txtNome" id="txtNome"placeholder="Nome completo">
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Cpf">
+                                            <input type="text" class="form-control"name="txtCpf" id="txtCpf"placeholder="Cpf">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Cep">
+                                            <input type="text" class="form-control"name="txtCep" id="txtCep"placeholder="Cep">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Logradouro">
+                                            <input type="text" class="form-control"name="txtLogradouro" id="txtLogradouro"placeholder="Logradouro">
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Número">
+                                            <input type="text" class="form-control"name="txtNumero" id="txtNumero"placeholder="Número">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Complemento">
+                                            <input type="text" class="form-control"name="txtComplemento" id="txtComplemento"placeholder="Complemento">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Bairro">
+                                            <input type="text" class="form-control"name="txtBairro" id="txtBairro"placeholder="Bairro">
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Cidade">
+                                            <input type="text" class="form-control"name="txtCidade" id="txtCidade"placeholder="Cidade">
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
@@ -135,18 +135,18 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="E-mail">
+                                            <input type="text" class="form-control"name="txtEmail" id="txtEmail"placeholder="E-mail">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Telefone">
+                                            <input type="text" class="form-control"name="txtTelefone1" id="txtTelefone1"placeholder="Telefone">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating"></label>
-                                            <input type="text" class="form-control"placeholder="Telefone (Opcional)">
+                                            <input type="text" class="form-control"name="txtTelefone2" id="txtTelefone2"placeholder="Telefone (Opcional)">
                                         </div>
                                     </div>
                                 </div>
@@ -162,17 +162,17 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Login">
+                                            <input type="text" class="form-control"name="txtLogin" id="txtLogin"placeholder="Login">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"placeholder="Senha">
+                                            <input type="text" class="form-control"name="txtSenha" id="txtSenha"placeholder="Senha">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control" placeholder="Confirmar senha">
+                                            <input type="text" class="form-control"name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirmar senha">
                                         </div>
                                     </div>
                                 </div>
