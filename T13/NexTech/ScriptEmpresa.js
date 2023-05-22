@@ -289,29 +289,29 @@ function PesquisarFuncionario(){
             },
             success: function (data, status, xhr) {
     
-                $("#resultado").empty().html( data );
-                $("#txtID").val($('#idGerado').text());
-                $("#txtStatus").val($('#PesquisaStatus').text());
-                $("#txtData").val($('#PesquisaData').text());
-                $("#txtNome").val($('#PesquisaNome').text());            
-                $("#txtCpf").val($('#PesquisaCpf').text());
+                // $("#resultado").empty().html( data );
+                // $("#txtID").val($('#idGerado').text());
+                // $("#txtStatus").val($('#PesquisaStatus').text());
+                // $("#txtData").val($('#PesquisaData').text());
+                // $("#txtNome").val($('#PesquisaNome').text());            
+                // $("#txtCpf").val($('#PesquisaCpf').text());
 
-                $("#txtCep").val($('#PesquisaCep').text());
-                $("#txtLogradouro").val($('#PesquisaLogradouro').text());
-                $("#txtNumero").val($('#PesquisaNumero').text());            
-                $("#txtComplemento").val($('#PesquisaComplemento').text());
-                $("#txtBairro").val($('#PesquisaBairro').text());
-                $("#txtCidade").val($('#PesquisaCidade').text());
-                $("#txtUF").val($('#PesquisaUF').text());   
+                // $("#txtCep").val($('#PesquisaCep').text());
+                // $("#txtLogradouro").val($('#PesquisaLogradouro').text());
+                // $("#txtNumero").val($('#PesquisaNumero').text());            
+                // $("#txtComplemento").val($('#PesquisaComplemento').text());
+                // $("#txtBairro").val($('#PesquisaBairro').text());
+                // $("#txtCidade").val($('#PesquisaCidade').text());
+                // $("#txtUF").val($('#PesquisaUF').text());   
 
-                $("#txtEmail").val($('#PesquisaEmail').text());
-                $("#txtTelefone1").val($('#PesquisaTelefone1').text());
-                $("#txtTelefone2").val($('#PesquisaTelefone2').text());
+                // $("#txtEmail").val($('#PesquisaEmail').text());
+                // $("#txtTelefone1").val($('#PesquisaTelefone1').text());
+                // $("#txtTelefone2").val($('#PesquisaTelefone2').text());
 
-                $("#txtDepart").val($('#PesquisaDepart').text());            
-                $("#txtLogin").val($('#PesquisaLogin').text());
-                $("#txtSenha").val($('#PesquisaSenha').text());
-                $("#txtConfirmarSenha").val($('#PesquisaConfirmarSenha').text());
+                // $("#txtDepart").val($('#PesquisaDepart').text());            
+                // $("#txtLogin").val($('#PesquisaLogin').text());
+                // $("#txtSenha").val($('#PesquisaSenha').text());
+                // $("#txtConfirmarSenha").val($('#PesquisaConfirmarSenha').text());
                
             },
             error: function (jqXhr, textStatus, errorMessage) {

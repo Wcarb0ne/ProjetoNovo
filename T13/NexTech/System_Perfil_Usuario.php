@@ -306,7 +306,7 @@
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control" name="txtID" id="txtID" disabled=""placeholder="ID"value="<?=$idFuncionario; ?>">
+                                            <input type="text" class="form-control" name="txtID" id="txtID" disabled=""placeholder="ID"value="<?=$idFuncionario ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -320,14 +320,14 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control" name="txtData" id="txtData" disabled=""placeholder="Data cadastro"value="<?$data_Funcionario; ?>">
+                                            <input type="text" class="form-control" name="txtData" id="txtData" disabled=""placeholder="Data cadastro"value="<?$data_Funcionario ?>">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control"name="txtNome" id="txtNome"placeholder="Nome completo"value="<?=$nome_Funcionario; ?>">
+                                            <input type="text" class="form-control"name="txtNome" id="txtNome"placeholder="Nome completo"value="<?=$nome_Funcionario ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
