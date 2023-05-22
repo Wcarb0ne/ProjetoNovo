@@ -108,19 +108,18 @@
 
 
                     echo '
-
-                    <div class="col-md-3 text-center mb-3 ">
-                        <div class="card w-100 passou">
-                        <img src="' . $foto_Parceiro . '" class="card-img-top imagem1"  alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">' . $nome . '</h5>
-                                <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
-                                <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
-                                <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
-                            </div>
+                    <div class="col-md-3 text-center mb-3 max-width:10; ">
+                    <div class="card w-100 passou">
+                    <img src="' . $foto_Parceiro . '" class="card-img-top imagem1"  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">' . $nome . '</h5>
+                            <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
+                            <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
+                            <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
                         </div>
                     </div>
-                    ';
+                </div>
+                ';
                 }
             } catch (PDOException $ex) {
                 echo $ex->getMessage();
@@ -137,7 +136,7 @@
     </div>
 
 
-    <?php include_once('_footer.php') ?>
+    <footer> <?php include_once('_footer.php') ?>  </footer>
 </body>
 
 

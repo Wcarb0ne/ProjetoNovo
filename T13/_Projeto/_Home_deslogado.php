@@ -49,8 +49,29 @@
 
 </head>
 
+
+
 <body>
 
+<style>
+        .card {
+            width: 250px;
+            height: 350px;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        }
+        .passou{
+            background-color: white;
+            transition: background-color 2s;
+        }
+        .passou:hover{
+            background-color: lightgray;
+        }
+         h3 {
+            text-align: center;
+        }
+    </style>
 
     <div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
         <div class="carousel-inner">

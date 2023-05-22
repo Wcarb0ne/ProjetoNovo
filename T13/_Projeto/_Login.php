@@ -42,7 +42,7 @@
 
             }
 
-            header('Location:Cliente_sistema.php');
+            header('Location:_Home.php');
             
         } else {
             $sql = $conn->query(

@@ -107,8 +107,7 @@
                                         <div class="main">
                                             <h3 class="name">Felipe</h3>
                                             <p class="profession">GEO</p>
-                                            <p class="text-center">"sei la sei la sei la e sei la
-                                                ainda nao sei ainda nao sei so bora"</p>
+                                            <p class="text-center">"Eu sempre gostei de dar o negocio que começa com P"</p>
                                         </div>
                                         <div class="footer">
                                             <i class="fa fa-mail-forward"></i>
@@ -173,8 +172,7 @@
                                         <div class="main">
                                             <h3 class="name">Thiago</h3>
                                             <p class="profession">Web Mapping Engineer</p>
-                                            <p class="text-center">"sei la sei la sei la e sei la
-                                                ainda nao sei ainda nao sei so bora"</p>
+                                            <p class="text-center">"Sempre fui uma pessoa branca sem racismo, pois o racismo e so coisa de branco"</p>
                                         </div>
                                         <div class="footer">
                                             <i class="fa fa-mail-forward"></i>
@@ -239,8 +237,7 @@
                                         <div class="main">
                                             <h3 class="name">Kauã</h3>
                                             <p class="profession">Web design</p>
-                                            <p class="text-center">"sei la sei la sei la e sei la
-                                                ainda nao sei ainda nao sei so bora"</p>
+                                            <p class="text-center">"Eu as vezes Fumava, outras vezes so fumava, mas sempre não parei e fumar "</p>
                                         </div>
                                         <div class="footer">
                                             <div class="rating">
@@ -309,8 +306,7 @@
                                             <h3 class="name">Wellington</h3>
                                             <p class="profession">Web system</p>
 
-                                            <p class="text-center">"sei la sei la sei la e sei la
-                                                ainda nao sei ainda nao sei so bora"</p>
+                                            <p class="text-center">"Eu Sempre Gostei do negocio que começa com P o Popoti"</p>
                                         </div>
                                         <div class="footer">
                                             <div class="rating">

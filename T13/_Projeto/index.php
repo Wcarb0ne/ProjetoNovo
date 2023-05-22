@@ -73,7 +73,7 @@ include_once('_header.php') ?>
       <h2 style="color:#043668;">Deseja anunciar? Confira nossos Planos:</h2>
       <hr style="color:#043668;">
       <div class=" card-group">
-
+  
         <div class="col-md-4 text-center mb-3 p-2">
         <img src="css/img/one4.png" class="card-img-top" alt="...">
           <div class="card card-body">
