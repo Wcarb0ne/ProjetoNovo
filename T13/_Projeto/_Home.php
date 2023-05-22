@@ -28,9 +28,9 @@
 
 
     <!--fle conosco-->
-    <link rel="stylesheet" href="css/faleconosco.css">
+    <!-- <link rel="stylesheet" href="css/faleconosco.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> -->
 
     <!--RODAPE -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
@@ -136,7 +136,7 @@
     </div>
 
 
-    <footer> <?php include_once('_footer.php') ?>  </footer>
+    
 </body>
 
 

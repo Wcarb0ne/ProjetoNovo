@@ -30,7 +30,7 @@ include_once('Parceiro_btoPesquisa.php'); ?>
           <a class="nav-link active" aria-current="page" href="Parceiro_sistema.php?Parceiro=Inicio">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="_Home.php">Home</a>
+          <a class="nav-link" href="Parceiro_sistema.php?Parceiro=Home">Home</a>
         </li>
 
         <li class="nav-item dropdown">

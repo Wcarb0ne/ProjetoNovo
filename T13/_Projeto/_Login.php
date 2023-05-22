@@ -42,7 +42,7 @@
 
             }
 
-            header('Location:_Home.php');
+            header('Location:Cliente_sistema.php?Cliente=Home');
             
         } else {
             $sql = $conn->query(
@@ -63,7 +63,7 @@
                     $_SESSION['ImgUsuario'] = $linha[19];
                 }
 
-                header('Location:_Home.php');
+                header('Location:Parceiro_sistema.php?Parceiro=Home');
 
             } else {
                 
