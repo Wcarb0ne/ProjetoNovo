@@ -1,5 +1,5 @@
 <?php include_once('Conexao.php'); include_once('Cliente_btoPesquisa.php');?>
-<link rel="stylesheet" href="css/icon.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <nav class="navbar navbar-expand-lg navbar-dark mb-0  " style="font-family: 'Open Sans', sans-serif; background-image: linear-gradient(to right,#043668,#0c6bc9b9);">
   <div class="container-fluid">
@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Index.php">Ínicio</a>
+          <a class="nav-link active" aria-current="page" href="Cliente_sistema.php?Cliente=Inicio">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Validar_index.php">Home</a>
+          <a class="nav-link" href="Cliente_sistema.php?Cliente=Home">Home</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -27,6 +27,7 @@
           <li><a class="dropdown-item" href="planos.php">Planos</a></li>
            
         </ul>
+        
  
 
 
@@ -40,12 +41,20 @@
     />
  
         <li>
-          <img src="css/img/user.png" class="profile" />
+          
+            <div class="row">
+            <center><img src="<?= $ImgUsuario ?>" class="profile"/><p>
+          <label style="margin-left: 25px;" > <?= $nomeUsuario ?></label></center>
+          </div>
+          
           <ul>
             <!-- <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>
               <p>Home</p>
             </li> -->
+
+
+            
             <li class="sub-item">
             <span class="material-icons-outlined"><a href="Cliente_sistema.php?Cliente=Dados" title="Dados"> format_list_bulleted </span>
               </span>
@@ -72,17 +81,12 @@
 
           </ul>
         </li>
-      </ul>
+        </ul>
+    </div>
     </nav>
   </body>
 </html>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
+ 
 
 
 

@@ -47,6 +47,7 @@ label{
 
 
     <br>
+    <div class="container-fluid">
     <form id="my-form" class="from-control" action="#" onsubmit="return false" enctype="multipart/form-data">
         <h2>Perfil</h2>
         <br><br>
@@ -54,8 +55,10 @@ label{
         <div class="row">
             <div class="col-sm-12 text-center">
                 <img id="preImg" src="<?=$foto_Cliente?>" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
+                <div class="container">
                 <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
                 <center><label for='txtImg' class="Perfil" style="width: 300px;">Imagem de Perfil &#187;</label></center>
+                </div>
             </div>
         </div>
         <br>
@@ -246,6 +249,7 @@ label{
                         </div>
 
                 </form>
+                </div>
 
 </body>
 

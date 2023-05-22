@@ -38,6 +38,7 @@
                 $_SESSION['loginUsuario'] = $linha[5];
                 $_SESSION['headerUsuario'] = "Cliente";
                 $_SESSION['ImgUsuario'] = $linha[18];
+            
 
             }
 

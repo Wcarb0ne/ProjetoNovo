@@ -92,6 +92,12 @@ include_once('Conexao.php');?>
                             {
                                 include_once('www_autenticarSair.php');
                             }
+                            elseif ($parceiro== 'Home') {
+                                include_once('_Home.php');
+                            }
+                            elseif ($parceiro== 'Inicio') {
+                                include_once('lading_foife.php');
+                            }
                         }
                         else{
                             echo '<h1> ERRO, Pagina não encontrada </h1>';

@@ -27,7 +27,7 @@ include_once('Parceiro_btoPesquisa.php'); ?>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Validar_index.php">Ínicio</a>
+          <a class="nav-link active" aria-current="page" href="Parceiro_sistema.php?Parceiro=Inicio">Ínicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="_Home.php">Home</a>
@@ -49,7 +49,8 @@ include_once('Parceiro_btoPesquisa.php'); ?>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
         <li>
-          <a href="Parceiro_sistema.php?Parceiro=dados"><img src="css/img/user.png" class="profile" /></a>
+        <center> <a style="text-decoration: none;" href="Parceiro_sistema.php?Parceiro=dados"><img src="<?= $ImgUsuario ?>" class="profile"/></a>
+        <p><label style="margin-left: 90px" > <?= $nomeUsuario ?></label></center>
           <ul>
             <!-- <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>

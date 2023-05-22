@@ -15,6 +15,9 @@ if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& iss
     else if ($_SESSION['TipoUsuario'] = "Parceiro"){
         include_once('lading_foife.php');
     }
+    else{
+        include_once('index.php');
+    }
 }
 else{
          ('index.php');

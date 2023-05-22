@@ -19,7 +19,7 @@ if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& iss
     }
 }
 else{
-    include_once('_Home_colado.php');
+    include_once('_Home_deslogado.php');
 
 
 }

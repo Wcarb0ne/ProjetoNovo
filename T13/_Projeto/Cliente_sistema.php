@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/Footer_Header.css">
     <link rel="stylesheet" href="css/FUNCIONAAAA.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/icon.css">
+
 
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/script.js"></script>
@@ -21,7 +22,8 @@
 
 <body>
     <?php include_once('Conexao.php');  ?>
-    <?php include_once('www_autenticar.php');?>
+    <?php include_once('www_autenticar.php');
+    include_once('validar_Header.php');?>
 
 
         <div class="row">
@@ -44,6 +46,12 @@
                         } 
                         elseif ($cliente == 'Sair') {
                             include_once('www_AutenticarSair.php');
+                        }
+                        elseif ($cliente == 'Home') {
+                            include_once('_Home.php');
+                        }
+                        elseif ($cliente == 'Inicio') {
+                            include_once('lading_foife.php');
                         }
                     } else {
                         echo '<h1> ERRO, Pagina não encontrada </h1>';
