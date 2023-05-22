@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/Footer_Header.css">
@@ -22,8 +22,8 @@
 
 <body>
     <?php include_once('Conexao.php');  ?>
-    <?php include_once('www_autenticar.php');
-    include_once('validar_Header.php');?>
+    <?php include_once('www_autenticar.php'); ?>
+    <div class="container-fluid mt-5 dg-dark">
 
 
         <div class="row">
@@ -37,20 +37,17 @@
 
                         if ($cliente  == 'cadastro') {
                             include_once('Cliente_cadastro.php');
-                       } 
+                        }
                         // elseif ($cliente == 'Cadastro Empresa') {
                         //     include_once('frm_Empresa.php');
                         // } 
                         elseif ($cliente == 'Dados') {
                             include_once('Cliente_Dados.php');
-                        } 
-                        elseif ($cliente == 'Sair') {
+                        } elseif ($cliente == 'Sair') {
                             include_once('www_AutenticarSair.php');
-                        }
-                        elseif ($cliente == 'Home') {
+                        } elseif ($cliente == 'Home') {
                             include_once('_Home.php');
-                        }
-                        elseif ($cliente == 'Inicio') {
+                        } elseif ($cliente == 'Inicio') {
                             include_once('lading_foife.php');
                         }
                     } else {
@@ -64,10 +61,13 @@
             <div class="col-sm-1"></div>
         </div>
     </div>
-    
-    <footer class="Rodape">
-        <?php include_once('_footer.php'); ?>
+
+
+    <footer>
+        <?php 
+            include_once('_footer.php');?>
     </footer>
 
 </body>
+
 </html>

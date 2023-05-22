@@ -46,12 +46,8 @@
 <?php 
 include_once('Conexao.php');?>
 <?php include_once('www_autenticar.php');?>
-    <div class="container mt-5 dg-dark">
-        <div class="row">
-            <div class="col-sm-12">
-              
-            </div>
-        </div>
+    <div class="container-fluid mt-5 dg-dark">
+
 
         <div class="row">
             <div class="col-sm-12 ">

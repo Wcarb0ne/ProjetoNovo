@@ -29,12 +29,11 @@
     <!-- <script>
     $(window).on('load', PesquisarCliente());
   </script> -->
-  <style>
-label{
-    font-family: 'Open Sans', sans-serif;
-}
-
-</style>
+    <style>
+        label {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 
 
 
@@ -48,25 +47,25 @@ label{
 
     <br>
     <div class="container-fluid">
-    <form id="my-form" class="from-control" action="#" onsubmit="return false" enctype="multipart/form-data">
-        <h2>Perfil</h2>
-        <br><br>
+        <form id="my-form" class="from-control" action="#" onsubmit="return false" enctype="multipart/form-data">
+            <h2>Perfil</h2>
+            <br><br>
 
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <img id="preImg" src="<?=$foto_Cliente?>" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
-                <div class="container">
-                <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
-                <center><label for='txtImg' class="Perfil" style="width: 300px;">Imagem de Perfil &#187;</label></center>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img id="preImg" src="<?= $foto_Cliente ?>" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
+                    <div class="container">
+                        <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
+                        <center><label for='txtImg' class="Perfil" style="width: 300px;">Imagem de Perfil &#187;</label></center>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
+            <br>
 
 
 
-        <hr>
-        <div class="container">
+            <hr>
+
             <div class="col-sm-1"></div>
 
 
@@ -100,11 +99,11 @@ label{
 
                     <div class="row mt-1"><!-- NOME  / CPF  / -->
                         <div class="col-sm-6">
-                        <label  >Nome</label>
+                            <label>Nome</label>
                             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o Nome completo" value="<?= $nome_Cliente ?>">
                         </div>
                         <div class="col-sm-3">
-                        <label  >CPF</label>
+                            <label>CPF</label>
                             <input type="txt" class="form-control" name="txtCPF" id="txtCPF" placeholder="Informe o CPF" value="<?= $cpf_Cliente ?>">
                         </div>
 
@@ -114,15 +113,15 @@ label{
                     <div class="row mt-3"><!--  email / telefone1 / telefone2 -->
 
                         <div class="col-sm-6">
-                        <label  >E-mail</label>
+                            <label>E-mail</label>
                             <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email" value="<?= $email_Cliente ?>">
                         </div>
                         <div class="col-sm-3">
-                        <label >Tel1</label>
+                            <label>Tel1</label>
                             <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Informe o Telefone" value="<?= $telefone1_Cliente ?>">
                         </div>
                         <div class="col-sm-3">
-                        <label  >Tel2</label>
+                            <label>Tel2</label>
                             <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder=" Informe o Telefone2" value="<?= $telefone2_Cliente ?>">
                         </div>
 
@@ -133,15 +132,15 @@ label{
 
                     <div class="row mt-3"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
                         <div class="col-sm-4">
-                        <label  >Login</label>
+                            <label>Login</label>
                             <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Informe o Login" value="<?= $login_Cliente ?>">
                         </div>
                         <div class="col-sm-4">
-                        <label  >Senha</label>
+                            <label>Senha</label>
                             <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Digite a Senha" value="<?= $senha_Cliente ?>">
                         </div>
                         <div class="col-sm-4">
-                        <label  >Confirmar Senha</label>
+                            <label>Confirmar Senha</label>
                             <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a senha" value="<?= $senha_Cliente ?>">
                         </div>
 
@@ -150,16 +149,16 @@ label{
 
                     <div class="row mt-3"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
                         <div class="col-sm-6">
-                        <label  >Logradouro(Rua)</label>
+                            <label>Logradouro(Rua)</label>
                             <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder="Insira o Logradouro" value="<?= $logradouro_Cliente ?>">
                         </div>
                         <div class="col-sm-3">
-                        <label  >Nº</label>
+                            <label>Nº</label>
                             <input type="number" class="form-control" name="txtNumero" id="txtNumero" placeholder="Número da Residência" value="<?= $numero_Cliente ?>">
                         </div>
 
                         <div class="col-sm-3">
-                        <label  >CEP</label>
+                            <label>CEP</label>
                             <input type="text" class="form-control" name="txtCEP" id="txtCEP" placeholder="Insira o CEP" value="<?= $cep_Cliente ?>">
                         </div>
                     </div>
@@ -167,17 +166,17 @@ label{
                     <div class="row mt-3">
 
                         <div class="col-sm-3">
-                        <label  >Bairro</label>
+                            <label>Bairro</label>
                             <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder="Insira o Bairro" value="<?= $bairro_Cliente ?>">
                         </div>
 
                         <div class="col-sm-3">
-                        <label>Cidade </label>
+                            <label>Cidade </label>
                             <input type="Text" class="form-control" name="txtCidade" id="txtCidade" placeholder="Informe a Cidade" value="<?= $cidade_Cliente ?>">
                         </div>
 
                         <div class="col-sm-2">
-                        <label  >Estado(UF)</label>
+                            <label>Estado(UF)</label>
                             <select name="txtUF" id="txtUF" class="form-control" value="">
                                 <option value="" <?= ($uf_Cliente == "" ? 'selected' : '') ?>>UF</option>
                                 <option value="Acre" <?= ($uf_Cliente == "Acre" ? 'selected' : '') ?>>AC</option>
@@ -210,7 +209,7 @@ label{
                         </div>
 
                         <div class="col-sm-4">
-                        <label  >Complemento</label>
+                            <label>Complemento</label>
                             <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Complemento(Opcional)" value="<?= $complemento_Cliente ?>">
                         </div>
 
@@ -219,10 +218,10 @@ label{
 
 
                     <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
-           
+
                     <div class="row mt-3"><!-- Observação -->
                         <div class="col-sm-12 ">
-                        <label  >Observação</label>
+                            <label>Observação</label>
                             <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Observação(Opcional)"><?= $obs_Cliente ?></textarea>
                         </div>
                     </div>
@@ -247,35 +246,40 @@ label{
                             <div class="col-sm-12" id="resultado"></div>
 
                         </div>
+                    </div>
 
                 </form>
-                </div>
+            </div>
+        </form>
+    </div>
+
+
 
 </body>
 
 </html>
 <script>
-        function previewFile(element) {
+    function previewFile(element) {
 
-            var preview = document.getElementById('preImg');
-            var file = document.getElementById('txtImg').files[0];
+        var preview = document.getElementById('preImg');
+        var file = document.getElementById('txtImg').files[0];
 
-            var reader = new FileReader();
+        var reader = new FileReader();
 
-            reader.onloadend = function() {
-                var caminho = reader.result;
-                // var caminhoLimpo = reader.result;
+        reader.onloadend = function() {
+            var caminho = reader.result;
+            // var caminhoLimpo = reader.result;
 
-                preview.src = caminho;
-                $("#base64Code").val(caminho);
-
-            }
-
-            if (file) {
-                reader.readAsDataURL(file);
-            } else {
-                preview.src = "";
-            }
+            preview.src = caminho;
+            $("#base64Code").val(caminho);
 
         }
-    </script>
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+        }
+
+    }
+</script>
