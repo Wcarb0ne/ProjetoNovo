@@ -8,7 +8,7 @@
    <!-- Cabeçalho e Rodapé --> <link rel="stylesheet" href="css/Footer_Header.css">
 
    
-   <!--Menu --><link rel="stylesheet" href="css/MenuParceiro2/css/fonts-icones.css">
+  
    <!--Menu --> <link rel="stylesheet" href="css/icon.css">
    
 

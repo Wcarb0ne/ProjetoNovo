@@ -24,8 +24,8 @@
 <body>
 <?php 
 
-
-include_once('_header.php') ?>
+include_once('Validar_index.php');
+include_once('_header.php'); ?>
 
 <!-- Carrossel -->
 

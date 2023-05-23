@@ -11,10 +11,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Validar_index.php">Ínicio</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Validar_home.php">Home</a>
+          <a class="nav-link" href="_Home.php">Home</a>
         </li>
 
         <li class="nav-item dropdown">

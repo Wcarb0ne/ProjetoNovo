@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bobonicado.css">
-    <link rel="stylesheet" href="css/icon.css">
+
+    <!-- <link rel="stylesheet" href="css/icon.css"> -->
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/landingPage.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/landingPage.css"> -->
 
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
@@ -33,6 +33,20 @@
         label {
             font-family: 'Open Sans', sans-serif;
         }
+        form{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 5px;
+}
+body {
+    font-family: "Archivo", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    /*background-image: radial-gradient(circle, #ff5811, #fa6a23, #f67933, #f18744, #ec9355);*/
+    background-image: linear-gradient(to right bottom,rgba(213,200,200,1) 42%, rgba(72,82,215,1) 100%);
+    background-repeat: no-repeat;
+
+    background-image: radial-gradient(circle, rgba(246,243,243,1) 14%, rgba(70,113,252,1) 100%);
+  }
     </style>
 
 

@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/Footer_Header.css">
-    <link rel="stylesheet" href="css/FUNCIONAAAA.css">
+    <!-- <link rel="stylesheet" href="css/FUNCIONAAAA.css"> -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"rel="stylesheet" />
+    <!--RODAPE --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
 
     <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+
     <script src="js/script.js"></script>
 
     <title>Login</title>

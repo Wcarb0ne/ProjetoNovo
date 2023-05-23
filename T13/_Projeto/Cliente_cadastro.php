@@ -1,15 +1,53 @@
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
 
-<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-<link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap" rel="stylesheet" />
 
-<script src="js/jquery-3.6.4.js"></script>
-<script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+
+    <style>
+        body {
+            font-family: "Archivo", Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            /*background-image: radial-gradient(circle, #ff5811, #fa6a23, #f67933, #f18744, #ec9355);*/
+            background-image: linear-gradient(to right bottom, rgba(213, 200, 200, 1) 42%, rgba(72, 82, 215, 1) 100%);
+            background-repeat: no-repeat;
+
+            background-image: radial-gradient(circle, rgba(246, 243, 243, 1) 14%, rgba(70, 113, 252, 1) 100%);
+        }
+
+        label {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* form{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 5px;
+} */
+    </style>
+
+    <title>Cliente</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
 
 
-<title>Cliente</title>
 
 <div class="container">
     <div class="col-sm-1"></div>
@@ -25,8 +63,8 @@
             <br>
             <div class="row">
                 <div class="col-sm-4"></div>
-                <div class="col-sm-3 m-5">
-                    <img id="preImg" src="css/img/Photo-Camera-PNG.png" height="200" width="285" style="border-radius: 70px;border-color:blue" alt="Image preview...">
+                <div class="col-sm-3">
+                    <img class="w-100" id="preImg" src="css/img/Photo-Camera-PNG.png" height="200" width="285" style="border-radius: 70px;border-color:blue;" alt="Image preview...">
                     <input name="txtImg" id="txtImg" type="file" class="form-control " onchange="previewFile(this)" />
                     <label for='txtImg' class="Perfil">Imagem de Perfil &#187;</label>
                 </div>
@@ -169,54 +207,54 @@
 
             </div>
             <textarea hidden id="base64Code" rows="5" class="form-control"></textarea>
-           
+
 
             <div class="row mt-4 mb-3"><!--botoes-->
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
                     <button name="btn-validar2 " class="btn-validar2 " onclick="CadastrarCliente()">Cadastrar</button>
-            </div>
-                    <div class="col-sm-5">
-                    <a href="_Home.php" name="btn-Sair" class="btn-Sair">Sair</a>
-                    </div>
-                
-
-            
-
                 </div>
-            </div>
+                <div class="col-sm-5">
+                    <a href="_Home.php" name="btn-Sair" class="btn-Sair">Sair</a>
+                </div>
 
-        </form>
+
+
+
+            </div>
     </div>
 
+    </form>
+</div>
 
-    <script>
-        function previewFile(element) {
 
-            var preview = document.getElementById('preImg');
-            var file = document.getElementById('txtImg').files[0];
+<script>
+    function previewFile(element) {
 
-            var reader = new FileReader();
+        var preview = document.getElementById('preImg');
+        var file = document.getElementById('txtImg').files[0];
 
-            reader.onloadend = function() {
-                var caminho = reader.result;
-                // var caminhoLimpo = reader.result;
+        var reader = new FileReader();
 
-                preview.src = caminho;
-                $("#base64Code").val(caminho);
+        reader.onloadend = function() {
+            var caminho = reader.result;
+            // var caminhoLimpo = reader.result;
 
-                
+            preview.src = caminho;
+            $("#base64Code").val(caminho);
 
-            }
 
-            if (file) {
-                reader.readAsDataURL(file);
-            } else {
-                preview.src = "";
-            }
 
         }
-    </script>
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+        }
+
+    }
+</script>
 
 
 </div>
