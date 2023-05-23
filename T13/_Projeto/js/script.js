@@ -426,8 +426,8 @@ function CadastrarSevicosParceiro() {
     let descricao_ParceiroServicos = $('#txtDescricao').val();
     let descricaoSolu_ParceiroServicos = $('#txtDescricaoSolu').val();
     let valor_ParceiroServicos = $('#txtvalor').val();
-    let id_Parceiro_ParceiroServicos = $('#txtIDPar').val();
     let nomeServico_ParceiroServicos = $('#txtNomeServico').val();
+    let id_Parceiro_ParceiroServicos = $('#txtIDPar').val();
 
     let action = 'Parceiro_ServicosBtoCadastrar.php';
 
@@ -449,8 +449,9 @@ function CadastrarSevicosParceiro() {
             txtDescricao: descricao_ParceiroServicos,
             txtDescricaoSolu: descricaoSolu_ParceiroServicos,
             txtvalor: valor_ParceiroServicos,
-            txtIDPar:id_Parceiro_ParceiroServicos,
+            
             txtNomeServico:nomeServico_ParceiroServicos,
+            txtIDPar:id_Parceiro_ParceiroServicos,
 
         },
         success: function (data, status, xhr) {

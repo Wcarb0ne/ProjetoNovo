@@ -23,8 +23,9 @@ if($_POST)
     $descricao_ParceiroServicos = $_POST['txtDescricao'];
     $descricaoSolu_ParceiroServicos = $_POST['txtDescricaoSolu'];
     $valor_ParceiroServicos = $_POST['txtvalor'];
-    $id_Parceiro_ParceiroServicos = $_POST['txtIDPar'];
+    
     $nomeServico_ParceiroServicos = $_POST['txtNomeServico'];
+    $id_Parceiro_ParceiroServicos = $_POST['txtIDPar'];
 
     
     

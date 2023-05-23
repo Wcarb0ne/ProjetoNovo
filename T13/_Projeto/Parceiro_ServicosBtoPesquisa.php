@@ -35,8 +35,8 @@ if($_POST)
             {
                 $id_ParceiroServicos=$linha[0];
                 $data_ParceiroServicos=$linha[1];
-                $status_ParceiroServicos =$linha[2] ;
-                $nome_ParceiroServicos = $linha[3];
+                $status_ParceiroServicos =$linha[2];
+                $nomeCliente_ParceiroServicos = $linha[3];
                 $cpfCliente_ParceiroServicos = $linha[4] ;
                 $contatoCliente_ParceiroServicos = $linha[5];
                 $emailCliente_ParceiroServicos = $linha[6];
@@ -49,6 +49,7 @@ if($_POST)
                 $valor_ParceiroServicos =$linha[13] ;
                 $id_Parceiro_ParceiroServicos= $linha[14];
                 $nomeServico_ParceiroServicos = $linha[15];
+                $id_Parceiro_ParceiroServicos =$linha[16];
 
 
                 
