@@ -34,26 +34,24 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery-3.6.4.js"></script>
 
-<style>
+
+    <style>
 
 .velhobroxa {
 
 max-height: 300px;
 }
-
 </style>
+
 </head>
 
 <body>
 
 
     <div class=" z-index: -1; ">
-        <?php
+        <?php 
+        include_once('_header.php');
 
-    
-
-        include_once('validar_Header.php');
-        include_once('Validar_mapa.php');
         include_once('mapa_Pesquisa.php');
 
         ?>
