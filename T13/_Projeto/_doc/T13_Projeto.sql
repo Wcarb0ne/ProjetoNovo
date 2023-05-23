@@ -94,7 +94,7 @@ create table ParceiroServicos
     id_ParceiroServicos int auto_increment not null primary key,
     data_ParceiroServicos timestamp not null,
     status_ParceiroServicos varchar(20) not null,
-    nome_ParceiroServicos  varchar(30) not null,
+    nomeCliente_ParceiroServicos  varchar(30) not null,
     cpfCliente_ParceiroServicos varchar(30) not null,
     contatoCliente_ParceiroServicos varchar(11) not null,
     emailCliente_ParceiroServicos varchar(30) not null,
@@ -106,6 +106,8 @@ create table ParceiroServicos
     descricaoSolu_ParceiroServicos varchar(255) not null,
     valor_ParceiroServicos varchar(30) not null
 );
+
+
 ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
 drop table PCategoria;
 select * from ParceiroServicos;
