@@ -47,13 +47,7 @@
 
     ?>
 
-</head>
-
-
-
-<body>
-
-<style>
+    <style>
         .card {
             width: 250px;
             min-height: 350px;
@@ -61,40 +55,61 @@
                 0 0 0 2px rgb(190, 190, 190),
                 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
         }
-        .passou{
+
+        .passou {
             background-color: white;
             transition: background-color 2s;
         }
-        .passou:hover{
+
+        .passou:hover {
             background-color: lightgray;
         }
-         h3 {
+
+        h3 {
             text-align: center;
+        }
+
+        .velhobroxa {
+
+            max-height: 300px;
+        }
+
+        body {
+
+            background-color: white;
+
         }
     </style>
 
-    <div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
+</head>
+
+
+<body>
+
+<div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="css/img/essa copiar poha.jpg" class="bobo" alt="...">
             </div>
 
         </div>
-        <div class="col-sm-3"></div>
-    </div>
-    <br>
 
-    <h3>Aqui estão as melhores perto de você </h3>
-    <hr>
-    <div class="container-fluid">
+    </div>
+
+
+    <div class="container">
+
+
+        <br>
+
+        <h3>Aqui estão as melhores perto de você </h3>
+        <hr>
+
 
         <div class="row">
             <!-- Começa aqui o modelo da impressão do PHP -->
 
             <?php
-
-
-
             try {
 
                 $sql = $conn->query("select * from Parceiro where status_Parceiro = 'Ativo'");
@@ -109,32 +124,39 @@
                     $logradouro_Parceiro = $linha['logradouro_Parceiro'];
                     $ramo_Parceiro = $linha['ramo_Parceiro'];
                     $foto_Parceiro = $linha['foto_Parceiro'];
-                    echo '
 
-                    <div class="col-md-3 text-center mb-3 p-1">
-                        <div class="card">
-                        <img src="' . $foto_Parceiro . '" class="card-img-top imagem1"  alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">' . $nome . '</h5>
-                                <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
-                                <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
-                                <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
-                            </div>
+
+
+                    echo '
+                    <div class="col-md-3 text-center mb-3  ">
+                    <div class="card w-100 passou">
+                    <img src="' . $foto_Parceiro . '" class="card-img-top imagem1 velhobroxa"  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">' . $nome . '</h5>
+                            <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
+                            <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
+                            <a href="validar_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
                         </div>
                     </div>
-                    ';
+                </div>
+                ';
                 }
             } catch (PDOException $ex) {
                 echo $ex->getMessage();
             }
             ?>
 
+
             <!-- Termina aqui o modelo PHP -->
+
         </div>
     </div>
 
-
     </div>
+    </div>
+
+
+
 
     <?php include_once('_footer.php') ?>
 </body>

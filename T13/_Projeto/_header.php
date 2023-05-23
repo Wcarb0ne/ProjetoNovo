@@ -17,11 +17,11 @@
           <a class="nav-link" href="_Home.php">Home</a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown padding: 0;">
           <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Saiba Mais </a>
         
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="Validar_sobre_nos.php">Sobre nós</a></li>
+          <li><a class="dropdown-item" href="Validar_sobre_nos.php">Sobre nós</li></a>
 
           <li><a class="dropdown-item" href="Validar_planos.php">Planos</a></li>
            

@@ -43,7 +43,13 @@
   <script src="js/jquery-3.6.4.js"></script>
     
 </head>
+<style>
 
+.teste{
+    z-index: -1;
+}
+
+</style>
 <body>
     <header>
         <?php include_once('www_autenticar.php') ?>
@@ -84,8 +90,8 @@
                     <div class="col-sm-2"></div>
                     <div class="col-sm-2">
 
-                    <div class="card carduim" style="width:18rem;">
-                            <img src="css/img/oro.png" class=" card-img-top  " alt="...">
+                    <div class="card  teste" style="width:18rem; z-index:-1;">
+                            <img src="css/img/oro.png" class=" card-img-top teste  " alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Plano ouro</h5>
                                 <h6 class="card-subtitle mb-2 text-muted ">Avançado</h6>

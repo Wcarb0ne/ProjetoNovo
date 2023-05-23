@@ -49,7 +49,7 @@ include_once('Parceiro_btoPesquisa.php'); ?>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
         <li>
-        <center> <a style="text-decoration: none;" href="Parceiro_sistema.php?Parceiro=dados"><img src="<?= $ImgUsuario ?>" class="profile"/></a>
+        <center> <a style="text-decoration: none;" href="#"><img src="<?= $ImgUsuario ?>" class="profile"/></a>
         <p><label style="margin-left: 90px" > <?= $nomeUsuario ?></label></center>
           <ul>
             <!-- <li class="sub-item">

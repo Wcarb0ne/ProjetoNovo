@@ -44,36 +44,38 @@
                 0 0 0 2px rgb(190, 190, 190),
                 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
         }
-        .passou{
+
+        .passou {
             background-color: white;
             transition: background-color 2s;
         }
-        .passou:hover{
+
+        .passou:hover {
             background-color: lightgray;
         }
-         h3 {
+
+        h3 {
             text-align: center;
         }
 
-.velhobroxa{
+        .velhobroxa {
 
-    max-height: 300px;
-}
+            max-height: 300px;
+        }
 
-body{
+        body {
 
-    background-color: white;
+            background-color: white;
 
-}
-
+        }
     </style>
 </head>
 
 <body>
 
- <?php
+    <?php
 
-
+// include_once('Validar_home.php');
     include_once('validar_Header.php');
     include_once('Conexao.php');
 
@@ -127,7 +129,7 @@ body{
                             <h5 class="card-title">' . $nome . '</h5>
                             <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
                             <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
-                            <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
+                            <a href="validar_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +150,7 @@ body{
     </div>
 
 
-    
+
 </body>
 
 
