@@ -54,6 +54,12 @@
          h3 {
             text-align: center;
         }
+
+.velhobroxa{
+
+    max-height: 300px;
+}
+
     </style>
 </head>
 
@@ -108,9 +114,9 @@
 
 
                     echo '
-                    <div class="col-md-3 text-center mb-3 max-width:10; ">
+                    <div class="col-md-3 text-center mb-3  ">
                     <div class="card w-100 passou">
-                    <img src="' . $foto_Parceiro . '" class="card-img-top imagem1"  alt="...">
+                    <img src="' . $foto_Parceiro . '" class="card-img-top imagem1 velhobroxa"  alt="...">
                         <div class="card-body">
                             <h5 class="card-title">' . $nome . '</h5>
                             <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>

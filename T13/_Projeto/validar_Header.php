@@ -14,8 +14,10 @@ if($_SESSION && ($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& iss
     }
     else if ($_SESSION['TipoUsuario'] = "Parceiro"){
         include_once('Parceiro_header');
-    }
+   
 }
-
-
+else{
+    include_once('_header.php');
+}
+    }
 ?>
