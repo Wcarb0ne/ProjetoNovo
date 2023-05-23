@@ -60,6 +60,12 @@
     max-height: 300px;
 }
 
+body{
+
+    background-color: white;
+
+}
+
     </style>
 </head>
 

@@ -82,8 +82,8 @@ include_once('Parceiro_btoPesquisa.php'); ?>
               <li class="sub-item">
                 <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Sair" title="Sair">logout </span>
                 <p>Logout</p>
+                </a>
               </li>
-              </a>
           </ul>
         </li>
       
