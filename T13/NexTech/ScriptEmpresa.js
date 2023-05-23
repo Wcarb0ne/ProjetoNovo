@@ -348,6 +348,7 @@ function ExcluirFuncionario(){
 }
 function AlterarFuncionario(){
 
+    let id_Funcionario = $('#txtID').val();
     let status_Funcionario = $('#txtStatus').val();
     let nome_Funcionario =$('#txtNome').val();
     let cpf_Funcionario = $('#txtCpf').val();
@@ -492,7 +493,8 @@ function AlterarFuncionario(){
             }
     
         })
-    }    
+}
+        
 /////////////////formulario Funcionario ///////////
 
 /////////////////formulario planos ///////////

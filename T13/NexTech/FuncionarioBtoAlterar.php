@@ -5,7 +5,7 @@ if($_POST)
     $id_Funcionario = $_POST['txtID']; 
     $status_Funcionario = $_POST['txtStatus'];
     $nome_Funcionario = $_POST['txtNome'];
-    $cpf_Funcionario = $_POST['txtCnpj'];
+    $cpf_Funcionario = $_POST['txtCpf'];
 
     $cep_Funcionario = $_POST['txtCep']; 
     $logradouro_Funcionario = $_POST['txtLogradouro']; 
@@ -27,8 +27,7 @@ if($_POST)
     try 
     {
        
-        $sql = $conn->prepare('update Departamento set
-
+        $sql = $conn->prepare('update Funcionario set
 
         status_Funcionario =:status_Funcionario, 
         nome_Funcionario =:nome_Funcionario,
@@ -50,8 +49,7 @@ if($_POST)
         senha_Funcionario =:senha_Funcionario,
         confirmarSenha_Funcionario =:confirmarSenha_Funcionario
 
-
-        where id_Departamento=:id_Departamento'
+        where id_Funcionario=:id_Funcionario'
         );   
 
         $sql->execute(array(

@@ -20,13 +20,18 @@
   <script src="./assets/js/jquery-1.11.1.min.js"></script>
     <script src="ScriptEmpresa.js"></script>
 
-    <?php include_once('Conexao.php');
-    include_once('NexTech_autenticar.php');
-    include_once('FuncionarioBtoPesquisa.php');
-    ?>
+    
 </head>
 
 <body>
+<?php 
+
+    include_once('Conexao.php');
+    include_once('NexTech_autenticar.php');
+    include_once('FuncionarioBtoPesquisa.php');
+    
+  ?>
+
   <div class="container-scroller">
     <!-- partial:assets/System_assets/System_partials/_navbar.php -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -104,11 +109,11 @@
               <img src="assets/System_images/faces/felipe.png" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" href="/T13/NexTech/System_Home.php" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
+            <a class="dropdown-item" href="System_Perfil_Usuario.php?=Perfil">
                 <i class="ti-settings text-primary"></i>
-                Settings
+                Perfil
               </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item"  href="NexTech_AutenticarSair.php">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -320,7 +325,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" class="form-control" name="txtData" id="txtData" disabled=""placeholder="Data cadastro"value="<?$data_Funcionario ?>">
+                                            <input type="text" class="form-control" name="txtData" id="txtData" disabled=""placeholder="Data cadastro"value="<?=$data_Funcionario ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -374,7 +379,7 @@
                                     <div class="col-md-1"></div>
                                     <div class="col-md-3">
                                         <div class="form-group bmd-form-group">
-                                            <select name="txtUF" id="txtUF" class="form-control">
+                                          <select name="txtUF" id="txtUF" class="form-control" value="">
                                             <option value="" <?= ($uf_Funcionario == "" ? 'selected' : '') ?>>UF</option>
                                             <option value="Acre" <?= ($uf_Funcionario == "Acre" ? 'selected' : '') ?>>AC</option>
                                             <option value="Alagoas" <?= ($uf_Funcionario == "Alagoas" ? 'selected' : '') ?>>AL</option>
@@ -402,7 +407,7 @@
                                             <option value="São Paulo" <?= ($uf_Funcionario == "São Paulo" ? 'selected' : '') ?>>SP</option>
                                             <option value="Sergipe" <?= ($uf_Funcionario == "Sergipe" ? 'selected' : '') ?>>SE</option>
                                             <option value="Tocantins" <?= ($uf_Funcionario == "Tocantins" ? 'selected' : '') ?>>TO</option>
-                                            </select>
+                                          </select>
                                         </div>
                                     </div>
                                 </div>

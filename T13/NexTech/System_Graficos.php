@@ -100,11 +100,11 @@
               <img src="assets/System_images/faces/felipe.png" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
+            <a class="dropdown-item" href="System_Perfil_Usuario.php?=Perfil">
                 <i class="ti-settings text-primary"></i>
-                Settings
+                Perfil
               </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item"  href="NexTech_AutenticarSair.php">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
