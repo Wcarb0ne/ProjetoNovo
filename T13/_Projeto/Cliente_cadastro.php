@@ -94,9 +94,11 @@
 
             <div class="row mt-1"><!-- NOME  / CPF  / -->
                 <div class="col-sm-6">
+                <label>Nome</label>
                     <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="informe o Nome completo">
                 </div>
                 <div class="col-sm-3">
+                <label>CPF</label>
                     <input type="text" class="form-control" name="txtCPF" id="txtCPF" placeholder="Informe o CPF">
                 </div>
 
@@ -107,12 +109,15 @@
             <div class="row mt-3"><!--  email / telefone1 / telefone2 -->
 
                 <div class="col-sm-6">
+                <label>E-mail</label>
                     <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira o Email">
                 </div>
                 <div class="col-sm-3">
+                <label>Tel1</label>
                     <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Informe o Telefone">
                 </div>
                 <div class="col-sm-3">
+                <label>Tel2</label>
                     <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder=" Informe o Telefone2">
                 </div>
 
@@ -121,12 +126,15 @@
 
             <div class="row mt-3"><!--LOGIN , SENHA , CONFIRMAR SENHA  -->
                 <div class="col-sm-4">
+                <label>Login</label>
                     <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Informe o Login">
                 </div>
                 <div class="col-sm-4">
+                <label>Senha</label>
                     <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Digite a Senha">
                 </div>
                 <div class="col-sm-4">
+                <label>Confirmar Senha</label>
                     <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Confirme a senha">
                 </div>
 
@@ -135,13 +143,16 @@
 
             <div class="row mt-3"><!--LOGRADOURO / NUMERO / COMPLEMENTO-->
                 <div class="col-sm-6">
+                <label>Logradouro(Rua)</label>
                     <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder="Insira o Logradouro">
                 </div>
                 <div class="col-sm-3">
+                <label>Nº</label>
                     <input type="number" class="form-control" name="txtNumero" id="txtNumero" placeholder="Número da Residência">
                 </div>
 
                 <div class="col-sm-3">
+                <label>CEP</label>
                     <input type="text" class="form-control" name="txtCEP" id="txtCEP" placeholder="Insira o CEP">
                 </div>
             </div>
@@ -149,14 +160,17 @@
             <div class="row mt-3">
 
                 <div class="col-sm-3">
+                <label>Bairro</label>
                     <input type="text" class="form-control" name="txtBairro" id="txtBairro" placeholder="Insira o Bairro">
                 </div>
 
                 <div class="col-sm-3">
+                <label>Cidade </label>
                     <input type="Text" class="form-control" name="txtCidade" id="txtCidade" placeholder="Informe a Cidade">
                 </div>
 
                 <div class="col-sm-2">
+                <label>Estado(UF)</label>
                     <select name="txtUF" id="txtUF" class="form-control">
                         <option value="">UF</option>
                         <option value="Acre">AC</option>
@@ -189,6 +203,7 @@
                 </div>
 
                 <div class="col-sm-4">
+                <label>Complemento</label>
                     <input type="text" class="form-control" name="txtComplemento" id="txtComplemento" placeholder="Complemento(Opcional)">
                 </div>
 
@@ -200,6 +215,7 @@
 
             <div class="row mt-3"><!-- Observação -->
                 <div class="col-sm-12 ">
+                <label>Observação</label>
                     <textarea name="txtObs" id="txtObs" class="form-control" rows="3" placeholder="Observação(Opcional)"></textarea>
                 </div>
             </div>

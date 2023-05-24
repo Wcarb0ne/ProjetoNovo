@@ -45,7 +45,7 @@ include_once('_header.php'); ?>
 
     <header style="margin-bottom: 20;">
       <div class="container text-center">
-        <div class="row align-items-Center">
+        <div class="row align-items-Center mt-3">
 
           <div class="col-sm-6" style="text-align: justify;">
             <h1> Procurando uma Boa Assistência Técnica?</h1>

@@ -32,7 +32,7 @@ function CadastrarParceiro() {
         return;
     }
     if ($.isNumeric($("#txtNome").val())) {
-        alert("Campo nome deve conter Apenas Letras");
+        alert("Nome deve conter Apenas Letras");
         return;
     }
     if ($("#txtCnpj").val() == null) {
@@ -40,7 +40,7 @@ function CadastrarParceiro() {
         return;
     }
     if (!$.isNumeric($("#txtCnpj").val())) {
-        alert("Apenas Números");
+        alert("Cnpj deve conter Apenas Números");
         return;
     }
     if ($('#txtRamo').val() == null) {
@@ -73,19 +73,15 @@ function CadastrarParceiro() {
         alert("Campo Cidade Obrigatório");
         return;
     }
+    if ($.isNumeric($("#txtCidade").val())) {
+        alert("Cidade deve conter Apenas letras");
+        return;
+    }
     if ($("#txtCep").val() == null) {
         alert("CEP obrigatório");
         return;
     }
-    if ($.isNumeric($("#txtCidade").val())) {
-        alert("Apenas letras");
-        return;
-    }
 
-    if (!$.isNumeric($("#txtCep").val())) {
-        alert("Preencha o CEP com números")
-        return;
-    }
     if ($("#txtUF").val().trim() === '') {
         alert("Estado(UF) é Obrigatório");
         return;
@@ -224,7 +220,7 @@ function ParceiroAlterar() {
         return;
     }
     if ($.isNumeric($("#txtNome").val())) {
-        alert("Nome deve possuir Apenas Letras");
+        alert("Nome deve conter Apenas Letras");
         return;
     }
     if ($("#txtCnpj").val() == null) {
@@ -232,7 +228,7 @@ function ParceiroAlterar() {
         return;
     }
     if (!$.isNumeric($("#txtCnpj").val())) {
-        alert("Apenas Números");
+        alert("Cnpj deve conter Apenas Números");
         return;
     }
     if ($('#txtRamo').val() == null) {
@@ -593,7 +589,7 @@ function CadastrarCliente() {
         return;
     }
     if ($.isNumeric($("#txtNome").val())) {
-        alert("Apenas Letras");
+        alert("Nome deve conter Apenas Letras");
         return;
     }
     if ($("#txtCPF").val() == null) {
@@ -601,7 +597,7 @@ function CadastrarCliente() {
         return;
     }
     if (!$.isNumeric($("#txtCPF").val())) {
-        alert("Apenas Números");
+        alert("CPF deve conter Apenas Números");
         return;
     }
     if ($('#txtEmail').val() == null) {
@@ -622,15 +618,15 @@ function CadastrarCliente() {
         return;
     }
     if ($.isNumeric($("#txtBairro").val())) {
-        alert("Apenas letras");
+        alert("Bairro deve conter Apenas letras");
         return;
     }
-    if ($.isNumeric($("#txtCidade").val() == null)) {
+    if ($("#txtCidade").val() == null) {
         alert("Campo Cidade Obrigatório");
         return;
     }
     if ($.isNumeric($("#txtCidade").val())) {
-        alert("Apenas letras");
+        alert("Cidade deve conter Apenas letras");
         return;
     }
     if ($("#txtCEP").val() == null) {
@@ -743,7 +739,7 @@ function AlterarCliente() {
         return;
     }
     if ($.isNumeric($("#txtNome").val())) {
-        alert("Apenas Letras");
+        alert("Nome deve conter Apenas Letras");
         return;
     }
     if ($("#txtCPF").val() == null) {
@@ -751,7 +747,7 @@ function AlterarCliente() {
         return;
     }
     if (!$.isNumeric($("#txtCPF").val())) {
-        alert("Apenas Números");
+        alert("CPF deve conter Apenas Números");
         return;
     }
     if ($('#txtEmail').val() == null) {
@@ -772,7 +768,7 @@ function AlterarCliente() {
         return;
     }
     if ($.isNumeric($("#txtBairro").val())) {
-        alert("Apenas letras");
+        alert("Bairro deve conter Apenas letras");
         return;
     }
     if ($("#txtCidade").val() == null) {
@@ -780,7 +776,7 @@ function AlterarCliente() {
         return;
     }
     if ($.isNumeric($("#txtCidade").val())) {
-        alert("Apenas letras");
+        alert("Cidade deve conter Apenas letras");
         return;
     }
     if ($("#txtCEP").val() == null) {

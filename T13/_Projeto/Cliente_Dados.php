@@ -93,7 +93,7 @@ body {
                     <br>
                     <div class="row"><!-- ID / STATUS / datacadastro -->
                         <div class="col-sm-2">
-                            <input type="number" class="form-control" name="txtID" id="txtID" placeholder="ID Cliente" disabled value="<?= $id_Cliente ?>">
+                            <input type="number" class="form-control" name="txtID" id="txtID" placeholder="ID Cliente" disabled value="<?= $id_Cliente ?>" hidden>
                         </div>
 
                         <div class="col-sm-2">

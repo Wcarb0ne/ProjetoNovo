@@ -86,7 +86,7 @@
 
                     <div class="col-sm-3">
                         <label>Data Cadastro</label>
-                        <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" value="<?= $data_Parceiro ?>" disabled>
+                        <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" value="<?= $data_Parceiro ?>" disabled hidden>
                     </div>
                 </div>
 
