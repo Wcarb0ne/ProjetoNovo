@@ -24,7 +24,7 @@ include_once('Parceiro_btoPesquisa.php'); ?>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav" style=" z-index: 999;">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="Parceiro_sistema.php?Parceiro=Inicio">Ínicio</a>
@@ -49,16 +49,17 @@ include_once('Parceiro_btoPesquisa.php'); ?>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
         <li>
-        <center> <a style="text-decoration: none;" href="#"><img src="<?= $ImgUsuario ?>" class="profile"/></a>
-        <p><label style="margin-left: 90px" > <?= $loginUsuario ?></label></center>
+          <center> <a style="text-decoration: none;" href="#"><img src="<?= $ImgUsuario ?>" class="profile" /></a>
+            <p><label style="margin-left: 90px"> <?= $loginUsuario ?></label>
+          </center>
           <ul>
             <!-- <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>
               <p>Home</p>
             </li> -->
-            <div class="teste">
+            <div class="teste" >
               <li class="sub-item">
-                <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Dados"> format_list_bulleted 
+                <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=dados" title="Dados"> format_list_bulleted
                 </span>
                 <p>Dados</p>
                 </a>
@@ -67,7 +68,7 @@ include_once('Parceiro_btoPesquisa.php'); ?>
 
               <li class="sub-item">
                 <span class="material-icons-outlined"><a href="Parceiro_sistema.php?Parceiro=Servicos" title="Servicos"> format_list_bulleted </span>
-                
+
                 <p>Serviços</p>
                 </a>
               </li>
@@ -86,9 +87,9 @@ include_once('Parceiro_btoPesquisa.php'); ?>
               </li>
           </ul>
         </li>
-      
-      </ul>
     </div>
+    </ul>
+  </div>
   </div>
 
 </nav>

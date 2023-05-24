@@ -53,7 +53,7 @@ max-height: 300px;
     
 
         include_once('validar_Header.php');
-        include_once('Validar_mapa.php');
+      
         include_once('mapa_Pesquisa.php');
 
         ?>

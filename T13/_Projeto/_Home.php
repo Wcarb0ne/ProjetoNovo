@@ -129,7 +129,7 @@
                             <h5 class="card-title">' . $nome . '</h5>
                             <p class="card-text">Endereço: ' . $logradouro_Parceiro . '</p>
                             <p class="card-text">Ramo: ' . $ramo_Parceiro . '</p>
-                            <a href="validar_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
+                            <a href="sistema_mapa.php?id=' . $id . '" class="btn btn-primary" >Conheça Aqui</a>
                         </div>
                     </div>
                 </div>
