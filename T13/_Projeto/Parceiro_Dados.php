@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NexTech|Parceiro</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,14 +78,14 @@
 
                     <div class="col-sm-5">
                         <select name="txtStatus" id="txtStatus" class="form-control" hidden>
-                            <option value=""> ->Selecione<-< /option>
+                            <option value=""> ->Selecione<-</option>
                             <option value="Ativo" <?= ($status_Parceiro == "Ativo" ? 'selected' : '') ?>>Ativo</option>
                             <option value="Inativo" <?= ($status_Parceiro == "Inativo" ? 'selected' : '') ?>>Inativo</option>
                         </select>
                     </div>
 
                     <div class="col-sm-3">
-                        <label>Data Cadastro</label>
+                        <label hidden>Data Cadastro</label>
                         <input type="text" class="form-control" name="txtData" id="txtData" placeholder="Data de Cadastro" value="<?= $data_Parceiro ?>" disabled hidden>
                     </div>
                 </div>
@@ -100,8 +100,14 @@
                         <input type="number" class="form-control" name="txtCnpj" id="txtCnpj" placeholder="Informe o Cnpj" value="<?= $cnpj_Parceiro ?>">
                     </div>
                     <div class="col-sm-3">
-                        <label> Ramo </label>
-                        <input type="text" class="form-control" name="txtRamo" id="txtRamo" placeholder="Informe o Ramo" value="<?= $ramo_Parceiro ?>">
+                        
+                        <label for="Ramo">Ramo</label>
+                    <select class="form-control" id="txtRamo">
+                        <option value="">Selecione</option>
+                        <option value="Eletrônico"<?=($ramo_Parceiro== "Eletrônico" ? 'selected' : '') ?>>Eletrônico</option>
+                        <option value="Eletroportátil" <?=($ramo_Parceiro== "Eletroportátil" ? 'selected' : '') ?>>Eletroportátil</option>
+                        <option value="Eletrodoméstico"<?=($ramo_Parceiro== "Eletrodoméstico" ? 'selected' : '') ?>>Eletrodoméstico</option>
+                    </select>
                     </div>
                 </div>
 

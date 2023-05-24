@@ -85,7 +85,8 @@ complemento_Cliente	varchar(50)	null		,
 telefone1_Cliente	varchar(14)	not null		,
 telefone2_Cliente	varchar(14)	null		,
 email_Cliente	varchar(50)	not null		,
-obs_Cliente	varchar(255)	null		
+obs_Cliente	varchar(255)	null,
+foto_Cliente blob null		
 );
 
 drop table ParceiroServicos;
@@ -105,10 +106,11 @@ create table ParceiroServicos
     descricao_ParceiroServicos varchar(255) not null,
     descricaoSolu_ParceiroServicos varchar(255) not null,
     valor_ParceiroServicos varchar(30) not null
+
 );
 
 
-ALTER TABLE ParceiroServicos ADD CONSTRAINT id_PCategoria_ParceiroServicos FOREIGN KEY(id_PCategoria_ParceiroServicos) REFERENCES PCategoria (id_PCategoria);
+ 
 drop table PCategoria;
 select * from ParceiroServicos;
 describe ParceiroServicos;
@@ -130,6 +132,7 @@ values
 );
 drop table Parceiro;
 select * from Parceiro;
+drop table ClienteFaleConosco;
 
 create table ClienteFaleConosco
 (
@@ -143,6 +146,7 @@ anexo_FaleConosco	blob null,
 CONSTRAINT id_Cliente_FaleConosco FOREIGN KEY(id_Cliente_FaleConosco) REFERENCES Cliente (id_Cliente)
 );		
 
+drop table  ParceiroFaleConosco;
 create table ParceiroFaleConosco
 (
 id_FaleConosco	int	not null auto_increment	 primary key	,
@@ -179,9 +183,21 @@ create table Departamento
     status_Departamento varchar(20) not null,
     descricao_Departamento varchar(255) not null
 );
+insert into Departamento
+(
+nome_Departamento,
+status_Departamento,
+descricao_Departamento
+)
+values(
+'RH',
+'Ativo',
+'Recursos Humanos'
+);
 drop table Funcionario;
 select * from Departamento;
 ALTER TABLE Funcionario ADD CONSTRAINT id_Departamento_Funcionario FOREIGN KEY(id_Departamento_Funcionario) REFERENCES Departamento (id_Departamento);                
+select * from Funcionario;
 create table Funcionario
 (
 	id_Funcionario int auto_increment not null primary key,
@@ -207,5 +223,5 @@ create table Funcionario
 insert into Funcionario
 (id_Funcionario,status_Funcionario,data_Funcionario,nome_Funcionario,cpf_Funcionario,cep_Funcionario,logradouro_Funcionario,numero_Funcionario,complemento_Funcionario,bairro_Funcionario,cidade_Funcionario,uf_Funcionario,email_Funcionario,telefone1_Funcionario,telefone2_Funcionario,id_Departamento_Funcionario,login_Funcionario,senha_Funcionario,confirmarSenha_Funcionario)
 values
-('1','ativo','03/05/2023','Felipe','156165116651','07196261','rua sei la','55','apto50','vila galvão','guarulhos','SP','cornoempresa@gmail.com','1185151162','1185151161','1','adm','123','123');
+('1','ativo','03/05/2023','Felipe','156165116651','07196261','rua sei la','55','apto50','vila galvão','guarulhos','SP','empresa@gmail.com','1185151162','1185151161','1','adm','123','123');
 select * from Funcionario;

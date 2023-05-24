@@ -38,7 +38,7 @@
 } */
     </style>
 
-    <title>Cliente</title>
+    <title>Cadastro|Cliente</title>
 </head>
 
 <body>

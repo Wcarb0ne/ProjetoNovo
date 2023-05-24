@@ -39,7 +39,7 @@
     margin-top: 5px;
 } */
     </style>
-    <title>Document</title>
+    <title>Cadastro|Parceiro</title>
 </head>
 
 <body>
@@ -95,8 +95,13 @@
                             <input type="number" class="form-control" name="txtCnpj" id="txtCnpj" placeholder="Informe o Cnpj">
                         </div>
                         <div class="col-sm-3">
-                            <label> Ramo </label>
-                            <input type="text" class="form-control" name="txtRamo" id="txtRamo" placeholder="Informe o Ramo">
+                        <label for="Ramo">Ramo</label>
+                    <select class="form-control" id="txtRamo">
+                        <option value="">Selecione</option>
+                        <option value="Eletrônico">Eletrônico</option>
+                        <option value="Eletroportátil" >Eletroportátil</option>
+                        <option value="Eletrodoméstico">Eletrodoméstico</option>
+                    </select>
                         </div>
                     </div>
 
