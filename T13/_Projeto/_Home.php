@@ -35,7 +35,13 @@
     <!--RODAPE -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
 
+    <?php
 
+// include_once('Validar_home.php');
+    include_once('validar_Header.php');
+    include_once('Conexao.php');
+
+    ?>
     <style>
         .card {
             width: 250px;
@@ -73,13 +79,7 @@
 
 <body>
 
-    <?php
 
-// include_once('Validar_home.php');
-    include_once('validar_Header.php');
-    include_once('Conexao.php');
-
-    ?>
     <div id="carouselExampleControls" class="carousel slide vsfkaua " data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">

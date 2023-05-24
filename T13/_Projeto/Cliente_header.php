@@ -50,7 +50,7 @@ include_once('Cliente_btoPesquisa.php'); ?>
           <div class="row">
             <center><img src="<?= $ImgUsuario ?>" class="profile" />
               <p>
-                <label style="margin-left: 25px;"> <?= $nomeUsuario ?></label>
+                <label style="margin-left: 25px;"> <?= $loginUsuario ?></label>
             </center>
           </div>
 

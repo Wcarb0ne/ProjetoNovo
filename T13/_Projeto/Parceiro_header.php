@@ -50,7 +50,7 @@ include_once('Parceiro_btoPesquisa.php'); ?>
 
         <li>
         <center> <a style="text-decoration: none;" href="#"><img src="<?= $ImgUsuario ?>" class="profile"/></a>
-        <p><label style="margin-left: 90px" > <?= $nomeUsuario ?></label></center>
+        <p><label style="margin-left: 90px" > <?= $loginUsuario ?></label></center>
           <ul>
             <!-- <li class="sub-item">
               <span class="material-icons-outlined"><a href="Parceiro_sistema.php?"title="Home">grid_view</a> </span>

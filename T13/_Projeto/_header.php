@@ -14,7 +14,7 @@
           <a class="nav-link active" aria-current="page" href="index.php">Ínicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="_Home.php">Home</a>
+          <a class="nav-link" href="_Home_deslogado.php">Home</a>
         </li>
 
         <li class="nav-item dropdown padding: 0;">
