@@ -16,6 +16,9 @@
         <li class="nav-item">
           <a class="nav-link" href="_Home_deslogado.php">Home</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../NexTech/">Area do Func.</a>
+        </li>
 
         <li class="nav-item dropdown padding: 0;">
           <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Saiba Mais </a>
